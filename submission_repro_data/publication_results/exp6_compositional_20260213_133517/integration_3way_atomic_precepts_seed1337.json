@@ -1,0 +1,46 @@
+{
+  "SIMPLE": {
+    "constraint": "Constraint: SIMPLE (integration domain)",
+    "solution_hint": "solution:salesforce-backup",
+    "confidence": 0.8,
+    "domain": "integration",
+    "times_seen": 5,
+    "last_updated": 1771001054.687986,
+    "source": "direct_training",
+    "tier": 1,
+    "semantic_meaning": "Simple API key authentication"
+  },
+  "RATE": {
+    "constraint": "Constraint: RATE (integration domain)",
+    "solution_hint": "solution:hubspot-v2",
+    "confidence": 0.6,
+    "domain": "integration",
+    "times_seen": 4,
+    "last_updated": 1771001099.164944,
+    "source": "direct_training",
+    "tier": 2,
+    "semantic_meaning": "Rate limiting compliance"
+  },
+  "AUTH": {
+    "constraint": "Constraint: AUTH (integration domain)",
+    "solution_hint": "solution:hubspot-v2",
+    "confidence": 0.6,
+    "domain": "integration",
+    "times_seen": 3,
+    "last_updated": 1771001099.164947,
+    "source": "direct_training",
+    "tier": 3,
+    "semantic_meaning": "Secure authentication required"
+  },
+  "QUERY": {
+    "constraint": "Constraint: QUERY (integration domain)",
+    "solution_hint": "solution:hubspot-v2",
+    "confidence": 0.6,
+    "domain": "integration",
+    "times_seen": 3,
+    "last_updated": 1771001099.1649501,
+    "source": "direct_training",
+    "tier": 1,
+    "semantic_meaning": "Flexible query patterns"
+  }
+}

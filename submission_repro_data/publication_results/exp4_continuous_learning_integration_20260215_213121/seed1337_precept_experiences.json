@@ -1,0 +1,83 @@
+{
+  "experiences": [
+    {
+      "id": "b54a491bdf12",
+      "task_description": "Authenticate with service (webhook)",
+      "goal": "",
+      "trajectory": [
+        {
+          "outcome": "failure",
+          "strategy": "",
+          "lessons": "Domain: integration, Strategy: "
+        }
+      ],
+      "outcome": "failure",
+      "correctness": 0.0,
+      "strategy_used": "Strategy using 1 steps",
+      "lessons_learned": [],
+      "skills_demonstrated": [],
+      "experience_type": "failure",
+      "priority": 2,
+      "domain": "general",
+      "timestamp": 1771213334.869327,
+      "retrieval_count": 2,
+      "usefulness_score": 0.42349999999999993,
+      "summary": null
+    },
+    {
+      "id": "aec9089c5c39",
+      "task_description": "Setup webhook (api)",
+      "goal": "",
+      "trajectory": [
+        {
+          "outcome": "failure",
+          "strategy": "",
+          "lessons": "Domain: integration, Strategy: "
+        }
+      ],
+      "outcome": "failure",
+      "correctness": 0.0,
+      "strategy_used": "Strategy using 1 steps",
+      "lessons_learned": [],
+      "skills_demonstrated": [],
+      "experience_type": "failure",
+      "priority": 2,
+      "domain": "general",
+      "timestamp": 1771213376.1386938,
+      "retrieval_count": 1,
+      "usefulness_score": 0.45499999999999996,
+      "summary": null
+    },
+    {
+      "id": "db3a9318f2ad",
+      "task_description": "Configure integration (realtime)",
+      "goal": "",
+      "trajectory": [
+        {
+          "outcome": "failure",
+          "strategy": "",
+          "lessons": "Domain: integration, Strategy: "
+        }
+      ],
+      "outcome": "failure",
+      "correctness": 0.0,
+      "strategy_used": "Strategy using 1 steps",
+      "lessons_learned": [],
+      "skills_demonstrated": [],
+      "experience_type": "failure",
+      "priority": 2,
+      "domain": "general",
+      "timestamp": 1771213430.824042,
+      "retrieval_count": 0,
+      "usefulness_score": 0.5,
+      "summary": null
+    }
+  ],
+  "stats": {
+    "total_added": 54,
+    "total_retrieved": 38,
+    "total_pruned": 51,
+    "successful_retrievals": 20
+  },
+  "timestamp": 1771213431.1546419
+}

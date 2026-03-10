@@ -1,0 +1,68 @@
+{
+  "ECON": {
+    "constraint": "Constraint: ECON (logistics domain)",
+    "solution_hint": "solution:ningbo",
+    "confidence": 0.8,
+    "domain": "logistics",
+    "times_seen": 9,
+    "last_updated": 1770992723.8813581,
+    "source": "direct_training",
+    "tier": 1,
+    "semantic_meaning": "Cost-optimized economical routing"
+  },
+  "SAFE": {
+    "constraint": "Constraint: SAFE (logistics domain)",
+    "solution_hint": "solution:hamburg",
+    "confidence": 0.8,
+    "domain": "logistics",
+    "times_seen": 10,
+    "last_updated": 1770992712.631103,
+    "source": "direct_training",
+    "tier": 3,
+    "semantic_meaning": "Safety-critical cargo requiring secure handling"
+  },
+  "BULK": {
+    "constraint": "Constraint: BULK (logistics domain)",
+    "solution_hint": "solution:antwerp",
+    "confidence": 0.8,
+    "domain": "logistics",
+    "times_seen": 7,
+    "last_updated": 1770992712.631099,
+    "source": "direct_training",
+    "tier": 1,
+    "semantic_meaning": "Bulk cargo requiring high-volume facilities"
+  },
+  "INTL": {
+    "constraint": "Constraint: INTL (logistics domain)",
+    "solution_hint": "solution:antwerp",
+    "confidence": 0.7,
+    "domain": "logistics",
+    "times_seen": 8,
+    "last_updated": 1770992723.881351,
+    "source": "direct_training",
+    "tier": 2,
+    "semantic_meaning": "International transshipment - neutral hub"
+  },
+  "FAST": {
+    "constraint": "Constraint: FAST (logistics domain)",
+    "solution_hint": "solution:long_beach",
+    "confidence": 0.7,
+    "domain": "logistics",
+    "times_seen": 4,
+    "last_updated": 1770992689.775166,
+    "source": "direct_training",
+    "tier": 1,
+    "semantic_meaning": "Time-critical express shipment"
+  },
+  "AMER": {
+    "constraint": "Constraint: AMER (logistics domain)",
+    "solution_hint": "solution:long_beach",
+    "confidence": 0.7,
+    "domain": "logistics",
+    "times_seen": 7,
+    "last_updated": 1770992723.881355,
+    "source": "direct_training",
+    "tier": 2,
+    "semantic_meaning": "American hub routing"
+  }
+}

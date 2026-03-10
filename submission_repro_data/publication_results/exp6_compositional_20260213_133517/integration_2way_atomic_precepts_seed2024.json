@@ -1,0 +1,35 @@
+{
+  "SIMPLE": {
+    "constraint": "Constraint: SIMPLE (integration domain)",
+    "solution_hint": "solution:salesforce-backup",
+    "confidence": 0.7,
+    "domain": "integration",
+    "times_seen": 4,
+    "last_updated": 1770997483.914098,
+    "source": "direct_training",
+    "tier": 1,
+    "semantic_meaning": "Simple API key authentication"
+  },
+  "RATE": {
+    "constraint": "Constraint: RATE (integration domain)",
+    "solution_hint": "solution:hubspot-v2",
+    "confidence": 0.6,
+    "domain": "integration",
+    "times_seen": 2,
+    "last_updated": 1770997483.914093,
+    "source": "direct_training",
+    "tier": 2,
+    "semantic_meaning": "Rate limiting compliance"
+  },
+  "VERIFY": {
+    "constraint": "Constraint: VERIFY (integration domain)",
+    "solution_hint": "solution:hubspot-v2",
+    "confidence": 0.6,
+    "domain": "integration",
+    "times_seen": 2,
+    "last_updated": 1770997437.364091,
+    "source": "direct_training",
+    "tier": 2,
+    "semantic_meaning": "Request verification required"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "experiences": [
+    {
+      "id": "73918e645bfe",
+      "task_description": "Book shipment from Rotterdam to Boston",
+      "goal": "",
+      "trajectory": [
+        {
+          "outcome": "failure",
+          "strategy": "",
+          "lessons": "Domain: logistics, Strategy: "
+        }
+      ],
+      "outcome": "failure",
+      "correctness": 0.0,
+      "strategy_used": "Strategy using 1 steps",
+      "lessons_learned": [],
+      "skills_demonstrated": [],
+      "experience_type": "failure",
+      "priority": 2,
+      "domain": "general",
+      "timestamp": 1770983379.839596,
+      "retrieval_count": 0,
+      "usefulness_score": 0.5,
+      "summary": null
+    }
+  ],
+  "stats": {
+    "total_added": 36,
+    "total_retrieved": 18,
+    "total_pruned": 35,
+    "successful_retrievals": 14
+  },
+  "timestamp": 1770983379.9963078
+}

@@ -1,0 +1,28 @@
+{
+  "experiment": "exp2_static_knowledge_ablation",
+  "seeds": [
+    42,
+    123,
+    456,
+    789,
+    999,
+    2024,
+    3141,
+    1337,
+    8888,
+    7777
+  ],
+  "domain": "logistics",
+  "static_knowledge_values": [
+    true,
+    false
+  ],
+  "train": 12,
+  "test": 4,
+  "E": 4,
+  "beta": 3,
+  "max_retries": 4,
+  "num_conditions": 5,
+  "timestamp": "20260220_144634",
+  "mode": "full"
+}

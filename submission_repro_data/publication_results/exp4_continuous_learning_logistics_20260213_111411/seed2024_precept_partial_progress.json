@@ -1,0 +1,106 @@
+{
+  "C-HZMT+E-TIDE+SH-701+T-FLEX+T-NGHT": {
+    "failed_options": [
+      "hamburg",
+      "antwerp",
+      "rotterdam",
+      "ningbo",
+      "shenzhen",
+      "los_angeles"
+    ],
+    "errors": [
+      "ROUTE-147"
+    ],
+    "last_attempt": 1770985370.4213471
+  },
+  "C-FRAG+C-HZMT+E-STRM+R-482+T-PEAK": {
+    "failed_options": [
+      "hamburg",
+      "antwerp",
+      "shanghai",
+      "ningbo",
+      "shenzhen",
+      "los_angeles"
+    ],
+    "errors": [
+      "ROUTE-365"
+    ],
+    "last_attempt": 1770985449.3710668
+  },
+  "E-SMOG+H-903+LA-550+T-PEAK+T-WKND": {
+    "failed_options": [
+      "antwerp"
+    ],
+    "errors": [
+      "ROUTE-455"
+    ],
+    "last_attempt": 1770985095.7631779
+  },
+  "E-SMOG+E-WNTR+H-903+T-PEAK+T-WKND": {
+    "failed_options": [
+      "long_beach",
+      "rotterdam"
+    ],
+    "errors": [
+      "ROUTE-135"
+    ],
+    "last_attempt": 1770985805.525415
+  },
+  "C-BULK+C-COLD+C-HIGH+E-STRM+H-903": {
+    "failed_options": [
+      "ningbo",
+      "rotterdam"
+    ],
+    "errors": [
+      "ROUTE-387"
+    ],
+    "last_attempt": 1770985844.9513369
+  },
+  "E-SMOG+H-903+LA-550+R-482+T-WKND": {
+    "failed_options": [
+      "rotterdam"
+    ],
+    "errors": [
+      "ROUTE-748"
+    ],
+    "last_attempt": 1770985870.512119
+  },
+  "C-BULK+C-COLD+E-HEAT+E-STRM+H-903": {
+    "failed_options": [
+      "rotterdam"
+    ],
+    "errors": [
+      "ROUTE-676"
+    ],
+    "last_attempt": 1770985908.741198
+  },
+  "E-SMOG+H-903+LA-550+SH-701+T-PEAK": {
+    "failed_options": [
+      "rotterdam",
+      "hamburg"
+    ],
+    "errors": [
+      "ROUTE-444"
+    ],
+    "last_attempt": 1770985939.584977
+  },
+  "C-COLD+C-FRAG+E-STRM+H-903+T-FLEX": {
+    "failed_options": [
+      "rotterdam"
+    ],
+    "errors": [
+      "ROUTE-922"
+    ],
+    "last_attempt": 1770985980.117193
+  },
+  "C-BULK+C-COLD+E-HEAT+H-903+T-FLEX": {
+    "failed_options": [
+      "rotterdam",
+      "hamburg"
+    ],
+    "errors": [
+      "ROUTE-750"
+    ],
+    "last_attempt": 1770986049.195702
+  }
+}

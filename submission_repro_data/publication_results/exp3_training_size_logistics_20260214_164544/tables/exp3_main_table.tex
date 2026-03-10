@@ -1,0 +1,21 @@
+\begin{table*}[t]
+\centering
+\caption{Experiment 3: Training Size Ablation --- $P_1$ and Avg Steps ($N{=}5$ composite conditions). Bold = best per row.$^a$}
+\label{tab:exp3_training_size}
+\begin{tabular}{cc ccc ccc}
+\toprule
+& & \multicolumn{3}{c}{\textbf{First-Try Success $P_1$ (\%)}} & \multicolumn{3}{c}{\textbf{Avg Steps} $\downarrow$} \\
+\cmidrule(lr){3-5} \cmidrule(lr){6-8}
+$\beta$ & $T_{\text{train}}$ & \textbf{PRECEPT} & \textbf{FR} & \textbf{ExpeL} & \textbf{PRECEPT} & \textbf{FR} & \textbf{ExpeL} \\
+\midrule
+1 & 4 & \textbf{77.5}$\pm$22.5 & 67.5$\pm$20.7 & \textbf{77.5}$\pm$17.8 & \textbf{2.80}$\pm$0.92 & 4.35$\pm$0.88 & 3.25$\pm$1.34 \\
+2 & 8 & \textbf{92.5}$\pm$7.5$^{**}$ & 75.0$\pm$14.6 & 72.5$\pm$19.7 & \textbf{2.33}$\pm$0.39 & 4.10$\pm$0.95 & 3.35$\pm$0.84 \\
+3 & 12 & \textbf{92.5}$\pm$7.5$^{***}$ & 60.0$\pm$15.1 & 72.5$\pm$13.2 & \textbf{2.30}$\pm$0.36 & 5.00$\pm$1.34 & 3.40$\pm$0.98 \\
+4 & 16 & \textbf{92.5}$\pm$7.5$^{***}$ & 55.0$\pm$14.1 & 60.0$\pm$15.1 & \textbf{2.25}$\pm$0.29 & 5.05$\pm$1.02 & 4.10$\pm$1.28 \\
+5 & 20 & \textbf{87.5}$\pm$9.4 & 72.5$\pm$13.2 & 77.5$\pm$10.2 & \textbf{2.52}$\pm$0.42 & 4.75$\pm$0.94 & 3.25$\pm$0.68 \\
+\bottomrule
+\end{tabular}
+\vspace{2mm}
+\footnotesize
+$^a$ n=10 seeds per $\beta$. $\pm$ 95\% CI. $^{***}$p$<$0.001, $^{**}$p$<$0.01, $^{*}$p$<$0.05 (paired t-test vs FR). $\downarrow$ lower is better.
+\end{table*}

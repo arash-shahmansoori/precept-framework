@@ -1,0 +1,42 @@
+{
+  "logistics:book_shipment:recovery_ROUTE-808_hamburg": {
+    "name": "recovery_ROUTE-808_hamburg",
+    "task_type": "logistics:book_shipment",
+    "steps": "1. Attempt default action for book_shipment\n2. If error 'ROUTE-808' occurs, use 'hamburg'\n3. Learned from: Transport express shipment from Shanghai to Los_An...",
+    "success_rate": 1.0,
+    "created": 1770981968.597232,
+    "uses": 32
+  },
+  "logistics:book_shipment:recovery_ROUTE-804_hamburg": {
+    "name": "recovery_ROUTE-804_hamburg",
+    "task_type": "logistics:book_shipment",
+    "steps": "1. Attempt default action for book_shipment\n2. If error 'ROUTE-804' occurs, use 'hamburg'\n3. Learned from: Arrange perishable delivery from Rotterdam to Lond...",
+    "success_rate": 1.0,
+    "created": 1770981968.6541529,
+    "uses": 32
+  },
+  "logistics:book_shipment:recovery_ROUTE-671_antwerp": {
+    "name": "recovery_ROUTE-671_antwerp",
+    "task_type": "logistics:book_shipment",
+    "steps": "1. Attempt default action for book_shipment\n2. If error 'ROUTE-671' occurs, use 'antwerp'\n3. Learned from: Book bulk cargo from Los_Angeles port to New_York...",
+    "success_rate": 1.0,
+    "created": 1770981969.804988,
+    "uses": 32
+  },
+  "logistics:book_shipment:recovery_ROUTE-567_antwerp": {
+    "name": "recovery_ROUTE-567_antwerp",
+    "task_type": "logistics:book_shipment",
+    "steps": "1. Attempt default action for book_shipment\n2. If error 'ROUTE-567' occurs, use 'antwerp'\n3. Learned from: Route freight from Los_Angeles to Singapore...",
+    "success_rate": 1.0,
+    "created": 1770982460.672844,
+    "uses": 4
+  },
+  "logistics:book_shipment:recovery_ROUTE-273_antwerp": {
+    "name": "recovery_ROUTE-273_antwerp",
+    "task_type": "logistics:book_shipment",
+    "steps": "1. Attempt default action for book_shipment\n2. If error 'ROUTE-273' occurs, use 'antwerp'\n3. Learned from: Ship cargo from Shanghai to Singapore...",
+    "success_rate": 1.0,
+    "created": 1770982562.288036,
+    "uses": 1
+  }
+}

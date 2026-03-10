@@ -1,0 +1,4208 @@
+{
+  "experiment": "exp4_continuous_learning",
+  "domain": "logistics",
+  "timestamp": "20260213_111411",
+  "parameters": {
+    "num_keys": 4,
+    "train_size": 4,
+    "test_size": 16,
+    "num_conditions": 5,
+    "max_retries": 2,
+    "beta": 1,
+    "encounters_per_key": 4
+  },
+  "n_runs": 10,
+  "seeds_used": [
+    42,
+    123,
+    456,
+    789,
+    999,
+    2024,
+    3141,
+    1337,
+    8888,
+    7777
+  ],
+  "learning_curves": {
+    "precept": {
+      "encounter_1": {
+        "p1_mean": 0.44833333333333336,
+        "p1_std": 0.15007981755581928,
+        "p1_ci_95": 0.10736063393802543,
+        "pt_mean": 0.6478787878787878,
+        "pt_std": 0.1436053184992651,
+        "pt_ci_95": 0.10272905632510441,
+        "steps_mean": 3.2406060606060607,
+        "steps_std": 0.3701298729427384,
+        "steps_ci_95": 0.26477496072217477,
+        "n": 10
+      },
+      "encounter_2": {
+        "p1_mean": 0.825,
+        "p1_std": 0.1687371394276382,
+        "p1_ci_95": 0.12070727798627842,
+        "pt_mean": 0.825,
+        "pt_std": 0.1687371394276382,
+        "pt_ci_95": 0.12070727798627842,
+        "steps_mean": 2.375,
+        "steps_std": 0.35843021946010944,
+        "steps_ci_95": 0.25640553280570555,
+        "n": 10
+      },
+      "encounter_3": {
+        "p1_mean": 0.875,
+        "p1_std": 0.13176156917368248,
+        "p1_ci_95": 0.09425654845225415,
+        "pt_mean": 1.0,
+        "pt_std": 0.0,
+        "pt_ci_95": 0.0,
+        "steps_mean": 2.25,
+        "steps_std": 0.26352313834736496,
+        "steps_ci_95": 0.1885130969045083,
+        "n": 10
+      },
+      "encounter_4": {
+        "p1_mean": 1.0,
+        "p1_std": 0.0,
+        "p1_ci_95": 0.0,
+        "pt_mean": 1.0,
+        "pt_std": 0.0,
+        "pt_ci_95": 0.0,
+        "steps_mean": 2.0,
+        "steps_std": 0.0,
+        "steps_ci_95": 0.0,
+        "n": 10
+      }
+    },
+    "expel": {
+      "encounter_1": {
+        "p1_mean": 0.3660606060606061,
+        "p1_std": 0.17773932090937786,
+        "p1_ci_95": 0.1271470506782012,
+        "pt_mean": 0.5390909090909091,
+        "pt_std": 0.1715816458652759,
+        "pt_ci_95": 0.12274211531057082,
+        "steps_mean": 4.18969696969697,
+        "steps_std": 0.675053157637352,
+        "steps_ci_95": 0.48290393822511524,
+        "n": 10
+      },
+      "encounter_2": {
+        "p1_mean": 0.65,
+        "p1_std": 0.268741924943285,
+        "p1_ci_95": 0.19224639193677906,
+        "pt_mean": 0.825,
+        "pt_std": 0.1687371394276382,
+        "pt_ci_95": 0.12070727798627842,
+        "steps_mean": 3.05,
+        "steps_std": 0.7975657409336933,
+        "steps_ci_95": 0.5705441607566247,
+        "n": 10
+      },
+      "encounter_3": {
+        "p1_mean": 0.725,
+        "p1_std": 0.18446619684315546,
+        "p1_ci_95": 0.13195916783315578,
+        "pt_mean": 0.875,
+        "pt_std": 0.13176156917368248,
+        "pt_ci_95": 0.09425654845225415,
+        "steps_mean": 2.8,
+        "steps_std": 0.5868938953886336,
+        "steps_ci_95": 0.4198386011486574,
+        "n": 10
+      },
+      "encounter_4": {
+        "p1_mean": 0.85,
+        "p1_std": 0.17480147469502527,
+        "p1_ci_95": 0.1250454421000324,
+        "pt_mean": 0.9,
+        "pt_std": 0.12909944487358058,
+        "pt_ci_95": 0.09235217944957687,
+        "steps_mean": 2.5,
+        "steps_std": 0.5270462766947299,
+        "steps_ci_95": 0.3770261938090166,
+        "n": 10
+      }
+    },
+    "full_reflexion": {
+      "encounter_1": {
+        "p1_mean": 0.38772727272727275,
+        "p1_std": 0.11667967481811761,
+        "p1_ci_95": 0.08346761116961425,
+        "pt_mean": 0.5506060606060607,
+        "pt_std": 0.0941487836886599,
+        "pt_ci_95": 0.06734998260208525,
+        "steps_mean": 4.123333333333333,
+        "steps_std": 0.3585988047172186,
+        "steps_ci_95": 0.25652613143362646,
+        "n": 10
+      },
+      "encounter_2": {
+        "p1_mean": 0.625,
+        "p1_std": 0.21245914639969937,
+        "p1_ci_95": 0.1519841176174127,
+        "pt_mean": 0.675,
+        "pt_std": 0.23717082451262844,
+        "pt_ci_95": 0.16966178721405745,
+        "steps_mean": 3.4,
+        "steps_std": 0.8755950357709131,
+        "steps_ci_95": 0.6263629556878303,
+        "n": 10
+      },
+      "encounter_3": {
+        "p1_mean": 0.6,
+        "p1_std": 0.17480147469502527,
+        "p1_ci_95": 0.1250454421000324,
+        "pt_mean": 0.65,
+        "pt_std": 0.24152294576982394,
+        "pt_ci_95": 0.1727751072110909,
+        "steps_mean": 3.5,
+        "steps_std": 0.816496580927726,
+        "steps_ci_95": 0.5840864678825164,
+        "n": 10
+      },
+      "encounter_4": {
+        "p1_mean": 0.675,
+        "p1_std": 0.23717082451262844,
+        "p1_ci_95": 0.16966178721405745,
+        "pt_mean": 0.725,
+        "pt_std": 0.21889875894272828,
+        "pt_ci_95": 0.15659073892195757,
+        "steps_mean": 3.2,
+        "steps_std": 0.8881941729649485,
+        "steps_ci_95": 0.6353758354890782,
+        "n": 10
+      }
+    }
+  },
+  "improvements": {
+    "precept": {
+      "p1_improvement_pp": 55.166666666666664,
+      "pt_improvement_pp": 35.21212121212122,
+      "steps_saved": 1.2406060606060607,
+      "enc1_p1": 0.44833333333333336,
+      "enc4_p1": 1.0
+    },
+    "expel": {
+      "p1_improvement_pp": 48.39393939393939,
+      "pt_improvement_pp": 36.09090909090909,
+      "steps_saved": 1.6896969696969704,
+      "enc1_p1": 0.3660606060606061,
+      "enc4_p1": 0.85
+    },
+    "full_reflexion": {
+      "p1_improvement_pp": 28.72727272727273,
+      "pt_improvement_pp": 17.43939393939393,
+      "steps_saved": 0.9233333333333329,
+      "enc1_p1": 0.38772727272727275,
+      "enc4_p1": 0.675
+    }
+  },
+  "statistical_tests": {
+    "per_encounter_tests": {
+      "encounter_1": {
+        "precept_vs_expel": {
+          "t_stat": 2.1976602468010236,
+          "p_value": 0.055552121679001365,
+          "cohens_d": 0.6949611903099004,
+          "n": 10
+        },
+        "precept_vs_full_reflexion": {
+          "t_stat": 1.517893276880822,
+          "p_value": 0.16335432744527884,
+          "cohens_d": 0.47999999999999987,
+          "n": 10
+        }
+      },
+      "encounter_2": {
+        "precept_vs_expel": {
+          "t_stat": 2.688774478590815,
+          "p_value": 0.02484634444065555,
+          "cohens_d": 0.8502651466878618,
+          "n": 10
+        },
+        "precept_vs_full_reflexion": {
+          "t_stat": 4.0,
+          "p_value": 0.0031104283103858535,
+          "cohens_d": 1.2649110640673518,
+          "n": 10
+        }
+      },
+      "encounter_3": {
+        "precept_vs_expel": {
+          "t_stat": 3.674234614174767,
+          "p_value": 0.005121072764272635,
+          "cohens_d": 1.1618950038622249,
+          "n": 10
+        },
+        "precept_vs_full_reflexion": {
+          "t_stat": 3.9727331518303837,
+          "p_value": 0.0032412146013796567,
+          "cohens_d": 1.2562885295843538,
+          "n": 10
+        }
+      },
+      "encounter_4": {
+        "precept_vs_expel": {
+          "t_stat": 2.7136021011998723,
+          "p_value": 0.023856384540122025,
+          "cohens_d": 0.858116330321033,
+          "n": 10
+        },
+        "precept_vs_full_reflexion": {
+          "t_stat": 4.333333333333334,
+          "p_value": 0.0018958419839849952,
+          "cohens_d": 1.3703203194062978,
+          "n": 10
+        }
+      }
+    },
+    "improvement_tests": {
+      "precept": {
+        "paired_test": {
+          "t_stat": 11.623969193663992,
+          "p_value": 1.0093960680578563e-06,
+          "cohens_d": 3.6758218103609095,
+          "n": 10
+        },
+        "improvement_significance": {
+          "t_stat": 11.623969193663992,
+          "p_value_two_tailed": 1.0093960680578563e-06,
+          "p_value_one_tailed": 5.046980340289282e-07,
+          "n": 10
+        },
+        "mean_improvement_pp": 55.166666666666664
+      },
+      "expel": {
+        "paired_test": {
+          "t_stat": 5.954512294366141,
+          "p_value": 0.0002141459901476123,
+          "cohens_d": 1.8829821205672006,
+          "n": 10
+        },
+        "improvement_significance": {
+          "t_stat": 5.954512294366141,
+          "p_value_two_tailed": 0.0002141459901476123,
+          "p_value_one_tailed": 0.00010707299507380614,
+          "n": 10
+        },
+        "mean_improvement_pp": 48.3939393939394
+      },
+      "full_reflexion": {
+        "paired_test": {
+          "t_stat": 4.106838866726988,
+          "p_value": 0.0026494915438877386,
+          "cohens_d": 1.2986964802161975,
+          "n": 10
+        },
+        "improvement_significance": {
+          "t_stat": 4.106838866726988,
+          "p_value_two_tailed": 0.0026494915438877386,
+          "p_value_one_tailed": 0.0013247457719438693,
+          "n": 10
+        },
+        "mean_improvement_pp": 28.727272727272723
+      }
+    },
+    "final_encounter_advantage": {
+      "precept_vs_expel": {
+        "t_stat": 2.7136021011998723,
+        "p_value": 0.023856384540122025,
+        "cohens_d": 0.858116330321033,
+        "n": 10
+      },
+      "precept_vs_full_reflexion": {
+        "t_stat": 4.333333333333334,
+        "p_value": 0.0018958419839849952,
+        "cohens_d": 1.3703203194062978,
+        "n": 10
+      },
+      "precept_mean_p1": 1.0,
+      "expel_mean_p1": 0.85,
+      "full_reflexion_mean_p1": 0.675,
+      "advantage_vs_expel_pp": 15.000000000000002,
+      "advantage_vs_fr_pp": 32.49999999999999
+    }
+  },
+  "raw_runs": [
+    {
+      "aggregated": {
+        "metadata": {
+          "domain": "logistics",
+          "timestamp": "20260213_112530",
+          "seed": 42,
+          "train_tasks": 4,
+          "test_tasks": 16,
+          "max_retries": 2,
+          "max_attempts": 3,
+          "concurrent_training": true,
+          "concurrent_testing": false,
+          "train_elapsed_seconds": 25.47,
+          "test_elapsed_seconds": 631.73,
+          "static_knowledge_enabled": false,
+          "static_knowledge_mode": "disabled",
+          "test_mode": "both"
+        },
+        "agents": {
+          "llm_baseline": {
+            "name": "LLM Baseline (NOT RUN - unfair)",
+            "success_rate": 0.0,
+            "total_successes": 0,
+            "total_tasks": 0,
+            "avg_steps": 0.0,
+            "llm_calls": 0,
+            "llm_accuracy": 0.0,
+            "first_try_success_rate": 0.0,
+            "first_try_successes": 0,
+            "learning_efficiency": 0.0,
+            "cold_start_success_rate": 0.0,
+            "cold_start_successes": 0,
+            "cold_start_total": 0
+          },
+          "reflexion": {
+            "name": "Reflexion (NOT RUN - unfair)",
+            "success_rate": 0.0,
+            "total_successes": 0,
+            "total_tasks": 0,
+            "avg_steps": 0.0,
+            "llm_calls": 0,
+            "llm_accuracy": 0.0,
+            "reflections_generated": 0,
+            "first_try_success_rate": 0.0,
+            "first_try_successes": 0,
+            "learning_efficiency": 0.0,
+            "cold_start_success_rate": 0.0,
+            "cold_start_successes": 0,
+            "cold_start_total": 0
+          },
+          "full_reflexion": {
+            "name": "Full Reflexion",
+            "success_rate": 1.0,
+            "total_successes": 16,
+            "total_tasks": 16,
+            "avg_steps": 3.38,
+            "llm_calls": 57,
+            "llm_accuracy": 0.4912,
+            "reflections_generated": 57,
+            "reflections_reused": 57,
+            "accumulated_memories": 20,
+            "first_try_success_rate": 0.875,
+            "first_try_successes": 14,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_total": 0,
+            "learning_efficiency": 2.5,
+            "cold_start_success_rate": 1.0,
+            "cold_start_successes": 4,
+            "cold_start_total": 4
+          },
+          "expel": {
+            "name": "ExpeL",
+            "success_rate": 0.875,
+            "total_successes": 14,
+            "total_tasks": 16,
+            "avg_steps": 2.88,
+            "llm_calls": 96,
+            "llm_accuracy": 0.2917,
+            "insights_extracted": 36,
+            "insights_retrieved": 454,
+            "first_try_success_rate": 0.75,
+            "first_try_successes": 12,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_total": 0,
+            "learning_efficiency": 2.1875,
+            "cold_start_success_rate": 0.75,
+            "cold_start_successes": 3,
+            "cold_start_total": 4
+          },
+          "precept": {
+            "name": "PRECEPT",
+            "success_rate": 1.0,
+            "total_successes": 16,
+            "total_tasks": 16,
+            "avg_steps": 2.12,
+            "rules_learned": 36,
+            "llm_reasoning_calls": 23,
+            "llm_reasoning_successes": 12,
+            "has_compass_evolution": true,
+            "first_try_success_rate": 0.9375,
+            "first_try_successes": 15,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_successes": 0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_successes": 0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_successes": 0,
+            "p1_other_total": 0,
+            "p1_without_rules": 0.0,
+            "p1_without_rules_successes": 0,
+            "p1_without_rules_total": 0,
+            "learning_efficiency": 2.5,
+            "cold_start_success_rate": 1.0,
+            "cold_start_successes": 4,
+            "cold_start_total": 4
+          }
+        },
+        "precept_advantages": {
+          "vs_llm_baseline": 1.0,
+          "vs_reflexion": 1.0,
+          "vs_full_reflexion": 0.0,
+          "steps_saved_vs_llm": -2.12,
+          "steps_saved_vs_reflexion": -2.12,
+          "steps_saved_vs_full_reflexion": 1.25,
+          "first_try_advantage_vs_llm": 0.9375,
+          "first_try_advantage_vs_reflexion": 0.9375,
+          "first_try_advantage_vs_full_reflexion": 0.0625,
+          "learning_efficiency_advantage_vs_llm": 2.5,
+          "learning_efficiency_advantage_vs_full_reflexion": 0.0,
+          "cold_start_advantage_vs_llm": 1.0,
+          "cold_start_advantage_vs_full_reflexion": 0.0
+        },
+        "pruning_stats": {
+          "total_constraints": 21,
+          "hard_constraints": 0,
+          "soft_constraints": 21,
+          "dumb_retries_prevented": 6,
+          "pruning_efficiency": 0.2857
+        },
+        "conflict_resolution": {
+          "enabled": false,
+          "mode": "disabled",
+          "stats": {
+            "status": "active",
+            "summary": {
+              "conflicts_detected": 0,
+              "conflicts_resolved": 0
+            },
+            "detection": {
+              "total_detections": 0,
+              "conflicts_found": 0
+            },
+            "resolution_outcomes": {
+              "static_wins": 0,
+              "dynamic_wins": 0,
+              "merges": 0
+            },
+            "reliability": {
+              "static_kb": 0.8333333333333334,
+              "dynamic_experience": 0.625,
+              "episodic_memory": 0.5
+            }
+          },
+          "precept_capabilities": [],
+          "baseline_capabilities": []
+        },
+        "winner": "precept",
+        "dual_mode_results": {
+          "matched": {
+            "precept": {
+              "success_rate": 1.0,
+              "first_try_success_rate": 0.9375,
+              "first_try_successes": 15,
+              "total_tasks": 16,
+              "avg_steps": 2.12
+            },
+            "expel": {
+              "success_rate": 0.875,
+              "first_try_success_rate": 0.75,
+              "first_try_successes": 12,
+              "total_tasks": 16,
+              "avg_steps": 2.88
+            },
+            "full_reflexion": {
+              "success_rate": 1.0,
+              "first_try_success_rate": 0.875,
+              "first_try_successes": 14,
+              "total_tasks": 16,
+              "avg_steps": 3.38
+            },
+            "elapsed_seconds": 278.48,
+            "num_scenarios": 16
+          },
+          "random": {
+            "precept": {
+              "success_rate": 0.75,
+              "first_try_success_rate": 0.6875,
+              "first_try_successes": 11,
+              "total_tasks": 16,
+              "avg_steps": 2.88
+            },
+            "expel": {
+              "success_rate": 0.75,
+              "first_try_success_rate": 0.6875,
+              "first_try_successes": 11,
+              "total_tasks": 16,
+              "avg_steps": 3.25
+            },
+            "full_reflexion": {
+              "success_rate": 0.6875,
+              "first_try_success_rate": 0.6875,
+              "first_try_successes": 11,
+              "total_tasks": 16,
+              "avg_steps": 4.25
+            },
+            "elapsed_seconds": 353.25,
+            "num_scenarios": 16
+          }
+        }
+      },
+      "artifacts": {
+        "rules_learned": 7,
+        "procedures": 5,
+        "partial_progress_keys": 7
+      },
+      "precept": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 0.5,
+            "pt": 0.6666666666666666,
+            "avg_steps": 3.3333333333333335,
+            "first_try_successes": 6,
+            "successes": 8,
+            "total": 12
+          },
+          "encounter_2": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 4,
+            "successes": 4,
+            "total": 4
+          },
+          "encounter_3": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 4,
+            "successes": 4,
+            "total": 4
+          },
+          "encounter_4": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 4,
+            "successes": 4,
+            "total": 4
+          }
+        },
+        "by_key": {
+          "C-BULK+C-COLD+P-220+R-482+SH-7": 4,
+          "C-COLD+C-HIGH+H-903+LA-550+P-2": 7,
+          "E-HEAT+H-903+R-482+SH-701+T-FL": 6,
+          "C-COLD+C-HZMT+H-903+LA-550+R-4": 7,
+          "E-WNTR+H-903+R-482+SH-701+T-FL": 1,
+          "C-BULK+C-COLD+C-HZMT+H-903+LA-": 1,
+          "C-COLD+C-HIGH+E-HEAT+H-903+P-2": 1,
+          "E-HEAT+H-903+R-482+T-FLEX+T-NG": 1,
+          "C-COLD+C-HZMT+LA-550+R-482+T-N": 1,
+          "C-COLD+C-HIGH+H-903+P-220+T-WK": 1,
+          "E-HEAT+H-903+R-482+SH-701+T-WK": 1,
+          "C-BULK+C-COLD+H-903+LA-550+R-4": 1
+        },
+        "total_tasks": 32
+      },
+      "expel": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 0.5,
+            "pt": 0.5833333333333334,
+            "avg_steps": 3.8333333333333335,
+            "first_try_successes": 6,
+            "successes": 7,
+            "total": 12
+          },
+          "encounter_2": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 4,
+            "successes": 4,
+            "total": 4
+          },
+          "encounter_3": {
+            "p1": 0.75,
+            "pt": 1.0,
+            "avg_steps": 2.5,
+            "first_try_successes": 3,
+            "successes": 4,
+            "total": 4
+          },
+          "encounter_4": {
+            "p1": 0.75,
+            "pt": 0.75,
+            "avg_steps": 3.0,
+            "first_try_successes": 3,
+            "successes": 3,
+            "total": 4
+          }
+        },
+        "by_key": {
+          "C-BULK+C-COLD+P-220+R-482+SH-7": 4,
+          "C-COLD+C-HIGH+H-903+LA-550+P-2": 7,
+          "E-HEAT+H-903+R-482+SH-701+T-FL": 6,
+          "C-COLD+C-HZMT+H-903+LA-550+R-4": 7,
+          "E-WNTR+H-903+R-482+SH-701+T-FL": 1,
+          "C-BULK+C-COLD+C-HZMT+H-903+LA-": 1,
+          "C-COLD+C-HIGH+E-HEAT+H-903+P-2": 1,
+          "E-HEAT+H-903+R-482+T-FLEX+T-NG": 1,
+          "C-COLD+C-HZMT+LA-550+R-482+T-N": 1,
+          "C-COLD+C-HIGH+H-903+P-220+T-WK": 1,
+          "E-HEAT+H-903+R-482+SH-701+T-WK": 1,
+          "C-BULK+C-COLD+H-903+LA-550+R-4": 1
+        },
+        "total_tasks": 32
+      },
+      "full_reflexion": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 0.5,
+            "pt": 0.5833333333333334,
+            "avg_steps": 3.8333333333333335,
+            "first_try_successes": 6,
+            "successes": 7,
+            "total": 12
+          },
+          "encounter_2": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 4,
+            "successes": 4,
+            "total": 4
+          },
+          "encounter_3": {
+            "p1": 0.75,
+            "pt": 1.0,
+            "avg_steps": 2.5,
+            "first_try_successes": 3,
+            "successes": 4,
+            "total": 4
+          },
+          "encounter_4": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 4,
+            "successes": 4,
+            "total": 4
+          }
+        },
+        "by_key": {
+          "C-BULK+C-COLD+P-220+R-482+SH-7": 4,
+          "C-COLD+C-HIGH+H-903+LA-550+P-2": 7,
+          "E-HEAT+H-903+R-482+SH-701+T-FL": 6,
+          "C-COLD+C-HZMT+H-903+LA-550+R-4": 7,
+          "E-WNTR+H-903+R-482+SH-701+T-FL": 1,
+          "C-BULK+C-COLD+C-HZMT+H-903+LA-": 1,
+          "C-COLD+C-HIGH+E-HEAT+H-903+P-2": 1,
+          "E-HEAT+H-903+R-482+T-FLEX+T-NG": 1,
+          "C-COLD+C-HZMT+LA-550+R-482+T-N": 1,
+          "C-COLD+C-HIGH+H-903+P-220+T-WK": 1,
+          "E-HEAT+H-903+R-482+SH-701+T-WK": 1,
+          "C-BULK+C-COLD+H-903+LA-550+R-4": 1
+        },
+        "total_tasks": 32
+      }
+    },
+    {
+      "aggregated": {
+        "metadata": {
+          "domain": "logistics",
+          "timestamp": "20260213_113702",
+          "seed": 123,
+          "train_tasks": 4,
+          "test_tasks": 16,
+          "max_retries": 2,
+          "max_attempts": 3,
+          "concurrent_training": true,
+          "concurrent_testing": false,
+          "train_elapsed_seconds": 21.72,
+          "test_elapsed_seconds": 638.53,
+          "static_knowledge_enabled": false,
+          "static_knowledge_mode": "disabled",
+          "test_mode": "both"
+        },
+        "agents": {
+          "llm_baseline": {
+            "name": "LLM Baseline (NOT RUN - unfair)",
+            "success_rate": 0.0,
+            "total_successes": 0,
+            "total_tasks": 0,
+            "avg_steps": 0.0,
+            "llm_calls": 0,
+            "llm_accuracy": 0.0,
+            "first_try_success_rate": 0.0,
+            "first_try_successes": 0,
+            "learning_efficiency": 0.0,
+            "cold_start_success_rate": 0.0,
+            "cold_start_successes": 0,
+            "cold_start_total": 0
+          },
+          "reflexion": {
+            "name": "Reflexion (NOT RUN - unfair)",
+            "success_rate": 0.0,
+            "total_successes": 0,
+            "total_tasks": 0,
+            "avg_steps": 0.0,
+            "llm_calls": 0,
+            "llm_accuracy": 0.0,
+            "reflections_generated": 0,
+            "first_try_success_rate": 0.0,
+            "first_try_successes": 0,
+            "learning_efficiency": 0.0,
+            "cold_start_success_rate": 0.0,
+            "cold_start_successes": 0,
+            "cold_start_total": 0
+          },
+          "full_reflexion": {
+            "name": "Full Reflexion",
+            "success_rate": 1.0,
+            "total_successes": 16,
+            "total_tasks": 16,
+            "avg_steps": 3.38,
+            "llm_calls": 57,
+            "llm_accuracy": 0.5088,
+            "reflections_generated": 57,
+            "reflections_reused": 57,
+            "accumulated_memories": 20,
+            "first_try_success_rate": 0.8125,
+            "first_try_successes": 13,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_total": 0,
+            "learning_efficiency": 2.5,
+            "cold_start_success_rate": 1.0,
+            "cold_start_successes": 4,
+            "cold_start_total": 4
+          },
+          "expel": {
+            "name": "ExpeL",
+            "success_rate": 1.0,
+            "total_successes": 16,
+            "total_tasks": 16,
+            "avg_steps": 2.25,
+            "llm_calls": 91,
+            "llm_accuracy": 0.3187,
+            "insights_extracted": 36,
+            "insights_retrieved": 423,
+            "first_try_success_rate": 0.875,
+            "first_try_successes": 14,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_total": 0,
+            "learning_efficiency": 2.5,
+            "cold_start_success_rate": 1.0,
+            "cold_start_successes": 4,
+            "cold_start_total": 4
+          },
+          "precept": {
+            "name": "PRECEPT",
+            "success_rate": 1.0,
+            "total_successes": 16,
+            "total_tasks": 16,
+            "avg_steps": 2.0,
+            "rules_learned": 37,
+            "llm_reasoning_calls": 19,
+            "llm_reasoning_successes": 11,
+            "has_compass_evolution": true,
+            "first_try_success_rate": 1.0,
+            "first_try_successes": 16,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_successes": 0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_successes": 0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_successes": 0,
+            "p1_other_total": 0,
+            "p1_without_rules": 0.0,
+            "p1_without_rules_successes": 0,
+            "p1_without_rules_total": 0,
+            "learning_efficiency": 2.5,
+            "cold_start_success_rate": 1.0,
+            "cold_start_successes": 4,
+            "cold_start_total": 4
+          }
+        },
+        "precept_advantages": {
+          "vs_llm_baseline": 1.0,
+          "vs_reflexion": 1.0,
+          "vs_full_reflexion": 0.0,
+          "steps_saved_vs_llm": -2.0,
+          "steps_saved_vs_reflexion": -2.0,
+          "steps_saved_vs_full_reflexion": 1.38,
+          "first_try_advantage_vs_llm": 1.0,
+          "first_try_advantage_vs_reflexion": 1.0,
+          "first_try_advantage_vs_full_reflexion": 0.1875,
+          "learning_efficiency_advantage_vs_llm": 2.5,
+          "learning_efficiency_advantage_vs_full_reflexion": 0.0,
+          "cold_start_advantage_vs_llm": 1.0,
+          "cold_start_advantage_vs_full_reflexion": 0.0
+        },
+        "pruning_stats": {
+          "total_constraints": 17,
+          "hard_constraints": 0,
+          "soft_constraints": 17,
+          "dumb_retries_prevented": 8,
+          "pruning_efficiency": 0.4706
+        },
+        "conflict_resolution": {
+          "enabled": false,
+          "mode": "disabled",
+          "stats": {
+            "status": "active",
+            "summary": {
+              "conflicts_detected": 0,
+              "conflicts_resolved": 0
+            },
+            "detection": {
+              "total_detections": 0,
+              "conflicts_found": 0
+            },
+            "resolution_outcomes": {
+              "static_wins": 0,
+              "dynamic_wins": 0,
+              "merges": 0
+            },
+            "reliability": {
+              "static_kb": 0.8333333333333334,
+              "dynamic_experience": 0.625,
+              "episodic_memory": 0.5
+            }
+          },
+          "precept_capabilities": [],
+          "baseline_capabilities": []
+        },
+        "winner": "precept",
+        "dual_mode_results": {
+          "matched": {
+            "precept": {
+              "success_rate": 1.0,
+              "first_try_success_rate": 1.0,
+              "first_try_successes": 16,
+              "total_tasks": 16,
+              "avg_steps": 2.0
+            },
+            "expel": {
+              "success_rate": 1.0,
+              "first_try_success_rate": 0.875,
+              "first_try_successes": 14,
+              "total_tasks": 16,
+              "avg_steps": 2.25
+            },
+            "full_reflexion": {
+              "success_rate": 1.0,
+              "first_try_success_rate": 0.8125,
+              "first_try_successes": 13,
+              "total_tasks": 16,
+              "avg_steps": 3.38
+            },
+            "elapsed_seconds": 274.07,
+            "num_scenarios": 16
+          },
+          "random": {
+            "precept": {
+              "success_rate": 0.75,
+              "first_try_success_rate": 0.625,
+              "first_try_successes": 10,
+              "total_tasks": 16,
+              "avg_steps": 2.75
+            },
+            "expel": {
+              "success_rate": 0.6875,
+              "first_try_success_rate": 0.625,
+              "first_try_successes": 10,
+              "total_tasks": 16,
+              "avg_steps": 3.5
+            },
+            "full_reflexion": {
+              "success_rate": 0.6875,
+              "first_try_success_rate": 0.625,
+              "first_try_successes": 10,
+              "total_tasks": 16,
+              "avg_steps": 4.5
+            },
+            "elapsed_seconds": 364.45,
+            "num_scenarios": 16
+          }
+        }
+      },
+      "artifacts": {
+        "rules_learned": 5,
+        "procedures": 5,
+        "partial_progress_keys": 6
+      },
+      "precept": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 0.45454545454545453,
+            "pt": 0.6363636363636364,
+            "avg_steps": 3.090909090909091,
+            "first_try_successes": 5,
+            "successes": 7,
+            "total": 11
+          },
+          "encounter_2": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 4,
+            "successes": 4,
+            "total": 4
+          },
+          "encounter_3": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 4,
+            "successes": 4,
+            "total": 4
+          },
+          "encounter_4": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 4,
+            "successes": 4,
+            "total": 4
+          }
+        },
+        "by_key": {
+          "C-FRAG+C-HIGH+LA-550+SH-701+T-": 7,
+          "C-BULK+H-903+P-220+SH-701+T-UR": 6,
+          "C-BULK+H-903+LA-550+R-482+T-FL": 6,
+          "E-HEAT+E-SMOG+E-TIDE+SH-701+T-": 6,
+          "C-BULK+H-903+P-220+R-482+SH-70": 1,
+          "C-BULK+E-HEAT+E-SMOG+E-TIDE+SH": 1,
+          "C-BULK+E-STRM+LA-550+R-482+T-F": 1,
+          "C-BULK+H-903+P-220+SH-701+T-NG": 1,
+          "C-FRAG+C-HIGH+E-WNTR+LA-550+SH": 1,
+          "E-HEAT+E-SMOG+E-TIDE+P-220+SH-": 1,
+          "C-BULK+H-903+R-482+T-FLEX+T-NG": 1
+        },
+        "total_tasks": 32
+      },
+      "expel": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 0.2727272727272727,
+            "pt": 0.5454545454545454,
+            "avg_steps": 4.363636363636363,
+            "first_try_successes": 3,
+            "successes": 6,
+            "total": 11
+          },
+          "encounter_2": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 4,
+            "successes": 4,
+            "total": 4
+          },
+          "encounter_3": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 4,
+            "successes": 4,
+            "total": 4
+          },
+          "encounter_4": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 4,
+            "successes": 4,
+            "total": 4
+          }
+        },
+        "by_key": {
+          "C-FRAG+C-HIGH+LA-550+SH-701+T-": 7,
+          "C-BULK+H-903+P-220+SH-701+T-UR": 6,
+          "C-BULK+H-903+LA-550+R-482+T-FL": 6,
+          "E-HEAT+E-SMOG+E-TIDE+SH-701+T-": 6,
+          "C-BULK+H-903+P-220+R-482+SH-70": 1,
+          "C-BULK+E-HEAT+E-SMOG+E-TIDE+SH": 1,
+          "C-BULK+E-STRM+LA-550+R-482+T-F": 1,
+          "C-BULK+H-903+P-220+SH-701+T-NG": 1,
+          "C-FRAG+C-HIGH+E-WNTR+LA-550+SH": 1,
+          "E-HEAT+E-SMOG+E-TIDE+P-220+SH-": 1,
+          "C-BULK+H-903+R-482+T-FLEX+T-NG": 1
+        },
+        "total_tasks": 32
+      },
+      "full_reflexion": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 0.36363636363636365,
+            "pt": 0.5454545454545454,
+            "avg_steps": 4.181818181818182,
+            "first_try_successes": 4,
+            "successes": 6,
+            "total": 11
+          },
+          "encounter_2": {
+            "p1": 0.75,
+            "pt": 1.0,
+            "avg_steps": 2.5,
+            "first_try_successes": 3,
+            "successes": 4,
+            "total": 4
+          },
+          "encounter_3": {
+            "p1": 0.75,
+            "pt": 1.0,
+            "avg_steps": 2.5,
+            "first_try_successes": 3,
+            "successes": 4,
+            "total": 4
+          },
+          "encounter_4": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 4,
+            "successes": 4,
+            "total": 4
+          }
+        },
+        "by_key": {
+          "C-FRAG+C-HIGH+LA-550+SH-701+T-": 7,
+          "C-BULK+H-903+P-220+SH-701+T-UR": 6,
+          "C-BULK+H-903+LA-550+R-482+T-FL": 6,
+          "E-HEAT+E-SMOG+E-TIDE+SH-701+T-": 6,
+          "C-BULK+H-903+P-220+R-482+SH-70": 1,
+          "C-BULK+E-HEAT+E-SMOG+E-TIDE+SH": 1,
+          "C-BULK+E-STRM+LA-550+R-482+T-F": 1,
+          "C-BULK+H-903+P-220+SH-701+T-NG": 1,
+          "C-FRAG+C-HIGH+E-WNTR+LA-550+SH": 1,
+          "E-HEAT+E-SMOG+E-TIDE+P-220+SH-": 1,
+          "C-BULK+H-903+R-482+T-FLEX+T-NG": 1
+        },
+        "total_tasks": 32
+      }
+    },
+    {
+      "aggregated": {
+        "metadata": {
+          "domain": "logistics",
+          "timestamp": "20260213_115002",
+          "seed": 456,
+          "train_tasks": 4,
+          "test_tasks": 16,
+          "max_retries": 2,
+          "max_attempts": 3,
+          "concurrent_training": true,
+          "concurrent_testing": false,
+          "train_elapsed_seconds": 17.56,
+          "test_elapsed_seconds": 730.56,
+          "static_knowledge_enabled": false,
+          "static_knowledge_mode": "disabled",
+          "test_mode": "both"
+        },
+        "agents": {
+          "llm_baseline": {
+            "name": "LLM Baseline (NOT RUN - unfair)",
+            "success_rate": 0.0,
+            "total_successes": 0,
+            "total_tasks": 0,
+            "avg_steps": 0.0,
+            "llm_calls": 0,
+            "llm_accuracy": 0.0,
+            "first_try_success_rate": 0.0,
+            "first_try_successes": 0,
+            "learning_efficiency": 0.0,
+            "cold_start_success_rate": 0.0,
+            "cold_start_successes": 0,
+            "cold_start_total": 0
+          },
+          "reflexion": {
+            "name": "Reflexion (NOT RUN - unfair)",
+            "success_rate": 0.0,
+            "total_successes": 0,
+            "total_tasks": 0,
+            "avg_steps": 0.0,
+            "llm_calls": 0,
+            "llm_accuracy": 0.0,
+            "reflections_generated": 0,
+            "first_try_success_rate": 0.0,
+            "first_try_successes": 0,
+            "learning_efficiency": 0.0,
+            "cold_start_success_rate": 0.0,
+            "cold_start_successes": 0,
+            "cold_start_total": 0
+          },
+          "full_reflexion": {
+            "name": "Full Reflexion",
+            "success_rate": 0.75,
+            "total_successes": 12,
+            "total_tasks": 16,
+            "avg_steps": 4.0,
+            "llm_calls": 63,
+            "llm_accuracy": 0.4127,
+            "reflections_generated": 63,
+            "reflections_reused": 63,
+            "accumulated_memories": 20,
+            "first_try_success_rate": 0.75,
+            "first_try_successes": 12,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_total": 0,
+            "learning_efficiency": 1.875,
+            "cold_start_success_rate": 0.75,
+            "cold_start_successes": 3,
+            "cold_start_total": 4
+          },
+          "expel": {
+            "name": "ExpeL",
+            "success_rate": 1.0,
+            "total_successes": 16,
+            "total_tasks": 16,
+            "avg_steps": 2.5,
+            "llm_calls": 95,
+            "llm_accuracy": 0.2947,
+            "insights_extracted": 36,
+            "insights_retrieved": 426,
+            "first_try_success_rate": 0.75,
+            "first_try_successes": 12,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_total": 0,
+            "learning_efficiency": 2.5,
+            "cold_start_success_rate": 1.0,
+            "cold_start_successes": 4,
+            "cold_start_total": 4
+          },
+          "precept": {
+            "name": "PRECEPT",
+            "success_rate": 0.875,
+            "total_successes": 14,
+            "total_tasks": 16,
+            "avg_steps": 2.5,
+            "rules_learned": 33,
+            "llm_reasoning_calls": 33,
+            "llm_reasoning_successes": 14,
+            "has_compass_evolution": true,
+            "first_try_success_rate": 0.8125,
+            "first_try_successes": 13,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_successes": 0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_successes": 0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_successes": 0,
+            "p1_other_total": 0,
+            "p1_without_rules": 0.0,
+            "p1_without_rules_successes": 0,
+            "p1_without_rules_total": 0,
+            "learning_efficiency": 2.1875,
+            "cold_start_success_rate": 0.75,
+            "cold_start_successes": 3,
+            "cold_start_total": 4
+          }
+        },
+        "precept_advantages": {
+          "vs_llm_baseline": 0.875,
+          "vs_reflexion": 0.875,
+          "vs_full_reflexion": 0.125,
+          "steps_saved_vs_llm": -2.5,
+          "steps_saved_vs_reflexion": -2.5,
+          "steps_saved_vs_full_reflexion": 1.5,
+          "first_try_advantage_vs_llm": 0.8125,
+          "first_try_advantage_vs_reflexion": 0.8125,
+          "first_try_advantage_vs_full_reflexion": 0.0625,
+          "learning_efficiency_advantage_vs_llm": 2.1875,
+          "learning_efficiency_advantage_vs_full_reflexion": 0.3125,
+          "cold_start_advantage_vs_llm": 0.75,
+          "cold_start_advantage_vs_full_reflexion": 0.0
+        },
+        "pruning_stats": {
+          "total_constraints": 27,
+          "hard_constraints": 0,
+          "soft_constraints": 27,
+          "dumb_retries_prevented": 4,
+          "pruning_efficiency": 0.1481
+        },
+        "conflict_resolution": {
+          "enabled": false,
+          "mode": "disabled",
+          "stats": {
+            "status": "active",
+            "summary": {
+              "conflicts_detected": 0,
+              "conflicts_resolved": 0
+            },
+            "detection": {
+              "total_detections": 0,
+              "conflicts_found": 0
+            },
+            "resolution_outcomes": {
+              "static_wins": 0,
+              "dynamic_wins": 0,
+              "merges": 0
+            },
+            "reliability": {
+              "static_kb": 0.8333333333333334,
+              "dynamic_experience": 0.625,
+              "episodic_memory": 0.5
+            }
+          },
+          "precept_capabilities": [],
+          "baseline_capabilities": []
+        },
+        "winner": "precept",
+        "dual_mode_results": {
+          "matched": {
+            "precept": {
+              "success_rate": 0.875,
+              "first_try_success_rate": 0.8125,
+              "first_try_successes": 13,
+              "total_tasks": 16,
+              "avg_steps": 2.5
+            },
+            "expel": {
+              "success_rate": 1.0,
+              "first_try_success_rate": 0.75,
+              "first_try_successes": 12,
+              "total_tasks": 16,
+              "avg_steps": 2.5
+            },
+            "full_reflexion": {
+              "success_rate": 0.75,
+              "first_try_success_rate": 0.75,
+              "first_try_successes": 12,
+              "total_tasks": 16,
+              "avg_steps": 4.0
+            },
+            "elapsed_seconds": 316.66,
+            "num_scenarios": 16
+          },
+          "random": {
+            "precept": {
+              "success_rate": 0.625,
+              "first_try_success_rate": 0.625,
+              "first_try_successes": 10,
+              "total_tasks": 16,
+              "avg_steps": 2.44
+            },
+            "expel": {
+              "success_rate": 0.75,
+              "first_try_success_rate": 0.625,
+              "first_try_successes": 10,
+              "total_tasks": 16,
+              "avg_steps": 3.38
+            },
+            "full_reflexion": {
+              "success_rate": 0.6875,
+              "first_try_success_rate": 0.5625,
+              "first_try_successes": 9,
+              "total_tasks": 16,
+              "avg_steps": 4.5
+            },
+            "elapsed_seconds": 413.9,
+            "num_scenarios": 16
+          }
+        }
+      },
+      "artifacts": {
+        "rules_learned": 4,
+        "procedures": 3,
+        "partial_progress_keys": 6
+      },
+      "precept": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 0.4166666666666667,
+            "pt": 0.4166666666666667,
+            "avg_steps": 2.8333333333333335,
+            "first_try_successes": 5,
+            "successes": 5,
+            "total": 12
+          },
+          "encounter_2": {
+            "p1": 0.75,
+            "pt": 0.75,
+            "avg_steps": 2.75,
+            "first_try_successes": 3,
+            "successes": 3,
+            "total": 4
+          },
+          "encounter_3": {
+            "p1": 0.75,
+            "pt": 1.0,
+            "avg_steps": 2.5,
+            "first_try_successes": 3,
+            "successes": 4,
+            "total": 4
+          },
+          "encounter_4": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 4,
+            "successes": 4,
+            "total": 4
+          }
+        },
+        "by_key": {
+          "E-HEAT+E-STRM+LA-550+P-220+SH-": 8,
+          "E-HEAT+E-WNTR+R-482+T-FLEX+T-U": 8,
+          "E-TIDE+H-903+P-220+SH-701+T-WK": 4,
+          "C-BULK+C-HIGH+E-WNTR+LA-550+SH": 4,
+          "E-STRM+H-903+LA-550+P-220+SH-7": 1,
+          "C-FRAG+E-HEAT+R-482+T-FLEX+T-U": 1,
+          "C-HIGH+E-HEAT+E-STRM+P-220+SH-": 1,
+          "E-HEAT+E-WNTR+P-220+T-FLEX+T-U": 1,
+          "E-HEAT+E-STRM+H-903+P-220+SH-7": 1,
+          "E-SMOG+E-WNTR+R-482+T-FLEX+T-U": 1,
+          "C-BULK+E-HEAT+E-STRM+LA-550+P-": 1,
+          "C-BULK+E-HEAT+R-482+T-FLEX+T-U": 1
+        },
+        "total_tasks": 32
+      },
+      "expel": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 0.3333333333333333,
+            "pt": 0.6666666666666666,
+            "avg_steps": 4.0,
+            "first_try_successes": 4,
+            "successes": 8,
+            "total": 12
+          },
+          "encounter_2": {
+            "p1": 0.75,
+            "pt": 1.0,
+            "avg_steps": 2.5,
+            "first_try_successes": 3,
+            "successes": 4,
+            "total": 4
+          },
+          "encounter_3": {
+            "p1": 0.75,
+            "pt": 1.0,
+            "avg_steps": 2.5,
+            "first_try_successes": 3,
+            "successes": 4,
+            "total": 4
+          },
+          "encounter_4": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 4,
+            "successes": 4,
+            "total": 4
+          }
+        },
+        "by_key": {
+          "E-HEAT+E-STRM+LA-550+P-220+SH-": 8,
+          "E-HEAT+E-WNTR+R-482+T-FLEX+T-U": 8,
+          "E-TIDE+H-903+P-220+SH-701+T-WK": 4,
+          "C-BULK+C-HIGH+E-WNTR+LA-550+SH": 4,
+          "E-STRM+H-903+LA-550+P-220+SH-7": 1,
+          "C-FRAG+E-HEAT+R-482+T-FLEX+T-U": 1,
+          "C-HIGH+E-HEAT+E-STRM+P-220+SH-": 1,
+          "E-HEAT+E-WNTR+P-220+T-FLEX+T-U": 1,
+          "E-HEAT+E-STRM+H-903+P-220+SH-7": 1,
+          "E-SMOG+E-WNTR+R-482+T-FLEX+T-U": 1,
+          "C-BULK+E-HEAT+E-STRM+LA-550+P-": 1,
+          "C-BULK+E-HEAT+R-482+T-FLEX+T-U": 1
+        },
+        "total_tasks": 32
+      },
+      "full_reflexion": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 0.3333333333333333,
+            "pt": 0.5,
+            "avg_steps": 4.333333333333333,
+            "first_try_successes": 4,
+            "successes": 6,
+            "total": 12
+          },
+          "encounter_2": {
+            "p1": 0.75,
+            "pt": 0.75,
+            "avg_steps": 3.0,
+            "first_try_successes": 3,
+            "successes": 3,
+            "total": 4
+          },
+          "encounter_3": {
+            "p1": 0.75,
+            "pt": 0.75,
+            "avg_steps": 3.0,
+            "first_try_successes": 3,
+            "successes": 3,
+            "total": 4
+          },
+          "encounter_4": {
+            "p1": 0.75,
+            "pt": 0.75,
+            "avg_steps": 3.0,
+            "first_try_successes": 3,
+            "successes": 3,
+            "total": 4
+          }
+        },
+        "by_key": {
+          "E-HEAT+E-STRM+LA-550+P-220+SH-": 8,
+          "E-HEAT+E-WNTR+R-482+T-FLEX+T-U": 8,
+          "E-TIDE+H-903+P-220+SH-701+T-WK": 4,
+          "C-BULK+C-HIGH+E-WNTR+LA-550+SH": 4,
+          "E-STRM+H-903+LA-550+P-220+SH-7": 1,
+          "C-FRAG+E-HEAT+R-482+T-FLEX+T-U": 1,
+          "C-HIGH+E-HEAT+E-STRM+P-220+SH-": 1,
+          "E-HEAT+E-WNTR+P-220+T-FLEX+T-U": 1,
+          "E-HEAT+E-STRM+H-903+P-220+SH-7": 1,
+          "E-SMOG+E-WNTR+R-482+T-FLEX+T-U": 1,
+          "C-BULK+E-HEAT+E-STRM+LA-550+P-": 1,
+          "C-BULK+E-HEAT+R-482+T-FLEX+T-U": 1
+        },
+        "total_tasks": 32
+      }
+    },
+    {
+      "aggregated": {
+        "metadata": {
+          "domain": "logistics",
+          "timestamp": "20260213_120412",
+          "seed": 789,
+          "train_tasks": 4,
+          "test_tasks": 16,
+          "max_retries": 2,
+          "max_attempts": 3,
+          "concurrent_training": true,
+          "concurrent_testing": false,
+          "train_elapsed_seconds": 22.96,
+          "test_elapsed_seconds": 794.84,
+          "static_knowledge_enabled": false,
+          "static_knowledge_mode": "disabled",
+          "test_mode": "both"
+        },
+        "agents": {
+          "llm_baseline": {
+            "name": "LLM Baseline (NOT RUN - unfair)",
+            "success_rate": 0.0,
+            "total_successes": 0,
+            "total_tasks": 0,
+            "avg_steps": 0.0,
+            "llm_calls": 0,
+            "llm_accuracy": 0.0,
+            "first_try_success_rate": 0.0,
+            "first_try_successes": 0,
+            "learning_efficiency": 0.0,
+            "cold_start_success_rate": 0.0,
+            "cold_start_successes": 0,
+            "cold_start_total": 0
+          },
+          "reflexion": {
+            "name": "Reflexion (NOT RUN - unfair)",
+            "success_rate": 0.0,
+            "total_successes": 0,
+            "total_tasks": 0,
+            "avg_steps": 0.0,
+            "llm_calls": 0,
+            "llm_accuracy": 0.0,
+            "reflections_generated": 0,
+            "first_try_success_rate": 0.0,
+            "first_try_successes": 0,
+            "learning_efficiency": 0.0,
+            "cold_start_success_rate": 0.0,
+            "cold_start_successes": 0,
+            "cold_start_total": 0
+          },
+          "full_reflexion": {
+            "name": "Full Reflexion",
+            "success_rate": 0.75,
+            "total_successes": 12,
+            "total_tasks": 16,
+            "avg_steps": 4.25,
+            "llm_calls": 62,
+            "llm_accuracy": 0.4032,
+            "reflections_generated": 62,
+            "reflections_reused": 62,
+            "accumulated_memories": 20,
+            "first_try_success_rate": 0.625,
+            "first_try_successes": 10,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_total": 0,
+            "learning_efficiency": 1.875,
+            "cold_start_success_rate": 0.75,
+            "cold_start_successes": 3,
+            "cold_start_total": 4
+          },
+          "expel": {
+            "name": "ExpeL",
+            "success_rate": 0.8125,
+            "total_successes": 13,
+            "total_tasks": 16,
+            "avg_steps": 3.12,
+            "llm_calls": 98,
+            "llm_accuracy": 0.2755,
+            "insights_extracted": 36,
+            "insights_retrieved": 511,
+            "first_try_success_rate": 0.625,
+            "first_try_successes": 10,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_total": 0,
+            "learning_efficiency": 2.0312,
+            "cold_start_success_rate": 0.75,
+            "cold_start_successes": 3,
+            "cold_start_total": 4
+          },
+          "precept": {
+            "name": "PRECEPT",
+            "success_rate": 0.875,
+            "total_successes": 14,
+            "total_tasks": 16,
+            "avg_steps": 2.62,
+            "rules_learned": 37,
+            "llm_reasoning_calls": 35,
+            "llm_reasoning_successes": 17,
+            "has_compass_evolution": true,
+            "first_try_success_rate": 0.75,
+            "first_try_successes": 12,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_successes": 0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_successes": 0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_successes": 0,
+            "p1_other_total": 0,
+            "p1_without_rules": 0.0,
+            "p1_without_rules_successes": 0,
+            "p1_without_rules_total": 0,
+            "learning_efficiency": 2.1875,
+            "cold_start_success_rate": 0.75,
+            "cold_start_successes": 3,
+            "cold_start_total": 4
+          }
+        },
+        "precept_advantages": {
+          "vs_llm_baseline": 0.875,
+          "vs_reflexion": 0.875,
+          "vs_full_reflexion": 0.125,
+          "steps_saved_vs_llm": -2.62,
+          "steps_saved_vs_reflexion": -2.62,
+          "steps_saved_vs_full_reflexion": 1.62,
+          "first_try_advantage_vs_llm": 0.75,
+          "first_try_advantage_vs_reflexion": 0.75,
+          "first_try_advantage_vs_full_reflexion": 0.125,
+          "learning_efficiency_advantage_vs_llm": 2.1875,
+          "learning_efficiency_advantage_vs_full_reflexion": 0.3125,
+          "cold_start_advantage_vs_llm": 0.75,
+          "cold_start_advantage_vs_full_reflexion": 0.0
+        },
+        "pruning_stats": {
+          "total_constraints": 31,
+          "hard_constraints": 0,
+          "soft_constraints": 31,
+          "dumb_retries_prevented": 7,
+          "pruning_efficiency": 0.2258
+        },
+        "conflict_resolution": {
+          "enabled": false,
+          "mode": "disabled",
+          "stats": {
+            "status": "active",
+            "summary": {
+              "conflicts_detected": 0,
+              "conflicts_resolved": 0
+            },
+            "detection": {
+              "total_detections": 0,
+              "conflicts_found": 0
+            },
+            "resolution_outcomes": {
+              "static_wins": 0,
+              "dynamic_wins": 0,
+              "merges": 0
+            },
+            "reliability": {
+              "static_kb": 0.8333333333333334,
+              "dynamic_experience": 0.625,
+              "episodic_memory": 0.5
+            }
+          },
+          "precept_capabilities": [],
+          "baseline_capabilities": []
+        },
+        "winner": "precept",
+        "dual_mode_results": {
+          "matched": {
+            "precept": {
+              "success_rate": 0.875,
+              "first_try_success_rate": 0.75,
+              "first_try_successes": 12,
+              "total_tasks": 16,
+              "avg_steps": 2.62
+            },
+            "expel": {
+              "success_rate": 0.8125,
+              "first_try_success_rate": 0.625,
+              "first_try_successes": 10,
+              "total_tasks": 16,
+              "avg_steps": 3.12
+            },
+            "full_reflexion": {
+              "success_rate": 0.75,
+              "first_try_success_rate": 0.625,
+              "first_try_successes": 10,
+              "total_tasks": 16,
+              "avg_steps": 4.25
+            },
+            "elapsed_seconds": 399.77,
+            "num_scenarios": 16
+          },
+          "random": {
+            "precept": {
+              "success_rate": 0.75,
+              "first_try_success_rate": 0.5625,
+              "first_try_successes": 9,
+              "total_tasks": 16,
+              "avg_steps": 2.88
+            },
+            "expel": {
+              "success_rate": 0.6875,
+              "first_try_success_rate": 0.5625,
+              "first_try_successes": 9,
+              "total_tasks": 16,
+              "avg_steps": 3.62
+            },
+            "full_reflexion": {
+              "success_rate": 0.6875,
+              "first_try_success_rate": 0.625,
+              "first_try_successes": 10,
+              "total_tasks": 16,
+              "avg_steps": 4.5
+            },
+            "elapsed_seconds": 395.07,
+            "num_scenarios": 16
+          }
+        }
+      },
+      "artifacts": {
+        "rules_learned": 6,
+        "procedures": 6,
+        "partial_progress_keys": 7
+      },
+      "precept": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 0.25,
+            "pt": 0.5833333333333334,
+            "avg_steps": 3.6666666666666665,
+            "first_try_successes": 3,
+            "successes": 7,
+            "total": 12
+          },
+          "encounter_2": {
+            "p1": 0.75,
+            "pt": 0.75,
+            "avg_steps": 2.5,
+            "first_try_successes": 3,
+            "successes": 3,
+            "total": 4
+          },
+          "encounter_3": {
+            "p1": 0.75,
+            "pt": 1.0,
+            "avg_steps": 2.5,
+            "first_try_successes": 3,
+            "successes": 4,
+            "total": 4
+          },
+          "encounter_4": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 4,
+            "successes": 4,
+            "total": 4
+          }
+        },
+        "by_key": {
+          "C-HIGH+E-HEAT+E-STRM+H-903+R-4": 4,
+          "E-HEAT+E-TIDE+LA-550+T-NGHT+T-": 4,
+          "C-HZMT+E-HEAT+E-TIDE+SH-701+T-": 8,
+          "E-SMOG+E-TIDE+H-903+T-PEAK+T-U": 8,
+          "C-BULK+C-HZMT+E-TIDE+SH-701+T-": 1,
+          "E-SMOG+H-903+T-FLEX+T-PEAK+T-U": 1,
+          "C-HZMT+E-TIDE+P-220+SH-701+T-W": 1,
+          "E-SMOG+E-STRM+E-TIDE+T-PEAK+T-": 1,
+          "C-HIGH+C-HZMT+E-TIDE+SH-701+T-": 1,
+          "E-SMOG+E-TIDE+H-903+R-482+T-UR": 1,
+          "C-HZMT+E-HEAT+E-TIDE+H-903+SH-": 1,
+          "E-SMOG+E-TIDE+T-PEAK+T-URGT+T-": 1
+        },
+        "total_tasks": 32
+      },
+      "expel": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 0.3333333333333333,
+            "pt": 0.5,
+            "avg_steps": 4.333333333333333,
+            "first_try_successes": 4,
+            "successes": 6,
+            "total": 12
+          },
+          "encounter_2": {
+            "p1": 0.75,
+            "pt": 0.75,
+            "avg_steps": 3.0,
+            "first_try_successes": 3,
+            "successes": 3,
+            "total": 4
+          },
+          "encounter_3": {
+            "p1": 0.5,
+            "pt": 0.75,
+            "avg_steps": 3.5,
+            "first_try_successes": 2,
+            "successes": 3,
+            "total": 4
+          },
+          "encounter_4": {
+            "p1": 0.5,
+            "pt": 1.0,
+            "avg_steps": 3.0,
+            "first_try_successes": 2,
+            "successes": 4,
+            "total": 4
+          }
+        },
+        "by_key": {
+          "C-HIGH+E-HEAT+E-STRM+H-903+R-4": 4,
+          "E-HEAT+E-TIDE+LA-550+T-NGHT+T-": 4,
+          "C-HZMT+E-HEAT+E-TIDE+SH-701+T-": 8,
+          "E-SMOG+E-TIDE+H-903+T-PEAK+T-U": 8,
+          "C-BULK+C-HZMT+E-TIDE+SH-701+T-": 1,
+          "E-SMOG+H-903+T-FLEX+T-PEAK+T-U": 1,
+          "C-HZMT+E-TIDE+P-220+SH-701+T-W": 1,
+          "E-SMOG+E-STRM+E-TIDE+T-PEAK+T-": 1,
+          "C-HIGH+C-HZMT+E-TIDE+SH-701+T-": 1,
+          "E-SMOG+E-TIDE+H-903+R-482+T-UR": 1,
+          "C-HZMT+E-HEAT+E-TIDE+H-903+SH-": 1,
+          "E-SMOG+E-TIDE+T-PEAK+T-URGT+T-": 1
+        },
+        "total_tasks": 32
+      },
+      "full_reflexion": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 0.3333333333333333,
+            "pt": 0.5,
+            "avg_steps": 4.333333333333333,
+            "first_try_successes": 4,
+            "successes": 6,
+            "total": 12
+          },
+          "encounter_2": {
+            "p1": 0.5,
+            "pt": 0.75,
+            "avg_steps": 3.5,
+            "first_try_successes": 2,
+            "successes": 3,
+            "total": 4
+          },
+          "encounter_3": {
+            "p1": 0.75,
+            "pt": 0.75,
+            "avg_steps": 3.0,
+            "first_try_successes": 3,
+            "successes": 3,
+            "total": 4
+          },
+          "encounter_4": {
+            "p1": 0.75,
+            "pt": 0.75,
+            "avg_steps": 3.0,
+            "first_try_successes": 3,
+            "successes": 3,
+            "total": 4
+          }
+        },
+        "by_key": {
+          "C-HIGH+E-HEAT+E-STRM+H-903+R-4": 4,
+          "E-HEAT+E-TIDE+LA-550+T-NGHT+T-": 4,
+          "C-HZMT+E-HEAT+E-TIDE+SH-701+T-": 8,
+          "E-SMOG+E-TIDE+H-903+T-PEAK+T-U": 8,
+          "C-BULK+C-HZMT+E-TIDE+SH-701+T-": 1,
+          "E-SMOG+H-903+T-FLEX+T-PEAK+T-U": 1,
+          "C-HZMT+E-TIDE+P-220+SH-701+T-W": 1,
+          "E-SMOG+E-STRM+E-TIDE+T-PEAK+T-": 1,
+          "C-HIGH+C-HZMT+E-TIDE+SH-701+T-": 1,
+          "E-SMOG+E-TIDE+H-903+R-482+T-UR": 1,
+          "C-HZMT+E-HEAT+E-TIDE+H-903+SH-": 1,
+          "E-SMOG+E-TIDE+T-PEAK+T-URGT+T-": 1
+        },
+        "total_tasks": 32
+      }
+    },
+    {
+      "aggregated": {
+        "metadata": {
+          "domain": "logistics",
+          "timestamp": "20260213_121735",
+          "seed": 999,
+          "train_tasks": 4,
+          "test_tasks": 16,
+          "max_retries": 2,
+          "max_attempts": 3,
+          "concurrent_training": true,
+          "concurrent_testing": false,
+          "train_elapsed_seconds": 22.36,
+          "test_elapsed_seconds": 748.27,
+          "static_knowledge_enabled": false,
+          "static_knowledge_mode": "disabled",
+          "test_mode": "both"
+        },
+        "agents": {
+          "llm_baseline": {
+            "name": "LLM Baseline (NOT RUN - unfair)",
+            "success_rate": 0.0,
+            "total_successes": 0,
+            "total_tasks": 0,
+            "avg_steps": 0.0,
+            "llm_calls": 0,
+            "llm_accuracy": 0.0,
+            "first_try_success_rate": 0.0,
+            "first_try_successes": 0,
+            "learning_efficiency": 0.0,
+            "cold_start_success_rate": 0.0,
+            "cold_start_successes": 0,
+            "cold_start_total": 0
+          },
+          "reflexion": {
+            "name": "Reflexion (NOT RUN - unfair)",
+            "success_rate": 0.0,
+            "total_successes": 0,
+            "total_tasks": 0,
+            "avg_steps": 0.0,
+            "llm_calls": 0,
+            "llm_accuracy": 0.0,
+            "reflections_generated": 0,
+            "first_try_success_rate": 0.0,
+            "first_try_successes": 0,
+            "learning_efficiency": 0.0,
+            "cold_start_success_rate": 0.0,
+            "cold_start_successes": 0,
+            "cold_start_total": 0
+          },
+          "full_reflexion": {
+            "name": "Full Reflexion",
+            "success_rate": 0.5,
+            "total_successes": 8,
+            "total_tasks": 16,
+            "avg_steps": 5.12,
+            "llm_calls": 69,
+            "llm_accuracy": 0.3188,
+            "reflections_generated": 69,
+            "reflections_reused": 69,
+            "accumulated_memories": 20,
+            "first_try_success_rate": 0.4375,
+            "first_try_successes": 7,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_total": 0,
+            "learning_efficiency": 1.25,
+            "cold_start_success_rate": 0.25,
+            "cold_start_successes": 1,
+            "cold_start_total": 4
+          },
+          "expel": {
+            "name": "ExpeL",
+            "success_rate": 0.875,
+            "total_successes": 14,
+            "total_tasks": 16,
+            "avg_steps": 3.0,
+            "llm_calls": 89,
+            "llm_accuracy": 0.3483,
+            "insights_extracted": 36,
+            "insights_retrieved": 386,
+            "first_try_success_rate": 0.75,
+            "first_try_successes": 12,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_total": 0,
+            "learning_efficiency": 2.1875,
+            "cold_start_success_rate": 0.75,
+            "cold_start_successes": 3,
+            "cold_start_total": 4
+          },
+          "precept": {
+            "name": "PRECEPT",
+            "success_rate": 0.875,
+            "total_successes": 14,
+            "total_tasks": 16,
+            "avg_steps": 2.31,
+            "rules_learned": 35,
+            "llm_reasoning_calls": 22,
+            "llm_reasoning_successes": 10,
+            "has_compass_evolution": true,
+            "first_try_success_rate": 0.875,
+            "first_try_successes": 14,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_successes": 0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_successes": 0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_successes": 0,
+            "p1_other_total": 0,
+            "p1_without_rules": 0.0,
+            "p1_without_rules_successes": 0,
+            "p1_without_rules_total": 0,
+            "learning_efficiency": 2.1875,
+            "cold_start_success_rate": 0.75,
+            "cold_start_successes": 3,
+            "cold_start_total": 4
+          }
+        },
+        "precept_advantages": {
+          "vs_llm_baseline": 0.875,
+          "vs_reflexion": 0.875,
+          "vs_full_reflexion": 0.375,
+          "steps_saved_vs_llm": -2.31,
+          "steps_saved_vs_reflexion": -2.31,
+          "steps_saved_vs_full_reflexion": 2.81,
+          "first_try_advantage_vs_llm": 0.875,
+          "first_try_advantage_vs_reflexion": 0.875,
+          "first_try_advantage_vs_full_reflexion": 0.4375,
+          "learning_efficiency_advantage_vs_llm": 2.1875,
+          "learning_efficiency_advantage_vs_full_reflexion": 0.9375,
+          "cold_start_advantage_vs_llm": 0.75,
+          "cold_start_advantage_vs_full_reflexion": 0.5
+        },
+        "pruning_stats": {
+          "total_constraints": 16,
+          "hard_constraints": 0,
+          "soft_constraints": 16,
+          "dumb_retries_prevented": 1,
+          "pruning_efficiency": 0.0625
+        },
+        "conflict_resolution": {
+          "enabled": false,
+          "mode": "disabled",
+          "stats": {
+            "status": "active",
+            "summary": {
+              "conflicts_detected": 0,
+              "conflicts_resolved": 0
+            },
+            "detection": {
+              "total_detections": 0,
+              "conflicts_found": 0
+            },
+            "resolution_outcomes": {
+              "static_wins": 0,
+              "dynamic_wins": 0,
+              "merges": 0
+            },
+            "reliability": {
+              "static_kb": 0.8333333333333334,
+              "dynamic_experience": 0.625,
+              "episodic_memory": 0.5
+            }
+          },
+          "precept_capabilities": [],
+          "baseline_capabilities": []
+        },
+        "winner": "precept",
+        "dual_mode_results": {
+          "matched": {
+            "precept": {
+              "success_rate": 0.875,
+              "first_try_success_rate": 0.875,
+              "first_try_successes": 14,
+              "total_tasks": 16,
+              "avg_steps": 2.31
+            },
+            "expel": {
+              "success_rate": 0.875,
+              "first_try_success_rate": 0.75,
+              "first_try_successes": 12,
+              "total_tasks": 16,
+              "avg_steps": 3.0
+            },
+            "full_reflexion": {
+              "success_rate": 0.5,
+              "first_try_success_rate": 0.4375,
+              "first_try_successes": 7,
+              "total_tasks": 16,
+              "avg_steps": 5.12
+            },
+            "elapsed_seconds": 399.53,
+            "num_scenarios": 16
+          },
+          "random": {
+            "precept": {
+              "success_rate": 0.9375,
+              "first_try_success_rate": 0.8125,
+              "first_try_successes": 13,
+              "total_tasks": 16,
+              "avg_steps": 2.38
+            },
+            "expel": {
+              "success_rate": 0.9375,
+              "first_try_success_rate": 0.8125,
+              "first_try_successes": 13,
+              "total_tasks": 16,
+              "avg_steps": 2.5
+            },
+            "full_reflexion": {
+              "success_rate": 0.8125,
+              "first_try_success_rate": 0.6875,
+              "first_try_successes": 11,
+              "total_tasks": 16,
+              "avg_steps": 4.12
+            },
+            "elapsed_seconds": 348.74,
+            "num_scenarios": 16
+          }
+        }
+      },
+      "artifacts": {
+        "rules_learned": 10,
+        "procedures": 3,
+        "partial_progress_keys": 4
+      },
+      "precept": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 0.6666666666666666,
+            "pt": 0.8333333333333334,
+            "avg_steps": 2.75,
+            "first_try_successes": 8,
+            "successes": 10,
+            "total": 12
+          },
+          "encounter_2": {
+            "p1": 0.75,
+            "pt": 0.75,
+            "avg_steps": 2.5,
+            "first_try_successes": 3,
+            "successes": 3,
+            "total": 4
+          },
+          "encounter_3": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 4,
+            "successes": 4,
+            "total": 4
+          },
+          "encounter_4": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 4,
+            "successes": 4,
+            "total": 4
+          }
+        },
+        "by_key": {
+          "C-BULK+C-HIGH+E-SMOG+H-903+SH-": 4,
+          "C-COLD+E-HEAT+H-903+LA-550+T-U": 8,
+          "E-SMOG+E-STRM+E-TIDE+LA-550+R-": 8,
+          "C-HIGH+C-HZMT+H-903+P-220+T-WK": 4,
+          "C-COLD+E-HEAT+E-SMOG+H-903+T-U": 1,
+          "E-SMOG+E-TIDE+LA-550+R-482+T-W": 1,
+          "C-COLD+E-HEAT+H-903+LA-550+T-N": 1,
+          "C-COLD+E-STRM+E-TIDE+LA-550+R-": 1,
+          "C-COLD+E-HEAT+E-SMOG+H-903+LA-": 1,
+          "E-SMOG+E-STRM+LA-550+R-482+T-W": 1,
+          "C-COLD+C-HIGH+E-HEAT+LA-550+T-": 1,
+          "C-FRAG+E-SMOG+E-STRM+LA-550+R-": 1
+        },
+        "total_tasks": 32
+      },
+      "expel": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 0.5833333333333334,
+            "pt": 0.8333333333333334,
+            "avg_steps": 3.1666666666666665,
+            "first_try_successes": 7,
+            "successes": 10,
+            "total": 12
+          },
+          "encounter_2": {
+            "p1": 0.5,
+            "pt": 0.75,
+            "avg_steps": 3.5,
+            "first_try_successes": 2,
+            "successes": 3,
+            "total": 4
+          },
+          "encounter_3": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 4,
+            "successes": 4,
+            "total": 4
+          },
+          "encounter_4": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 4,
+            "successes": 4,
+            "total": 4
+          }
+        },
+        "by_key": {
+          "C-BULK+C-HIGH+E-SMOG+H-903+SH-": 4,
+          "C-COLD+E-HEAT+H-903+LA-550+T-U": 8,
+          "E-SMOG+E-STRM+E-TIDE+LA-550+R-": 8,
+          "C-HIGH+C-HZMT+H-903+P-220+T-WK": 4,
+          "C-COLD+E-HEAT+E-SMOG+H-903+T-U": 1,
+          "E-SMOG+E-TIDE+LA-550+R-482+T-W": 1,
+          "C-COLD+E-HEAT+H-903+LA-550+T-N": 1,
+          "C-COLD+E-STRM+E-TIDE+LA-550+R-": 1,
+          "C-COLD+E-HEAT+E-SMOG+H-903+LA-": 1,
+          "E-SMOG+E-STRM+LA-550+R-482+T-W": 1,
+          "C-COLD+C-HIGH+E-HEAT+LA-550+T-": 1,
+          "C-FRAG+E-SMOG+E-STRM+LA-550+R-": 1
+        },
+        "total_tasks": 32
+      },
+      "full_reflexion": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 0.3333333333333333,
+            "pt": 0.5,
+            "avg_steps": 4.333333333333333,
+            "first_try_successes": 4,
+            "successes": 6,
+            "total": 12
+          },
+          "encounter_2": {
+            "p1": 0.5,
+            "pt": 0.5,
+            "avg_steps": 4.0,
+            "first_try_successes": 2,
+            "successes": 2,
+            "total": 4
+          },
+          "encounter_3": {
+            "p1": 0.5,
+            "pt": 0.5,
+            "avg_steps": 4.0,
+            "first_try_successes": 2,
+            "successes": 2,
+            "total": 4
+          },
+          "encounter_4": {
+            "p1": 0.5,
+            "pt": 0.75,
+            "avg_steps": 3.5,
+            "first_try_successes": 2,
+            "successes": 3,
+            "total": 4
+          }
+        },
+        "by_key": {
+          "C-BULK+C-HIGH+E-SMOG+H-903+SH-": 4,
+          "C-COLD+E-HEAT+H-903+LA-550+T-U": 8,
+          "E-SMOG+E-STRM+E-TIDE+LA-550+R-": 8,
+          "C-HIGH+C-HZMT+H-903+P-220+T-WK": 4,
+          "C-COLD+E-HEAT+E-SMOG+H-903+T-U": 1,
+          "E-SMOG+E-TIDE+LA-550+R-482+T-W": 1,
+          "C-COLD+E-HEAT+H-903+LA-550+T-N": 1,
+          "C-COLD+E-STRM+E-TIDE+LA-550+R-": 1,
+          "C-COLD+E-HEAT+E-SMOG+H-903+LA-": 1,
+          "E-SMOG+E-STRM+LA-550+R-482+T-W": 1,
+          "C-COLD+C-HIGH+E-HEAT+LA-550+T-": 1,
+          "C-FRAG+E-SMOG+E-STRM+LA-550+R-": 1
+        },
+        "total_tasks": 32
+      }
+    },
+    {
+      "aggregated": {
+        "metadata": {
+          "domain": "logistics",
+          "timestamp": "20260213_123427",
+          "seed": 2024,
+          "train_tasks": 4,
+          "test_tasks": 16,
+          "max_retries": 2,
+          "max_attempts": 3,
+          "concurrent_training": true,
+          "concurrent_testing": false,
+          "train_elapsed_seconds": 24.35,
+          "test_elapsed_seconds": 955.4,
+          "static_knowledge_enabled": false,
+          "static_knowledge_mode": "disabled",
+          "test_mode": "both"
+        },
+        "agents": {
+          "llm_baseline": {
+            "name": "LLM Baseline (NOT RUN - unfair)",
+            "success_rate": 0.0,
+            "total_successes": 0,
+            "total_tasks": 0,
+            "avg_steps": 0.0,
+            "llm_calls": 0,
+            "llm_accuracy": 0.0,
+            "first_try_success_rate": 0.0,
+            "first_try_successes": 0,
+            "learning_efficiency": 0.0,
+            "cold_start_success_rate": 0.0,
+            "cold_start_successes": 0,
+            "cold_start_total": 0
+          },
+          "reflexion": {
+            "name": "Reflexion (NOT RUN - unfair)",
+            "success_rate": 0.0,
+            "total_successes": 0,
+            "total_tasks": 0,
+            "avg_steps": 0.0,
+            "llm_calls": 0,
+            "llm_accuracy": 0.0,
+            "reflections_generated": 0,
+            "first_try_success_rate": 0.0,
+            "first_try_successes": 0,
+            "learning_efficiency": 0.0,
+            "cold_start_success_rate": 0.0,
+            "cold_start_successes": 0,
+            "cold_start_total": 0
+          },
+          "full_reflexion": {
+            "name": "Full Reflexion",
+            "success_rate": 0.25,
+            "total_successes": 4,
+            "total_tasks": 16,
+            "avg_steps": 6.12,
+            "llm_calls": 85,
+            "llm_accuracy": 0.1647,
+            "reflections_generated": 85,
+            "reflections_reused": 85,
+            "accumulated_memories": 20,
+            "first_try_success_rate": 0.1875,
+            "first_try_successes": 3,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_total": 0,
+            "learning_efficiency": 0.625,
+            "cold_start_success_rate": 0.25,
+            "cold_start_successes": 1,
+            "cold_start_total": 4
+          },
+          "expel": {
+            "name": "ExpeL",
+            "success_rate": 0.6875,
+            "total_successes": 11,
+            "total_tasks": 16,
+            "avg_steps": 3.62,
+            "llm_calls": 106,
+            "llm_accuracy": 0.2075,
+            "insights_extracted": 36,
+            "insights_retrieved": 536,
+            "first_try_success_rate": 0.5,
+            "first_try_successes": 8,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_total": 0,
+            "learning_efficiency": 1.7188,
+            "cold_start_success_rate": 0.25,
+            "cold_start_successes": 1,
+            "cold_start_total": 4
+          },
+          "precept": {
+            "name": "PRECEPT",
+            "success_rate": 0.75,
+            "total_successes": 12,
+            "total_tasks": 16,
+            "avg_steps": 2.75,
+            "rules_learned": 33,
+            "llm_reasoning_calls": 44,
+            "llm_reasoning_successes": 17,
+            "has_compass_evolution": true,
+            "first_try_success_rate": 0.6875,
+            "first_try_successes": 11,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_successes": 0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_successes": 0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_successes": 0,
+            "p1_other_total": 0,
+            "p1_without_rules": 0.0,
+            "p1_without_rules_successes": 0,
+            "p1_without_rules_total": 0,
+            "learning_efficiency": 1.875,
+            "cold_start_success_rate": 0.5,
+            "cold_start_successes": 2,
+            "cold_start_total": 4
+          }
+        },
+        "precept_advantages": {
+          "vs_llm_baseline": 0.75,
+          "vs_reflexion": 0.75,
+          "vs_full_reflexion": 0.5,
+          "steps_saved_vs_llm": -2.75,
+          "steps_saved_vs_reflexion": -2.75,
+          "steps_saved_vs_full_reflexion": 3.38,
+          "first_try_advantage_vs_llm": 0.6875,
+          "first_try_advantage_vs_reflexion": 0.6875,
+          "first_try_advantage_vs_full_reflexion": 0.5,
+          "learning_efficiency_advantage_vs_llm": 1.875,
+          "learning_efficiency_advantage_vs_full_reflexion": 1.25,
+          "cold_start_advantage_vs_llm": 0.5,
+          "cold_start_advantage_vs_full_reflexion": 0.25
+        },
+        "pruning_stats": {
+          "total_constraints": 40,
+          "hard_constraints": 0,
+          "soft_constraints": 40,
+          "dumb_retries_prevented": 9,
+          "pruning_efficiency": 0.225
+        },
+        "conflict_resolution": {
+          "enabled": false,
+          "mode": "disabled",
+          "stats": {
+            "status": "active",
+            "summary": {
+              "conflicts_detected": 0,
+              "conflicts_resolved": 0
+            },
+            "detection": {
+              "total_detections": 0,
+              "conflicts_found": 0
+            },
+            "resolution_outcomes": {
+              "static_wins": 0,
+              "dynamic_wins": 0,
+              "merges": 0
+            },
+            "reliability": {
+              "static_kb": 0.8333333333333334,
+              "dynamic_experience": 0.625,
+              "episodic_memory": 0.5
+            }
+          },
+          "precept_capabilities": [],
+          "baseline_capabilities": []
+        },
+        "winner": "precept",
+        "dual_mode_results": {
+          "matched": {
+            "precept": {
+              "success_rate": 0.75,
+              "first_try_success_rate": 0.6875,
+              "first_try_successes": 11,
+              "total_tasks": 16,
+              "avg_steps": 2.75
+            },
+            "expel": {
+              "success_rate": 0.6875,
+              "first_try_success_rate": 0.5,
+              "first_try_successes": 8,
+              "total_tasks": 16,
+              "avg_steps": 3.62
+            },
+            "full_reflexion": {
+              "success_rate": 0.25,
+              "first_try_success_rate": 0.1875,
+              "first_try_successes": 3,
+              "total_tasks": 16,
+              "avg_steps": 6.12
+            },
+            "elapsed_seconds": 503.41,
+            "num_scenarios": 16
+          },
+          "random": {
+            "precept": {
+              "success_rate": 0.75,
+              "first_try_success_rate": 0.5,
+              "first_try_successes": 8,
+              "total_tasks": 16,
+              "avg_steps": 3.12
+            },
+            "expel": {
+              "success_rate": 0.625,
+              "first_try_success_rate": 0.5,
+              "first_try_successes": 8,
+              "total_tasks": 16,
+              "avg_steps": 3.88
+            },
+            "full_reflexion": {
+              "success_rate": 0.5625,
+              "first_try_success_rate": 0.375,
+              "first_try_successes": 6,
+              "total_tasks": 16,
+              "avg_steps": 5.25
+            },
+            "elapsed_seconds": 451.98,
+            "num_scenarios": 16
+          }
+        }
+      },
+      "artifacts": {
+        "rules_learned": 6,
+        "procedures": 6,
+        "partial_progress_keys": 10
+      },
+      "precept": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 0.16666666666666666,
+            "pt": 0.5,
+            "avg_steps": 4.0,
+            "first_try_successes": 2,
+            "successes": 6,
+            "total": 12
+          },
+          "encounter_2": {
+            "p1": 0.5,
+            "pt": 0.5,
+            "avg_steps": 3.0,
+            "first_try_successes": 2,
+            "successes": 2,
+            "total": 4
+          },
+          "encounter_3": {
+            "p1": 0.75,
+            "pt": 1.0,
+            "avg_steps": 2.5,
+            "first_try_successes": 3,
+            "successes": 4,
+            "total": 4
+          },
+          "encounter_4": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 4,
+            "successes": 4,
+            "total": 4
+          }
+        },
+        "by_key": {
+          "E-SMOG+H-903+LA-550+T-PEAK+T-W": 8,
+          "C-BULK+C-COLD+E-STRM+H-903+T-F": 8,
+          "C-FRAG+C-HZMT+E-STRM+R-482+T-P": 4,
+          "C-HZMT+E-TIDE+SH-701+T-FLEX+T-": 4,
+          "E-SMOG+E-WNTR+H-903+T-PEAK+T-W": 1,
+          "C-BULK+C-COLD+C-HIGH+E-STRM+H-": 1,
+          "E-SMOG+H-903+LA-550+R-482+T-WK": 1,
+          "C-BULK+C-COLD+E-HEAT+E-STRM+H-": 1,
+          "E-SMOG+H-903+LA-550+SH-701+T-P": 1,
+          "C-COLD+C-FRAG+E-STRM+H-903+T-F": 1,
+          "E-SMOG+H-903+P-220+T-PEAK+T-WK": 1,
+          "C-BULK+C-COLD+E-HEAT+H-903+T-F": 1
+        },
+        "total_tasks": 32
+      },
+      "expel": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 0.08333333333333333,
+            "pt": 0.25,
+            "avg_steps": 5.333333333333333,
+            "first_try_successes": 1,
+            "successes": 3,
+            "total": 12
+          },
+          "encounter_2": {
+            "p1": 0.25,
+            "pt": 0.75,
+            "avg_steps": 4.0,
+            "first_try_successes": 1,
+            "successes": 3,
+            "total": 4
+          },
+          "encounter_3": {
+            "p1": 0.5,
+            "pt": 0.75,
+            "avg_steps": 3.5,
+            "first_try_successes": 2,
+            "successes": 3,
+            "total": 4
+          },
+          "encounter_4": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 4,
+            "successes": 4,
+            "total": 4
+          }
+        },
+        "by_key": {
+          "E-SMOG+H-903+LA-550+T-PEAK+T-W": 8,
+          "C-BULK+C-COLD+E-STRM+H-903+T-F": 8,
+          "C-FRAG+C-HZMT+E-STRM+R-482+T-P": 4,
+          "C-HZMT+E-TIDE+SH-701+T-FLEX+T-": 4,
+          "E-SMOG+E-WNTR+H-903+T-PEAK+T-W": 1,
+          "C-BULK+C-COLD+C-HIGH+E-STRM+H-": 1,
+          "E-SMOG+H-903+LA-550+R-482+T-WK": 1,
+          "C-BULK+C-COLD+E-HEAT+E-STRM+H-": 1,
+          "E-SMOG+H-903+LA-550+SH-701+T-P": 1,
+          "C-COLD+C-FRAG+E-STRM+H-903+T-F": 1,
+          "E-SMOG+H-903+P-220+T-PEAK+T-WK": 1,
+          "C-BULK+C-COLD+E-HEAT+H-903+T-F": 1
+        },
+        "total_tasks": 32
+      },
+      "full_reflexion": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 0.16666666666666666,
+            "pt": 0.5,
+            "avg_steps": 4.666666666666667,
+            "first_try_successes": 2,
+            "successes": 6,
+            "total": 12
+          },
+          "encounter_2": {
+            "p1": 0.25,
+            "pt": 0.25,
+            "avg_steps": 5.0,
+            "first_try_successes": 1,
+            "successes": 1,
+            "total": 4
+          },
+          "encounter_3": {
+            "p1": 0.25,
+            "pt": 0.25,
+            "avg_steps": 5.0,
+            "first_try_successes": 1,
+            "successes": 1,
+            "total": 4
+          },
+          "encounter_4": {
+            "p1": 0.25,
+            "pt": 0.25,
+            "avg_steps": 5.0,
+            "first_try_successes": 1,
+            "successes": 1,
+            "total": 4
+          }
+        },
+        "by_key": {
+          "E-SMOG+H-903+LA-550+T-PEAK+T-W": 8,
+          "C-BULK+C-COLD+E-STRM+H-903+T-F": 8,
+          "C-FRAG+C-HZMT+E-STRM+R-482+T-P": 4,
+          "C-HZMT+E-TIDE+SH-701+T-FLEX+T-": 4,
+          "E-SMOG+E-WNTR+H-903+T-PEAK+T-W": 1,
+          "C-BULK+C-COLD+C-HIGH+E-STRM+H-": 1,
+          "E-SMOG+H-903+LA-550+R-482+T-WK": 1,
+          "C-BULK+C-COLD+E-HEAT+E-STRM+H-": 1,
+          "E-SMOG+H-903+LA-550+SH-701+T-P": 1,
+          "C-COLD+C-FRAG+E-STRM+H-903+T-F": 1,
+          "E-SMOG+H-903+P-220+T-PEAK+T-WK": 1,
+          "C-BULK+C-COLD+E-HEAT+H-903+T-F": 1
+        },
+        "total_tasks": 32
+      }
+    },
+    {
+      "aggregated": {
+        "metadata": {
+          "domain": "logistics",
+          "timestamp": "20260213_124638",
+          "seed": 3141,
+          "train_tasks": 4,
+          "test_tasks": 16,
+          "max_retries": 2,
+          "max_attempts": 3,
+          "concurrent_training": true,
+          "concurrent_testing": false,
+          "train_elapsed_seconds": 23.16,
+          "test_elapsed_seconds": 675.37,
+          "static_knowledge_enabled": false,
+          "static_knowledge_mode": "disabled",
+          "test_mode": "both"
+        },
+        "agents": {
+          "llm_baseline": {
+            "name": "LLM Baseline (NOT RUN - unfair)",
+            "success_rate": 0.0,
+            "total_successes": 0,
+            "total_tasks": 0,
+            "avg_steps": 0.0,
+            "llm_calls": 0,
+            "llm_accuracy": 0.0,
+            "first_try_success_rate": 0.0,
+            "first_try_successes": 0,
+            "learning_efficiency": 0.0,
+            "cold_start_success_rate": 0.0,
+            "cold_start_successes": 0,
+            "cold_start_total": 0
+          },
+          "reflexion": {
+            "name": "Reflexion (NOT RUN - unfair)",
+            "success_rate": 0.0,
+            "total_successes": 0,
+            "total_tasks": 0,
+            "avg_steps": 0.0,
+            "llm_calls": 0,
+            "llm_accuracy": 0.0,
+            "reflections_generated": 0,
+            "first_try_success_rate": 0.0,
+            "first_try_successes": 0,
+            "learning_efficiency": 0.0,
+            "cold_start_success_rate": 0.0,
+            "cold_start_successes": 0,
+            "cold_start_total": 0
+          },
+          "full_reflexion": {
+            "name": "Full Reflexion",
+            "success_rate": 0.6875,
+            "total_successes": 11,
+            "total_tasks": 16,
+            "avg_steps": 4.75,
+            "llm_calls": 68,
+            "llm_accuracy": 0.3529,
+            "reflections_generated": 68,
+            "reflections_reused": 68,
+            "accumulated_memories": 20,
+            "first_try_success_rate": 0.5,
+            "first_try_successes": 8,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_total": 0,
+            "learning_efficiency": 1.7188,
+            "cold_start_success_rate": 0.75,
+            "cold_start_successes": 3,
+            "cold_start_total": 4
+          },
+          "expel": {
+            "name": "ExpeL",
+            "success_rate": 0.8125,
+            "total_successes": 13,
+            "total_tasks": 16,
+            "avg_steps": 3.0,
+            "llm_calls": 93,
+            "llm_accuracy": 0.3011,
+            "insights_extracted": 36,
+            "insights_retrieved": 420,
+            "first_try_success_rate": 0.6875,
+            "first_try_successes": 11,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_total": 0,
+            "learning_efficiency": 2.0312,
+            "cold_start_success_rate": 0.25,
+            "cold_start_successes": 1,
+            "cold_start_total": 4
+          },
+          "precept": {
+            "name": "PRECEPT",
+            "success_rate": 1.0,
+            "total_successes": 16,
+            "total_tasks": 16,
+            "avg_steps": 2.12,
+            "rules_learned": 37,
+            "llm_reasoning_calls": 18,
+            "llm_reasoning_successes": 10,
+            "has_compass_evolution": true,
+            "first_try_success_rate": 0.9375,
+            "first_try_successes": 15,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_successes": 0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_successes": 0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_successes": 0,
+            "p1_other_total": 0,
+            "p1_without_rules": 0.0,
+            "p1_without_rules_successes": 0,
+            "p1_without_rules_total": 0,
+            "learning_efficiency": 2.5,
+            "cold_start_success_rate": 1.0,
+            "cold_start_successes": 4,
+            "cold_start_total": 4
+          }
+        },
+        "precept_advantages": {
+          "vs_llm_baseline": 1.0,
+          "vs_reflexion": 1.0,
+          "vs_full_reflexion": 0.3125,
+          "steps_saved_vs_llm": -2.12,
+          "steps_saved_vs_reflexion": -2.12,
+          "steps_saved_vs_full_reflexion": 2.62,
+          "first_try_advantage_vs_llm": 0.9375,
+          "first_try_advantage_vs_reflexion": 0.9375,
+          "first_try_advantage_vs_full_reflexion": 0.4375,
+          "learning_efficiency_advantage_vs_llm": 2.5,
+          "learning_efficiency_advantage_vs_full_reflexion": 0.7812,
+          "cold_start_advantage_vs_llm": 1.0,
+          "cold_start_advantage_vs_full_reflexion": 0.25
+        },
+        "pruning_stats": {
+          "total_constraints": 14,
+          "hard_constraints": 0,
+          "soft_constraints": 14,
+          "dumb_retries_prevented": 4,
+          "pruning_efficiency": 0.2857
+        },
+        "conflict_resolution": {
+          "enabled": false,
+          "mode": "disabled",
+          "stats": {
+            "status": "active",
+            "summary": {
+              "conflicts_detected": 0,
+              "conflicts_resolved": 0
+            },
+            "detection": {
+              "total_detections": 0,
+              "conflicts_found": 0
+            },
+            "resolution_outcomes": {
+              "static_wins": 0,
+              "dynamic_wins": 0,
+              "merges": 0
+            },
+            "reliability": {
+              "static_kb": 0.8333333333333334,
+              "dynamic_experience": 0.625,
+              "episodic_memory": 0.5
+            }
+          },
+          "precept_capabilities": [],
+          "baseline_capabilities": []
+        },
+        "winner": "precept",
+        "dual_mode_results": {
+          "matched": {
+            "precept": {
+              "success_rate": 1.0,
+              "first_try_success_rate": 0.9375,
+              "first_try_successes": 15,
+              "total_tasks": 16,
+              "avg_steps": 2.12
+            },
+            "expel": {
+              "success_rate": 0.8125,
+              "first_try_success_rate": 0.6875,
+              "first_try_successes": 11,
+              "total_tasks": 16,
+              "avg_steps": 3.0
+            },
+            "full_reflexion": {
+              "success_rate": 0.6875,
+              "first_try_success_rate": 0.5,
+              "first_try_successes": 8,
+              "total_tasks": 16,
+              "avg_steps": 4.75
+            },
+            "elapsed_seconds": 321.33,
+            "num_scenarios": 16
+          },
+          "random": {
+            "precept": {
+              "success_rate": 0.9375,
+              "first_try_success_rate": 0.75,
+              "first_try_successes": 12,
+              "total_tasks": 16,
+              "avg_steps": 2.69
+            },
+            "expel": {
+              "success_rate": 0.8125,
+              "first_try_success_rate": 0.75,
+              "first_try_successes": 12,
+              "total_tasks": 16,
+              "avg_steps": 3.0
+            },
+            "full_reflexion": {
+              "success_rate": 0.6875,
+              "first_try_success_rate": 0.625,
+              "first_try_successes": 10,
+              "total_tasks": 16,
+              "avg_steps": 4.5
+            },
+            "elapsed_seconds": 354.04,
+            "num_scenarios": 16
+          }
+        }
+      },
+      "artifacts": {
+        "rules_learned": 9,
+        "procedures": 6,
+        "partial_progress_keys": 5
+      },
+      "precept": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 0.5454545454545454,
+            "pt": 0.9090909090909091,
+            "avg_steps": 3.1818181818181817,
+            "first_try_successes": 6,
+            "successes": 10,
+            "total": 11
+          },
+          "encounter_2": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 4,
+            "successes": 4,
+            "total": 4
+          },
+          "encounter_3": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 4,
+            "successes": 4,
+            "total": 4
+          },
+          "encounter_4": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 4,
+            "successes": 4,
+            "total": 4
+          }
+        },
+        "by_key": {
+          "E-SMOG+P-220+SH-701+T-FLEX+T-W": 7,
+          "H-903+LA-550+R-482+T-NGHT+T-WK": 7,
+          "C-COLD+H-903+LA-550+T-NGHT+T-U": 7,
+          "C-HZMT+E-WNTR+R-482+T-NGHT+T-W": 4,
+          "C-COLD+H-903+T-NGHT+T-PEAK+T-U": 1,
+          "H-903+LA-550+R-482+SH-701+T-NG": 1,
+          "C-COLD+E-SMOG+P-220+SH-701+T-W": 1,
+          "E-TIDE+H-903+LA-550+T-NGHT+T-W": 1,
+          "E-HEAT+P-220+SH-701+T-FLEX+T-W": 1,
+          "E-STRM+H-903+LA-550+T-NGHT+T-U": 1,
+          "H-903+LA-550+R-482+SH-701+T-WK": 1
+        },
+        "total_tasks": 32
+      },
+      "expel": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 0.45454545454545453,
+            "pt": 0.5454545454545454,
+            "avg_steps": 4.0,
+            "first_try_successes": 5,
+            "successes": 6,
+            "total": 11
+          },
+          "encounter_2": {
+            "p1": 0.75,
+            "pt": 1.0,
+            "avg_steps": 2.5,
+            "first_try_successes": 3,
+            "successes": 4,
+            "total": 4
+          },
+          "encounter_3": {
+            "p1": 0.75,
+            "pt": 1.0,
+            "avg_steps": 2.5,
+            "first_try_successes": 3,
+            "successes": 4,
+            "total": 4
+          },
+          "encounter_4": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 4,
+            "successes": 4,
+            "total": 4
+          }
+        },
+        "by_key": {
+          "E-SMOG+P-220+SH-701+T-FLEX+T-W": 7,
+          "H-903+LA-550+R-482+T-NGHT+T-WK": 7,
+          "C-COLD+H-903+LA-550+T-NGHT+T-U": 7,
+          "C-HZMT+E-WNTR+R-482+T-NGHT+T-W": 4,
+          "C-COLD+H-903+T-NGHT+T-PEAK+T-U": 1,
+          "H-903+LA-550+R-482+SH-701+T-NG": 1,
+          "C-COLD+E-SMOG+P-220+SH-701+T-W": 1,
+          "E-TIDE+H-903+LA-550+T-NGHT+T-W": 1,
+          "E-HEAT+P-220+SH-701+T-FLEX+T-W": 1,
+          "E-STRM+H-903+LA-550+T-NGHT+T-U": 1,
+          "H-903+LA-550+R-482+SH-701+T-WK": 1
+        },
+        "total_tasks": 32
+      },
+      "full_reflexion": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 0.36363636363636365,
+            "pt": 0.7272727272727273,
+            "avg_steps": 3.8181818181818183,
+            "first_try_successes": 4,
+            "successes": 8,
+            "total": 11
+          },
+          "encounter_2": {
+            "p1": 0.75,
+            "pt": 0.75,
+            "avg_steps": 3.0,
+            "first_try_successes": 3,
+            "successes": 3,
+            "total": 4
+          },
+          "encounter_3": {
+            "p1": 0.5,
+            "pt": 0.5,
+            "avg_steps": 4.0,
+            "first_try_successes": 2,
+            "successes": 2,
+            "total": 4
+          },
+          "encounter_4": {
+            "p1": 0.75,
+            "pt": 0.75,
+            "avg_steps": 3.0,
+            "first_try_successes": 3,
+            "successes": 3,
+            "total": 4
+          }
+        },
+        "by_key": {
+          "E-SMOG+P-220+SH-701+T-FLEX+T-W": 7,
+          "H-903+LA-550+R-482+T-NGHT+T-WK": 7,
+          "C-COLD+H-903+LA-550+T-NGHT+T-U": 7,
+          "C-HZMT+E-WNTR+R-482+T-NGHT+T-W": 4,
+          "C-COLD+H-903+T-NGHT+T-PEAK+T-U": 1,
+          "H-903+LA-550+R-482+SH-701+T-NG": 1,
+          "C-COLD+E-SMOG+P-220+SH-701+T-W": 1,
+          "E-TIDE+H-903+LA-550+T-NGHT+T-W": 1,
+          "E-HEAT+P-220+SH-701+T-FLEX+T-W": 1,
+          "E-STRM+H-903+LA-550+T-NGHT+T-U": 1,
+          "H-903+LA-550+R-482+SH-701+T-WK": 1
+        },
+        "total_tasks": 32
+      }
+    },
+    {
+      "aggregated": {
+        "metadata": {
+          "domain": "logistics",
+          "timestamp": "20260213_125941",
+          "seed": 1337,
+          "train_tasks": 4,
+          "test_tasks": 16,
+          "max_retries": 2,
+          "max_attempts": 3,
+          "concurrent_training": true,
+          "concurrent_testing": false,
+          "train_elapsed_seconds": 23.8,
+          "test_elapsed_seconds": 727.29,
+          "static_knowledge_enabled": false,
+          "static_knowledge_mode": "disabled",
+          "test_mode": "both"
+        },
+        "agents": {
+          "llm_baseline": {
+            "name": "LLM Baseline (NOT RUN - unfair)",
+            "success_rate": 0.0,
+            "total_successes": 0,
+            "total_tasks": 0,
+            "avg_steps": 0.0,
+            "llm_calls": 0,
+            "llm_accuracy": 0.0,
+            "first_try_success_rate": 0.0,
+            "first_try_successes": 0,
+            "learning_efficiency": 0.0,
+            "cold_start_success_rate": 0.0,
+            "cold_start_successes": 0,
+            "cold_start_total": 0
+          },
+          "reflexion": {
+            "name": "Reflexion (NOT RUN - unfair)",
+            "success_rate": 0.0,
+            "total_successes": 0,
+            "total_tasks": 0,
+            "avg_steps": 0.0,
+            "llm_calls": 0,
+            "llm_accuracy": 0.0,
+            "reflections_generated": 0,
+            "first_try_success_rate": 0.0,
+            "first_try_successes": 0,
+            "learning_efficiency": 0.0,
+            "cold_start_success_rate": 0.0,
+            "cold_start_successes": 0,
+            "cold_start_total": 0
+          },
+          "full_reflexion": {
+            "name": "Full Reflexion",
+            "success_rate": 0.6875,
+            "total_successes": 11,
+            "total_tasks": 16,
+            "avg_steps": 4.5,
+            "llm_calls": 61,
+            "llm_accuracy": 0.4098,
+            "reflections_generated": 61,
+            "reflections_reused": 61,
+            "accumulated_memories": 20,
+            "first_try_success_rate": 0.625,
+            "first_try_successes": 10,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_total": 0,
+            "learning_efficiency": 1.7188,
+            "cold_start_success_rate": 0.5,
+            "cold_start_successes": 2,
+            "cold_start_total": 4
+          },
+          "expel": {
+            "name": "ExpeL",
+            "success_rate": 0.6875,
+            "total_successes": 11,
+            "total_tasks": 16,
+            "avg_steps": 3.62,
+            "llm_calls": 100,
+            "llm_accuracy": 0.25,
+            "insights_extracted": 36,
+            "insights_retrieved": 482,
+            "first_try_success_rate": 0.5625,
+            "first_try_successes": 9,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_total": 0,
+            "learning_efficiency": 1.7188,
+            "cold_start_success_rate": 0.5,
+            "cold_start_successes": 2,
+            "cold_start_total": 4
+          },
+          "precept": {
+            "name": "PRECEPT",
+            "success_rate": 0.875,
+            "total_successes": 14,
+            "total_tasks": 16,
+            "avg_steps": 2.44,
+            "rules_learned": 34,
+            "llm_reasoning_calls": 26,
+            "llm_reasoning_successes": 11,
+            "has_compass_evolution": true,
+            "first_try_success_rate": 0.8125,
+            "first_try_successes": 13,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_successes": 0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_successes": 0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_successes": 0,
+            "p1_other_total": 0,
+            "p1_without_rules": 0.0,
+            "p1_without_rules_successes": 0,
+            "p1_without_rules_total": 0,
+            "learning_efficiency": 2.1875,
+            "cold_start_success_rate": 0.75,
+            "cold_start_successes": 3,
+            "cold_start_total": 4
+          }
+        },
+        "precept_advantages": {
+          "vs_llm_baseline": 0.875,
+          "vs_reflexion": 0.875,
+          "vs_full_reflexion": 0.1875,
+          "steps_saved_vs_llm": -2.44,
+          "steps_saved_vs_reflexion": -2.44,
+          "steps_saved_vs_full_reflexion": 2.06,
+          "first_try_advantage_vs_llm": 0.8125,
+          "first_try_advantage_vs_reflexion": 0.8125,
+          "first_try_advantage_vs_full_reflexion": 0.1875,
+          "learning_efficiency_advantage_vs_llm": 2.1875,
+          "learning_efficiency_advantage_vs_full_reflexion": 0.4688,
+          "cold_start_advantage_vs_llm": 0.75,
+          "cold_start_advantage_vs_full_reflexion": 0.25
+        },
+        "pruning_stats": {
+          "total_constraints": 24,
+          "hard_constraints": 0,
+          "soft_constraints": 24,
+          "dumb_retries_prevented": 4,
+          "pruning_efficiency": 0.1667
+        },
+        "conflict_resolution": {
+          "enabled": false,
+          "mode": "disabled",
+          "stats": {
+            "status": "active",
+            "summary": {
+              "conflicts_detected": 0,
+              "conflicts_resolved": 0
+            },
+            "detection": {
+              "total_detections": 0,
+              "conflicts_found": 0
+            },
+            "resolution_outcomes": {
+              "static_wins": 0,
+              "dynamic_wins": 0,
+              "merges": 0
+            },
+            "reliability": {
+              "static_kb": 0.8333333333333334,
+              "dynamic_experience": 0.625,
+              "episodic_memory": 0.5
+            }
+          },
+          "precept_capabilities": [],
+          "baseline_capabilities": []
+        },
+        "winner": "precept",
+        "dual_mode_results": {
+          "matched": {
+            "precept": {
+              "success_rate": 0.875,
+              "first_try_success_rate": 0.8125,
+              "first_try_successes": 13,
+              "total_tasks": 16,
+              "avg_steps": 2.44
+            },
+            "expel": {
+              "success_rate": 0.6875,
+              "first_try_success_rate": 0.5625,
+              "first_try_successes": 9,
+              "total_tasks": 16,
+              "avg_steps": 3.62
+            },
+            "full_reflexion": {
+              "success_rate": 0.6875,
+              "first_try_success_rate": 0.625,
+              "first_try_successes": 10,
+              "total_tasks": 16,
+              "avg_steps": 4.5
+            },
+            "elapsed_seconds": 404.13,
+            "num_scenarios": 16
+          },
+          "random": {
+            "precept": {
+              "success_rate": 0.8125,
+              "first_try_success_rate": 0.75,
+              "first_try_successes": 12,
+              "total_tasks": 16,
+              "avg_steps": 2.62
+            },
+            "expel": {
+              "success_rate": 0.75,
+              "first_try_success_rate": 0.75,
+              "first_try_successes": 12,
+              "total_tasks": 16,
+              "avg_steps": 3.0
+            },
+            "full_reflexion": {
+              "success_rate": 0.8125,
+              "first_try_success_rate": 0.8125,
+              "first_try_successes": 13,
+              "total_tasks": 16,
+              "avg_steps": 3.75
+            },
+            "elapsed_seconds": 323.16,
+            "num_scenarios": 16
+          }
+        }
+      },
+      "artifacts": {
+        "rules_learned": 7,
+        "procedures": 3,
+        "partial_progress_keys": 5
+      },
+      "precept": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 0.5833333333333334,
+            "pt": 0.6666666666666666,
+            "avg_steps": 3.0833333333333335,
+            "first_try_successes": 7,
+            "successes": 8,
+            "total": 12
+          },
+          "encounter_2": {
+            "p1": 0.75,
+            "pt": 0.75,
+            "avg_steps": 2.5,
+            "first_try_successes": 3,
+            "successes": 3,
+            "total": 4
+          },
+          "encounter_3": {
+            "p1": 0.75,
+            "pt": 1.0,
+            "avg_steps": 2.5,
+            "first_try_successes": 3,
+            "successes": 4,
+            "total": 4
+          },
+          "encounter_4": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 4,
+            "successes": 4,
+            "total": 4
+          }
+        },
+        "by_key": {
+          "C-FRAG+E-SMOG+R-482+T-NGHT+T-W": 4,
+          "E-TIDE+H-903+LA-550+T-NGHT+T-U": 4,
+          "C-HZMT+P-220+SH-701+T-FLEX+T-N": 8,
+          "E-HEAT+H-903+T-NGHT+T-PEAK+T-U": 8,
+          "H-903+T-FLEX+T-NGHT+T-PEAK+T-U": 1,
+          "E-HEAT+P-220+SH-701+T-FLEX+T-N": 1,
+          "E-HEAT+E-STRM+H-903+T-PEAK+T-U": 1,
+          "C-FRAG+C-HZMT+P-220+SH-701+T-N": 1,
+          "E-HEAT+E-TIDE+T-NGHT+T-PEAK+T-": 1,
+          "C-HZMT+P-220+T-FLEX+T-NGHT+T-W": 1,
+          "E-STRM+H-903+T-NGHT+T-PEAK+T-U": 1,
+          "C-BULK+C-HZMT+SH-701+T-FLEX+T-": 1
+        },
+        "total_tasks": 32
+      },
+      "expel": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 0.4166666666666667,
+            "pt": 0.5,
+            "avg_steps": 4.166666666666667,
+            "first_try_successes": 5,
+            "successes": 6,
+            "total": 12
+          },
+          "encounter_2": {
+            "p1": 0.75,
+            "pt": 0.75,
+            "avg_steps": 3.0,
+            "first_try_successes": 3,
+            "successes": 3,
+            "total": 4
+          },
+          "encounter_3": {
+            "p1": 0.5,
+            "pt": 0.75,
+            "avg_steps": 3.5,
+            "first_try_successes": 2,
+            "successes": 3,
+            "total": 4
+          },
+          "encounter_4": {
+            "p1": 0.75,
+            "pt": 0.75,
+            "avg_steps": 3.0,
+            "first_try_successes": 3,
+            "successes": 3,
+            "total": 4
+          }
+        },
+        "by_key": {
+          "C-FRAG+E-SMOG+R-482+T-NGHT+T-W": 4,
+          "E-TIDE+H-903+LA-550+T-NGHT+T-U": 4,
+          "C-HZMT+P-220+SH-701+T-FLEX+T-N": 8,
+          "E-HEAT+H-903+T-NGHT+T-PEAK+T-U": 8,
+          "H-903+T-FLEX+T-NGHT+T-PEAK+T-U": 1,
+          "E-HEAT+P-220+SH-701+T-FLEX+T-N": 1,
+          "E-HEAT+E-STRM+H-903+T-PEAK+T-U": 1,
+          "C-FRAG+C-HZMT+P-220+SH-701+T-N": 1,
+          "E-HEAT+E-TIDE+T-NGHT+T-PEAK+T-": 1,
+          "C-HZMT+P-220+T-FLEX+T-NGHT+T-W": 1,
+          "E-STRM+H-903+T-NGHT+T-PEAK+T-U": 1,
+          "C-BULK+C-HZMT+SH-701+T-FLEX+T-": 1
+        },
+        "total_tasks": 32
+      },
+      "full_reflexion": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 0.5,
+            "pt": 0.5833333333333334,
+            "avg_steps": 3.8333333333333335,
+            "first_try_successes": 6,
+            "successes": 7,
+            "total": 12
+          },
+          "encounter_2": {
+            "p1": 0.75,
+            "pt": 0.75,
+            "avg_steps": 3.0,
+            "first_try_successes": 3,
+            "successes": 3,
+            "total": 4
+          },
+          "encounter_3": {
+            "p1": 0.75,
+            "pt": 0.75,
+            "avg_steps": 3.0,
+            "first_try_successes": 3,
+            "successes": 3,
+            "total": 4
+          },
+          "encounter_4": {
+            "p1": 0.75,
+            "pt": 0.75,
+            "avg_steps": 3.0,
+            "first_try_successes": 3,
+            "successes": 3,
+            "total": 4
+          }
+        },
+        "by_key": {
+          "C-FRAG+E-SMOG+R-482+T-NGHT+T-W": 4,
+          "E-TIDE+H-903+LA-550+T-NGHT+T-U": 4,
+          "C-HZMT+P-220+SH-701+T-FLEX+T-N": 8,
+          "E-HEAT+H-903+T-NGHT+T-PEAK+T-U": 8,
+          "H-903+T-FLEX+T-NGHT+T-PEAK+T-U": 1,
+          "E-HEAT+P-220+SH-701+T-FLEX+T-N": 1,
+          "E-HEAT+E-STRM+H-903+T-PEAK+T-U": 1,
+          "C-FRAG+C-HZMT+P-220+SH-701+T-N": 1,
+          "E-HEAT+E-TIDE+T-NGHT+T-PEAK+T-": 1,
+          "C-HZMT+P-220+T-FLEX+T-NGHT+T-W": 1,
+          "E-STRM+H-903+T-NGHT+T-PEAK+T-U": 1,
+          "C-BULK+C-HZMT+SH-701+T-FLEX+T-": 1
+        },
+        "total_tasks": 32
+      }
+    },
+    {
+      "aggregated": {
+        "metadata": {
+          "domain": "logistics",
+          "timestamp": "20260213_131405",
+          "seed": 8888,
+          "train_tasks": 4,
+          "test_tasks": 16,
+          "max_retries": 2,
+          "max_attempts": 3,
+          "concurrent_training": true,
+          "concurrent_testing": false,
+          "train_elapsed_seconds": 25.71,
+          "test_elapsed_seconds": 807.35,
+          "static_knowledge_enabled": false,
+          "static_knowledge_mode": "disabled",
+          "test_mode": "both"
+        },
+        "agents": {
+          "llm_baseline": {
+            "name": "LLM Baseline (NOT RUN - unfair)",
+            "success_rate": 0.0,
+            "total_successes": 0,
+            "total_tasks": 0,
+            "avg_steps": 0.0,
+            "llm_calls": 0,
+            "llm_accuracy": 0.0,
+            "first_try_success_rate": 0.0,
+            "first_try_successes": 0,
+            "learning_efficiency": 0.0,
+            "cold_start_success_rate": 0.0,
+            "cold_start_successes": 0,
+            "cold_start_total": 0
+          },
+          "reflexion": {
+            "name": "Reflexion (NOT RUN - unfair)",
+            "success_rate": 0.0,
+            "total_successes": 0,
+            "total_tasks": 0,
+            "avg_steps": 0.0,
+            "llm_calls": 0,
+            "llm_accuracy": 0.0,
+            "reflections_generated": 0,
+            "first_try_success_rate": 0.0,
+            "first_try_successes": 0,
+            "learning_efficiency": 0.0,
+            "cold_start_success_rate": 0.0,
+            "cold_start_successes": 0,
+            "cold_start_total": 0
+          },
+          "full_reflexion": {
+            "name": "Full Reflexion",
+            "success_rate": 0.5625,
+            "total_successes": 9,
+            "total_tasks": 16,
+            "avg_steps": 4.88,
+            "llm_calls": 66,
+            "llm_accuracy": 0.3333,
+            "reflections_generated": 66,
+            "reflections_reused": 66,
+            "accumulated_memories": 20,
+            "first_try_success_rate": 0.5,
+            "first_try_successes": 8,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_total": 0,
+            "learning_efficiency": 1.4062,
+            "cold_start_success_rate": 0.5,
+            "cold_start_successes": 2,
+            "cold_start_total": 4
+          },
+          "expel": {
+            "name": "ExpeL",
+            "success_rate": 0.625,
+            "total_successes": 10,
+            "total_tasks": 16,
+            "avg_steps": 3.88,
+            "llm_calls": 106,
+            "llm_accuracy": 0.2075,
+            "insights_extracted": 36,
+            "insights_retrieved": 511,
+            "first_try_success_rate": 0.5,
+            "first_try_successes": 8,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_total": 0,
+            "learning_efficiency": 1.5625,
+            "cold_start_success_rate": 0.25,
+            "cold_start_successes": 1,
+            "cold_start_total": 4
+          },
+          "precept": {
+            "name": "PRECEPT",
+            "success_rate": 0.875,
+            "total_successes": 14,
+            "total_tasks": 16,
+            "avg_steps": 2.44,
+            "rules_learned": 36,
+            "llm_reasoning_calls": 28,
+            "llm_reasoning_successes": 14,
+            "has_compass_evolution": true,
+            "first_try_success_rate": 0.8125,
+            "first_try_successes": 13,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_successes": 0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_successes": 0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_successes": 0,
+            "p1_other_total": 0,
+            "p1_without_rules": 0.0,
+            "p1_without_rules_successes": 0,
+            "p1_without_rules_total": 0,
+            "learning_efficiency": 2.1875,
+            "cold_start_success_rate": 0.75,
+            "cold_start_successes": 3,
+            "cold_start_total": 4
+          }
+        },
+        "precept_advantages": {
+          "vs_llm_baseline": 0.875,
+          "vs_reflexion": 0.875,
+          "vs_full_reflexion": 0.3125,
+          "steps_saved_vs_llm": -2.44,
+          "steps_saved_vs_reflexion": -2.44,
+          "steps_saved_vs_full_reflexion": 2.44,
+          "first_try_advantage_vs_llm": 0.8125,
+          "first_try_advantage_vs_reflexion": 0.8125,
+          "first_try_advantage_vs_full_reflexion": 0.3125,
+          "learning_efficiency_advantage_vs_llm": 2.1875,
+          "learning_efficiency_advantage_vs_full_reflexion": 0.7812,
+          "cold_start_advantage_vs_llm": 0.75,
+          "cold_start_advantage_vs_full_reflexion": 0.25
+        },
+        "pruning_stats": {
+          "total_constraints": 24,
+          "hard_constraints": 0,
+          "soft_constraints": 24,
+          "dumb_retries_prevented": 2,
+          "pruning_efficiency": 0.0833
+        },
+        "conflict_resolution": {
+          "enabled": false,
+          "mode": "disabled",
+          "stats": {
+            "status": "active",
+            "summary": {
+              "conflicts_detected": 0,
+              "conflicts_resolved": 0
+            },
+            "detection": {
+              "total_detections": 0,
+              "conflicts_found": 0
+            },
+            "resolution_outcomes": {
+              "static_wins": 0,
+              "dynamic_wins": 0,
+              "merges": 0
+            },
+            "reliability": {
+              "static_kb": 0.8333333333333334,
+              "dynamic_experience": 0.625,
+              "episodic_memory": 0.5
+            }
+          },
+          "precept_capabilities": [],
+          "baseline_capabilities": []
+        },
+        "winner": "precept",
+        "dual_mode_results": {
+          "matched": {
+            "precept": {
+              "success_rate": 0.875,
+              "first_try_success_rate": 0.8125,
+              "first_try_successes": 13,
+              "total_tasks": 16,
+              "avg_steps": 2.44
+            },
+            "expel": {
+              "success_rate": 0.625,
+              "first_try_success_rate": 0.5,
+              "first_try_successes": 8,
+              "total_tasks": 16,
+              "avg_steps": 3.88
+            },
+            "full_reflexion": {
+              "success_rate": 0.5625,
+              "first_try_success_rate": 0.5,
+              "first_try_successes": 8,
+              "total_tasks": 16,
+              "avg_steps": 4.88
+            },
+            "elapsed_seconds": 445.22,
+            "num_scenarios": 16
+          },
+          "random": {
+            "precept": {
+              "success_rate": 0.8125,
+              "first_try_success_rate": 0.6875,
+              "first_try_successes": 11,
+              "total_tasks": 16,
+              "avg_steps": 2.62
+            },
+            "expel": {
+              "success_rate": 0.75,
+              "first_try_success_rate": 0.625,
+              "first_try_successes": 10,
+              "total_tasks": 16,
+              "avg_steps": 3.38
+            },
+            "full_reflexion": {
+              "success_rate": 0.75,
+              "first_try_success_rate": 0.6875,
+              "first_try_successes": 11,
+              "total_tasks": 16,
+              "avg_steps": 4.12
+            },
+            "elapsed_seconds": 362.13,
+            "num_scenarios": 16
+          }
+        }
+      },
+      "artifacts": {
+        "rules_learned": 7,
+        "procedures": 4,
+        "partial_progress_keys": 5
+      },
+      "precept": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 0.4,
+            "pt": 0.6,
+            "avg_steps": 3.3,
+            "first_try_successes": 4,
+            "successes": 6,
+            "total": 10
+          },
+          "encounter_2": {
+            "p1": 0.75,
+            "pt": 0.75,
+            "avg_steps": 2.5,
+            "first_try_successes": 3,
+            "successes": 3,
+            "total": 4
+          },
+          "encounter_3": {
+            "p1": 0.75,
+            "pt": 1.0,
+            "avg_steps": 2.5,
+            "first_try_successes": 3,
+            "successes": 4,
+            "total": 4
+          },
+          "encounter_4": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 4,
+            "successes": 4,
+            "total": 4
+          }
+        },
+        "by_key": {
+          "C-BULK+E-HEAT+R-482+T-PEAK+T-W": 4,
+          "C-FRAG+H-903+LA-550+T-PEAK+T-W": 9,
+          "C-HIGH+E-STRM+LA-550+R-482+T-U": 9,
+          "C-BULK+C-FRAG+E-TIDE+SH-701+T-": 4,
+          "C-HIGH+E-STRM+LA-550+T-URGT+T-": 1,
+          "C-FRAG+LA-550+P-220+T-PEAK+T-W": 1,
+          "C-HIGH+E-STRM+E-WNTR+LA-550+T-": 1,
+          "C-FRAG+H-903+LA-550+P-220+T-WK": 1,
+          "C-FRAG+E-WNTR+H-903+LA-550+T-P": 1,
+          "E-STRM+LA-550+P-220+R-482+T-UR": 1
+        },
+        "total_tasks": 32
+      },
+      "expel": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 0.1,
+            "pt": 0.3,
+            "avg_steps": 5.2,
+            "first_try_successes": 1,
+            "successes": 3,
+            "total": 10
+          },
+          "encounter_2": {
+            "p1": 0.25,
+            "pt": 0.75,
+            "avg_steps": 4.0,
+            "first_try_successes": 1,
+            "successes": 3,
+            "total": 4
+          },
+          "encounter_3": {
+            "p1": 0.75,
+            "pt": 0.75,
+            "avg_steps": 3.0,
+            "first_try_successes": 3,
+            "successes": 3,
+            "total": 4
+          },
+          "encounter_4": {
+            "p1": 0.75,
+            "pt": 0.75,
+            "avg_steps": 3.0,
+            "first_try_successes": 3,
+            "successes": 3,
+            "total": 4
+          }
+        },
+        "by_key": {
+          "C-BULK+E-HEAT+R-482+T-PEAK+T-W": 4,
+          "C-FRAG+H-903+LA-550+T-PEAK+T-W": 9,
+          "C-HIGH+E-STRM+LA-550+R-482+T-U": 9,
+          "C-BULK+C-FRAG+E-TIDE+SH-701+T-": 4,
+          "C-HIGH+E-STRM+LA-550+T-URGT+T-": 1,
+          "C-FRAG+LA-550+P-220+T-PEAK+T-W": 1,
+          "C-HIGH+E-STRM+E-WNTR+LA-550+T-": 1,
+          "C-FRAG+H-903+LA-550+P-220+T-WK": 1,
+          "C-FRAG+E-WNTR+H-903+LA-550+T-P": 1,
+          "E-STRM+LA-550+P-220+R-482+T-UR": 1
+        },
+        "total_tasks": 32
+      },
+      "full_reflexion": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 0.4,
+            "pt": 0.4,
+            "avg_steps": 4.4,
+            "first_try_successes": 4,
+            "successes": 4,
+            "total": 10
+          },
+          "encounter_2": {
+            "p1": 0.5,
+            "pt": 0.5,
+            "avg_steps": 4.0,
+            "first_try_successes": 2,
+            "successes": 2,
+            "total": 4
+          },
+          "encounter_3": {
+            "p1": 0.5,
+            "pt": 0.5,
+            "avg_steps": 4.0,
+            "first_try_successes": 2,
+            "successes": 2,
+            "total": 4
+          },
+          "encounter_4": {
+            "p1": 0.5,
+            "pt": 0.75,
+            "avg_steps": 3.5,
+            "first_try_successes": 2,
+            "successes": 3,
+            "total": 4
+          }
+        },
+        "by_key": {
+          "C-BULK+E-HEAT+R-482+T-PEAK+T-W": 4,
+          "C-FRAG+H-903+LA-550+T-PEAK+T-W": 9,
+          "C-HIGH+E-STRM+LA-550+R-482+T-U": 9,
+          "C-BULK+C-FRAG+E-TIDE+SH-701+T-": 4,
+          "C-HIGH+E-STRM+LA-550+T-URGT+T-": 1,
+          "C-FRAG+LA-550+P-220+T-PEAK+T-W": 1,
+          "C-HIGH+E-STRM+E-WNTR+LA-550+T-": 1,
+          "C-FRAG+H-903+LA-550+P-220+T-WK": 1,
+          "C-FRAG+E-WNTR+H-903+LA-550+T-P": 1,
+          "E-STRM+LA-550+P-220+R-482+T-UR": 1
+        },
+        "total_tasks": 32
+      }
+    },
+    {
+      "aggregated": {
+        "metadata": {
+          "domain": "logistics",
+          "timestamp": "20260213_132700",
+          "seed": 7777,
+          "train_tasks": 4,
+          "test_tasks": 16,
+          "max_retries": 2,
+          "max_attempts": 3,
+          "concurrent_training": true,
+          "concurrent_testing": false,
+          "train_elapsed_seconds": 23.46,
+          "test_elapsed_seconds": 719.87,
+          "static_knowledge_enabled": false,
+          "static_knowledge_mode": "disabled",
+          "test_mode": "both"
+        },
+        "agents": {
+          "llm_baseline": {
+            "name": "LLM Baseline (NOT RUN - unfair)",
+            "success_rate": 0.0,
+            "total_successes": 0,
+            "total_tasks": 0,
+            "avg_steps": 0.0,
+            "llm_calls": 0,
+            "llm_accuracy": 0.0,
+            "first_try_success_rate": 0.0,
+            "first_try_successes": 0,
+            "learning_efficiency": 0.0,
+            "cold_start_success_rate": 0.0,
+            "cold_start_successes": 0,
+            "cold_start_total": 0
+          },
+          "reflexion": {
+            "name": "Reflexion (NOT RUN - unfair)",
+            "success_rate": 0.0,
+            "total_successes": 0,
+            "total_tasks": 0,
+            "avg_steps": 0.0,
+            "llm_calls": 0,
+            "llm_accuracy": 0.0,
+            "reflections_generated": 0,
+            "first_try_success_rate": 0.0,
+            "first_try_successes": 0,
+            "learning_efficiency": 0.0,
+            "cold_start_success_rate": 0.0,
+            "cold_start_successes": 0,
+            "cold_start_total": 0
+          },
+          "full_reflexion": {
+            "name": "Full Reflexion",
+            "success_rate": 0.5,
+            "total_successes": 8,
+            "total_tasks": 16,
+            "avg_steps": 5.25,
+            "llm_calls": 67,
+            "llm_accuracy": 0.3433,
+            "reflections_generated": 67,
+            "reflections_reused": 67,
+            "accumulated_memories": 20,
+            "first_try_success_rate": 0.4375,
+            "first_try_successes": 7,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_total": 0,
+            "learning_efficiency": 1.25,
+            "cold_start_success_rate": 0.5,
+            "cold_start_successes": 2,
+            "cold_start_total": 4
+          },
+          "expel": {
+            "name": "ExpeL",
+            "success_rate": 0.5625,
+            "total_successes": 9,
+            "total_tasks": 16,
+            "avg_steps": 3.75,
+            "llm_calls": 96,
+            "llm_accuracy": 0.2708,
+            "insights_extracted": 36,
+            "insights_retrieved": 456,
+            "first_try_success_rate": 0.5625,
+            "first_try_successes": 9,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_total": 0,
+            "learning_efficiency": 1.4062,
+            "cold_start_success_rate": 0.25,
+            "cold_start_successes": 1,
+            "cold_start_total": 4
+          },
+          "precept": {
+            "name": "PRECEPT",
+            "success_rate": 0.875,
+            "total_successes": 14,
+            "total_tasks": 16,
+            "avg_steps": 2.31,
+            "rules_learned": 33,
+            "llm_reasoning_calls": 26,
+            "llm_reasoning_successes": 9,
+            "has_compass_evolution": true,
+            "first_try_success_rate": 0.875,
+            "first_try_successes": 14,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_successes": 0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_successes": 0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_successes": 0,
+            "p1_other_total": 0,
+            "p1_without_rules": 0.0,
+            "p1_without_rules_successes": 0,
+            "p1_without_rules_total": 0,
+            "learning_efficiency": 2.1875,
+            "cold_start_success_rate": 0.5,
+            "cold_start_successes": 2,
+            "cold_start_total": 4
+          }
+        },
+        "precept_advantages": {
+          "vs_llm_baseline": 0.875,
+          "vs_reflexion": 0.875,
+          "vs_full_reflexion": 0.375,
+          "steps_saved_vs_llm": -2.31,
+          "steps_saved_vs_reflexion": -2.31,
+          "steps_saved_vs_full_reflexion": 2.94,
+          "first_try_advantage_vs_llm": 0.875,
+          "first_try_advantage_vs_reflexion": 0.875,
+          "first_try_advantage_vs_full_reflexion": 0.4375,
+          "learning_efficiency_advantage_vs_llm": 2.1875,
+          "learning_efficiency_advantage_vs_full_reflexion": 0.9375,
+          "cold_start_advantage_vs_llm": 0.5,
+          "cold_start_advantage_vs_full_reflexion": 0.0
+        },
+        "pruning_stats": {
+          "total_constraints": 23,
+          "hard_constraints": 0,
+          "soft_constraints": 23,
+          "dumb_retries_prevented": 5,
+          "pruning_efficiency": 0.2174
+        },
+        "conflict_resolution": {
+          "enabled": false,
+          "mode": "disabled",
+          "stats": {
+            "status": "active",
+            "summary": {
+              "conflicts_detected": 0,
+              "conflicts_resolved": 0
+            },
+            "detection": {
+              "total_detections": 0,
+              "conflicts_found": 0
+            },
+            "resolution_outcomes": {
+              "static_wins": 0,
+              "dynamic_wins": 0,
+              "merges": 0
+            },
+            "reliability": {
+              "static_kb": 0.8333333333333334,
+              "dynamic_experience": 0.625,
+              "episodic_memory": 0.5
+            }
+          },
+          "precept_capabilities": [],
+          "baseline_capabilities": []
+        },
+        "winner": "precept",
+        "dual_mode_results": {
+          "matched": {
+            "precept": {
+              "success_rate": 0.875,
+              "first_try_success_rate": 0.875,
+              "first_try_successes": 14,
+              "total_tasks": 16,
+              "avg_steps": 2.31
+            },
+            "expel": {
+              "success_rate": 0.5625,
+              "first_try_success_rate": 0.5625,
+              "first_try_successes": 9,
+              "total_tasks": 16,
+              "avg_steps": 3.75
+            },
+            "full_reflexion": {
+              "success_rate": 0.5,
+              "first_try_success_rate": 0.4375,
+              "first_try_successes": 7,
+              "total_tasks": 16,
+              "avg_steps": 5.25
+            },
+            "elapsed_seconds": 405.8,
+            "num_scenarios": 16
+          },
+          "random": {
+            "precept": {
+              "success_rate": 0.875,
+              "first_try_success_rate": 0.75,
+              "first_try_successes": 12,
+              "total_tasks": 16,
+              "avg_steps": 2.56
+            },
+            "expel": {
+              "success_rate": 0.9375,
+              "first_try_success_rate": 0.875,
+              "first_try_successes": 14,
+              "total_tasks": 16,
+              "avg_steps": 2.5
+            },
+            "full_reflexion": {
+              "success_rate": 0.875,
+              "first_try_success_rate": 0.6875,
+              "first_try_successes": 11,
+              "total_tasks": 16,
+              "avg_steps": 3.88
+            },
+            "elapsed_seconds": 314.06,
+            "num_scenarios": 16
+          }
+        }
+      },
+      "artifacts": {
+        "rules_learned": 9,
+        "procedures": 3,
+        "partial_progress_keys": 6
+      },
+      "precept": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 0.5,
+            "pt": 0.6666666666666666,
+            "avg_steps": 3.1666666666666665,
+            "first_try_successes": 6,
+            "successes": 8,
+            "total": 12
+          },
+          "encounter_2": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 4,
+            "successes": 4,
+            "total": 4
+          },
+          "encounter_3": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 4,
+            "successes": 4,
+            "total": 4
+          },
+          "encounter_4": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 4,
+            "successes": 4,
+            "total": 4
+          }
+        },
+        "by_key": {
+          "E-TIDE+H-903+LA-550+T-FLEX+T-U": 8,
+          "E-HEAT+E-SMOG+E-WNTR+H-903+SH-": 8,
+          "C-HIGH+E-TIDE+E-WNTR+R-482+T-W": 4,
+          "C-BULK+C-HZMT+E-STRM+E-WNTR+LA": 4,
+          "H-903+LA-550+P-220+T-FLEX+T-UR": 1,
+          "E-SMOG+E-WNTR+H-903+P-220+SH-7": 1,
+          "C-BULK+E-TIDE+LA-550+T-FLEX+T-": 1,
+          "E-HEAT+E-WNTR+H-903+R-482+SH-7": 1,
+          "C-HZMT+E-TIDE+H-903+LA-550+T-U": 1,
+          "E-HEAT+E-SMOG+H-903+SH-701+T-N": 1,
+          "C-COLD+E-TIDE+H-903+LA-550+T-F": 1,
+          "E-HEAT+E-SMOG+E-STRM+E-WNTR+SH": 1
+        },
+        "total_tasks": 32
+      },
+      "expel": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 0.5833333333333334,
+            "pt": 0.6666666666666666,
+            "avg_steps": 3.5,
+            "first_try_successes": 7,
+            "successes": 8,
+            "total": 12
+          },
+          "encounter_2": {
+            "p1": 0.5,
+            "pt": 0.5,
+            "avg_steps": 4.0,
+            "first_try_successes": 2,
+            "successes": 2,
+            "total": 4
+          },
+          "encounter_3": {
+            "p1": 0.75,
+            "pt": 0.75,
+            "avg_steps": 3.0,
+            "first_try_successes": 3,
+            "successes": 3,
+            "total": 4
+          },
+          "encounter_4": {
+            "p1": 0.75,
+            "pt": 0.75,
+            "avg_steps": 3.0,
+            "first_try_successes": 3,
+            "successes": 3,
+            "total": 4
+          }
+        },
+        "by_key": {
+          "E-TIDE+H-903+LA-550+T-FLEX+T-U": 8,
+          "E-HEAT+E-SMOG+E-WNTR+H-903+SH-": 8,
+          "C-HIGH+E-TIDE+E-WNTR+R-482+T-W": 4,
+          "C-BULK+C-HZMT+E-STRM+E-WNTR+LA": 4,
+          "H-903+LA-550+P-220+T-FLEX+T-UR": 1,
+          "E-SMOG+E-WNTR+H-903+P-220+SH-7": 1,
+          "C-BULK+E-TIDE+LA-550+T-FLEX+T-": 1,
+          "E-HEAT+E-WNTR+H-903+R-482+SH-7": 1,
+          "C-HZMT+E-TIDE+H-903+LA-550+T-U": 1,
+          "E-HEAT+E-SMOG+H-903+SH-701+T-N": 1,
+          "C-COLD+E-TIDE+H-903+LA-550+T-F": 1,
+          "E-HEAT+E-SMOG+E-STRM+E-WNTR+SH": 1
+        },
+        "total_tasks": 32
+      },
+      "full_reflexion": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 0.5833333333333334,
+            "pt": 0.6666666666666666,
+            "avg_steps": 3.5,
+            "first_try_successes": 7,
+            "successes": 8,
+            "total": 12
+          },
+          "encounter_2": {
+            "p1": 0.5,
+            "pt": 0.5,
+            "avg_steps": 4.0,
+            "first_try_successes": 2,
+            "successes": 2,
+            "total": 4
+          },
+          "encounter_3": {
+            "p1": 0.5,
+            "pt": 0.5,
+            "avg_steps": 4.0,
+            "first_try_successes": 2,
+            "successes": 2,
+            "total": 4
+          },
+          "encounter_4": {
+            "p1": 0.5,
+            "pt": 0.5,
+            "avg_steps": 4.0,
+            "first_try_successes": 2,
+            "successes": 2,
+            "total": 4
+          }
+        },
+        "by_key": {
+          "E-TIDE+H-903+LA-550+T-FLEX+T-U": 8,
+          "E-HEAT+E-SMOG+E-WNTR+H-903+SH-": 8,
+          "C-HIGH+E-TIDE+E-WNTR+R-482+T-W": 4,
+          "C-BULK+C-HZMT+E-STRM+E-WNTR+LA": 4,
+          "H-903+LA-550+P-220+T-FLEX+T-UR": 1,
+          "E-SMOG+E-WNTR+H-903+P-220+SH-7": 1,
+          "C-BULK+E-TIDE+LA-550+T-FLEX+T-": 1,
+          "E-HEAT+E-WNTR+H-903+R-482+SH-7": 1,
+          "C-HZMT+E-TIDE+H-903+LA-550+T-U": 1,
+          "E-HEAT+E-SMOG+H-903+SH-701+T-N": 1,
+          "C-COLD+E-TIDE+H-903+LA-550+T-F": 1,
+          "E-HEAT+E-SMOG+E-STRM+E-WNTR+SH": 1
+        },
+        "total_tasks": 32
+      }
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "STREAM": {
+    "constraint": "Constraint: STREAM (integration domain)",
+    "solution_hint": "solution:hubspot-v2",
+    "confidence": 0.6,
+    "domain": "integration",
+    "times_seen": 1,
+    "last_updated": 1770995854.1607711,
+    "source": "direct_training",
+    "tier": 1,
+    "semantic_meaning": "Real-time streaming data"
+  },
+  "VERIFY": {
+    "constraint": "Constraint: VERIFY (integration domain)",
+    "solution_hint": "contributed_to:salesforce-backup",
+    "confidence": 0.4,
+    "domain": "integration",
+    "times_seen": 1,
+    "last_updated": 1770995904.140339,
+    "source": "composite_extraction",
+    "tier": 2,
+    "semantic_meaning": "Request verification required"
+  },
+  "SIMPLE": {
+    "constraint": "Constraint: SIMPLE (integration domain)",
+    "solution_hint": "contributed_to:salesforce-backup",
+    "confidence": 0.4,
+    "domain": "integration",
+    "times_seen": 1,
+    "last_updated": 1770995904.140348,
+    "source": "composite_extraction",
+    "tier": 1,
+    "semantic_meaning": "Simple API key authentication"
+  }
+}

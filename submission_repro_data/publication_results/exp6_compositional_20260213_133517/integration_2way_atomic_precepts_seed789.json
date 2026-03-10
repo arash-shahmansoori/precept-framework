@@ -1,0 +1,35 @@
+{
+  "RETRY": {
+    "constraint": "Constraint: RETRY (integration domain)",
+    "solution_hint": "solution:hubspot-v2",
+    "confidence": 0.7,
+    "domain": "integration",
+    "times_seen": 2,
+    "last_updated": 1770996762.003096,
+    "source": "direct_training",
+    "tier": 2,
+    "semantic_meaning": "Retry logic for reliability"
+  },
+  "RATE": {
+    "constraint": "Constraint: RATE (integration domain)",
+    "solution_hint": "solution:hubspot-v2",
+    "confidence": 0.7,
+    "domain": "integration",
+    "times_seen": 2,
+    "last_updated": 1770996756.4991639,
+    "source": "direct_training",
+    "tier": 2,
+    "semantic_meaning": "Rate limiting compliance"
+  },
+  "VERIFY": {
+    "constraint": "Constraint: VERIFY (integration domain)",
+    "solution_hint": "solution:hubspot-v2",
+    "confidence": 0.6,
+    "domain": "integration",
+    "times_seen": 1,
+    "last_updated": 1770996743.891832,
+    "source": "direct_training",
+    "tier": 2,
+    "semantic_meaning": "Request verification required"
+  }
+}

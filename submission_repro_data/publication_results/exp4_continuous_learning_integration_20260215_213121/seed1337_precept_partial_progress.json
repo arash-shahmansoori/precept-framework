@@ -1,0 +1,185 @@
+{
+  "INT-407+INT-511+NET-DNS+NET-SSL+SVC-MAINT": {
+    "failed_options": [
+      "compliance-gateway",
+      "notification-service-fallback",
+      "inventory-service",
+      "analytics-api",
+      "inventory-service-direct",
+      "legacy-erp-v2",
+      "payment-gateway",
+      "audit-logger",
+      "partner-api-proxy",
+      "analytics-api-backend",
+      "notification-service",
+      "payment-gateway-v2",
+      "partner-api",
+      "legacy-erp",
+      "data-warehouse",
+      "salesforce",
+      "google_workspace",
+      "salesforce-backup",
+      "google_workspace-admin"
+    ],
+    "errors": [
+      "INT-914"
+    ],
+    "last_attempt": 1771212377.9348228
+  },
+  "DAT-SCHEMA+INT-401+NET-DNS+NET-SSL+SVC-DEPREC": {
+    "failed_options": [
+      "google_workspace",
+      "slack_enterprise",
+      "salesforce",
+      "confluence_server"
+    ],
+    "errors": [
+      "INT-846"
+    ],
+    "last_attempt": 1771211659.838432
+  },
+  "DAT-CORRUPT+INT-404+INT-419+NET-DNS+NET-FIREWALL": {
+    "failed_options": [
+      "zendesk",
+      "salesforce-backup",
+      "salesforce",
+      "zendesk-premium",
+      "legacy-erp",
+      "compliance-gateway",
+      "analytics-api-backend",
+      "payment-gateway"
+    ],
+    "errors": [
+      "INT-584"
+    ],
+    "last_attempt": 1771211819.9508018
+  },
+  "DAT-PARTIAL+INT-402+NET-DNS+NET-SSL+SVC-MIGRATE": {
+    "failed_options": [
+      "analytics-api-backend",
+      "payment-gateway-v2",
+      "legacy-erp",
+      "audit-logger"
+    ],
+    "errors": [
+      "INT-647"
+    ],
+    "last_attempt": 1771211659.227032
+  },
+  "DAT-CORRUPT+INT-419+INT-429+NET-FIREWALL+NET-SSL": {
+    "failed_options": [
+      "zendesk",
+      "stripe",
+      "stripe-webhook-v2",
+      "google_workspace",
+      "data-warehouse",
+      "analytics-api-backend",
+      "notification-service",
+      "legacy-erp-v2",
+      "partner-api-proxy",
+      "payment-gateway",
+      "compliance-gateway",
+      "inventory-service"
+    ],
+    "errors": [
+      "INT-437"
+    ],
+    "last_attempt": 1771211997.621192
+  },
+  "DAT-LARGE+INT-401+NET-PROXY+NET-TIMEOUT+SVC-DOWN": {
+    "failed_options": [
+      "inventory-service-direct",
+      "data-warehouse",
+      "partner-api",
+      "inventory-service"
+    ],
+    "errors": [
+      "INT-923"
+    ],
+    "last_attempt": 1771212946.966609
+  },
+  "INT-401+NET-SSL+NET-TIMEOUT+SVC-DEPREC+SVC-MIGRATE": {
+    "failed_options": [
+      "data-warehouse",
+      "compliance-gateway",
+      "inventory-service",
+      "partner-api-proxy"
+    ],
+    "errors": [
+      "INT-852"
+    ],
+    "last_attempt": 1771212995.106718
+  },
+  "DAT-SYNC+INT-401+NET-TIMEOUT+SVC-DEPREC+SVC-MIGRATE": {
+    "failed_options": [
+      "analytics-api-backend",
+      "compliance-gateway",
+      "partner-api-proxy",
+      "legacy-erp-v2"
+    ],
+    "errors": [
+      "INT-415"
+    ],
+    "last_attempt": 1771213096.5529191
+  },
+  "DAT-SYNC+INT-401+INT-403+NET-TIMEOUT+SVC-VERSION": {
+    "failed_options": [
+      "notification-service-fallback",
+      "notification-service",
+      "data-warehouse",
+      "legacy-erp"
+    ],
+    "errors": [
+      "INT-936"
+    ],
+    "last_attempt": 1771213197.026011
+  },
+  "DAT-LARGE+INT-401+NET-PROXY+NET-TIMEOUT+SVC-VERSION": {
+    "failed_options": [
+      "jira_cloud",
+      "slack_enterprise",
+      "confluence_server",
+      "zendesk-premium"
+    ],
+    "errors": [
+      "INT-713"
+    ],
+    "last_attempt": 1771213270.551048
+  },
+  "INT-401+INT-403+INT-429+NET-PROXY+SVC-MIGRATE": {
+    "failed_options": [
+      "analytics-api",
+      "notification-service",
+      "legacy-erp-v2",
+      "compliance-gateway"
+    ],
+    "errors": [
+      "INT-596"
+    ],
+    "last_attempt": 1771213334.860329
+  },
+  "INT-401+INT-403+INT-407+NET-PROXY+NET-TIMEOUT": {
+    "failed_options": [
+      "notification-service",
+      "analytics-api",
+      "payment-gateway",
+      "audit-logger"
+    ],
+    "errors": [
+      "INT-995"
+    ],
+    "last_attempt": 1771213376.1291
+  },
+  "DAT-SCHEMA+INT-401+NET-TIMEOUT+SVC-MAINT+SVC-MIGRATE": {
+    "failed_options": [
+      "analytics-api",
+      "legacy-erp",
+      "payment-gateway-v2",
+      "data-warehouse"
+    ],
+    "errors": [
+      "INT-381"
+    ],
+    "last_attempt": 1771213430.8161879
+  }
+}

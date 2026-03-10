@@ -1,0 +1,68 @@
+{
+  "EURO": {
+    "constraint": "Constraint: EURO (logistics domain)",
+    "solution_hint": "solution:hamburg",
+    "confidence": 0.8,
+    "domain": "logistics",
+    "times_seen": 5,
+    "last_updated": 1770992037.3678029,
+    "source": "direct_training",
+    "tier": 2,
+    "semantic_meaning": "European hub routing"
+  },
+  "INTL": {
+    "constraint": "Constraint: INTL (logistics domain)",
+    "solution_hint": "solution:antwerp",
+    "confidence": 0.8,
+    "domain": "logistics",
+    "times_seen": 6,
+    "last_updated": 1770992122.418449,
+    "source": "direct_training",
+    "tier": 2,
+    "semantic_meaning": "International transshipment - neutral hub"
+  },
+  "ASIA": {
+    "constraint": "Constraint: ASIA (logistics domain)",
+    "solution_hint": "solution:ningbo",
+    "confidence": 0.7,
+    "domain": "logistics",
+    "times_seen": 5,
+    "last_updated": 1770992112.126645,
+    "source": "direct_training",
+    "tier": 2,
+    "semantic_meaning": "Asian hub routing"
+  },
+  "SAFE": {
+    "constraint": "Constraint: SAFE (logistics domain)",
+    "solution_hint": "solution:hamburg",
+    "confidence": 0.7,
+    "domain": "logistics",
+    "times_seen": 6,
+    "last_updated": 1770992085.737579,
+    "source": "direct_training",
+    "tier": 3,
+    "semantic_meaning": "Safety-critical cargo requiring secure handling"
+  },
+  "BULK": {
+    "constraint": "Constraint: BULK (logistics domain)",
+    "solution_hint": "solution:antwerp",
+    "confidence": 0.6,
+    "domain": "logistics",
+    "times_seen": 4,
+    "last_updated": 1770992085.7375748,
+    "source": "direct_training",
+    "tier": 1,
+    "semantic_meaning": "Bulk cargo requiring high-volume facilities"
+  },
+  "FAST": {
+    "constraint": "Constraint: FAST (logistics domain)",
+    "solution_hint": "solution:long_beach",
+    "confidence": 0.6,
+    "domain": "logistics",
+    "times_seen": 6,
+    "last_updated": 1770992122.418453,
+    "source": "direct_training",
+    "tier": 1,
+    "semantic_meaning": "Time-critical express shipment"
+  }
+}

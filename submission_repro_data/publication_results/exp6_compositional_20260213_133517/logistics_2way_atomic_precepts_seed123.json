@@ -1,0 +1,57 @@
+{
+  "SAFE": {
+    "constraint": "Constraint: SAFE (logistics domain)",
+    "solution_hint": "solution:hamburg",
+    "confidence": 0.8,
+    "domain": "logistics",
+    "times_seen": 6,
+    "last_updated": 1770990181.598321,
+    "source": "direct_training",
+    "tier": 3,
+    "semantic_meaning": "Safety-critical cargo requiring secure handling"
+  },
+  "EURO": {
+    "constraint": "Constraint: EURO (logistics domain)",
+    "solution_hint": "solution:hamburg",
+    "confidence": 0.7,
+    "domain": "logistics",
+    "times_seen": 4,
+    "last_updated": 1770990129.940759,
+    "source": "direct_training",
+    "tier": 2,
+    "semantic_meaning": "European hub routing"
+  },
+  "BULK": {
+    "constraint": "Constraint: BULK (logistics domain)",
+    "solution_hint": "solution:antwerp",
+    "confidence": 0.8,
+    "domain": "logistics",
+    "times_seen": 5,
+    "last_updated": 1770990169.683797,
+    "source": "direct_training",
+    "tier": 1,
+    "semantic_meaning": "Bulk cargo requiring high-volume facilities"
+  },
+  "ECON": {
+    "constraint": "Constraint: ECON (logistics domain)",
+    "solution_hint": "solution:ningbo",
+    "confidence": 0.6,
+    "domain": "logistics",
+    "times_seen": 4,
+    "last_updated": 1770990181.598315,
+    "source": "direct_training",
+    "tier": 1,
+    "semantic_meaning": "Cost-optimized economical routing"
+  },
+  "INTL": {
+    "constraint": "Constraint: INTL (logistics domain)",
+    "solution_hint": "solution:antwerp",
+    "confidence": 0.6,
+    "domain": "logistics",
+    "times_seen": 3,
+    "last_updated": 1770990143.271389,
+    "source": "direct_training",
+    "tier": 2,
+    "semantic_meaning": "International transshipment - neutral hub"
+  }
+}

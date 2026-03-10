@@ -1,0 +1,562 @@
+{
+  "beta_1": {
+    "beta": 1,
+    "train_count": 4,
+    "n_runs": 10,
+    "precept": {
+      "first_try_success": {
+        "mean": 0.775,
+        "std": 0.36228441865473593,
+        "ci_95": 0.25916266081663636,
+        "n": 10
+      },
+      "success_rate": {
+        "mean": 0.825,
+        "std": 0.33437337746231466,
+        "ci_95": 0.23919630474631276,
+        "n": 10
+      },
+      "avg_steps": {
+        "mean": 2.8,
+        "std": 1.284523257866513,
+        "ci_95": 0.9188925834174513,
+        "n": 10
+      }
+    },
+    "full_reflexion": {
+      "first_try_success": {
+        "mean": 0.675,
+        "std": 0.2898754521821014,
+        "ci_95": 0.20736440659495908,
+        "n": 10
+      },
+      "success_rate": {
+        "mean": 0.925,
+        "std": 0.1687371394276382,
+        "ci_95": 0.12070727798627842,
+        "n": 10
+      },
+      "avg_steps": {
+        "mean": 4.35,
+        "std": 1.2258783698955529,
+        "ci_95": 0.8769405578065125,
+        "n": 10
+      }
+    },
+    "expel": {
+      "first_try_success": {
+        "mean": 0.775,
+        "std": 0.24860723150293831,
+        "ci_95": 0.17784289993426894,
+        "n": 10
+      },
+      "success_rate": {
+        "mean": 0.925,
+        "std": 0.1687371394276382,
+        "ci_95": 0.12070727798627842,
+        "n": 10
+      },
+      "avg_steps": {
+        "mean": 3.25,
+        "std": 1.8745369798669986,
+        "ci_95": 1.3409629740783835,
+        "n": 10
+      }
+    },
+    "statistical_tests": {
+      "precept_vs_fr": {
+        "first_try_success": {
+          "t_stat": 0.5970223141259936,
+          "p_value": 0.5652072679166222,
+          "cohens_d": 0.1887950326582658
+        },
+        "success_rate": {
+          "t_stat": -0.840168050416806,
+          "p_value": 0.42257162813419624,
+          "cohens_d": -0.2656844656620286
+        }
+      },
+      "precept_vs_expel": {
+        "first_try_success": {
+          "t_stat": 0.0,
+          "p_value": 1.0,
+          "cohens_d": 0.0
+        },
+        "success_rate": {
+          "t_stat": -0.840168050416806,
+          "p_value": 0.42257162813419624,
+          "cohens_d": -0.2656844656620286
+        }
+      },
+      "first_try_success": {
+        "t_stat": 0.5970223141259936,
+        "p_value": 0.5652072679166222,
+        "cohens_d": 0.1887950326582658
+      },
+      "success_rate": {
+        "t_stat": -0.840168050416806,
+        "p_value": 0.42257162813419624,
+        "cohens_d": -0.2656844656620286
+      }
+    },
+    "advantage": {
+      "vs_fr_first_try_pp": 9.999999999999998,
+      "vs_fr_success_pp": -10.000000000000009,
+      "vs_fr_steps_saved": 1.5499999999999998,
+      "vs_expel_first_try_pp": 0.0,
+      "vs_expel_success_pp": -10.000000000000009,
+      "vs_expel_steps_saved": 0.4500000000000002,
+      "first_try_success_pp": 9.999999999999998,
+      "success_rate_pp": -10.000000000000009,
+      "steps_saved": 1.5499999999999998
+    }
+  },
+  "beta_2": {
+    "beta": 2,
+    "train_count": 8,
+    "n_runs": 10,
+    "precept": {
+      "first_try_success": {
+        "mean": 0.925,
+        "std": 0.12076147288491199,
+        "ci_95": 0.08638755360554545,
+        "n": 10
+      },
+      "success_rate": {
+        "mean": 1.0,
+        "std": 0.0,
+        "ci_95": 0.0,
+        "n": 10
+      },
+      "avg_steps": {
+        "mean": 2.325,
+        "std": 0.5407042732502778,
+        "ci_95": 0.3867965359669927,
+        "n": 10
+      }
+    },
+    "full_reflexion": {
+      "first_try_success": {
+        "mean": 0.75,
+        "std": 0.2041241452319315,
+        "ci_95": 0.1460216169706291,
+        "n": 10
+      },
+      "success_rate": {
+        "mean": 0.9,
+        "std": 0.17480147469502527,
+        "ci_95": 0.1250454421000324,
+        "n": 10
+      },
+      "avg_steps": {
+        "mean": 4.1,
+        "std": 1.3291601358251257,
+        "ci_95": 0.9508238823269036,
+        "n": 10
+      }
+    },
+    "expel": {
+      "first_try_success": {
+        "mean": 0.725,
+        "std": 0.27512623365365296,
+        "ci_95": 0.1968134512627023,
+        "n": 10
+      },
+      "success_rate": {
+        "mean": 0.925,
+        "std": 0.12076147288491199,
+        "ci_95": 0.08638755360554545,
+        "n": 10
+      },
+      "avg_steps": {
+        "mean": 3.35,
+        "std": 1.179689224612426,
+        "ci_95": 0.843898833746529,
+        "n": 10
+      }
+    },
+    "statistical_tests": {
+      "precept_vs_fr": {
+        "first_try_success": {
+          "t_stat": 3.279648999660727,
+          "p_value": 0.009534613041301043,
+          "cohens_d": 1.0371160764820688
+        },
+        "success_rate": {
+          "t_stat": 1.8090680674665816,
+          "p_value": 0.1038881310621017,
+          "cohens_d": 0.5720775535473553
+        }
+      },
+      "precept_vs_expel": {
+        "first_try_success": {
+          "t_stat": 2.449489742783178,
+          "p_value": 0.03678749787978613,
+          "cohens_d": 0.7745966692414833
+        },
+        "success_rate": {
+          "t_stat": 1.9639610121239315,
+          "p_value": 0.0811261888458405,
+          "cohens_d": 0.6210590034081188
+        }
+      },
+      "first_try_success": {
+        "t_stat": 3.279648999660727,
+        "p_value": 0.009534613041301043,
+        "cohens_d": 1.0371160764820688
+      },
+      "success_rate": {
+        "t_stat": 1.8090680674665816,
+        "p_value": 0.1038881310621017,
+        "cohens_d": 0.5720775535473553
+      }
+    },
+    "advantage": {
+      "vs_fr_first_try_pp": 17.500000000000004,
+      "vs_fr_success_pp": 9.999999999999998,
+      "vs_fr_steps_saved": 1.7749999999999995,
+      "vs_expel_first_try_pp": 20.000000000000007,
+      "vs_expel_success_pp": 7.499999999999996,
+      "vs_expel_steps_saved": 1.025,
+      "first_try_success_pp": 17.500000000000004,
+      "success_rate_pp": 9.999999999999998,
+      "steps_saved": 1.7749999999999995
+    }
+  },
+  "beta_3": {
+    "beta": 3,
+    "train_count": 12,
+    "n_runs": 10,
+    "precept": {
+      "first_try_success": {
+        "mean": 0.925,
+        "std": 0.12076147288491199,
+        "ci_95": 0.08638755360554545,
+        "n": 10
+      },
+      "success_rate": {
+        "mean": 0.975,
+        "std": 0.07905694150420949,
+        "ci_95": 0.05655392907135248,
+        "n": 10
+      },
+      "avg_steps": {
+        "mean": 2.3,
+        "std": 0.4972144630058766,
+        "ci_95": 0.35568579986853777,
+        "n": 10
+      }
+    },
+    "full_reflexion": {
+      "first_try_success": {
+        "mean": 0.6,
+        "std": 0.21081851067789195,
+        "ci_95": 0.1508104775236066,
+        "n": 10
+      },
+      "success_rate": {
+        "mean": 0.825,
+        "std": 0.26483747636784505,
+        "ci_95": 0.18945331768426177,
+        "n": 10
+      },
+      "avg_steps": {
+        "mean": 5.0,
+        "std": 1.8708286933869707,
+        "ci_95": 1.3383102257355122,
+        "n": 10
+      }
+    },
+    "expel": {
+      "first_try_success": {
+        "mean": 0.725,
+        "std": 0.18446619684315546,
+        "ci_95": 0.13195916783315578,
+        "n": 10
+      },
+      "success_rate": {
+        "mean": 0.975,
+        "std": 0.07905694150420949,
+        "ci_95": 0.05655392907135248,
+        "n": 10
+      },
+      "avg_steps": {
+        "mean": 3.4,
+        "std": 1.3703203194062976,
+        "ci_95": 0.9802681039034429,
+        "n": 10
+      }
+    },
+    "statistical_tests": {
+      "precept_vs_fr": {
+        "first_try_success": {
+          "t_stat": 6.090776713655637,
+          "p_value": 0.00018126273512634856,
+          "cohens_d": 1.9260727134666997
+        },
+        "success_rate": {
+          "t_stat": 2.25,
+          "p_value": 0.051003260706950763,
+          "cohens_d": 0.7115124735378854
+        }
+      },
+      "precept_vs_expel": {
+        "first_try_success": {
+          "t_stat": 4.0,
+          "p_value": 0.0031104283103858535,
+          "cohens_d": 1.2649110640673518
+        },
+        "success_rate": {
+          "t_stat": NaN,
+          "p_value": NaN,
+          "cohens_d": 0.0
+        }
+      },
+      "first_try_success": {
+        "t_stat": 6.090776713655637,
+        "p_value": 0.00018126273512634856,
+        "cohens_d": 1.9260727134666997
+      },
+      "success_rate": {
+        "t_stat": 2.25,
+        "p_value": 0.051003260706950763,
+        "cohens_d": 0.7115124735378854
+      }
+    },
+    "advantage": {
+      "vs_fr_first_try_pp": 32.50000000000001,
+      "vs_fr_success_pp": 15.000000000000002,
+      "vs_fr_steps_saved": 2.7,
+      "vs_expel_first_try_pp": 20.000000000000007,
+      "vs_expel_success_pp": 0.0,
+      "vs_expel_steps_saved": 1.1,
+      "first_try_success_pp": 32.50000000000001,
+      "success_rate_pp": 15.000000000000002,
+      "steps_saved": 2.7
+    }
+  },
+  "beta_4": {
+    "beta": 4,
+    "train_count": 16,
+    "n_runs": 10,
+    "precept": {
+      "first_try_success": {
+        "mean": 0.925,
+        "std": 0.12076147288491199,
+        "ci_95": 0.08638755360554545,
+        "n": 10
+      },
+      "success_rate": {
+        "mean": 0.95,
+        "std": 0.10540925533894598,
+        "ci_95": 0.0754052387618033,
+        "n": 10
+      },
+      "avg_steps": {
+        "mean": 2.25,
+        "std": 0.408248290463863,
+        "ci_95": 0.2920432339412582,
+        "n": 10
+      }
+    },
+    "full_reflexion": {
+      "first_try_success": {
+        "mean": 0.55,
+        "std": 0.19720265943665388,
+        "ci_95": 0.14107028430727706,
+        "n": 10
+      },
+      "success_rate": {
+        "mean": 0.9,
+        "std": 0.12909944487358058,
+        "ci_95": 0.09235217944957687,
+        "n": 10
+      },
+      "avg_steps": {
+        "mean": 5.05,
+        "std": 1.4230249470757708,
+        "ci_95": 1.0179707232843447,
+        "n": 10
+      }
+    },
+    "expel": {
+      "first_try_success": {
+        "mean": 0.6,
+        "std": 0.21081851067789195,
+        "ci_95": 0.1508104775236066,
+        "n": 10
+      },
+      "success_rate": {
+        "mean": 0.925,
+        "std": 0.1687371394276382,
+        "ci_95": 0.12070727798627842,
+        "n": 10
+      },
+      "avg_steps": {
+        "mean": 4.1,
+        "std": 1.7919573407620815,
+        "ci_95": 1.281889058950656,
+        "n": 10
+      }
+    },
+    "statistical_tests": {
+      "precept_vs_fr": {
+        "first_try_success": {
+          "t_stat": 5.58156305651438,
+          "p_value": 0.00034226399836478254,
+          "cohens_d": 1.7650452162436563
+        },
+        "success_rate": {
+          "t_stat": 1.0,
+          "p_value": 0.34343639613791355,
+          "cohens_d": 0.31622776601683794
+        }
+      },
+      "precept_vs_expel": {
+        "first_try_success": {
+          "t_stat": 4.993438317382942,
+          "p_value": 0.000745618060127258,
+          "cohens_d": 1.5790638438488862
+        },
+        "success_rate": {
+          "t_stat": 1.0,
+          "p_value": 0.34343639613791355,
+          "cohens_d": 0.31622776601683794
+        }
+      },
+      "first_try_success": {
+        "t_stat": 5.58156305651438,
+        "p_value": 0.00034226399836478254,
+        "cohens_d": 1.7650452162436563
+      },
+      "success_rate": {
+        "t_stat": 1.0,
+        "p_value": 0.34343639613791355,
+        "cohens_d": 0.31622776601683794
+      }
+    },
+    "advantage": {
+      "vs_fr_first_try_pp": 37.5,
+      "vs_fr_success_pp": 4.999999999999993,
+      "vs_fr_steps_saved": 2.8,
+      "vs_expel_first_try_pp": 32.50000000000001,
+      "vs_expel_success_pp": 2.499999999999991,
+      "vs_expel_steps_saved": 1.8499999999999996,
+      "first_try_success_pp": 37.5,
+      "success_rate_pp": 4.999999999999993,
+      "steps_saved": 2.8
+    }
+  },
+  "beta_5": {
+    "beta": 5,
+    "train_count": 20,
+    "n_runs": 10,
+    "precept": {
+      "first_try_success": {
+        "mean": 0.875,
+        "std": 0.13176156917368248,
+        "ci_95": 0.09425654845225415,
+        "n": 10
+      },
+      "success_rate": {
+        "mean": 0.975,
+        "std": 0.07905694150420949,
+        "ci_95": 0.05655392907135248,
+        "n": 10
+      },
+      "avg_steps": {
+        "mean": 2.525,
+        "std": 0.582737791234903,
+        "ci_95": 0.4168655033402794,
+        "n": 10
+      }
+    },
+    "full_reflexion": {
+      "first_try_success": {
+        "mean": 0.725,
+        "std": 0.18446619684315546,
+        "ci_95": 0.13195916783315578,
+        "n": 10
+      },
+      "success_rate": {
+        "mean": 0.9,
+        "std": 0.17480147469502527,
+        "ci_95": 0.1250454421000324,
+        "n": 10
+      },
+      "avg_steps": {
+        "mean": 4.75,
+        "std": 1.3176156917368247,
+        "ci_95": 0.9425654845225414,
+        "n": 10
+      }
+    },
+    "expel": {
+      "first_try_success": {
+        "mean": 0.775,
+        "std": 0.14191155304938666,
+        "ci_95": 0.10151740951340943,
+        "n": 10
+      },
+      "success_rate": {
+        "mean": 0.95,
+        "std": 0.10540925533894598,
+        "ci_95": 0.0754052387618033,
+        "n": 10
+      },
+      "avg_steps": {
+        "mean": 3.25,
+        "std": 0.950146187582615,
+        "ci_95": 0.6796936369857164,
+        "n": 10
+      }
+    },
+    "statistical_tests": {
+      "precept_vs_fr": {
+        "first_try_success": {
+          "t_stat": 1.963961012123931,
+          "p_value": 0.08112618884584075,
+          "cohens_d": 0.6210590034081188
+        },
+        "success_rate": {
+          "t_stat": 1.4055638569974545,
+          "p_value": 0.19342205960333228,
+          "cohens_d": 0.44447831849231534
+        }
+      },
+      "precept_vs_expel": {
+        "first_try_success": {
+          "t_stat": 2.449489742783178,
+          "p_value": 0.03678749787978613,
+          "cohens_d": 0.7745966692414833
+        },
+        "success_rate": {
+          "t_stat": 1.0,
+          "p_value": 0.34343639613791355,
+          "cohens_d": 0.31622776601683794
+        }
+      },
+      "first_try_success": {
+        "t_stat": 1.963961012123931,
+        "p_value": 0.08112618884584075,
+        "cohens_d": 0.6210590034081188
+      },
+      "success_rate": {
+        "t_stat": 1.4055638569974545,
+        "p_value": 0.19342205960333228,
+        "cohens_d": 0.44447831849231534
+      }
+    },
+    "advantage": {
+      "vs_fr_first_try_pp": 15.000000000000002,
+      "vs_fr_success_pp": 7.499999999999996,
+      "vs_fr_steps_saved": 2.225,
+      "vs_expel_first_try_pp": 9.999999999999998,
+      "vs_expel_success_pp": 2.500000000000002,
+      "vs_expel_steps_saved": 0.7250000000000001,
+      "first_try_success_pp": 15.000000000000002,
+      "success_rate_pp": 7.499999999999996,
+      "steps_saved": 2.225
+    }
+  }
+}

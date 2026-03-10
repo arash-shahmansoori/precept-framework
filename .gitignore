@@ -1,0 +1,50 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.env.*
+.DS_Store
+.cache/
+.coverage
+htmlcov/
+*.egg-info/
+
+# Local dev caches
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.vscode/
+node_modules/
+.matplotlib/
+tmp_pdf_review/
+tmp_pdf_review_tables/
+
+# LaTeX build artifacts (can embed machine-local absolute paths)
+paper/**/PRECEPT_PAPER.aux
+paper/**/PRECEPT_PAPER.bbl
+paper/**/PRECEPT_PAPER.blg
+paper/**/PRECEPT_PAPER.fdb_latexmk
+paper/**/PRECEPT_PAPER.fls
+paper/**/PRECEPT_PAPER.log
+paper/**/PRECEPT_PAPER.out
+
+# Submission-package / generated-artifact excludes
+paper/
+docs/
+figures/
+submission_repro_data/regenerated_paper_artifacts/
+submission_anonymous_package/
+data/
+data/trace_*.json
+experiment_run*.log
+data.zip
+data 2.zip
+
+# Raw run logs/traces can leak local paths, request IDs, and service metadata
+submission_repro_data/publication_results/**/*.log
+submission_repro_data/publication_results/**/*_trace.json
+submission_repro_data/publication_results/**/trace_*.json
+data/publication_results/**/*.log
+data/publication_results/**/*_trace.json
+data/publication_results/**/trace_*.json

@@ -1,0 +1,68 @@
+{
+  "RETRY": {
+    "constraint": "Constraint: RETRY (integration domain)",
+    "solution_hint": "solution:hubspot-v2",
+    "confidence": 0.7,
+    "domain": "integration",
+    "times_seen": 7,
+    "last_updated": 1770999657.0474691,
+    "source": "direct_training",
+    "tier": 2,
+    "semantic_meaning": "Retry logic for reliability"
+  },
+  "AUTH": {
+    "constraint": "Constraint: AUTH (integration domain)",
+    "solution_hint": "solution:hubspot-v2",
+    "confidence": 0.6,
+    "domain": "integration",
+    "times_seen": 4,
+    "last_updated": 1770999496.783405,
+    "source": "direct_training",
+    "tier": 3,
+    "semantic_meaning": "Secure authentication required"
+  },
+  "RATE": {
+    "constraint": "Constraint: RATE (integration domain)",
+    "solution_hint": "solution:hubspot-v2",
+    "confidence": 0.6,
+    "domain": "integration",
+    "times_seen": 5,
+    "last_updated": 1770999657.0474648,
+    "source": "direct_training",
+    "tier": 2,
+    "semantic_meaning": "Rate limiting compliance"
+  },
+  "BATCH": {
+    "constraint": "Constraint: BATCH (integration domain)",
+    "solution_hint": "contributed_to:hubspot-v2",
+    "confidence": 0.6000000000000001,
+    "domain": "integration",
+    "times_seen": 3,
+    "last_updated": 1770999657.047471,
+    "source": "composite_extraction",
+    "tier": 1,
+    "semantic_meaning": "Batch processing for efficiency"
+  },
+  "STREAM": {
+    "constraint": "Constraint: STREAM (integration domain)",
+    "solution_hint": "contributed_to:hubspot-v2",
+    "confidence": 0.7,
+    "domain": "integration",
+    "times_seen": 4,
+    "last_updated": 1770999546.7596202,
+    "source": "composite_extraction",
+    "tier": 1,
+    "semantic_meaning": "Real-time streaming data"
+  },
+  "SIMPLE": {
+    "constraint": "Constraint: SIMPLE (integration domain)",
+    "solution_hint": "contributed_to:hubspot-v2",
+    "confidence": 0.5,
+    "domain": "integration",
+    "times_seen": 2,
+    "last_updated": 1770999361.252118,
+    "source": "composite_extraction",
+    "tier": 1,
+    "semantic_meaning": "Simple API key authentication"
+  }
+}

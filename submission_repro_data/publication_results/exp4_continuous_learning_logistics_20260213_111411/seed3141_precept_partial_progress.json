@@ -1,0 +1,48 @@
+{
+  "C-HZMT+E-WNTR+R-482+T-NGHT+T-WKND": {
+    "failed_options": [
+      "hamburg"
+    ],
+    "errors": [
+      "ROUTE-700"
+    ],
+    "last_attempt": 1770986106.485991
+  },
+  "E-SMOG+P-220+SH-701+T-FLEX+T-WKND": {
+    "failed_options": [
+      "hamburg"
+    ],
+    "errors": [
+      "ROUTE-205"
+    ],
+    "last_attempt": 1770986106.491873
+  },
+  "C-COLD+H-903+T-NGHT+T-PEAK+T-URGT": {
+    "failed_options": [
+      "rotterdam",
+      "hamburg"
+    ],
+    "errors": [
+      "ROUTE-448"
+    ],
+    "last_attempt": 1770986596.158607
+  },
+  "H-903+LA-550+R-482+SH-701+T-NGHT": {
+    "failed_options": [
+      "long_beach"
+    ],
+    "errors": [
+      "ROUTE-962"
+    ],
+    "last_attempt": 1770986617.560302
+  },
+  "H-903+LA-550+R-482+SH-701+T-WKND": {
+    "failed_options": [
+      "rotterdam"
+    ],
+    "errors": [
+      "ROUTE-734"
+    ],
+    "last_attempt": 1770986771.163071
+  }
+}

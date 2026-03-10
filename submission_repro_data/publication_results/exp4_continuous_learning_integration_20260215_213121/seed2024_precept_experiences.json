@@ -1,0 +1,35 @@
+{
+  "experiences": [
+    {
+      "id": "db3a9318f2ad",
+      "task_description": "Configure integration (realtime)",
+      "goal": "",
+      "trajectory": [
+        {
+          "outcome": "failure",
+          "strategy": "",
+          "lessons": "Domain: integration, Strategy: "
+        }
+      ],
+      "outcome": "failure",
+      "correctness": 0.0,
+      "strategy_used": "Strategy using 1 steps",
+      "lessons_learned": [],
+      "skills_demonstrated": [],
+      "experience_type": "failure",
+      "priority": 2,
+      "domain": "general",
+      "timestamp": 1771211499.8365061,
+      "retrieval_count": 0,
+      "usefulness_score": 0.5,
+      "summary": null
+    }
+  ],
+  "stats": {
+    "total_added": 54,
+    "total_retrieved": 43,
+    "total_pruned": 53,
+    "successful_retrievals": 25
+  },
+  "timestamp": 1771211500.03818
+}

@@ -1,0 +1,162 @@
+[
+  {
+    "type": "port_status",
+    "content": "Rotterdam port has stable operations with no labor disruptions expected",
+    "entity": "rotterdam",
+    "condition": "R-482",
+    "metadata": {
+      "category": "status",
+      "outdated": true,
+      "scenario_type": "single_condition"
+    },
+    "note": "SINGLE-CONDITION CONFLICT: Will conflict with R-482 labor strike"
+  },
+  {
+    "type": "port_status",
+    "content": "Hamburg port labor relations are stable with no congestion issues",
+    "entity": "hamburg",
+    "condition": "H-903",
+    "metadata": {
+      "category": "status",
+      "outdated": true,
+      "scenario_type": "single_condition"
+    },
+    "note": "SINGLE-CONDITION CONFLICT: Will conflict with H-903 congestion"
+  },
+  {
+    "type": "port_status",
+    "content": "Shanghai port is operating at normal capacity",
+    "entity": "shanghai",
+    "condition": "SH-701",
+    "metadata": {
+      "category": "status",
+      "outdated": true,
+      "scenario_type": "single_condition"
+    },
+    "note": "SINGLE-CONDITION CONFLICT: Will conflict with SH-701 capacity exceeded"
+  },
+  {
+    "type": "port_status",
+    "content": "Los Angeles port has cleared its backlog",
+    "entity": "los_angeles",
+    "condition": "LA-550",
+    "metadata": {
+      "category": "status",
+      "outdated": true,
+      "scenario_type": "single_condition"
+    },
+    "note": "SINGLE-CONDITION CONFLICT: Will conflict with LA-550 labor action"
+  },
+  {
+    "type": "multi_condition_advice",
+    "content": "Weekend shipments (T-WKND) to Rotterdam proceed normally without delays",
+    "entity": "rotterdam",
+    "conditions": [
+      "R-482",
+      "T-WKND"
+    ],
+    "metadata": {
+      "category": "timing",
+      "outdated": true,
+      "scenario_type": "multi_condition"
+    },
+    "note": "MULTI-CONDITION CONFLICT: R-482 + T-WKND requires special handling"
+  },
+  {
+    "type": "multi_condition_advice",
+    "content": "High-priority cargo (C-HIGH) to blocked ports still gets processed normally",
+    "entity": "cargo",
+    "conditions": [
+      "R-482",
+      "C-HIGH"
+    ],
+    "metadata": {
+      "category": "priority",
+      "outdated": true,
+      "scenario_type": "multi_condition"
+    },
+    "note": "MULTI-CONDITION CONFLICT: R-482 + C-HIGH needs alternative routing"
+  },
+  {
+    "type": "multi_condition_advice",
+    "content": "Hazardous materials (C-HZMT) can be routed through any port regardless of conditions",
+    "entity": "hazmat",
+    "conditions": [
+      "R-482",
+      "C-HZMT"
+    ],
+    "metadata": {
+      "category": "compliance",
+      "dangerous": true,
+      "scenario_type": "multi_condition"
+    },
+    "note": "MULTI-CONDITION CONFLICT: R-482 + C-HZMT requires certified alternative ports"
+  },
+  {
+    "type": "multi_condition_advice",
+    "content": "Cold chain cargo (C-COLD) during weather delays (P-220) can wait indefinitely",
+    "entity": "cold_chain",
+    "conditions": [
+      "P-220",
+      "C-COLD"
+    ],
+    "metadata": {
+      "category": "cargo",
+      "dangerous": true,
+      "scenario_type": "multi_condition"
+    },
+    "note": "MULTI-CONDITION CONFLICT: P-220 + C-COLD needs immediate alternative"
+  },
+  {
+    "type": "multi_condition_advice",
+    "content": "Bulk shipments (C-BULK) during congestion (H-903) are not affected",
+    "entity": "bulk",
+    "conditions": [
+      "H-903",
+      "C-BULK"
+    ],
+    "metadata": {
+      "category": "cargo",
+      "outdated": true,
+      "scenario_type": "multi_condition"
+    },
+    "note": "MULTI-CONDITION CONFLICT: H-903 + C-BULK faces severe delays"
+  },
+  {
+    "type": "multi_condition_advice",
+    "content": "Fragile cargo (C-FRAG) with urgent timing (T-URGT) can use standard routes",
+    "entity": "fragile_urgent",
+    "conditions": [
+      "C-FRAG",
+      "T-URGT"
+    ],
+    "metadata": {
+      "category": "handling",
+      "outdated": true,
+      "scenario_type": "multi_condition"
+    },
+    "note": "MULTI-CONDITION CONFLICT: C-FRAG + T-URGT needs specialized handling"
+  },
+  {
+    "type": "route_recommendation",
+    "content": "Rotterdam is the recommended origin port for all European shipments",
+    "entity": "rotterdam",
+    "metadata": {
+      "category": "recommendation",
+      "outdated": true,
+      "scenario_type": "single_condition"
+    },
+    "note": "SINGLE-CONDITION CONFLICT: Rotterdam may be blocked"
+  },
+  {
+    "type": "port_fact",
+    "content": "Antwerp has limited capacity and should be used as backup only",
+    "entity": "antwerp",
+    "metadata": {
+      "category": "capacity",
+      "misleading": true,
+      "scenario_type": "single_condition"
+    },
+    "note": "MISLEADING: Antwerp is actually a good working alternative"
+  }
+]

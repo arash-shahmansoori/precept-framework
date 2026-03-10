@@ -1,0 +1,68 @@
+{
+  "SIMPLE": {
+    "constraint": "Constraint: SIMPLE (integration domain)",
+    "solution_hint": "solution:salesforce-backup",
+    "confidence": 0.8,
+    "domain": "integration",
+    "times_seen": 4,
+    "last_updated": 1770996426.077769,
+    "source": "direct_training",
+    "tier": 1,
+    "semantic_meaning": "Simple API key authentication"
+  },
+  "AUTH": {
+    "constraint": "Constraint: AUTH (integration domain)",
+    "solution_hint": "contributed_to:salesforce-backup",
+    "confidence": 0.5,
+    "domain": "integration",
+    "times_seen": 2,
+    "last_updated": 1770996559.340275,
+    "source": "composite_extraction",
+    "tier": 3,
+    "semantic_meaning": "Secure authentication required"
+  },
+  "RETRY": {
+    "constraint": "Constraint: RETRY (integration domain)",
+    "solution_hint": "contributed_to:salesforce-backup",
+    "confidence": 0.5,
+    "domain": "integration",
+    "times_seen": 2,
+    "last_updated": 1770996559.340266,
+    "source": "composite_extraction",
+    "tier": 2,
+    "semantic_meaning": "Retry logic for reliability"
+  },
+  "STREAM": {
+    "constraint": "Constraint: STREAM (integration domain)",
+    "solution_hint": "contributed_to:salesforce-backup",
+    "confidence": 0.4,
+    "domain": "integration",
+    "times_seen": 1,
+    "last_updated": 1770996463.960235,
+    "source": "composite_extraction",
+    "tier": 1,
+    "semantic_meaning": "Real-time streaming data"
+  },
+  "RATE": {
+    "constraint": "Constraint: RATE (integration domain)",
+    "solution_hint": "contributed_to:salesforce-backup",
+    "confidence": 0.4,
+    "domain": "integration",
+    "times_seen": 1,
+    "last_updated": 1770996660.4098182,
+    "source": "composite_extraction",
+    "tier": 2,
+    "semantic_meaning": "Rate limiting compliance"
+  },
+  "BATCH": {
+    "constraint": "Constraint: BATCH (integration domain)",
+    "solution_hint": "contributed_to:salesforce-backup",
+    "confidence": 0.4,
+    "domain": "integration",
+    "times_seen": 1,
+    "last_updated": 1770996660.409825,
+    "source": "composite_extraction",
+    "tier": 1,
+    "semantic_meaning": "Batch processing for efficiency"
+  }
+}

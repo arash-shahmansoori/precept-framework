@@ -1,0 +1,3163 @@
+{
+  "experiment": "exp7_rule_drift",
+  "domain": "integration",
+  "timestamp": "20260213_170252",
+  "parameters": {
+    "num_keys": 6,
+    "train_size": 18,
+    "test_size": 24,
+    "num_conditions": 5,
+    "max_retries": 3,
+    "beta": 3,
+    "encounters_per_key": 4
+  },
+  "n_runs": 9,
+  "seeds_used": [
+    42,
+    123,
+    456,
+    789,
+    999,
+    2024,
+    3141,
+    1337,
+    8888
+  ],
+  "train_hash_seed": "0",
+  "test_hash_seed": "1",
+  "learning_curves": {
+    "precept": {
+      "encounter_1": {
+        "p1_mean": 1.0,
+        "p1_std": 0.0,
+        "p1_ci_95": 0.0,
+        "pt_mean": 1.0,
+        "pt_std": 0.0,
+        "pt_ci_95": 0.0,
+        "steps_mean": 2.0,
+        "steps_std": 0.0,
+        "steps_ci_95": 0.0,
+        "n": 9
+      },
+      "encounter_2": {
+        "p1_mean": 1.0,
+        "p1_std": 0.0,
+        "p1_ci_95": 0.0,
+        "pt_mean": 1.0,
+        "pt_std": 0.0,
+        "pt_ci_95": 0.0,
+        "steps_mean": 2.0,
+        "steps_std": 0.0,
+        "steps_ci_95": 0.0,
+        "n": 9
+      },
+      "encounter_3": {
+        "p1_mean": 1.0,
+        "p1_std": 0.0,
+        "p1_ci_95": 0.0,
+        "pt_mean": 1.0,
+        "pt_std": 0.0,
+        "pt_ci_95": 0.0,
+        "steps_mean": 2.0,
+        "steps_std": 0.0,
+        "steps_ci_95": 0.0,
+        "n": 9
+      },
+      "encounter_4": {
+        "p1_mean": 1.0,
+        "p1_std": 0.0,
+        "p1_ci_95": 0.0,
+        "pt_mean": 1.0,
+        "pt_std": 0.0,
+        "pt_ci_95": 0.0,
+        "steps_mean": 2.0,
+        "steps_std": 0.0,
+        "steps_ci_95": 0.0,
+        "n": 9
+      }
+    },
+    "expel": {
+      "encounter_1": {
+        "p1_mean": 0.3333333333333333,
+        "p1_std": 0.15545631755148026,
+        "p1_ci_95": 0.11949430370577514,
+        "pt_mean": 0.3555555555555555,
+        "pt_std": 0.14813657362192648,
+        "pt_ci_95": 0.11386785044904628,
+        "steps_mean": 4.622222222222223,
+        "steps_std": 0.5925462944877059,
+        "steps_ci_95": 0.4554714017961851,
+        "n": 9
+      },
+      "encounter_2": {
+        "p1_mean": 0.4666666666666667,
+        "p1_std": 0.22607766610417557,
+        "p1_ci_95": 0.17377867763784516,
+        "pt_mean": 0.4666666666666667,
+        "pt_std": 0.22607766610417557,
+        "pt_ci_95": 0.17377867763784516,
+        "steps_mean": 4.133333333333333,
+        "steps_std": 0.9043106644167024,
+        "steps_ci_95": 0.6951147105513807,
+        "n": 9
+      },
+      "encounter_3": {
+        "p1_mean": 0.28148148148148144,
+        "p1_std": 0.3312900336861239,
+        "p1_ci_95": 0.25465206254404305,
+        "pt_mean": 0.28148148148148144,
+        "pt_std": 0.3312900336861239,
+        "pt_ci_95": 0.25465206254404305,
+        "steps_mean": 4.874074074074074,
+        "steps_std": 1.3251601347444955,
+        "steps_ci_95": 1.018608250176172,
+        "n": 9
+      },
+      "encounter_4": {
+        "p1_mean": 0.4666666666666667,
+        "p1_std": 0.22607766610417557,
+        "p1_ci_95": 0.17377867763784516,
+        "pt_mean": 0.4666666666666667,
+        "pt_std": 0.22607766610417557,
+        "pt_ci_95": 0.17377867763784516,
+        "steps_mean": 4.133333333333333,
+        "steps_std": 0.9043106644167024,
+        "steps_ci_95": 0.6951147105513807,
+        "n": 9
+      }
+    },
+    "full_reflexion": {
+      "encounter_1": {
+        "p1_mean": 0.31851851851851853,
+        "p1_std": 0.12372809695177828,
+        "p1_ci_95": 0.09510583440391422,
+        "pt_mean": 0.337037037037037,
+        "pt_std": 0.13788526273323173,
+        "pt_ci_95": 0.10598799534884841,
+        "steps_mean": 4.688888888888888,
+        "steps_std": 0.5120763831912405,
+        "steps_ci_95": 0.39361675239313115,
+        "n": 9
+      },
+      "encounter_2": {
+        "p1_mean": 0.37407407407407406,
+        "p1_std": 0.2119864892037657,
+        "p1_ci_95": 0.16294724023709897,
+        "pt_mean": 0.4296296296296296,
+        "pt_std": 0.2163102481547976,
+        "pt_ci_95": 0.1662707755773342,
+        "steps_mean": 4.392592592592592,
+        "steps_std": 0.8235724648980632,
+        "steps_ci_95": 0.6330538365650739,
+        "n": 9
+      },
+      "encounter_3": {
+        "p1_mean": 0.15185185185185185,
+        "p1_std": 0.19372884193514103,
+        "p1_ci_95": 0.14891317020358313,
+        "pt_mean": 0.17037037037037037,
+        "pt_std": 0.2030629653610785,
+        "pt_ci_95": 0.15608801260982244,
+        "steps_mean": 5.355555555555555,
+        "steps_std": 0.7859884081701063,
+        "steps_ci_95": 0.6041641731542683,
+        "n": 9
+      },
+      "encounter_4": {
+        "p1_mean": 0.44814814814814813,
+        "p1_std": 0.24444444444444444,
+        "p1_ci_95": 0.18789663323885794,
+        "pt_mean": 0.4666666666666667,
+        "pt_std": 0.22607766610417557,
+        "pt_ci_95": 0.17377867763784516,
+        "steps_mean": 4.170370370370371,
+        "steps_std": 0.9351833516667029,
+        "steps_ci_95": 0.7188455587058361,
+        "n": 9
+      }
+    }
+  },
+  "improvements": {
+    "precept": {
+      "p1_improvement_pp": 0.0,
+      "pt_improvement_pp": 0.0,
+      "steps_saved": 0.0,
+      "enc1_p1": 1.0,
+      "enc4_p1": 1.0
+    },
+    "expel": {
+      "p1_improvement_pp": 13.333333333333336,
+      "pt_improvement_pp": 11.111111111111116,
+      "steps_saved": 0.4888888888888898,
+      "enc1_p1": 0.3333333333333333,
+      "enc4_p1": 0.4666666666666667
+    },
+    "full_reflexion": {
+      "p1_improvement_pp": 12.96296296296296,
+      "pt_improvement_pp": 12.962962962962965,
+      "steps_saved": 0.5185185185185173,
+      "enc1_p1": 0.31851851851851853,
+      "enc4_p1": 0.44814814814814813
+    }
+  },
+  "statistical_tests": {
+    "per_encounter_tests": {
+      "encounter_1": {
+        "precept_vs_expel": {
+          "t_stat": 12.865350418053538,
+          "p_value": 1.2589777603860303e-06,
+          "cohens_d": 4.288450139351179,
+          "n": 9
+        },
+        "precept_vs_full_reflexion": {
+          "t_stat": 16.52368778646329,
+          "p_value": 1.8163490607473716e-07,
+          "cohens_d": 5.507895928821096,
+          "n": 9
+        }
+      },
+      "encounter_2": {
+        "precept_vs_expel": {
+          "t_stat": 7.0772138954350625,
+          "p_value": 0.00010431680165884665,
+          "cohens_d": 2.3590712984783546,
+          "n": 9
+        },
+        "precept_vs_full_reflexion": {
+          "t_stat": 8.858006870300208,
+          "p_value": 2.0826328834879506e-05,
+          "cohens_d": 2.9526689567667366,
+          "n": 9
+        }
+      },
+      "encounter_3": {
+        "precept_vs_expel": {
+          "t_stat": 6.506551167783715,
+          "p_value": 0.0001868102432762509,
+          "cohens_d": 2.1688503892612383,
+          "n": 9
+        },
+        "precept_vs_full_reflexion": {
+          "t_stat": 13.134050764089661,
+          "p_value": 1.0743003618999216e-06,
+          "cohens_d": 4.37801692136322,
+          "n": 9
+        }
+      },
+      "encounter_4": {
+        "precept_vs_expel": {
+          "t_stat": 7.0772138954350625,
+          "p_value": 0.00010431680165884665,
+          "cohens_d": 2.3590712984783546,
+          "n": 9
+        },
+        "precept_vs_full_reflexion": {
+          "t_stat": 6.7727272727272725,
+          "p_value": 0.00014171636723577178,
+          "cohens_d": 2.2575757575757573,
+          "n": 9
+        }
+      }
+    },
+    "improvement_tests": {
+      "precept": {
+        "paired_test": {
+          "t_stat": NaN,
+          "p_value": NaN,
+          "cohens_d": 0.0,
+          "n": 9
+        },
+        "improvement_significance": {
+          "t_stat": NaN,
+          "p_value_two_tailed": NaN,
+          "p_value_one_tailed": NaN,
+          "n": 9
+        },
+        "mean_improvement_pp": 0.0
+      },
+      "expel": {
+        "paired_test": {
+          "t_stat": 1.1696884291885905,
+          "p_value": 0.27579240852140546,
+          "cohens_d": 0.3898961430628635,
+          "n": 9
+        },
+        "improvement_significance": {
+          "t_stat": 1.1696884291885905,
+          "p_value_two_tailed": 0.27579240852140546,
+          "p_value_one_tailed": 0.13789620426070273,
+          "n": 9
+        },
+        "mean_improvement_pp": 13.333333333333334
+      },
+      "full_reflexion": {
+        "paired_test": {
+          "t_stat": 1.941450686788302,
+          "p_value": 0.08814861019930578,
+          "cohens_d": 0.647150228929434,
+          "n": 9
+        },
+        "improvement_significance": {
+          "t_stat": 1.941450686788302,
+          "p_value_two_tailed": 0.08814861019930578,
+          "p_value_one_tailed": 0.04407430509965289,
+          "n": 9
+        },
+        "mean_improvement_pp": 12.962962962962962
+      }
+    },
+    "final_encounter_advantage": {
+      "precept_vs_expel": {
+        "t_stat": 7.0772138954350625,
+        "p_value": 0.00010431680165884665,
+        "cohens_d": 2.3590712984783546,
+        "n": 9
+      },
+      "precept_vs_full_reflexion": {
+        "t_stat": 6.7727272727272725,
+        "p_value": 0.00014171636723577178,
+        "cohens_d": 2.2575757575757573,
+        "n": 9
+      },
+      "precept_mean_p1": 1.0,
+      "expel_mean_p1": 0.4666666666666667,
+      "full_reflexion_mean_p1": 0.44814814814814813,
+      "advantage_vs_expel_pp": 53.333333333333336,
+      "advantage_vs_fr_pp": 55.18518518518518
+    }
+  },
+  "raw_runs": [
+    {
+      "aggregated": {
+        "metadata": {
+          "domain": "integration",
+          "timestamp": "20260213_172806",
+          "seed": 42,
+          "train_tasks": 0,
+          "test_tasks": 24,
+          "max_retries": 3,
+          "max_attempts": 4,
+          "concurrent_training": false,
+          "concurrent_testing": false,
+          "train_elapsed_seconds": 0.01,
+          "test_elapsed_seconds": 1342.31,
+          "static_knowledge_enabled": false,
+          "static_knowledge_mode": "disabled",
+          "test_mode": "matched"
+        },
+        "agents": {
+          "llm_baseline": {
+            "name": "LLM Baseline (NOT RUN - unfair)",
+            "success_rate": 0.0,
+            "total_successes": 0,
+            "total_tasks": 0,
+            "avg_steps": 0.0,
+            "llm_calls": 0,
+            "llm_accuracy": 0.0,
+            "first_try_success_rate": 0.0,
+            "first_try_successes": 0,
+            "learning_efficiency": 0.0,
+            "cold_start_success_rate": 0.0,
+            "cold_start_successes": 0,
+            "cold_start_total": 0
+          },
+          "reflexion": {
+            "name": "Reflexion (NOT RUN - unfair)",
+            "success_rate": 0.0,
+            "total_successes": 0,
+            "total_tasks": 0,
+            "avg_steps": 0.0,
+            "llm_calls": 0,
+            "llm_accuracy": 0.0,
+            "reflections_generated": 0,
+            "first_try_success_rate": 0.0,
+            "first_try_successes": 0,
+            "learning_efficiency": 0.0,
+            "cold_start_success_rate": 0.0,
+            "cold_start_successes": 0,
+            "cold_start_total": 0
+          },
+          "full_reflexion": {
+            "name": "Full Reflexion",
+            "success_rate": 0.375,
+            "total_successes": 9,
+            "total_tasks": 24,
+            "avg_steps": 6.75,
+            "llm_calls": 69,
+            "llm_accuracy": 0.1304,
+            "reflections_generated": 69,
+            "reflections_reused": 69,
+            "accumulated_memories": 39,
+            "first_try_success_rate": 0.375,
+            "first_try_successes": 9,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_total": 0,
+            "learning_efficiency": 0,
+            "cold_start_success_rate": 0.4,
+            "cold_start_successes": 2,
+            "cold_start_total": 5
+          },
+          "expel": {
+            "name": "ExpeL",
+            "success_rate": 0.375,
+            "total_successes": 9,
+            "total_tasks": 24,
+            "avg_steps": 5.75,
+            "llm_calls": 93,
+            "llm_accuracy": 0.0968,
+            "insights_extracted": 24,
+            "insights_retrieved": 690,
+            "first_try_success_rate": 0.375,
+            "first_try_successes": 9,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_total": 0,
+            "learning_efficiency": 0,
+            "cold_start_success_rate": 0.4,
+            "cold_start_successes": 2,
+            "cold_start_total": 5
+          },
+          "precept": {
+            "name": "PRECEPT",
+            "success_rate": 1.0,
+            "total_successes": 24,
+            "total_tasks": 24,
+            "avg_steps": 2.0,
+            "rules_learned": 24,
+            "llm_reasoning_calls": 0,
+            "llm_reasoning_successes": 0,
+            "has_compass_evolution": true,
+            "first_try_success_rate": 1.0,
+            "first_try_successes": 24,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_successes": 0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_successes": 0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_successes": 0,
+            "p1_other_total": 0,
+            "p1_without_rules": 0.0,
+            "p1_without_rules_successes": 0,
+            "p1_without_rules_total": 0,
+            "learning_efficiency": 0,
+            "cold_start_success_rate": 1.0,
+            "cold_start_successes": 5,
+            "cold_start_total": 5
+          }
+        },
+        "precept_advantages": {
+          "vs_llm_baseline": 1.0,
+          "vs_reflexion": 1.0,
+          "vs_full_reflexion": 0.625,
+          "steps_saved_vs_llm": -2.0,
+          "steps_saved_vs_reflexion": -2.0,
+          "steps_saved_vs_full_reflexion": 4.75,
+          "first_try_advantage_vs_llm": 1.0,
+          "first_try_advantage_vs_reflexion": 1.0,
+          "first_try_advantage_vs_full_reflexion": 0.625,
+          "learning_efficiency_advantage_vs_llm": 0.0,
+          "learning_efficiency_advantage_vs_full_reflexion": 0,
+          "cold_start_advantage_vs_llm": 1.0,
+          "cold_start_advantage_vs_full_reflexion": 0.6
+        },
+        "pruning_stats": {
+          "total_constraints": 0,
+          "hard_constraints": 0,
+          "soft_constraints": 0,
+          "dumb_retries_prevented": 0,
+          "pruning_efficiency": 0.0
+        },
+        "conflict_resolution": {
+          "enabled": false,
+          "mode": "disabled",
+          "stats": {
+            "status": "active",
+            "summary": {
+              "conflicts_detected": 0,
+              "conflicts_resolved": 0
+            },
+            "detection": {
+              "total_detections": 0,
+              "conflicts_found": 0
+            },
+            "resolution_outcomes": {
+              "static_wins": 0,
+              "dynamic_wins": 0,
+              "merges": 0
+            },
+            "reliability": {
+              "static_kb": 0.8333333333333334,
+              "dynamic_experience": 0.625,
+              "episodic_memory": 0.5
+            }
+          },
+          "precept_capabilities": [],
+          "baseline_capabilities": []
+        },
+        "winner": "precept"
+      },
+      "rules": {
+        "before_count": 5,
+        "after_count": 5,
+        "changed_keys": 1
+      },
+      "train_hash_seed": "0",
+      "test_hash_seed": "1",
+      "precept": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 5,
+            "successes": 5,
+            "total": 5
+          },
+          "encounter_2": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 5,
+            "successes": 5,
+            "total": 5
+          },
+          "encounter_3": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 5,
+            "successes": 5,
+            "total": 5
+          },
+          "encounter_4": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 5,
+            "successes": 5,
+            "total": 5
+          }
+        },
+        "by_key": {
+          "DAT-CORRUPT+INT-401+INT-403+NE": 5,
+          "DAT-CORRUPT+DAT-LARGE+INT-401+": 5,
+          "DAT-CORRUPT+DAT-SCHEMA+INT-407": 5,
+          "DAT-LARGE+DAT-PARTIAL+INT-401+": 5,
+          "INT-401+INT-403+INT-429+NET-FI": 4
+        },
+        "total_tasks": 24
+      },
+      "expel": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 0.4,
+            "pt": 0.4,
+            "avg_steps": 4.4,
+            "first_try_successes": 2,
+            "successes": 2,
+            "total": 5
+          },
+          "encounter_2": {
+            "p1": 0.4,
+            "pt": 0.4,
+            "avg_steps": 4.4,
+            "first_try_successes": 2,
+            "successes": 2,
+            "total": 5
+          },
+          "encounter_3": {
+            "p1": 0.4,
+            "pt": 0.4,
+            "avg_steps": 4.4,
+            "first_try_successes": 2,
+            "successes": 2,
+            "total": 5
+          },
+          "encounter_4": {
+            "p1": 0.4,
+            "pt": 0.4,
+            "avg_steps": 4.4,
+            "first_try_successes": 2,
+            "successes": 2,
+            "total": 5
+          }
+        },
+        "by_key": {
+          "DAT-CORRUPT+INT-401+INT-403+NE": 5,
+          "DAT-CORRUPT+DAT-LARGE+INT-401+": 5,
+          "DAT-CORRUPT+DAT-SCHEMA+INT-407": 5,
+          "DAT-LARGE+DAT-PARTIAL+INT-401+": 5,
+          "INT-401+INT-403+INT-429+NET-FI": 4
+        },
+        "total_tasks": 24
+      },
+      "full_reflexion": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 0.4,
+            "pt": 0.4,
+            "avg_steps": 4.4,
+            "first_try_successes": 2,
+            "successes": 2,
+            "total": 5
+          },
+          "encounter_2": {
+            "p1": 0.4,
+            "pt": 0.4,
+            "avg_steps": 4.4,
+            "first_try_successes": 2,
+            "successes": 2,
+            "total": 5
+          },
+          "encounter_3": {
+            "p1": 0.4,
+            "pt": 0.4,
+            "avg_steps": 4.4,
+            "first_try_successes": 2,
+            "successes": 2,
+            "total": 5
+          },
+          "encounter_4": {
+            "p1": 0.4,
+            "pt": 0.4,
+            "avg_steps": 4.4,
+            "first_try_successes": 2,
+            "successes": 2,
+            "total": 5
+          }
+        },
+        "by_key": {
+          "DAT-CORRUPT+INT-401+INT-403+NE": 5,
+          "DAT-CORRUPT+DAT-LARGE+INT-401+": 5,
+          "DAT-CORRUPT+DAT-SCHEMA+INT-407": 5,
+          "DAT-LARGE+DAT-PARTIAL+INT-401+": 5,
+          "INT-401+INT-403+INT-429+NET-FI": 4
+        },
+        "total_tasks": 24
+      }
+    },
+    {
+      "aggregated": {
+        "metadata": {
+          "domain": "integration",
+          "timestamp": "20260213_192336",
+          "seed": 123,
+          "train_tasks": 0,
+          "test_tasks": 24,
+          "max_retries": 3,
+          "max_attempts": 4,
+          "concurrent_training": false,
+          "concurrent_testing": false,
+          "train_elapsed_seconds": 0.01,
+          "test_elapsed_seconds": 6729.85,
+          "static_knowledge_enabled": false,
+          "static_knowledge_mode": "disabled",
+          "test_mode": "matched"
+        },
+        "agents": {
+          "llm_baseline": {
+            "name": "LLM Baseline (NOT RUN - unfair)",
+            "success_rate": 0.0,
+            "total_successes": 0,
+            "total_tasks": 0,
+            "avg_steps": 0.0,
+            "llm_calls": 0,
+            "llm_accuracy": 0.0,
+            "first_try_success_rate": 0.0,
+            "first_try_successes": 0,
+            "learning_efficiency": 0.0,
+            "cold_start_success_rate": 0.0,
+            "cold_start_successes": 0,
+            "cold_start_total": 0
+          },
+          "reflexion": {
+            "name": "Reflexion (NOT RUN - unfair)",
+            "success_rate": 0.0,
+            "total_successes": 0,
+            "total_tasks": 0,
+            "avg_steps": 0.0,
+            "llm_calls": 0,
+            "llm_accuracy": 0.0,
+            "reflections_generated": 0,
+            "first_try_success_rate": 0.0,
+            "first_try_successes": 0,
+            "learning_efficiency": 0.0,
+            "cold_start_success_rate": 0.0,
+            "cold_start_successes": 0,
+            "cold_start_total": 0
+          },
+          "full_reflexion": {
+            "name": "Full Reflexion",
+            "success_rate": 0.375,
+            "total_successes": 9,
+            "total_tasks": 24,
+            "avg_steps": 6.75,
+            "llm_calls": 69,
+            "llm_accuracy": 0.1304,
+            "reflections_generated": 69,
+            "reflections_reused": 69,
+            "accumulated_memories": 37,
+            "first_try_success_rate": 0.375,
+            "first_try_successes": 9,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_total": 0,
+            "learning_efficiency": 0,
+            "cold_start_success_rate": 0.3333,
+            "cold_start_successes": 1,
+            "cold_start_total": 3
+          },
+          "expel": {
+            "name": "ExpeL",
+            "success_rate": 0.3333,
+            "total_successes": 8,
+            "total_tasks": 24,
+            "avg_steps": 6.0,
+            "llm_calls": 96,
+            "llm_accuracy": 0.0833,
+            "insights_extracted": 24,
+            "insights_retrieved": 696,
+            "first_try_success_rate": 0.3333,
+            "first_try_successes": 8,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_total": 0,
+            "learning_efficiency": 0,
+            "cold_start_success_rate": 0.0,
+            "cold_start_successes": 0,
+            "cold_start_total": 3
+          },
+          "precept": {
+            "name": "PRECEPT",
+            "success_rate": 1.0,
+            "total_successes": 24,
+            "total_tasks": 24,
+            "avg_steps": 2.0,
+            "rules_learned": 24,
+            "llm_reasoning_calls": 0,
+            "llm_reasoning_successes": 0,
+            "has_compass_evolution": true,
+            "first_try_success_rate": 1.0,
+            "first_try_successes": 24,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_successes": 0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_successes": 0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_successes": 0,
+            "p1_other_total": 0,
+            "p1_without_rules": 0.0,
+            "p1_without_rules_successes": 0,
+            "p1_without_rules_total": 0,
+            "learning_efficiency": 0,
+            "cold_start_success_rate": 1.0,
+            "cold_start_successes": 3,
+            "cold_start_total": 3
+          }
+        },
+        "precept_advantages": {
+          "vs_llm_baseline": 1.0,
+          "vs_reflexion": 1.0,
+          "vs_full_reflexion": 0.625,
+          "steps_saved_vs_llm": -2.0,
+          "steps_saved_vs_reflexion": -2.0,
+          "steps_saved_vs_full_reflexion": 4.75,
+          "first_try_advantage_vs_llm": 1.0,
+          "first_try_advantage_vs_reflexion": 1.0,
+          "first_try_advantage_vs_full_reflexion": 0.625,
+          "learning_efficiency_advantage_vs_llm": 0.0,
+          "learning_efficiency_advantage_vs_full_reflexion": 0,
+          "cold_start_advantage_vs_llm": 1.0,
+          "cold_start_advantage_vs_full_reflexion": 0.6667
+        },
+        "pruning_stats": {
+          "total_constraints": 0,
+          "hard_constraints": 0,
+          "soft_constraints": 0,
+          "dumb_retries_prevented": 0,
+          "pruning_efficiency": 0.0
+        },
+        "conflict_resolution": {
+          "enabled": false,
+          "mode": "disabled",
+          "stats": {
+            "status": "active",
+            "summary": {
+              "conflicts_detected": 0,
+              "conflicts_resolved": 0
+            },
+            "detection": {
+              "total_detections": 0,
+              "conflicts_found": 0
+            },
+            "resolution_outcomes": {
+              "static_wins": 0,
+              "dynamic_wins": 0,
+              "merges": 0
+            },
+            "reliability": {
+              "static_kb": 0.8333333333333334,
+              "dynamic_experience": 0.625,
+              "episodic_memory": 0.5
+            }
+          },
+          "precept_capabilities": [],
+          "baseline_capabilities": []
+        },
+        "winner": "precept"
+      },
+      "rules": {
+        "before_count": 3,
+        "after_count": 3,
+        "changed_keys": 1
+      },
+      "train_hash_seed": "0",
+      "test_hash_seed": "1",
+      "precept": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 3,
+            "successes": 3,
+            "total": 3
+          },
+          "encounter_2": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 3,
+            "successes": 3,
+            "total": 3
+          },
+          "encounter_3": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 3,
+            "successes": 3,
+            "total": 3
+          },
+          "encounter_4": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 3,
+            "successes": 3,
+            "total": 3
+          }
+        },
+        "by_key": {
+          "DAT-PARTIAL+INT-401+INT-407+IN": 8,
+          "DAT-SYNC+INT-403+INT-429+INT-5": 8,
+          "INT-401+INT-404+INT-407+NET-PR": 8
+        },
+        "total_tasks": 24
+      },
+      "expel": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 0.0,
+            "pt": 0.0,
+            "avg_steps": 6.0,
+            "first_try_successes": 0,
+            "successes": 0,
+            "total": 3
+          },
+          "encounter_2": {
+            "p1": 0.6666666666666666,
+            "pt": 0.6666666666666666,
+            "avg_steps": 3.3333333333333335,
+            "first_try_successes": 2,
+            "successes": 2,
+            "total": 3
+          },
+          "encounter_3": {
+            "p1": 0.0,
+            "pt": 0.0,
+            "avg_steps": 6.0,
+            "first_try_successes": 0,
+            "successes": 0,
+            "total": 3
+          },
+          "encounter_4": {
+            "p1": 0.6666666666666666,
+            "pt": 0.6666666666666666,
+            "avg_steps": 3.3333333333333335,
+            "first_try_successes": 2,
+            "successes": 2,
+            "total": 3
+          }
+        },
+        "by_key": {
+          "DAT-PARTIAL+INT-401+INT-407+IN": 8,
+          "DAT-SYNC+INT-403+INT-429+INT-5": 8,
+          "INT-401+INT-404+INT-407+NET-PR": 8
+        },
+        "total_tasks": 24
+      },
+      "full_reflexion": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 0.3333333333333333,
+            "pt": 0.3333333333333333,
+            "avg_steps": 4.666666666666667,
+            "first_try_successes": 1,
+            "successes": 1,
+            "total": 3
+          },
+          "encounter_2": {
+            "p1": 0.6666666666666666,
+            "pt": 0.6666666666666666,
+            "avg_steps": 3.3333333333333335,
+            "first_try_successes": 2,
+            "successes": 2,
+            "total": 3
+          },
+          "encounter_3": {
+            "p1": 0.0,
+            "pt": 0.0,
+            "avg_steps": 6.0,
+            "first_try_successes": 0,
+            "successes": 0,
+            "total": 3
+          },
+          "encounter_4": {
+            "p1": 0.6666666666666666,
+            "pt": 0.6666666666666666,
+            "avg_steps": 3.3333333333333335,
+            "first_try_successes": 2,
+            "successes": 2,
+            "total": 3
+          }
+        },
+        "by_key": {
+          "DAT-PARTIAL+INT-401+INT-407+IN": 8,
+          "DAT-SYNC+INT-403+INT-429+INT-5": 8,
+          "INT-401+INT-404+INT-407+NET-PR": 8
+        },
+        "total_tasks": 24
+      }
+    },
+    {
+      "aggregated": {
+        "metadata": {
+          "domain": "integration",
+          "timestamp": "20260213_193858",
+          "seed": 456,
+          "train_tasks": 0,
+          "test_tasks": 24,
+          "max_retries": 3,
+          "max_attempts": 4,
+          "concurrent_training": false,
+          "concurrent_testing": false,
+          "train_elapsed_seconds": 0.01,
+          "test_elapsed_seconds": 767.58,
+          "static_knowledge_enabled": false,
+          "static_knowledge_mode": "disabled",
+          "test_mode": "matched"
+        },
+        "agents": {
+          "llm_baseline": {
+            "name": "LLM Baseline (NOT RUN - unfair)",
+            "success_rate": 0.0,
+            "total_successes": 0,
+            "total_tasks": 0,
+            "avg_steps": 0.0,
+            "llm_calls": 0,
+            "llm_accuracy": 0.0,
+            "first_try_success_rate": 0.0,
+            "first_try_successes": 0,
+            "learning_efficiency": 0.0,
+            "cold_start_success_rate": 0.0,
+            "cold_start_successes": 0,
+            "cold_start_total": 0
+          },
+          "reflexion": {
+            "name": "Reflexion (NOT RUN - unfair)",
+            "success_rate": 0.0,
+            "total_successes": 0,
+            "total_tasks": 0,
+            "avg_steps": 0.0,
+            "llm_calls": 0,
+            "llm_accuracy": 0.0,
+            "reflections_generated": 0,
+            "first_try_success_rate": 0.0,
+            "first_try_successes": 0,
+            "learning_efficiency": 0.0,
+            "cold_start_success_rate": 0.0,
+            "cold_start_successes": 0,
+            "cold_start_total": 0
+          },
+          "full_reflexion": {
+            "name": "Full Reflexion",
+            "success_rate": 0.375,
+            "total_successes": 9,
+            "total_tasks": 24,
+            "avg_steps": 7.33,
+            "llm_calls": 76,
+            "llm_accuracy": 0.1184,
+            "reflections_generated": 76,
+            "reflections_reused": 76,
+            "accumulated_memories": 40,
+            "first_try_success_rate": 0.2083,
+            "first_try_successes": 5,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_total": 0,
+            "learning_efficiency": 0,
+            "cold_start_success_rate": 0.5,
+            "cold_start_successes": 3,
+            "cold_start_total": 6
+          },
+          "expel": {
+            "name": "ExpeL",
+            "success_rate": 0.375,
+            "total_successes": 9,
+            "total_tasks": 24,
+            "avg_steps": 5.75,
+            "llm_calls": 93,
+            "llm_accuracy": 0.0968,
+            "insights_extracted": 24,
+            "insights_retrieved": 690,
+            "first_try_success_rate": 0.375,
+            "first_try_successes": 9,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_total": 0,
+            "learning_efficiency": 0,
+            "cold_start_success_rate": 0.5,
+            "cold_start_successes": 3,
+            "cold_start_total": 6
+          },
+          "precept": {
+            "name": "PRECEPT",
+            "success_rate": 1.0,
+            "total_successes": 24,
+            "total_tasks": 24,
+            "avg_steps": 2.0,
+            "rules_learned": 24,
+            "llm_reasoning_calls": 0,
+            "llm_reasoning_successes": 0,
+            "has_compass_evolution": true,
+            "first_try_success_rate": 1.0,
+            "first_try_successes": 24,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_successes": 0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_successes": 0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_successes": 0,
+            "p1_other_total": 0,
+            "p1_without_rules": 0.0,
+            "p1_without_rules_successes": 0,
+            "p1_without_rules_total": 0,
+            "learning_efficiency": 0,
+            "cold_start_success_rate": 1.0,
+            "cold_start_successes": 6,
+            "cold_start_total": 6
+          }
+        },
+        "precept_advantages": {
+          "vs_llm_baseline": 1.0,
+          "vs_reflexion": 1.0,
+          "vs_full_reflexion": 0.625,
+          "steps_saved_vs_llm": -2.0,
+          "steps_saved_vs_reflexion": -2.0,
+          "steps_saved_vs_full_reflexion": 5.33,
+          "first_try_advantage_vs_llm": 1.0,
+          "first_try_advantage_vs_reflexion": 1.0,
+          "first_try_advantage_vs_full_reflexion": 0.7917,
+          "learning_efficiency_advantage_vs_llm": 0.0,
+          "learning_efficiency_advantage_vs_full_reflexion": 0,
+          "cold_start_advantage_vs_llm": 1.0,
+          "cold_start_advantage_vs_full_reflexion": 0.5
+        },
+        "pruning_stats": {
+          "total_constraints": 0,
+          "hard_constraints": 0,
+          "soft_constraints": 0,
+          "dumb_retries_prevented": 0,
+          "pruning_efficiency": 0.0
+        },
+        "conflict_resolution": {
+          "enabled": false,
+          "mode": "disabled",
+          "stats": {
+            "status": "active",
+            "summary": {
+              "conflicts_detected": 0,
+              "conflicts_resolved": 0
+            },
+            "detection": {
+              "total_detections": 0,
+              "conflicts_found": 0
+            },
+            "resolution_outcomes": {
+              "static_wins": 0,
+              "dynamic_wins": 0,
+              "merges": 0
+            },
+            "reliability": {
+              "static_kb": 0.8333333333333334,
+              "dynamic_experience": 0.625,
+              "episodic_memory": 0.5
+            }
+          },
+          "precept_capabilities": [],
+          "baseline_capabilities": []
+        },
+        "winner": "precept"
+      },
+      "rules": {
+        "before_count": 6,
+        "after_count": 6,
+        "changed_keys": 3
+      },
+      "train_hash_seed": "0",
+      "test_hash_seed": "1",
+      "precept": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 6,
+            "successes": 6,
+            "total": 6
+          },
+          "encounter_2": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 6,
+            "successes": 6,
+            "total": 6
+          },
+          "encounter_3": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 6,
+            "successes": 6,
+            "total": 6
+          },
+          "encounter_4": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 6,
+            "successes": 6,
+            "total": 6
+          }
+        },
+        "by_key": {
+          "DAT-CORRUPT+DAT-SCHEMA+DAT-SYN": 4,
+          "INT-401+NET-FIREWALL+NET-PROXY": 4,
+          "DAT-LARGE+INT-403+INT-429+INT-": 4,
+          "INT-404+SVC-DEPREC+SVC-DOWN+SV": 4,
+          "INT-407+INT-419+INT-429+SVC-MA": 4,
+          "INT-402+INT-403+INT-419+NET-TI": 4
+        },
+        "total_tasks": 24
+      },
+      "expel": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 0.5,
+            "pt": 0.5,
+            "avg_steps": 4.0,
+            "first_try_successes": 3,
+            "successes": 3,
+            "total": 6
+          },
+          "encounter_2": {
+            "p1": 0.3333333333333333,
+            "pt": 0.3333333333333333,
+            "avg_steps": 4.666666666666667,
+            "first_try_successes": 2,
+            "successes": 2,
+            "total": 6
+          },
+          "encounter_3": {
+            "p1": 0.3333333333333333,
+            "pt": 0.3333333333333333,
+            "avg_steps": 4.666666666666667,
+            "first_try_successes": 2,
+            "successes": 2,
+            "total": 6
+          },
+          "encounter_4": {
+            "p1": 0.3333333333333333,
+            "pt": 0.3333333333333333,
+            "avg_steps": 4.666666666666667,
+            "first_try_successes": 2,
+            "successes": 2,
+            "total": 6
+          }
+        },
+        "by_key": {
+          "DAT-CORRUPT+DAT-SCHEMA+DAT-SYN": 4,
+          "INT-401+NET-FIREWALL+NET-PROXY": 4,
+          "DAT-LARGE+INT-403+INT-429+INT-": 4,
+          "INT-404+SVC-DEPREC+SVC-DOWN+SV": 4,
+          "INT-407+INT-419+INT-429+SVC-MA": 4,
+          "INT-402+INT-403+INT-419+NET-TI": 4
+        },
+        "total_tasks": 24
+      },
+      "full_reflexion": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 0.3333333333333333,
+            "pt": 0.5,
+            "avg_steps": 4.333333333333333,
+            "first_try_successes": 2,
+            "successes": 3,
+            "total": 6
+          },
+          "encounter_2": {
+            "p1": 0.16666666666666666,
+            "pt": 0.3333333333333333,
+            "avg_steps": 5.0,
+            "first_try_successes": 1,
+            "successes": 2,
+            "total": 6
+          },
+          "encounter_3": {
+            "p1": 0.16666666666666666,
+            "pt": 0.3333333333333333,
+            "avg_steps": 5.0,
+            "first_try_successes": 1,
+            "successes": 2,
+            "total": 6
+          },
+          "encounter_4": {
+            "p1": 0.16666666666666666,
+            "pt": 0.3333333333333333,
+            "avg_steps": 5.0,
+            "first_try_successes": 1,
+            "successes": 2,
+            "total": 6
+          }
+        },
+        "by_key": {
+          "DAT-CORRUPT+DAT-SCHEMA+DAT-SYN": 4,
+          "INT-401+NET-FIREWALL+NET-PROXY": 4,
+          "DAT-LARGE+INT-403+INT-429+INT-": 4,
+          "INT-404+SVC-DEPREC+SVC-DOWN+SV": 4,
+          "INT-407+INT-419+INT-429+SVC-MA": 4,
+          "INT-402+INT-403+INT-419+NET-TI": 4
+        },
+        "total_tasks": 24
+      }
+    },
+    {
+      "aggregated": {
+        "metadata": {
+          "domain": "integration",
+          "timestamp": "20260213_195314",
+          "seed": 789,
+          "train_tasks": 0,
+          "test_tasks": 24,
+          "max_retries": 3,
+          "max_attempts": 4,
+          "concurrent_training": false,
+          "concurrent_testing": false,
+          "train_elapsed_seconds": 0.01,
+          "test_elapsed_seconds": 714.1,
+          "static_knowledge_enabled": false,
+          "static_knowledge_mode": "disabled",
+          "test_mode": "matched"
+        },
+        "agents": {
+          "llm_baseline": {
+            "name": "LLM Baseline (NOT RUN - unfair)",
+            "success_rate": 0.0,
+            "total_successes": 0,
+            "total_tasks": 0,
+            "avg_steps": 0.0,
+            "llm_calls": 0,
+            "llm_accuracy": 0.0,
+            "first_try_success_rate": 0.0,
+            "first_try_successes": 0,
+            "learning_efficiency": 0.0,
+            "cold_start_success_rate": 0.0,
+            "cold_start_successes": 0,
+            "cold_start_total": 0
+          },
+          "reflexion": {
+            "name": "Reflexion (NOT RUN - unfair)",
+            "success_rate": 0.0,
+            "total_successes": 0,
+            "total_tasks": 0,
+            "avg_steps": 0.0,
+            "llm_calls": 0,
+            "llm_accuracy": 0.0,
+            "reflections_generated": 0,
+            "first_try_success_rate": 0.0,
+            "first_try_successes": 0,
+            "learning_efficiency": 0.0,
+            "cold_start_success_rate": 0.0,
+            "cold_start_successes": 0,
+            "cold_start_total": 0
+          },
+          "full_reflexion": {
+            "name": "Full Reflexion",
+            "success_rate": 0.375,
+            "total_successes": 9,
+            "total_tasks": 24,
+            "avg_steps": 6.83,
+            "llm_calls": 70,
+            "llm_accuracy": 0.1286,
+            "reflections_generated": 70,
+            "reflections_reused": 70,
+            "accumulated_memories": 38,
+            "first_try_success_rate": 0.3333,
+            "first_try_successes": 8,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_total": 0,
+            "learning_efficiency": 0,
+            "cold_start_success_rate": 0.3333,
+            "cold_start_successes": 1,
+            "cold_start_total": 3
+          },
+          "expel": {
+            "name": "ExpeL",
+            "success_rate": 0.375,
+            "total_successes": 9,
+            "total_tasks": 24,
+            "avg_steps": 5.75,
+            "llm_calls": 93,
+            "llm_accuracy": 0.0968,
+            "insights_extracted": 24,
+            "insights_retrieved": 689,
+            "first_try_success_rate": 0.375,
+            "first_try_successes": 9,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_total": 0,
+            "learning_efficiency": 0,
+            "cold_start_success_rate": 0.3333,
+            "cold_start_successes": 1,
+            "cold_start_total": 3
+          },
+          "precept": {
+            "name": "PRECEPT",
+            "success_rate": 1.0,
+            "total_successes": 24,
+            "total_tasks": 24,
+            "avg_steps": 2.0,
+            "rules_learned": 24,
+            "llm_reasoning_calls": 0,
+            "llm_reasoning_successes": 0,
+            "has_compass_evolution": true,
+            "first_try_success_rate": 1.0,
+            "first_try_successes": 24,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_successes": 0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_successes": 0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_successes": 0,
+            "p1_other_total": 0,
+            "p1_without_rules": 0.0,
+            "p1_without_rules_successes": 0,
+            "p1_without_rules_total": 0,
+            "learning_efficiency": 0,
+            "cold_start_success_rate": 1.0,
+            "cold_start_successes": 3,
+            "cold_start_total": 3
+          }
+        },
+        "precept_advantages": {
+          "vs_llm_baseline": 1.0,
+          "vs_reflexion": 1.0,
+          "vs_full_reflexion": 0.625,
+          "steps_saved_vs_llm": -2.0,
+          "steps_saved_vs_reflexion": -2.0,
+          "steps_saved_vs_full_reflexion": 4.83,
+          "first_try_advantage_vs_llm": 1.0,
+          "first_try_advantage_vs_reflexion": 1.0,
+          "first_try_advantage_vs_full_reflexion": 0.6667,
+          "learning_efficiency_advantage_vs_llm": 0.0,
+          "learning_efficiency_advantage_vs_full_reflexion": 0,
+          "cold_start_advantage_vs_llm": 1.0,
+          "cold_start_advantage_vs_full_reflexion": 0.6667
+        },
+        "pruning_stats": {
+          "total_constraints": 0,
+          "hard_constraints": 0,
+          "soft_constraints": 0,
+          "dumb_retries_prevented": 0,
+          "pruning_efficiency": 0.0
+        },
+        "conflict_resolution": {
+          "enabled": false,
+          "mode": "disabled",
+          "stats": {
+            "status": "active",
+            "summary": {
+              "conflicts_detected": 0,
+              "conflicts_resolved": 0
+            },
+            "detection": {
+              "total_detections": 0,
+              "conflicts_found": 0
+            },
+            "resolution_outcomes": {
+              "static_wins": 0,
+              "dynamic_wins": 0,
+              "merges": 0
+            },
+            "reliability": {
+              "static_kb": 0.8333333333333334,
+              "dynamic_experience": 0.625,
+              "episodic_memory": 0.5
+            }
+          },
+          "precept_capabilities": [],
+          "baseline_capabilities": []
+        },
+        "winner": "precept"
+      },
+      "rules": {
+        "before_count": 3,
+        "after_count": 3,
+        "changed_keys": 0
+      },
+      "train_hash_seed": "0",
+      "test_hash_seed": "1",
+      "precept": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 3,
+            "successes": 3,
+            "total": 3
+          },
+          "encounter_2": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 3,
+            "successes": 3,
+            "total": 3
+          },
+          "encounter_3": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 3,
+            "successes": 3,
+            "total": 3
+          },
+          "encounter_4": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 3,
+            "successes": 3,
+            "total": 3
+          }
+        },
+        "by_key": {
+          "DAT-SYNC+INT-401+INT-407+SVC-M": 8,
+          "DAT-PARTIAL+INT-402+NET-SSL+SV": 8,
+          "DAT-CORRUPT+DAT-LARGE+DAT-PART": 8
+        },
+        "total_tasks": 24
+      },
+      "expel": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 0.3333333333333333,
+            "pt": 0.3333333333333333,
+            "avg_steps": 4.666666666666667,
+            "first_try_successes": 1,
+            "successes": 1,
+            "total": 3
+          },
+          "encounter_2": {
+            "p1": 0.6666666666666666,
+            "pt": 0.6666666666666666,
+            "avg_steps": 3.3333333333333335,
+            "first_try_successes": 2,
+            "successes": 2,
+            "total": 3
+          },
+          "encounter_3": {
+            "p1": 0.0,
+            "pt": 0.0,
+            "avg_steps": 6.0,
+            "first_try_successes": 0,
+            "successes": 0,
+            "total": 3
+          },
+          "encounter_4": {
+            "p1": 0.6666666666666666,
+            "pt": 0.6666666666666666,
+            "avg_steps": 3.3333333333333335,
+            "first_try_successes": 2,
+            "successes": 2,
+            "total": 3
+          }
+        },
+        "by_key": {
+          "DAT-SYNC+INT-401+INT-407+SVC-M": 8,
+          "DAT-PARTIAL+INT-402+NET-SSL+SV": 8,
+          "DAT-CORRUPT+DAT-LARGE+DAT-PART": 8
+        },
+        "total_tasks": 24
+      },
+      "full_reflexion": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 0.3333333333333333,
+            "pt": 0.3333333333333333,
+            "avg_steps": 4.666666666666667,
+            "first_try_successes": 1,
+            "successes": 1,
+            "total": 3
+          },
+          "encounter_2": {
+            "p1": 0.3333333333333333,
+            "pt": 0.6666666666666666,
+            "avg_steps": 4.0,
+            "first_try_successes": 1,
+            "successes": 2,
+            "total": 3
+          },
+          "encounter_3": {
+            "p1": 0.0,
+            "pt": 0.0,
+            "avg_steps": 6.0,
+            "first_try_successes": 0,
+            "successes": 0,
+            "total": 3
+          },
+          "encounter_4": {
+            "p1": 0.6666666666666666,
+            "pt": 0.6666666666666666,
+            "avg_steps": 3.3333333333333335,
+            "first_try_successes": 2,
+            "successes": 2,
+            "total": 3
+          }
+        },
+        "by_key": {
+          "DAT-SYNC+INT-401+INT-407+SVC-M": 8,
+          "DAT-PARTIAL+INT-402+NET-SSL+SV": 8,
+          "DAT-CORRUPT+DAT-LARGE+DAT-PART": 8
+        },
+        "total_tasks": 24
+      }
+    },
+    {
+      "aggregated": {
+        "metadata": {
+          "domain": "integration",
+          "timestamp": "20260213_201011",
+          "seed": 999,
+          "train_tasks": 0,
+          "test_tasks": 24,
+          "max_retries": 3,
+          "max_attempts": 4,
+          "concurrent_training": false,
+          "concurrent_testing": false,
+          "train_elapsed_seconds": 0.01,
+          "test_elapsed_seconds": 851.36,
+          "static_knowledge_enabled": false,
+          "static_knowledge_mode": "disabled",
+          "test_mode": "matched"
+        },
+        "agents": {
+          "llm_baseline": {
+            "name": "LLM Baseline (NOT RUN - unfair)",
+            "success_rate": 0.0,
+            "total_successes": 0,
+            "total_tasks": 0,
+            "avg_steps": 0.0,
+            "llm_calls": 0,
+            "llm_accuracy": 0.0,
+            "first_try_success_rate": 0.0,
+            "first_try_successes": 0,
+            "learning_efficiency": 0.0,
+            "cold_start_success_rate": 0.0,
+            "cold_start_successes": 0,
+            "cold_start_total": 0
+          },
+          "reflexion": {
+            "name": "Reflexion (NOT RUN - unfair)",
+            "success_rate": 0.0,
+            "total_successes": 0,
+            "total_tasks": 0,
+            "avg_steps": 0.0,
+            "llm_calls": 0,
+            "llm_accuracy": 0.0,
+            "reflections_generated": 0,
+            "first_try_success_rate": 0.0,
+            "first_try_successes": 0,
+            "learning_efficiency": 0.0,
+            "cold_start_success_rate": 0.0,
+            "cold_start_successes": 0,
+            "cold_start_total": 0
+          },
+          "full_reflexion": {
+            "name": "Full Reflexion",
+            "success_rate": 0.3333,
+            "total_successes": 8,
+            "total_tasks": 24,
+            "avg_steps": 7.17,
+            "llm_calls": 74,
+            "llm_accuracy": 0.1081,
+            "reflections_generated": 74,
+            "reflections_reused": 74,
+            "accumulated_memories": 39,
+            "first_try_success_rate": 0.25,
+            "first_try_successes": 6,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_total": 0,
+            "learning_efficiency": 0,
+            "cold_start_success_rate": 0.3333,
+            "cold_start_successes": 1,
+            "cold_start_total": 3
+          },
+          "expel": {
+            "name": "ExpeL",
+            "success_rate": 0.375,
+            "total_successes": 9,
+            "total_tasks": 24,
+            "avg_steps": 5.75,
+            "llm_calls": 93,
+            "llm_accuracy": 0.0968,
+            "insights_extracted": 24,
+            "insights_retrieved": 690,
+            "first_try_success_rate": 0.375,
+            "first_try_successes": 9,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_total": 0,
+            "learning_efficiency": 0,
+            "cold_start_success_rate": 0.3333,
+            "cold_start_successes": 1,
+            "cold_start_total": 3
+          },
+          "precept": {
+            "name": "PRECEPT",
+            "success_rate": 1.0,
+            "total_successes": 24,
+            "total_tasks": 24,
+            "avg_steps": 2.0,
+            "rules_learned": 24,
+            "llm_reasoning_calls": 0,
+            "llm_reasoning_successes": 0,
+            "has_compass_evolution": true,
+            "first_try_success_rate": 1.0,
+            "first_try_successes": 24,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_successes": 0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_successes": 0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_successes": 0,
+            "p1_other_total": 0,
+            "p1_without_rules": 0.0,
+            "p1_without_rules_successes": 0,
+            "p1_without_rules_total": 0,
+            "learning_efficiency": 0,
+            "cold_start_success_rate": 1.0,
+            "cold_start_successes": 3,
+            "cold_start_total": 3
+          }
+        },
+        "precept_advantages": {
+          "vs_llm_baseline": 1.0,
+          "vs_reflexion": 1.0,
+          "vs_full_reflexion": 0.6667,
+          "steps_saved_vs_llm": -2.0,
+          "steps_saved_vs_reflexion": -2.0,
+          "steps_saved_vs_full_reflexion": 5.17,
+          "first_try_advantage_vs_llm": 1.0,
+          "first_try_advantage_vs_reflexion": 1.0,
+          "first_try_advantage_vs_full_reflexion": 0.75,
+          "learning_efficiency_advantage_vs_llm": 0.0,
+          "learning_efficiency_advantage_vs_full_reflexion": 0,
+          "cold_start_advantage_vs_llm": 1.0,
+          "cold_start_advantage_vs_full_reflexion": 0.6667
+        },
+        "pruning_stats": {
+          "total_constraints": 0,
+          "hard_constraints": 0,
+          "soft_constraints": 0,
+          "dumb_retries_prevented": 0,
+          "pruning_efficiency": 0.0
+        },
+        "conflict_resolution": {
+          "enabled": false,
+          "mode": "disabled",
+          "stats": {
+            "status": "active",
+            "summary": {
+              "conflicts_detected": 0,
+              "conflicts_resolved": 0
+            },
+            "detection": {
+              "total_detections": 0,
+              "conflicts_found": 0
+            },
+            "resolution_outcomes": {
+              "static_wins": 0,
+              "dynamic_wins": 0,
+              "merges": 0
+            },
+            "reliability": {
+              "static_kb": 0.8333333333333334,
+              "dynamic_experience": 0.625,
+              "episodic_memory": 0.5
+            }
+          },
+          "precept_capabilities": [],
+          "baseline_capabilities": []
+        },
+        "winner": "precept"
+      },
+      "rules": {
+        "before_count": 3,
+        "after_count": 3,
+        "changed_keys": 1
+      },
+      "train_hash_seed": "0",
+      "test_hash_seed": "1",
+      "precept": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 3,
+            "successes": 3,
+            "total": 3
+          },
+          "encounter_2": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 3,
+            "successes": 3,
+            "total": 3
+          },
+          "encounter_3": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 3,
+            "successes": 3,
+            "total": 3
+          },
+          "encounter_4": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 3,
+            "successes": 3,
+            "total": 3
+          }
+        },
+        "by_key": {
+          "DAT-PARTIAL+DAT-SYNC+INT-403+I": 8,
+          "DAT-SCHEMA+INT-402+INT-419+INT": 8,
+          "DAT-CORRUPT+DAT-PARTIAL+INT-40": 8
+        },
+        "total_tasks": 24
+      },
+      "expel": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 0.3333333333333333,
+            "pt": 0.3333333333333333,
+            "avg_steps": 4.666666666666667,
+            "first_try_successes": 1,
+            "successes": 1,
+            "total": 3
+          },
+          "encounter_2": {
+            "p1": 0.6666666666666666,
+            "pt": 0.6666666666666666,
+            "avg_steps": 3.3333333333333335,
+            "first_try_successes": 2,
+            "successes": 2,
+            "total": 3
+          },
+          "encounter_3": {
+            "p1": 0.0,
+            "pt": 0.0,
+            "avg_steps": 6.0,
+            "first_try_successes": 0,
+            "successes": 0,
+            "total": 3
+          },
+          "encounter_4": {
+            "p1": 0.6666666666666666,
+            "pt": 0.6666666666666666,
+            "avg_steps": 3.3333333333333335,
+            "first_try_successes": 2,
+            "successes": 2,
+            "total": 3
+          }
+        },
+        "by_key": {
+          "DAT-PARTIAL+DAT-SYNC+INT-403+I": 8,
+          "DAT-SCHEMA+INT-402+INT-419+INT": 8,
+          "DAT-CORRUPT+DAT-PARTIAL+INT-40": 8
+        },
+        "total_tasks": 24
+      },
+      "full_reflexion": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 0.3333333333333333,
+            "pt": 0.3333333333333333,
+            "avg_steps": 4.666666666666667,
+            "first_try_successes": 1,
+            "successes": 1,
+            "total": 3
+          },
+          "encounter_2": {
+            "p1": 0.3333333333333333,
+            "pt": 0.3333333333333333,
+            "avg_steps": 4.666666666666667,
+            "first_try_successes": 1,
+            "successes": 1,
+            "total": 3
+          },
+          "encounter_3": {
+            "p1": 0.0,
+            "pt": 0.0,
+            "avg_steps": 6.0,
+            "first_try_successes": 0,
+            "successes": 0,
+            "total": 3
+          },
+          "encounter_4": {
+            "p1": 0.6666666666666666,
+            "pt": 0.6666666666666666,
+            "avg_steps": 3.3333333333333335,
+            "first_try_successes": 2,
+            "successes": 2,
+            "total": 3
+          }
+        },
+        "by_key": {
+          "DAT-PARTIAL+DAT-SYNC+INT-403+I": 8,
+          "DAT-SCHEMA+INT-402+INT-419+INT": 8,
+          "DAT-CORRUPT+DAT-PARTIAL+INT-40": 8
+        },
+        "total_tasks": 24
+      }
+    },
+    {
+      "aggregated": {
+        "metadata": {
+          "domain": "integration",
+          "timestamp": "20260213_222923",
+          "seed": 3141,
+          "train_tasks": 0,
+          "test_tasks": 24,
+          "max_retries": 3,
+          "max_attempts": 4,
+          "concurrent_training": false,
+          "concurrent_testing": false,
+          "train_elapsed_seconds": 0.01,
+          "test_elapsed_seconds": 716.13,
+          "static_knowledge_enabled": false,
+          "static_knowledge_mode": "disabled",
+          "test_mode": "matched"
+        },
+        "agents": {
+          "llm_baseline": {
+            "name": "LLM Baseline (NOT RUN - unfair)",
+            "success_rate": 0.0,
+            "total_successes": 0,
+            "total_tasks": 0,
+            "avg_steps": 0.0,
+            "llm_calls": 0,
+            "llm_accuracy": 0.0,
+            "first_try_success_rate": 0.0,
+            "first_try_successes": 0,
+            "learning_efficiency": 0.0,
+            "cold_start_success_rate": 0.0,
+            "cold_start_successes": 0,
+            "cold_start_total": 0
+          },
+          "reflexion": {
+            "name": "Reflexion (NOT RUN - unfair)",
+            "success_rate": 0.0,
+            "total_successes": 0,
+            "total_tasks": 0,
+            "avg_steps": 0.0,
+            "llm_calls": 0,
+            "llm_accuracy": 0.0,
+            "reflections_generated": 0,
+            "first_try_success_rate": 0.0,
+            "first_try_successes": 0,
+            "learning_efficiency": 0.0,
+            "cold_start_success_rate": 0.0,
+            "cold_start_successes": 0,
+            "cold_start_total": 0
+          },
+          "full_reflexion": {
+            "name": "Full Reflexion",
+            "success_rate": 0.375,
+            "total_successes": 9,
+            "total_tasks": 24,
+            "avg_steps": 6.75,
+            "llm_calls": 69,
+            "llm_accuracy": 0.1304,
+            "reflections_generated": 69,
+            "reflections_reused": 69,
+            "accumulated_memories": 39,
+            "first_try_success_rate": 0.375,
+            "first_try_successes": 9,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_total": 0,
+            "learning_efficiency": 0,
+            "cold_start_success_rate": 0.3333,
+            "cold_start_successes": 1,
+            "cold_start_total": 3
+          },
+          "expel": {
+            "name": "ExpeL",
+            "success_rate": 0.375,
+            "total_successes": 9,
+            "total_tasks": 24,
+            "avg_steps": 5.75,
+            "llm_calls": 93,
+            "llm_accuracy": 0.0968,
+            "insights_extracted": 24,
+            "insights_retrieved": 690,
+            "first_try_success_rate": 0.375,
+            "first_try_successes": 9,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_total": 0,
+            "learning_efficiency": 0,
+            "cold_start_success_rate": 0.3333,
+            "cold_start_successes": 1,
+            "cold_start_total": 3
+          },
+          "precept": {
+            "name": "PRECEPT",
+            "success_rate": 1.0,
+            "total_successes": 24,
+            "total_tasks": 24,
+            "avg_steps": 2.0,
+            "rules_learned": 24,
+            "llm_reasoning_calls": 0,
+            "llm_reasoning_successes": 0,
+            "has_compass_evolution": true,
+            "first_try_success_rate": 1.0,
+            "first_try_successes": 24,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_successes": 0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_successes": 0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_successes": 0,
+            "p1_other_total": 0,
+            "p1_without_rules": 0.0,
+            "p1_without_rules_successes": 0,
+            "p1_without_rules_total": 0,
+            "learning_efficiency": 0,
+            "cold_start_success_rate": 1.0,
+            "cold_start_successes": 3,
+            "cold_start_total": 3
+          }
+        },
+        "precept_advantages": {
+          "vs_llm_baseline": 1.0,
+          "vs_reflexion": 1.0,
+          "vs_full_reflexion": 0.625,
+          "steps_saved_vs_llm": -2.0,
+          "steps_saved_vs_reflexion": -2.0,
+          "steps_saved_vs_full_reflexion": 4.75,
+          "first_try_advantage_vs_llm": 1.0,
+          "first_try_advantage_vs_reflexion": 1.0,
+          "first_try_advantage_vs_full_reflexion": 0.625,
+          "learning_efficiency_advantage_vs_llm": 0.0,
+          "learning_efficiency_advantage_vs_full_reflexion": 0,
+          "cold_start_advantage_vs_llm": 1.0,
+          "cold_start_advantage_vs_full_reflexion": 0.6667
+        },
+        "pruning_stats": {
+          "total_constraints": 0,
+          "hard_constraints": 0,
+          "soft_constraints": 0,
+          "dumb_retries_prevented": 0,
+          "pruning_efficiency": 0.0
+        },
+        "conflict_resolution": {
+          "enabled": false,
+          "mode": "disabled",
+          "stats": {
+            "status": "active",
+            "summary": {
+              "conflicts_detected": 0,
+              "conflicts_resolved": 0
+            },
+            "detection": {
+              "total_detections": 0,
+              "conflicts_found": 0
+            },
+            "resolution_outcomes": {
+              "static_wins": 0,
+              "dynamic_wins": 0,
+              "merges": 0
+            },
+            "reliability": {
+              "static_kb": 0.8333333333333334,
+              "dynamic_experience": 0.625,
+              "episodic_memory": 0.5
+            }
+          },
+          "precept_capabilities": [],
+          "baseline_capabilities": []
+        },
+        "winner": "precept"
+      },
+      "rules": {
+        "before_count": 3,
+        "after_count": 3,
+        "changed_keys": 0
+      },
+      "train_hash_seed": "0",
+      "test_hash_seed": "1",
+      "precept": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 3,
+            "successes": 3,
+            "total": 3
+          },
+          "encounter_2": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 3,
+            "successes": 3,
+            "total": 3
+          },
+          "encounter_3": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 3,
+            "successes": 3,
+            "total": 3
+          },
+          "encounter_4": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 3,
+            "successes": 3,
+            "total": 3
+          }
+        },
+        "by_key": {
+          "INT-403+INT-404+INT-407+INT-42": 8,
+          "INT-419+INT-429+NET-DNS+NET-FI": 8,
+          "INT-403+INT-407+INT-429+NET-FI": 8
+        },
+        "total_tasks": 24
+      },
+      "expel": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 0.3333333333333333,
+            "pt": 0.3333333333333333,
+            "avg_steps": 4.666666666666667,
+            "first_try_successes": 1,
+            "successes": 1,
+            "total": 3
+          },
+          "encounter_2": {
+            "p1": 0.6666666666666666,
+            "pt": 0.6666666666666666,
+            "avg_steps": 3.3333333333333335,
+            "first_try_successes": 2,
+            "successes": 2,
+            "total": 3
+          },
+          "encounter_3": {
+            "p1": 0.0,
+            "pt": 0.0,
+            "avg_steps": 6.0,
+            "first_try_successes": 0,
+            "successes": 0,
+            "total": 3
+          },
+          "encounter_4": {
+            "p1": 0.6666666666666666,
+            "pt": 0.6666666666666666,
+            "avg_steps": 3.3333333333333335,
+            "first_try_successes": 2,
+            "successes": 2,
+            "total": 3
+          }
+        },
+        "by_key": {
+          "INT-403+INT-404+INT-407+INT-42": 8,
+          "INT-419+INT-429+NET-DNS+NET-FI": 8,
+          "INT-403+INT-407+INT-429+NET-FI": 8
+        },
+        "total_tasks": 24
+      },
+      "full_reflexion": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 0.3333333333333333,
+            "pt": 0.3333333333333333,
+            "avg_steps": 4.666666666666667,
+            "first_try_successes": 1,
+            "successes": 1,
+            "total": 3
+          },
+          "encounter_2": {
+            "p1": 0.6666666666666666,
+            "pt": 0.6666666666666666,
+            "avg_steps": 3.3333333333333335,
+            "first_try_successes": 2,
+            "successes": 2,
+            "total": 3
+          },
+          "encounter_3": {
+            "p1": 0.0,
+            "pt": 0.0,
+            "avg_steps": 6.0,
+            "first_try_successes": 0,
+            "successes": 0,
+            "total": 3
+          },
+          "encounter_4": {
+            "p1": 0.6666666666666666,
+            "pt": 0.6666666666666666,
+            "avg_steps": 3.3333333333333335,
+            "first_try_successes": 2,
+            "successes": 2,
+            "total": 3
+          }
+        },
+        "by_key": {
+          "INT-403+INT-404+INT-407+INT-42": 8,
+          "INT-419+INT-429+NET-DNS+NET-FI": 8,
+          "INT-403+INT-407+INT-429+NET-FI": 8
+        },
+        "total_tasks": 24
+      }
+    },
+    {
+      "aggregated": {
+        "metadata": {
+          "domain": "integration",
+          "timestamp": "20260213_224341",
+          "seed": 1337,
+          "train_tasks": 0,
+          "test_tasks": 24,
+          "max_retries": 3,
+          "max_attempts": 4,
+          "concurrent_training": false,
+          "concurrent_testing": false,
+          "train_elapsed_seconds": 0.01,
+          "test_elapsed_seconds": 712.3,
+          "static_knowledge_enabled": false,
+          "static_knowledge_mode": "disabled",
+          "test_mode": "matched"
+        },
+        "agents": {
+          "llm_baseline": {
+            "name": "LLM Baseline (NOT RUN - unfair)",
+            "success_rate": 0.0,
+            "total_successes": 0,
+            "total_tasks": 0,
+            "avg_steps": 0.0,
+            "llm_calls": 0,
+            "llm_accuracy": 0.0,
+            "first_try_success_rate": 0.0,
+            "first_try_successes": 0,
+            "learning_efficiency": 0.0,
+            "cold_start_success_rate": 0.0,
+            "cold_start_successes": 0,
+            "cold_start_total": 0
+          },
+          "reflexion": {
+            "name": "Reflexion (NOT RUN - unfair)",
+            "success_rate": 0.0,
+            "total_successes": 0,
+            "total_tasks": 0,
+            "avg_steps": 0.0,
+            "llm_calls": 0,
+            "llm_accuracy": 0.0,
+            "reflections_generated": 0,
+            "first_try_success_rate": 0.0,
+            "first_try_successes": 0,
+            "learning_efficiency": 0.0,
+            "cold_start_success_rate": 0.0,
+            "cold_start_successes": 0,
+            "cold_start_total": 0
+          },
+          "full_reflexion": {
+            "name": "Full Reflexion",
+            "success_rate": 0.375,
+            "total_successes": 9,
+            "total_tasks": 24,
+            "avg_steps": 6.75,
+            "llm_calls": 69,
+            "llm_accuracy": 0.1304,
+            "reflections_generated": 69,
+            "reflections_reused": 69,
+            "accumulated_memories": 40,
+            "first_try_success_rate": 0.375,
+            "first_try_successes": 9,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_total": 0,
+            "learning_efficiency": 0,
+            "cold_start_success_rate": 0.4,
+            "cold_start_successes": 2,
+            "cold_start_total": 5
+          },
+          "expel": {
+            "name": "ExpeL",
+            "success_rate": 0.375,
+            "total_successes": 9,
+            "total_tasks": 24,
+            "avg_steps": 5.75,
+            "llm_calls": 93,
+            "llm_accuracy": 0.0968,
+            "insights_extracted": 24,
+            "insights_retrieved": 686,
+            "first_try_success_rate": 0.375,
+            "first_try_successes": 9,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_total": 0,
+            "learning_efficiency": 0,
+            "cold_start_success_rate": 0.4,
+            "cold_start_successes": 2,
+            "cold_start_total": 5
+          },
+          "precept": {
+            "name": "PRECEPT",
+            "success_rate": 1.0,
+            "total_successes": 24,
+            "total_tasks": 24,
+            "avg_steps": 2.0,
+            "rules_learned": 24,
+            "llm_reasoning_calls": 0,
+            "llm_reasoning_successes": 0,
+            "has_compass_evolution": true,
+            "first_try_success_rate": 1.0,
+            "first_try_successes": 24,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_successes": 0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_successes": 0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_successes": 0,
+            "p1_other_total": 0,
+            "p1_without_rules": 0.0,
+            "p1_without_rules_successes": 0,
+            "p1_without_rules_total": 0,
+            "learning_efficiency": 0,
+            "cold_start_success_rate": 1.0,
+            "cold_start_successes": 5,
+            "cold_start_total": 5
+          }
+        },
+        "precept_advantages": {
+          "vs_llm_baseline": 1.0,
+          "vs_reflexion": 1.0,
+          "vs_full_reflexion": 0.625,
+          "steps_saved_vs_llm": -2.0,
+          "steps_saved_vs_reflexion": -2.0,
+          "steps_saved_vs_full_reflexion": 4.75,
+          "first_try_advantage_vs_llm": 1.0,
+          "first_try_advantage_vs_reflexion": 1.0,
+          "first_try_advantage_vs_full_reflexion": 0.625,
+          "learning_efficiency_advantage_vs_llm": 0.0,
+          "learning_efficiency_advantage_vs_full_reflexion": 0,
+          "cold_start_advantage_vs_llm": 1.0,
+          "cold_start_advantage_vs_full_reflexion": 0.6
+        },
+        "pruning_stats": {
+          "total_constraints": 0,
+          "hard_constraints": 0,
+          "soft_constraints": 0,
+          "dumb_retries_prevented": 0,
+          "pruning_efficiency": 0.0
+        },
+        "conflict_resolution": {
+          "enabled": false,
+          "mode": "disabled",
+          "stats": {
+            "status": "active",
+            "summary": {
+              "conflicts_detected": 0,
+              "conflicts_resolved": 0
+            },
+            "detection": {
+              "total_detections": 0,
+              "conflicts_found": 0
+            },
+            "resolution_outcomes": {
+              "static_wins": 0,
+              "dynamic_wins": 0,
+              "merges": 0
+            },
+            "reliability": {
+              "static_kb": 0.8333333333333334,
+              "dynamic_experience": 0.625,
+              "episodic_memory": 0.5
+            }
+          },
+          "precept_capabilities": [],
+          "baseline_capabilities": []
+        },
+        "winner": "precept"
+      },
+      "rules": {
+        "before_count": 5,
+        "after_count": 5,
+        "changed_keys": 2
+      },
+      "train_hash_seed": "0",
+      "test_hash_seed": "1",
+      "precept": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 5,
+            "successes": 5,
+            "total": 5
+          },
+          "encounter_2": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 5,
+            "successes": 5,
+            "total": 5
+          },
+          "encounter_3": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 5,
+            "successes": 5,
+            "total": 5
+          },
+          "encounter_4": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 5,
+            "successes": 5,
+            "total": 5
+          }
+        },
+        "by_key": {
+          "DAT-SCHEMA+INT-401+NET-DNS+NET": 5,
+          "DAT-CORRUPT+INT-419+INT-429+NE": 5,
+          "INT-401+INT-403+NET-PROXY+NET-": 5,
+          "DAT-PARTIAL+INT-402+NET-DNS+NE": 5,
+          "DAT-CORRUPT+INT-404+INT-419+NE": 4
+        },
+        "total_tasks": 24
+      },
+      "expel": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 0.4,
+            "pt": 0.4,
+            "avg_steps": 4.4,
+            "first_try_successes": 2,
+            "successes": 2,
+            "total": 5
+          },
+          "encounter_2": {
+            "p1": 0.4,
+            "pt": 0.4,
+            "avg_steps": 4.4,
+            "first_try_successes": 2,
+            "successes": 2,
+            "total": 5
+          },
+          "encounter_3": {
+            "p1": 0.4,
+            "pt": 0.4,
+            "avg_steps": 4.4,
+            "first_try_successes": 2,
+            "successes": 2,
+            "total": 5
+          },
+          "encounter_4": {
+            "p1": 0.4,
+            "pt": 0.4,
+            "avg_steps": 4.4,
+            "first_try_successes": 2,
+            "successes": 2,
+            "total": 5
+          }
+        },
+        "by_key": {
+          "DAT-SCHEMA+INT-401+NET-DNS+NET": 5,
+          "DAT-CORRUPT+INT-419+INT-429+NE": 5,
+          "INT-401+INT-403+NET-PROXY+NET-": 5,
+          "DAT-PARTIAL+INT-402+NET-DNS+NE": 5,
+          "DAT-CORRUPT+INT-404+INT-419+NE": 4
+        },
+        "total_tasks": 24
+      },
+      "full_reflexion": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 0.4,
+            "pt": 0.4,
+            "avg_steps": 4.4,
+            "first_try_successes": 2,
+            "successes": 2,
+            "total": 5
+          },
+          "encounter_2": {
+            "p1": 0.4,
+            "pt": 0.4,
+            "avg_steps": 4.4,
+            "first_try_successes": 2,
+            "successes": 2,
+            "total": 5
+          },
+          "encounter_3": {
+            "p1": 0.4,
+            "pt": 0.4,
+            "avg_steps": 4.4,
+            "first_try_successes": 2,
+            "successes": 2,
+            "total": 5
+          },
+          "encounter_4": {
+            "p1": 0.4,
+            "pt": 0.4,
+            "avg_steps": 4.4,
+            "first_try_successes": 2,
+            "successes": 2,
+            "total": 5
+          }
+        },
+        "by_key": {
+          "DAT-SCHEMA+INT-401+NET-DNS+NET": 5,
+          "DAT-CORRUPT+INT-419+INT-429+NE": 5,
+          "INT-401+INT-403+NET-PROXY+NET-": 5,
+          "DAT-PARTIAL+INT-402+NET-DNS+NE": 5,
+          "DAT-CORRUPT+INT-404+INT-419+NE": 4
+        },
+        "total_tasks": 24
+      }
+    },
+    {
+      "aggregated": {
+        "metadata": {
+          "domain": "integration",
+          "timestamp": "20260213_225627",
+          "seed": 8888,
+          "train_tasks": 0,
+          "test_tasks": 24,
+          "max_retries": 3,
+          "max_attempts": 4,
+          "concurrent_training": false,
+          "concurrent_testing": false,
+          "train_elapsed_seconds": 0.01,
+          "test_elapsed_seconds": 633.63,
+          "static_knowledge_enabled": false,
+          "static_knowledge_mode": "disabled",
+          "test_mode": "matched"
+        },
+        "agents": {
+          "llm_baseline": {
+            "name": "LLM Baseline (NOT RUN - unfair)",
+            "success_rate": 0.0,
+            "total_successes": 0,
+            "total_tasks": 0,
+            "avg_steps": 0.0,
+            "llm_calls": 0,
+            "llm_accuracy": 0.0,
+            "first_try_success_rate": 0.0,
+            "first_try_successes": 0,
+            "learning_efficiency": 0.0,
+            "cold_start_success_rate": 0.0,
+            "cold_start_successes": 0,
+            "cold_start_total": 0
+          },
+          "reflexion": {
+            "name": "Reflexion (NOT RUN - unfair)",
+            "success_rate": 0.0,
+            "total_successes": 0,
+            "total_tasks": 0,
+            "avg_steps": 0.0,
+            "llm_calls": 0,
+            "llm_accuracy": 0.0,
+            "reflections_generated": 0,
+            "first_try_success_rate": 0.0,
+            "first_try_successes": 0,
+            "learning_efficiency": 0.0,
+            "cold_start_success_rate": 0.0,
+            "cold_start_successes": 0,
+            "cold_start_total": 0
+          },
+          "full_reflexion": {
+            "name": "Full Reflexion",
+            "success_rate": 0.125,
+            "total_successes": 3,
+            "total_tasks": 24,
+            "avg_steps": 8.42,
+            "llm_calls": 89,
+            "llm_accuracy": 0.0337,
+            "reflections_generated": 89,
+            "reflections_reused": 89,
+            "accumulated_memories": 39,
+            "first_try_success_rate": 0.0833,
+            "first_try_successes": 2,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_total": 0,
+            "learning_efficiency": 0,
+            "cold_start_success_rate": 0.0,
+            "cold_start_successes": 0,
+            "cold_start_total": 2
+          },
+          "expel": {
+            "name": "ExpeL",
+            "success_rate": 0.375,
+            "total_successes": 9,
+            "total_tasks": 24,
+            "avg_steps": 5.75,
+            "llm_calls": 93,
+            "llm_accuracy": 0.0968,
+            "insights_extracted": 24,
+            "insights_retrieved": 690,
+            "first_try_success_rate": 0.375,
+            "first_try_successes": 9,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_total": 0,
+            "learning_efficiency": 0,
+            "cold_start_success_rate": 0.5,
+            "cold_start_successes": 1,
+            "cold_start_total": 2
+          },
+          "precept": {
+            "name": "PRECEPT",
+            "success_rate": 1.0,
+            "total_successes": 24,
+            "total_tasks": 24,
+            "avg_steps": 2.0,
+            "rules_learned": 24,
+            "llm_reasoning_calls": 0,
+            "llm_reasoning_successes": 0,
+            "has_compass_evolution": true,
+            "first_try_success_rate": 1.0,
+            "first_try_successes": 24,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_successes": 0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_successes": 0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_successes": 0,
+            "p1_other_total": 0,
+            "p1_without_rules": 0.0,
+            "p1_without_rules_successes": 0,
+            "p1_without_rules_total": 0,
+            "learning_efficiency": 0,
+            "cold_start_success_rate": 1.0,
+            "cold_start_successes": 2,
+            "cold_start_total": 2
+          }
+        },
+        "precept_advantages": {
+          "vs_llm_baseline": 1.0,
+          "vs_reflexion": 1.0,
+          "vs_full_reflexion": 0.875,
+          "steps_saved_vs_llm": -2.0,
+          "steps_saved_vs_reflexion": -2.0,
+          "steps_saved_vs_full_reflexion": 6.42,
+          "first_try_advantage_vs_llm": 1.0,
+          "first_try_advantage_vs_reflexion": 1.0,
+          "first_try_advantage_vs_full_reflexion": 0.9167,
+          "learning_efficiency_advantage_vs_llm": 0.0,
+          "learning_efficiency_advantage_vs_full_reflexion": 0,
+          "cold_start_advantage_vs_llm": 1.0,
+          "cold_start_advantage_vs_full_reflexion": 1.0
+        },
+        "pruning_stats": {
+          "total_constraints": 0,
+          "hard_constraints": 0,
+          "soft_constraints": 0,
+          "dumb_retries_prevented": 0,
+          "pruning_efficiency": 0.0
+        },
+        "conflict_resolution": {
+          "enabled": false,
+          "mode": "disabled",
+          "stats": {
+            "status": "active",
+            "summary": {
+              "conflicts_detected": 0,
+              "conflicts_resolved": 0
+            },
+            "detection": {
+              "total_detections": 0,
+              "conflicts_found": 0
+            },
+            "resolution_outcomes": {
+              "static_wins": 0,
+              "dynamic_wins": 0,
+              "merges": 0
+            },
+            "reliability": {
+              "static_kb": 0.8333333333333334,
+              "dynamic_experience": 0.625,
+              "episodic_memory": 0.5
+            }
+          },
+          "precept_capabilities": [],
+          "baseline_capabilities": []
+        },
+        "winner": "precept"
+      },
+      "rules": {
+        "before_count": 2,
+        "after_count": 2,
+        "changed_keys": 0
+      },
+      "train_hash_seed": "0",
+      "test_hash_seed": "1",
+      "precept": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 2,
+            "successes": 2,
+            "total": 2
+          },
+          "encounter_2": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 2,
+            "successes": 2,
+            "total": 2
+          },
+          "encounter_3": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 2,
+            "successes": 2,
+            "total": 2
+          },
+          "encounter_4": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 2,
+            "successes": 2,
+            "total": 2
+          }
+        },
+        "by_key": {
+          "DAT-PARTIAL+DAT-SYNC+INT-402+I": 12,
+          "DAT-PARTIAL+DAT-SCHEMA+INT-429": 12
+        },
+        "total_tasks": 24
+      },
+      "expel": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 0.5,
+            "pt": 0.5,
+            "avg_steps": 4.0,
+            "first_try_successes": 1,
+            "successes": 1,
+            "total": 2
+          },
+          "encounter_2": {
+            "p1": 0.0,
+            "pt": 0.0,
+            "avg_steps": 6.0,
+            "first_try_successes": 0,
+            "successes": 0,
+            "total": 2
+          },
+          "encounter_3": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 2,
+            "successes": 2,
+            "total": 2
+          },
+          "encounter_4": {
+            "p1": 0.0,
+            "pt": 0.0,
+            "avg_steps": 6.0,
+            "first_try_successes": 0,
+            "successes": 0,
+            "total": 2
+          }
+        },
+        "by_key": {
+          "DAT-PARTIAL+DAT-SYNC+INT-402+I": 12,
+          "DAT-PARTIAL+DAT-SCHEMA+INT-429": 12
+        },
+        "total_tasks": 24
+      },
+      "full_reflexion": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 0.0,
+            "pt": 0.0,
+            "avg_steps": 6.0,
+            "first_try_successes": 0,
+            "successes": 0,
+            "total": 2
+          },
+          "encounter_2": {
+            "p1": 0.0,
+            "pt": 0.0,
+            "avg_steps": 6.0,
+            "first_try_successes": 0,
+            "successes": 0,
+            "total": 2
+          },
+          "encounter_3": {
+            "p1": 0.0,
+            "pt": 0.0,
+            "avg_steps": 6.0,
+            "first_try_successes": 0,
+            "successes": 0,
+            "total": 2
+          },
+          "encounter_4": {
+            "p1": 0.0,
+            "pt": 0.0,
+            "avg_steps": 6.0,
+            "first_try_successes": 0,
+            "successes": 0,
+            "total": 2
+          }
+        },
+        "by_key": {
+          "DAT-PARTIAL+DAT-SYNC+INT-402+I": 12,
+          "DAT-PARTIAL+DAT-SCHEMA+INT-429": 12
+        },
+        "total_tasks": 24
+      }
+    },
+    {
+      "aggregated": {
+        "metadata": {
+          "domain": "integration",
+          "timestamp": "20260213_230955",
+          "seed": 7777,
+          "train_tasks": 0,
+          "test_tasks": 24,
+          "max_retries": 3,
+          "max_attempts": 4,
+          "concurrent_training": false,
+          "concurrent_testing": false,
+          "train_elapsed_seconds": 0.01,
+          "test_elapsed_seconds": 643.33,
+          "static_knowledge_enabled": false,
+          "static_knowledge_mode": "disabled",
+          "test_mode": "matched"
+        },
+        "agents": {
+          "llm_baseline": {
+            "name": "LLM Baseline (NOT RUN - unfair)",
+            "success_rate": 0.0,
+            "total_successes": 0,
+            "total_tasks": 0,
+            "avg_steps": 0.0,
+            "llm_calls": 0,
+            "llm_accuracy": 0.0,
+            "first_try_success_rate": 0.0,
+            "first_try_successes": 0,
+            "learning_efficiency": 0.0,
+            "cold_start_success_rate": 0.0,
+            "cold_start_successes": 0,
+            "cold_start_total": 0
+          },
+          "reflexion": {
+            "name": "Reflexion (NOT RUN - unfair)",
+            "success_rate": 0.0,
+            "total_successes": 0,
+            "total_tasks": 0,
+            "avg_steps": 0.0,
+            "llm_calls": 0,
+            "llm_accuracy": 0.0,
+            "reflections_generated": 0,
+            "first_try_success_rate": 0.0,
+            "first_try_successes": 0,
+            "learning_efficiency": 0.0,
+            "cold_start_success_rate": 0.0,
+            "cold_start_successes": 0,
+            "cold_start_total": 0
+          },
+          "full_reflexion": {
+            "name": "Full Reflexion",
+            "success_rate": 0.375,
+            "total_successes": 9,
+            "total_tasks": 24,
+            "avg_steps": 6.75,
+            "llm_calls": 69,
+            "llm_accuracy": 0.1304,
+            "reflections_generated": 69,
+            "reflections_reused": 69,
+            "accumulated_memories": 37,
+            "first_try_success_rate": 0.375,
+            "first_try_successes": 9,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_total": 0,
+            "learning_efficiency": 0,
+            "cold_start_success_rate": 0.4,
+            "cold_start_successes": 2,
+            "cold_start_total": 5
+          },
+          "expel": {
+            "name": "ExpeL",
+            "success_rate": 0.375,
+            "total_successes": 9,
+            "total_tasks": 24,
+            "avg_steps": 6.0,
+            "llm_calls": 96,
+            "llm_accuracy": 0.0938,
+            "insights_extracted": 24,
+            "insights_retrieved": 716,
+            "first_try_success_rate": 0.3333,
+            "first_try_successes": 8,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_total": 0,
+            "learning_efficiency": 0,
+            "cold_start_success_rate": 0.4,
+            "cold_start_successes": 2,
+            "cold_start_total": 5
+          },
+          "precept": {
+            "name": "PRECEPT",
+            "success_rate": 1.0,
+            "total_successes": 24,
+            "total_tasks": 24,
+            "avg_steps": 2.0,
+            "rules_learned": 24,
+            "llm_reasoning_calls": 0,
+            "llm_reasoning_successes": 0,
+            "has_compass_evolution": true,
+            "first_try_success_rate": 1.0,
+            "first_try_successes": 24,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_successes": 0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_successes": 0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_successes": 0,
+            "p1_other_total": 0,
+            "p1_without_rules": 0.0,
+            "p1_without_rules_successes": 0,
+            "p1_without_rules_total": 0,
+            "learning_efficiency": 0,
+            "cold_start_success_rate": 1.0,
+            "cold_start_successes": 5,
+            "cold_start_total": 5
+          }
+        },
+        "precept_advantages": {
+          "vs_llm_baseline": 1.0,
+          "vs_reflexion": 1.0,
+          "vs_full_reflexion": 0.625,
+          "steps_saved_vs_llm": -2.0,
+          "steps_saved_vs_reflexion": -2.0,
+          "steps_saved_vs_full_reflexion": 4.75,
+          "first_try_advantage_vs_llm": 1.0,
+          "first_try_advantage_vs_reflexion": 1.0,
+          "first_try_advantage_vs_full_reflexion": 0.625,
+          "learning_efficiency_advantage_vs_llm": 0.0,
+          "learning_efficiency_advantage_vs_full_reflexion": 0,
+          "cold_start_advantage_vs_llm": 1.0,
+          "cold_start_advantage_vs_full_reflexion": 0.6
+        },
+        "pruning_stats": {
+          "total_constraints": 0,
+          "hard_constraints": 0,
+          "soft_constraints": 0,
+          "dumb_retries_prevented": 0,
+          "pruning_efficiency": 0.0
+        },
+        "conflict_resolution": {
+          "enabled": false,
+          "mode": "disabled",
+          "stats": {
+            "status": "active",
+            "summary": {
+              "conflicts_detected": 0,
+              "conflicts_resolved": 0
+            },
+            "detection": {
+              "total_detections": 0,
+              "conflicts_found": 0
+            },
+            "resolution_outcomes": {
+              "static_wins": 0,
+              "dynamic_wins": 0,
+              "merges": 0
+            },
+            "reliability": {
+              "static_kb": 0.8333333333333334,
+              "dynamic_experience": 0.625,
+              "episodic_memory": 0.5
+            }
+          },
+          "precept_capabilities": [],
+          "baseline_capabilities": []
+        },
+        "winner": "precept"
+      },
+      "rules": {
+        "before_count": 5,
+        "after_count": 5,
+        "changed_keys": 1
+      },
+      "train_hash_seed": "0",
+      "test_hash_seed": "1",
+      "precept": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 5,
+            "successes": 5,
+            "total": 5
+          },
+          "encounter_2": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 5,
+            "successes": 5,
+            "total": 5
+          },
+          "encounter_3": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 5,
+            "successes": 5,
+            "total": 5
+          },
+          "encounter_4": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 5,
+            "successes": 5,
+            "total": 5
+          }
+        },
+        "by_key": {
+          "INT-402+INT-407+NET-PROXY+NET-": 5,
+          "INT-403+INT-429+SVC-DEPREC+SVC": 5,
+          "DAT-LARGE+DAT-SCHEMA+INT-511+N": 5,
+          "DAT-SYNC+INT-401+NET-DNS+SVC-D": 5,
+          "DAT-SCHEMA+INT-403+INT-419+SVC": 4
+        },
+        "total_tasks": 24
+      },
+      "expel": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 0.2,
+            "pt": 0.4,
+            "avg_steps": 4.8,
+            "first_try_successes": 1,
+            "successes": 2,
+            "total": 5
+          },
+          "encounter_2": {
+            "p1": 0.4,
+            "pt": 0.4,
+            "avg_steps": 4.4,
+            "first_try_successes": 2,
+            "successes": 2,
+            "total": 5
+          },
+          "encounter_3": {
+            "p1": 0.4,
+            "pt": 0.4,
+            "avg_steps": 4.4,
+            "first_try_successes": 2,
+            "successes": 2,
+            "total": 5
+          },
+          "encounter_4": {
+            "p1": 0.4,
+            "pt": 0.4,
+            "avg_steps": 4.4,
+            "first_try_successes": 2,
+            "successes": 2,
+            "total": 5
+          }
+        },
+        "by_key": {
+          "INT-402+INT-407+NET-PROXY+NET-": 5,
+          "INT-403+INT-429+SVC-DEPREC+SVC": 5,
+          "DAT-LARGE+DAT-SCHEMA+INT-511+N": 5,
+          "DAT-SYNC+INT-401+NET-DNS+SVC-D": 5,
+          "DAT-SCHEMA+INT-403+INT-419+SVC": 4
+        },
+        "total_tasks": 24
+      },
+      "full_reflexion": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 0.4,
+            "pt": 0.4,
+            "avg_steps": 4.4,
+            "first_try_successes": 2,
+            "successes": 2,
+            "total": 5
+          },
+          "encounter_2": {
+            "p1": 0.4,
+            "pt": 0.4,
+            "avg_steps": 4.4,
+            "first_try_successes": 2,
+            "successes": 2,
+            "total": 5
+          },
+          "encounter_3": {
+            "p1": 0.4,
+            "pt": 0.4,
+            "avg_steps": 4.4,
+            "first_try_successes": 2,
+            "successes": 2,
+            "total": 5
+          },
+          "encounter_4": {
+            "p1": 0.4,
+            "pt": 0.4,
+            "avg_steps": 4.4,
+            "first_try_successes": 2,
+            "successes": 2,
+            "total": 5
+          }
+        },
+        "by_key": {
+          "INT-402+INT-407+NET-PROXY+NET-": 5,
+          "INT-403+INT-429+SVC-DEPREC+SVC": 5,
+          "DAT-LARGE+DAT-SCHEMA+INT-511+N": 5,
+          "DAT-SYNC+INT-401+NET-DNS+SVC-D": 5,
+          "DAT-SCHEMA+INT-403+INT-419+SVC": 4
+        },
+        "total_tasks": 24
+      }
+    }
+  ]
+}

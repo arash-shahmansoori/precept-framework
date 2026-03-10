@@ -1,0 +1,35 @@
+{
+  "STREAM": {
+    "constraint": "Constraint: STREAM (integration domain)",
+    "solution_hint": "solution:hubspot-v2",
+    "confidence": 0.8,
+    "domain": "integration",
+    "times_seen": 3,
+    "last_updated": 1770998201.934541,
+    "source": "direct_training",
+    "tier": 1,
+    "semantic_meaning": "Real-time streaming data"
+  },
+  "QUERY": {
+    "constraint": "Constraint: QUERY (integration domain)",
+    "solution_hint": "solution:hubspot-v2",
+    "confidence": 0.8,
+    "domain": "integration",
+    "times_seen": 3,
+    "last_updated": 1770998232.490127,
+    "source": "direct_training",
+    "tier": 1,
+    "semantic_meaning": "Flexible query patterns"
+  },
+  "RETRY": {
+    "constraint": "Constraint: RETRY (integration domain)",
+    "solution_hint": "solution:hubspot-v2",
+    "confidence": 0.6,
+    "domain": "integration",
+    "times_seen": 1,
+    "last_updated": 1770998218.037549,
+    "source": "direct_training",
+    "tier": 2,
+    "semantic_meaning": "Retry logic for reliability"
+  }
+}

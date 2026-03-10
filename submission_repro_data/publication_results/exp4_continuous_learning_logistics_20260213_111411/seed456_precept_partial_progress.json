@@ -1,0 +1,64 @@
+{
+  "E-TIDE+H-903+P-220+SH-701+T-WKND": {
+    "failed_options": [
+      "antwerp",
+      "rotterdam",
+      "shanghai",
+      "ningbo",
+      "shenzhen",
+      "los_angeles"
+    ],
+    "errors": [
+      "ROUTE-870"
+    ],
+    "last_attempt": 1770982873.091706
+  },
+  "C-BULK+C-HIGH+E-WNTR+LA-550+SH-701": {
+    "failed_options": [
+      "ningbo"
+    ],
+    "errors": [
+      "ROUTE-612"
+    ],
+    "last_attempt": 1770982659.1196868
+  },
+  "E-STRM+H-903+LA-550+P-220+SH-701": {
+    "failed_options": [
+      "rotterdam",
+      "hamburg"
+    ],
+    "errors": [
+      "ROUTE-324"
+    ],
+    "last_attempt": 1770983129.173735
+  },
+  "C-FRAG+E-HEAT+R-482+T-FLEX+T-URGT": {
+    "failed_options": [
+      "rotterdam"
+    ],
+    "errors": [
+      "ROUTE-904"
+    ],
+    "last_attempt": 1770983159.080737
+  },
+  "C-HIGH+E-HEAT+E-STRM+P-220+SH-701": {
+    "failed_options": [
+      "rotterdam",
+      "hamburg"
+    ],
+    "errors": [
+      "ROUTE-368"
+    ],
+    "last_attempt": 1770983196.760777
+  },
+  "E-HEAT+E-STRM+H-903+P-220+SH-701": {
+    "failed_options": [
+      "rotterdam",
+      "hamburg"
+    ],
+    "errors": [
+      "ROUTE-218"
+    ],
+    "last_attempt": 1770983276.226947
+  }
+}

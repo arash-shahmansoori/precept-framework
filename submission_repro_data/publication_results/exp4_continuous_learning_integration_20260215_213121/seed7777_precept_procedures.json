@@ -1,0 +1,42 @@
+{
+  "integration:sync_data:recovery_INT-915_hubspot-v2": {
+    "name": "recovery_INT-915_hubspot-v2",
+    "task_type": "integration:sync_data",
+    "steps": "1. Attempt default action for sync_data\n2. If error 'INT-915' occurs, use 'hubspot-v2'\n3. Learned from: Connect integration (CRM_sync)...",
+    "success_rate": 1.0,
+    "created": 1771216104.67068,
+    "uses": 20
+  },
+  "integration:sync_data:recovery_INT-973_hubspot-v2": {
+    "name": "recovery_INT-973_hubspot-v2",
+    "task_type": "integration:sync_data",
+    "steps": "1. Attempt default action for sync_data\n2. If error 'INT-973' occurs, use 'hubspot-v2'\n3. Learned from: Connect integration (Marketing_automation)...",
+    "success_rate": 1.0,
+    "created": 1771216108.585046,
+    "uses": 20
+  },
+  "integration:sync_data:recovery_INT-991_salesforce-backup": {
+    "name": "recovery_INT-991_salesforce-backup",
+    "task_type": "integration:sync_data",
+    "steps": "1. Attempt default action for sync_data\n2. If error 'INT-991' occurs, use 'salesforce-backup'\n3. Learned from: Connect to API (api)...",
+    "success_rate": 1.0,
+    "created": 1771216556.105669,
+    "uses": 13
+  },
+  "integration:sync_data:recovery_INT-978_hubspot-v2": {
+    "name": "recovery_INT-978_hubspot-v2",
+    "task_type": "integration:sync_data",
+    "steps": "1. Attempt default action for sync_data\n2. If error 'INT-978' occurs, use 'hubspot-v2'\n3. Learned from: Establish connection (api)...",
+    "success_rate": 1.0,
+    "created": 1771216719.318045,
+    "uses": 12
+  },
+  "integration:sync_data:recovery_INT-426_salesforce-backup": {
+    "name": "recovery_INT-426_salesforce-backup",
+    "task_type": "integration:sync_data",
+    "steps": "1. Attempt default action for sync_data\n2. If error 'INT-426' occurs, use 'salesforce-backup'\n3. Learned from: Establish connection (realtime)...",
+    "success_rate": 1.0,
+    "created": 1771217825.918746,
+    "uses": 1
+  }
+}

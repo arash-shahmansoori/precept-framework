@@ -1,0 +1,35 @@
+{
+  "experiences": [
+    {
+      "id": "db8a13e19f21",
+      "task_description": "Book shipment from Hamburg to London",
+      "goal": "",
+      "trajectory": [
+        {
+          "outcome": "success",
+          "strategy": "LLM:origin:hamburg",
+          "lessons": "Domain: logistics, Strategy: LLM:origin:hamburg"
+        }
+      ],
+      "outcome": "success",
+      "correctness": 1.0,
+      "strategy_used": "Strategy using 1 steps",
+      "lessons_learned": [],
+      "skills_demonstrated": [],
+      "experience_type": "success",
+      "priority": 2,
+      "domain": "general",
+      "timestamp": 1770986773.433575,
+      "retrieval_count": 0,
+      "usefulness_score": 0.5,
+      "summary": null
+    }
+  ],
+  "stats": {
+    "total_added": 36,
+    "total_retrieved": 10,
+    "total_pruned": 35,
+    "successful_retrievals": 10
+  },
+  "timestamp": 1770986773.614461
+}

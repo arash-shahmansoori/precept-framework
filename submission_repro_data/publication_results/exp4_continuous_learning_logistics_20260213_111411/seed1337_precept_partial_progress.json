@@ -1,0 +1,56 @@
+{
+  "C-FRAG+E-SMOG+R-482+T-NGHT+T-WKND": {
+    "failed_options": [
+      "antwerp",
+      "hamburg",
+      "shanghai",
+      "ningbo",
+      "shenzhen",
+      "los_angeles"
+    ],
+    "errors": [
+      "ROUTE-585"
+    ],
+    "last_attempt": 1770987083.359364
+  },
+  "E-TIDE+H-903+LA-550+T-NGHT+T-URGT": {
+    "failed_options": [
+      "shanghai",
+      "ningbo"
+    ],
+    "errors": [
+      "ROUTE-511"
+    ],
+    "last_attempt": 1770986839.316481
+  },
+  "E-HEAT+E-STRM+H-903+T-PEAK+T-URGT": {
+    "failed_options": [
+      "ningbo",
+      "rotterdam"
+    ],
+    "errors": [
+      "ROUTE-176"
+    ],
+    "last_attempt": 1770987422.346483
+  },
+  "C-HZMT+P-220+T-FLEX+T-NGHT+T-WKND": {
+    "failed_options": [
+      "rotterdam",
+      "hamburg"
+    ],
+    "errors": [
+      "ROUTE-729"
+    ],
+    "last_attempt": 1770987497.473242
+  },
+  "C-BULK+C-HZMT+SH-701+T-FLEX+T-NGHT": {
+    "failed_options": [
+      "antwerp",
+      "rotterdam"
+    ],
+    "errors": [
+      "ROUTE-621"
+    ],
+    "last_attempt": 1770987541.0888882
+  }
+}

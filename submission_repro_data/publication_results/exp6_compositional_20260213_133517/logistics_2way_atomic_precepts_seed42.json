@@ -1,0 +1,68 @@
+{
+  "SAFE": {
+    "constraint": "Constraint: SAFE (logistics domain)",
+    "solution_hint": "solution:hamburg",
+    "confidence": 0.8,
+    "domain": "logistics",
+    "times_seen": 8,
+    "last_updated": 1770989964.220414,
+    "source": "direct_training",
+    "tier": 3,
+    "semantic_meaning": "Safety-critical cargo requiring secure handling"
+  },
+  "ECON": {
+    "constraint": "Constraint: ECON (logistics domain)",
+    "solution_hint": "solution:ningbo",
+    "confidence": 0.8,
+    "domain": "logistics",
+    "times_seen": 6,
+    "last_updated": 1770989908.6024032,
+    "source": "direct_training",
+    "tier": 1,
+    "semantic_meaning": "Cost-optimized economical routing"
+  },
+  "BULK": {
+    "constraint": "Constraint: BULK (logistics domain)",
+    "solution_hint": "solution:antwerp",
+    "confidence": 0.8,
+    "domain": "logistics",
+    "times_seen": 5,
+    "last_updated": 1770989949.9934132,
+    "source": "direct_training",
+    "tier": 1,
+    "semantic_meaning": "Bulk cargo requiring high-volume facilities"
+  },
+  "AMER": {
+    "constraint": "Constraint: AMER (logistics domain)",
+    "solution_hint": "solution:long_beach",
+    "confidence": 0.8,
+    "domain": "logistics",
+    "times_seen": 6,
+    "last_updated": 1770989949.993409,
+    "source": "direct_training",
+    "tier": 2,
+    "semantic_meaning": "American hub routing"
+  },
+  "FAST": {
+    "constraint": "Constraint: FAST (logistics domain)",
+    "solution_hint": "solution:long_beach",
+    "confidence": 0.7,
+    "domain": "logistics",
+    "times_seen": 5,
+    "last_updated": 1770989931.993021,
+    "source": "direct_training",
+    "tier": 1,
+    "semantic_meaning": "Time-critical express shipment"
+  },
+  "INTL": {
+    "constraint": "Constraint: INTL (logistics domain)",
+    "solution_hint": "solution:antwerp",
+    "confidence": 0.7,
+    "domain": "logistics",
+    "times_seen": 6,
+    "last_updated": 1770989964.220418,
+    "source": "direct_training",
+    "tier": 2,
+    "semantic_meaning": "International transshipment - neutral hub"
+  }
+}

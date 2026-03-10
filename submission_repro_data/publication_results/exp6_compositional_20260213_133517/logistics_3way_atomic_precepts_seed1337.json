@@ -1,0 +1,68 @@
+{
+  "INTL": {
+    "constraint": "Constraint: INTL (logistics domain)",
+    "solution_hint": "solution:antwerp",
+    "confidence": 0.8,
+    "domain": "logistics",
+    "times_seen": 7,
+    "last_updated": 1770994952.365578,
+    "source": "direct_training",
+    "tier": 2,
+    "semantic_meaning": "International transshipment - neutral hub"
+  },
+  "AMER": {
+    "constraint": "Constraint: AMER (logistics domain)",
+    "solution_hint": "solution:long_beach",
+    "confidence": 0.8,
+    "domain": "logistics",
+    "times_seen": 9,
+    "last_updated": 1770994926.794824,
+    "source": "direct_training",
+    "tier": 2,
+    "semantic_meaning": "American hub routing"
+  },
+  "BULK": {
+    "constraint": "Constraint: BULK (logistics domain)",
+    "solution_hint": "solution:antwerp",
+    "confidence": 0.8,
+    "domain": "logistics",
+    "times_seen": 10,
+    "last_updated": 1770994926.794826,
+    "source": "direct_training",
+    "tier": 1,
+    "semantic_meaning": "Bulk cargo requiring high-volume facilities"
+  },
+  "EURO": {
+    "constraint": "Constraint: EURO (logistics domain)",
+    "solution_hint": "solution:hamburg",
+    "confidence": 0.7,
+    "domain": "logistics",
+    "times_seen": 6,
+    "last_updated": 1770994840.313102,
+    "source": "direct_training",
+    "tier": 2,
+    "semantic_meaning": "European hub routing"
+  },
+  "SAFE": {
+    "constraint": "Constraint: SAFE (logistics domain)",
+    "solution_hint": "solution:hamburg",
+    "confidence": 0.7,
+    "domain": "logistics",
+    "times_seen": 7,
+    "last_updated": 1770994952.365571,
+    "source": "direct_training",
+    "tier": 3,
+    "semantic_meaning": "Safety-critical cargo requiring secure handling"
+  },
+  "ASIA": {
+    "constraint": "Constraint: ASIA (logistics domain)",
+    "solution_hint": "solution:ningbo",
+    "confidence": 0.6,
+    "domain": "logistics",
+    "times_seen": 5,
+    "last_updated": 1770994952.3655748,
+    "source": "direct_training",
+    "tier": 2,
+    "semantic_meaning": "Asian hub routing"
+  }
+}

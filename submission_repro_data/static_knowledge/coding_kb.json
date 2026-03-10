@@ -1,0 +1,81 @@
+[
+  {
+    "type": "package_status",
+    "content": "Package 'numpy' installs reliably with pip on all platforms",
+    "entity": "numpy",
+    "condition": "PKG-404",
+    "metadata": {"category": "package", "outdated": true, "scenario_type": "single_condition"},
+    "note": "SINGLE-CONDITION CONFLICT: PKG-404 pip failure, need conda"
+  },
+  {
+    "type": "package_status",
+    "content": "Package conflicts are rare with modern pip versions",
+    "entity": "pip",
+    "condition": "PKG-409",
+    "metadata": {"category": "package", "outdated": true, "scenario_type": "single_condition"},
+    "note": "SINGLE-CONDITION CONFLICT: PKG-409 needs poetry"
+  },
+  {
+    "type": "test_info",
+    "content": "Flaky tests (TST-FLAKY) are rare in well-designed codebases",
+    "entity": "tests",
+    "condition": "TST-FLAKY",
+    "metadata": {"category": "testing", "outdated": true, "scenario_type": "single_condition"},
+    "note": "SINGLE-CONDITION CONFLICT: TST-FLAKY is common in async code"
+  },
+  {
+    "type": "multi_condition_advice",
+    "content": "pip failures (PKG-404) on ARM architecture (ENV-ARM) can be fixed by retrying",
+    "entity": "pip_arm",
+    "conditions": ["PKG-404", "ENV-ARM"],
+    "metadata": {"category": "package", "false": true, "scenario_type": "multi_condition"},
+    "note": "MULTI-CONDITION CONFLICT: PKG-404 + ENV-ARM needs conda"
+  },
+  {
+    "type": "multi_condition_advice",
+    "content": "Package conflicts (PKG-409) with GPU environments (ENV-GPU) auto-resolve",
+    "entity": "conflict_gpu",
+    "conditions": ["PKG-409", "ENV-GPU"],
+    "metadata": {"category": "package", "incomplete": true, "scenario_type": "multi_condition"},
+    "note": "MULTI-CONDITION CONFLICT: PKG-409 + ENV-GPU needs poetry + cuda toolkit"
+  },
+  {
+    "type": "multi_condition_advice",
+    "content": "Flaky tests (TST-FLAKY) with slow execution (TST-SLOW) resolve themselves",
+    "entity": "flaky_slow",
+    "conditions": ["TST-FLAKY", "TST-SLOW"],
+    "metadata": {"category": "testing", "dangerous": true, "scenario_type": "multi_condition"},
+    "note": "MULTI-CONDITION CONFLICT: TST-FLAKY + TST-SLOW needs test isolation"
+  },
+  {
+    "type": "multi_condition_advice",
+    "content": "Memory errors (ENV-MEM) with large builds (BLD-NATIV) need more RAM only",
+    "entity": "memory_build",
+    "conditions": ["ENV-MEM", "BLD-NATIV"],
+    "metadata": {"category": "build", "incomplete": true, "scenario_type": "multi_condition"},
+    "note": "MULTI-CONDITION CONFLICT: ENV-MEM + BLD-NATIV needs chunked build"
+  },
+  {
+    "type": "multi_condition_advice",
+    "content": "Cross compilation (BLD-CROSS) with cache issues (BLD-CACHE) is rare",
+    "entity": "cross_cache",
+    "conditions": ["BLD-CROSS", "BLD-CACHE"],
+    "metadata": {"category": "build", "misleading": true, "scenario_type": "multi_condition"},
+    "note": "MULTI-CONDITION CONFLICT: BLD-CROSS + BLD-CACHE needs cache clear + rebuild"
+  },
+  {
+    "type": "multi_condition_advice",
+    "content": "E2E tests (TST-E2E) with coverage tracking (TST-COV) are fast",
+    "entity": "e2e_coverage",
+    "conditions": ["TST-E2E", "TST-COV"],
+    "metadata": {"category": "testing", "outdated": true, "scenario_type": "multi_condition"},
+    "note": "MULTI-CONDITION CONFLICT: TST-E2E + TST-COV is slow, needs parallel"
+  },
+  {
+    "type": "tool_recommendation",
+    "content": "pip is always the best choice for Python package management",
+    "entity": "pip",
+    "metadata": {"category": "tooling", "misleading": true, "scenario_type": "single_condition"},
+    "note": "MISLEADING: conda/poetry often better for complex deps"
+  }
+]

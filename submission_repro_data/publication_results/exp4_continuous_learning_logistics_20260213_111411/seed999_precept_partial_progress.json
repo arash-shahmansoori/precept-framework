@@ -1,0 +1,42 @@
+{
+  "C-BULK+C-HIGH+E-SMOG+H-903+SH-701": {
+    "failed_options": [
+      "antwerp"
+    ],
+    "errors": [
+      "ROUTE-593"
+    ],
+    "last_attempt": 1770984288.637078
+  },
+  "C-HIGH+C-HZMT+H-903+P-220+T-WKND": {
+    "failed_options": [
+      "ningbo",
+      "rotterdam",
+      "hamburg",
+      "antwerp",
+      "shanghai"
+    ],
+    "errors": [
+      "ROUTE-923"
+    ],
+    "last_attempt": 1770984512.033868
+  },
+  "C-COLD+E-STRM+E-TIDE+LA-550+R-482": {
+    "failed_options": [
+      "rotterdam"
+    ],
+    "errors": [
+      "ROUTE-249"
+    ],
+    "last_attempt": 1770984934.400898
+  },
+  "C-COLD+C-HIGH+E-HEAT+LA-550+T-URGT": {
+    "failed_options": [
+      "ningbo"
+    ],
+    "errors": [
+      "ROUTE-135"
+    ],
+    "last_attempt": 1770984993.584873
+  }
+}

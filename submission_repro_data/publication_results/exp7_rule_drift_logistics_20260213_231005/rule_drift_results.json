@@ -1,0 +1,3482 @@
+{
+  "experiment": "exp7_rule_drift",
+  "domain": "logistics",
+  "timestamp": "20260213_231005",
+  "parameters": {
+    "num_keys": 4,
+    "train_size": 12,
+    "test_size": 16,
+    "num_conditions": 5,
+    "max_retries": 3,
+    "beta": 3,
+    "encounters_per_key": 4
+  },
+  "n_runs": 10,
+  "seeds_used": [
+    42,
+    123,
+    456,
+    789,
+    999,
+    2024,
+    3141,
+    1337,
+    8888,
+    7777
+  ],
+  "train_hash_seed": "0",
+  "test_hash_seed": "1",
+  "learning_curves": {
+    "precept": {
+      "encounter_1": {
+        "p1_mean": 0.885,
+        "p1_std": 0.12258783698955528,
+        "p1_ci_95": 0.08769405578065124,
+        "pt_mean": 0.905,
+        "pt_std": 0.12349089035228468,
+        "pt_ci_95": 0.08834006124015573,
+        "steps_mean": 2.325,
+        "steps_std": 0.41180497002019456,
+        "steps_ci_95": 0.2945875292242675,
+        "n": 10
+      },
+      "encounter_2": {
+        "p1_mean": 0.905,
+        "p1_std": 0.12349089035228468,
+        "p1_ci_95": 0.08834006124015573,
+        "pt_mean": 0.93,
+        "pt_std": 0.11352924243950933,
+        "pt_ci_95": 0.08121392761072754,
+        "steps_mean": 2.305,
+        "steps_std": 0.4112649862179965,
+        "steps_ci_95": 0.2942012480822433,
+        "n": 10
+      },
+      "encounter_3": {
+        "p1_mean": 0.93,
+        "p1_std": 0.11352924243950933,
+        "p1_ci_95": 0.08121392761072754,
+        "pt_mean": 1.0,
+        "pt_std": 0.0,
+        "pt_ci_95": 0.0,
+        "steps_mean": 2.1350000000000002,
+        "steps_std": 0.23339284955247072,
+        "steps_ci_95": 0.16695918673565757,
+        "n": 10
+      },
+      "encounter_4": {
+        "p1_mean": 1.0,
+        "p1_std": 0.0,
+        "p1_ci_95": 0.0,
+        "pt_mean": 1.0,
+        "pt_std": 0.0,
+        "pt_ci_95": 0.0,
+        "steps_mean": 2.0,
+        "steps_std": 0.0,
+        "steps_ci_95": 0.0,
+        "n": 10
+      }
+    },
+    "expel": {
+      "encounter_1": {
+        "p1_mean": 0.6849999999999999,
+        "p1_std": 0.20419217527722372,
+        "p1_ci_95": 0.14607028273334358,
+        "pt_mean": 0.8399999999999999,
+        "pt_std": 0.1629587541544042,
+        "pt_ci_95": 0.11657367017560913,
+        "steps_mean": 2.95,
+        "steps_std": 0.6802777210652851,
+        "steps_ci_95": 0.48664136575406125,
+        "n": 10
+      },
+      "encounter_2": {
+        "p1_mean": 0.78,
+        "p1_std": 0.2030325644378808,
+        "p1_ci_95": 0.1452407471111607,
+        "pt_mean": 0.86,
+        "pt_std": 0.16964014199999297,
+        "pt_ci_95": 0.12135324711253763,
+        "steps_mean": 2.7199999999999998,
+        "steps_std": 0.6941021378570864,
+        "steps_ci_95": 0.49653075777733763,
+        "n": 10
+      },
+      "encounter_3": {
+        "p1_mean": 0.8399999999999999,
+        "p1_std": 0.1882669499525725,
+        "p1_ci_95": 0.13467806281793393,
+        "pt_mean": 0.9550000000000001,
+        "pt_std": 0.0955975359979999,
+        "pt_ci_95": 0.06838635757163816,
+        "steps_mean": 2.41,
+        "steps_std": 0.4532597979574677,
+        "steps_ci_95": 0.3242425266757542,
+        "n": 10
+      },
+      "encounter_4": {
+        "p1_mean": 0.925,
+        "p1_std": 0.12076147288491199,
+        "p1_ci_95": 0.08638755360554545,
+        "pt_mean": 0.975,
+        "pt_std": 0.07905694150420949,
+        "pt_ci_95": 0.05655392907135248,
+        "steps_mean": 2.2,
+        "steps_std": 0.34960294939005054,
+        "steps_ci_95": 0.2500908842000648,
+        "n": 10
+      }
+    },
+    "full_reflexion": {
+      "encounter_1": {
+        "p1_mean": 0.58,
+        "p1_std": 0.22754730887834682,
+        "p1_ci_95": 0.1627775388451873,
+        "pt_mean": 0.8399999999999999,
+        "pt_std": 0.22211108331943574,
+        "pt_ci_95": 0.15888869734910993,
+        "steps_mean": 3.1599999999999997,
+        "steps_std": 0.8289216555930428,
+        "steps_ci_95": 0.5929748308517714,
+        "n": 10
+      },
+      "encounter_2": {
+        "p1_mean": 0.755,
+        "p1_std": 0.2681728298442381,
+        "p1_ci_95": 0.19183928582751175,
+        "pt_mean": 0.8649999999999999,
+        "pt_std": 0.1915579401759281,
+        "pt_ci_95": 0.13703229540175146,
+        "steps_mean": 2.7600000000000002,
+        "steps_std": 0.8408989898383226,
+        "steps_ci_95": 0.601542899619463,
+        "n": 10
+      },
+      "encounter_3": {
+        "p1_mean": 0.845,
+        "p1_std": 0.1862644476126468,
+        "p1_ci_95": 0.13324555893981024,
+        "pt_mean": 0.8899999999999999,
+        "pt_std": 0.19119507199599983,
+        "pt_ci_95": 0.13677271514327635,
+        "steps_mean": 2.5300000000000002,
+        "steps_std": 0.730372811955952,
+        "steps_ci_95": 0.5224772349788135,
+        "n": 10
+      },
+      "encounter_4": {
+        "p1_mean": 0.7,
+        "p1_std": 0.4048319267163706,
+        "p1_ci_95": 0.28959931454112126,
+        "pt_mean": 0.85,
+        "pt_std": 0.3374742788552764,
+        "pt_ci_95": 0.24141455597255684,
+        "steps_mean": 2.9,
+        "steps_std": 1.3498971154211057,
+        "steps_ci_95": 0.9656582238902274,
+        "n": 10
+      }
+    }
+  },
+  "improvements": {
+    "precept": {
+      "p1_improvement_pp": 11.5,
+      "pt_improvement_pp": 9.499999999999996,
+      "steps_saved": 0.3250000000000002,
+      "enc1_p1": 0.885,
+      "enc4_p1": 1.0
+    },
+    "expel": {
+      "p1_improvement_pp": 24.00000000000001,
+      "pt_improvement_pp": 13.500000000000012,
+      "steps_saved": 0.75,
+      "enc1_p1": 0.6849999999999999,
+      "enc4_p1": 0.925
+    },
+    "full_reflexion": {
+      "p1_improvement_pp": 12.0,
+      "pt_improvement_pp": 1.000000000000012,
+      "steps_saved": 0.2599999999999998,
+      "enc1_p1": 0.58,
+      "enc4_p1": 0.7
+    }
+  },
+  "statistical_tests": {
+    "per_encounter_tests": {
+      "encounter_1": {
+        "precept_vs_expel": {
+          "t_stat": 2.945284162042896,
+          "p_value": 0.016345728089285604,
+          "cohens_d": 0.9313806308475994,
+          "n": 10
+        },
+        "precept_vs_full_reflexion": {
+          "t_stat": 5.819061456852375,
+          "p_value": 0.0002533571963820988,
+          "cohens_d": 1.8401488048151131,
+          "n": 10
+        }
+      },
+      "encounter_2": {
+        "precept_vs_expel": {
+          "t_stat": 1.895850521870845,
+          "p_value": 0.09048634812092897,
+          "cohens_d": 0.5995205752330737,
+          "n": 10
+        },
+        "precept_vs_full_reflexion": {
+          "t_stat": 1.7385016708940755,
+          "p_value": 0.11612429686463131,
+          "cohens_d": 0.5497624996033735,
+          "n": 10
+        }
+      },
+      "encounter_3": {
+        "precept_vs_expel": {
+          "t_stat": 1.4885581853339223,
+          "p_value": 0.17078261244619516,
+          "cohens_d": 0.47072342953422447,
+          "n": 10
+        },
+        "precept_vs_full_reflexion": {
+          "t_stat": 1.4361924284421885,
+          "p_value": 0.1847809724866407,
+          "cohens_d": 0.4541639232165707,
+          "n": 10
+        }
+      },
+      "encounter_4": {
+        "precept_vs_expel": {
+          "t_stat": 1.963961012123931,
+          "p_value": 0.08112618884584075,
+          "cohens_d": 0.6210590034081188,
+          "n": 10
+        },
+        "precept_vs_full_reflexion": {
+          "t_stat": 2.3434003976548294,
+          "p_value": 0.04377578392954618,
+          "cohens_d": 0.7410482726333565,
+          "n": 10
+        }
+      }
+    },
+    "improvement_tests": {
+      "precept": {
+        "paired_test": {
+          "t_stat": 2.9665417047071996,
+          "p_value": 0.01579085119990439,
+          "cohens_d": 0.9381028560753398,
+          "n": 10
+        },
+        "improvement_significance": {
+          "t_stat": 2.9665417047071996,
+          "p_value_two_tailed": 0.01579085119990439,
+          "p_value_one_tailed": 0.007895425599952195,
+          "n": 10
+        },
+        "mean_improvement_pp": 11.5
+      },
+      "expel": {
+        "paired_test": {
+          "t_stat": 3.2897639691716676,
+          "p_value": 0.00938188059572647,
+          "cohens_d": 1.0403147106938422,
+          "n": 10
+        },
+        "improvement_significance": {
+          "t_stat": 3.2897639691716676,
+          "p_value_two_tailed": 0.00938188059572647,
+          "p_value_one_tailed": 0.004690940297863235,
+          "n": 10
+        },
+        "mean_improvement_pp": 24.0
+      },
+      "full_reflexion": {
+        "paired_test": {
+          "t_stat": 0.8969221113023231,
+          "p_value": 0.3931199716341174,
+          "cohens_d": 0.2836316755482393,
+          "n": 10
+        },
+        "improvement_significance": {
+          "t_stat": 0.8969221113023231,
+          "p_value_two_tailed": 0.3931199716341174,
+          "p_value_one_tailed": 0.1965599858170587,
+          "n": 10
+        },
+        "mean_improvement_pp": 12.000000000000002
+      }
+    },
+    "final_encounter_advantage": {
+      "precept_vs_expel": {
+        "t_stat": 1.963961012123931,
+        "p_value": 0.08112618884584075,
+        "cohens_d": 0.6210590034081188,
+        "n": 10
+      },
+      "precept_vs_full_reflexion": {
+        "t_stat": 2.3434003976548294,
+        "p_value": 0.04377578392954618,
+        "cohens_d": 0.7410482726333565,
+        "n": 10
+      },
+      "precept_mean_p1": 1.0,
+      "expel_mean_p1": 0.925,
+      "full_reflexion_mean_p1": 0.7,
+      "advantage_vs_expel_pp": 7.499999999999996,
+      "advantage_vs_fr_pp": 30.000000000000004
+    }
+  },
+  "raw_runs": [
+    {
+      "aggregated": {
+        "metadata": {
+          "domain": "logistics",
+          "timestamp": "20260214_000454",
+          "seed": 42,
+          "train_tasks": 0,
+          "test_tasks": 16,
+          "max_retries": 3,
+          "max_attempts": 4,
+          "concurrent_training": false,
+          "concurrent_testing": false,
+          "train_elapsed_seconds": 0.01,
+          "test_elapsed_seconds": 300.09,
+          "static_knowledge_enabled": false,
+          "static_knowledge_mode": "disabled",
+          "test_mode": "matched"
+        },
+        "agents": {
+          "llm_baseline": {
+            "name": "LLM Baseline (NOT RUN - unfair)",
+            "success_rate": 0.0,
+            "total_successes": 0,
+            "total_tasks": 0,
+            "avg_steps": 0.0,
+            "llm_calls": 0,
+            "llm_accuracy": 0.0,
+            "first_try_success_rate": 0.0,
+            "first_try_successes": 0,
+            "learning_efficiency": 0.0,
+            "cold_start_success_rate": 0.0,
+            "cold_start_successes": 0,
+            "cold_start_total": 0
+          },
+          "reflexion": {
+            "name": "Reflexion (NOT RUN - unfair)",
+            "success_rate": 0.0,
+            "total_successes": 0,
+            "total_tasks": 0,
+            "avg_steps": 0.0,
+            "llm_calls": 0,
+            "llm_accuracy": 0.0,
+            "reflections_generated": 0,
+            "first_try_success_rate": 0.0,
+            "first_try_successes": 0,
+            "learning_efficiency": 0.0,
+            "cold_start_success_rate": 0.0,
+            "cold_start_successes": 0,
+            "cold_start_total": 0
+          },
+          "full_reflexion": {
+            "name": "Full Reflexion",
+            "success_rate": 1.0,
+            "total_successes": 16,
+            "total_tasks": 16,
+            "avg_steps": 4.0,
+            "llm_calls": 24,
+            "llm_accuracy": 0.6667,
+            "reflections_generated": 24,
+            "reflections_reused": 24,
+            "accumulated_memories": 20,
+            "first_try_success_rate": 0.5625,
+            "first_try_successes": 9,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_total": 0,
+            "learning_efficiency": 0,
+            "cold_start_success_rate": 1.0,
+            "cold_start_successes": 5,
+            "cold_start_total": 5
+          },
+          "expel": {
+            "name": "ExpeL",
+            "success_rate": 0.9375,
+            "total_successes": 15,
+            "total_tasks": 16,
+            "avg_steps": 3.25,
+            "llm_calls": 42,
+            "llm_accuracy": 0.3571,
+            "insights_extracted": 16,
+            "insights_retrieved": 260,
+            "first_try_success_rate": 0.6875,
+            "first_try_successes": 11,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_total": 0,
+            "learning_efficiency": 0,
+            "cold_start_success_rate": 0.8,
+            "cold_start_successes": 4,
+            "cold_start_total": 5
+          },
+          "precept": {
+            "name": "PRECEPT",
+            "success_rate": 1.0,
+            "total_successes": 16,
+            "total_tasks": 16,
+            "avg_steps": 2.0,
+            "rules_learned": 16,
+            "llm_reasoning_calls": 0,
+            "llm_reasoning_successes": 0,
+            "has_compass_evolution": true,
+            "first_try_success_rate": 1.0,
+            "first_try_successes": 16,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_successes": 0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_successes": 0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_successes": 0,
+            "p1_other_total": 0,
+            "p1_without_rules": 0.0,
+            "p1_without_rules_successes": 0,
+            "p1_without_rules_total": 0,
+            "learning_efficiency": 0,
+            "cold_start_success_rate": 1.0,
+            "cold_start_successes": 5,
+            "cold_start_total": 5
+          }
+        },
+        "precept_advantages": {
+          "vs_llm_baseline": 1.0,
+          "vs_reflexion": 1.0,
+          "vs_full_reflexion": 0.0,
+          "steps_saved_vs_llm": -2.0,
+          "steps_saved_vs_reflexion": -2.0,
+          "steps_saved_vs_full_reflexion": 2.0,
+          "first_try_advantage_vs_llm": 1.0,
+          "first_try_advantage_vs_reflexion": 1.0,
+          "first_try_advantage_vs_full_reflexion": 0.4375,
+          "learning_efficiency_advantage_vs_llm": 0.0,
+          "learning_efficiency_advantage_vs_full_reflexion": 0,
+          "cold_start_advantage_vs_llm": 1.0,
+          "cold_start_advantage_vs_full_reflexion": 0.0
+        },
+        "pruning_stats": {
+          "total_constraints": 0,
+          "hard_constraints": 0,
+          "soft_constraints": 0,
+          "dumb_retries_prevented": 0,
+          "pruning_efficiency": 0.0
+        },
+        "conflict_resolution": {
+          "enabled": false,
+          "mode": "disabled",
+          "stats": {
+            "status": "active",
+            "summary": {
+              "conflicts_detected": 0,
+              "conflicts_resolved": 0
+            },
+            "detection": {
+              "total_detections": 0,
+              "conflicts_found": 0
+            },
+            "resolution_outcomes": {
+              "static_wins": 0,
+              "dynamic_wins": 0,
+              "merges": 0
+            },
+            "reliability": {
+              "static_kb": 0.8333333333333334,
+              "dynamic_experience": 0.625,
+              "episodic_memory": 0.5
+            }
+          },
+          "precept_capabilities": [],
+          "baseline_capabilities": []
+        },
+        "winner": "precept"
+      },
+      "rules": {
+        "before_count": 5,
+        "after_count": 5,
+        "changed_keys": 2
+      },
+      "train_hash_seed": "0",
+      "test_hash_seed": "1",
+      "precept": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 5,
+            "successes": 5,
+            "total": 5
+          },
+          "encounter_2": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 5,
+            "successes": 5,
+            "total": 5
+          },
+          "encounter_3": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 5,
+            "successes": 5,
+            "total": 5
+          },
+          "encounter_4": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 1,
+            "successes": 1,
+            "total": 1
+          }
+        },
+        "by_key": {
+          "C-COLD+C-HZMT+H-903+LA-550+R-4": 4,
+          "C-COLD+C-HIGH+H-903+LA-550+P-2": 3,
+          "C-BULK+C-COLD+P-220+R-482+SH-7": 3,
+          "E-HEAT+E-WNTR+LA-550+T-FLEX+T-": 3,
+          "E-HEAT+H-903+R-482+SH-701+T-FL": 3
+        },
+        "total_tasks": 16
+      },
+      "expel": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 0.4,
+            "pt": 0.8,
+            "avg_steps": 3.6,
+            "first_try_successes": 2,
+            "successes": 4,
+            "total": 5
+          },
+          "encounter_2": {
+            "p1": 0.6,
+            "pt": 1.0,
+            "avg_steps": 2.8,
+            "first_try_successes": 3,
+            "successes": 5,
+            "total": 5
+          },
+          "encounter_3": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 5,
+            "successes": 5,
+            "total": 5
+          },
+          "encounter_4": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 1,
+            "successes": 1,
+            "total": 1
+          }
+        },
+        "by_key": {
+          "C-COLD+C-HZMT+H-903+LA-550+R-4": 4,
+          "C-COLD+C-HIGH+H-903+LA-550+P-2": 3,
+          "C-BULK+C-COLD+P-220+R-482+SH-7": 3,
+          "E-HEAT+E-WNTR+LA-550+T-FLEX+T-": 3,
+          "E-HEAT+H-903+R-482+SH-701+T-FL": 3
+        },
+        "total_tasks": 16
+      },
+      "full_reflexion": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 0.6,
+            "pt": 1.0,
+            "avg_steps": 2.8,
+            "first_try_successes": 3,
+            "successes": 5,
+            "total": 5
+          },
+          "encounter_2": {
+            "p1": 0.4,
+            "pt": 1.0,
+            "avg_steps": 3.2,
+            "first_try_successes": 2,
+            "successes": 5,
+            "total": 5
+          },
+          "encounter_3": {
+            "p1": 0.8,
+            "pt": 1.0,
+            "avg_steps": 2.4,
+            "first_try_successes": 4,
+            "successes": 5,
+            "total": 5
+          },
+          "encounter_4": {
+            "p1": 0.0,
+            "pt": 1.0,
+            "avg_steps": 4.0,
+            "first_try_successes": 0,
+            "successes": 1,
+            "total": 1
+          }
+        },
+        "by_key": {
+          "C-COLD+C-HZMT+H-903+LA-550+R-4": 4,
+          "C-COLD+C-HIGH+H-903+LA-550+P-2": 3,
+          "C-BULK+C-COLD+P-220+R-482+SH-7": 3,
+          "E-HEAT+E-WNTR+LA-550+T-FLEX+T-": 3,
+          "E-HEAT+H-903+R-482+SH-701+T-FL": 3
+        },
+        "total_tasks": 16
+      }
+    },
+    {
+      "aggregated": {
+        "metadata": {
+          "domain": "logistics",
+          "timestamp": "20260214_001058",
+          "seed": 123,
+          "train_tasks": 0,
+          "test_tasks": 16,
+          "max_retries": 3,
+          "max_attempts": 4,
+          "concurrent_training": false,
+          "concurrent_testing": false,
+          "train_elapsed_seconds": 0.01,
+          "test_elapsed_seconds": 254.03,
+          "static_knowledge_enabled": false,
+          "static_knowledge_mode": "disabled",
+          "test_mode": "matched"
+        },
+        "agents": {
+          "llm_baseline": {
+            "name": "LLM Baseline (NOT RUN - unfair)",
+            "success_rate": 0.0,
+            "total_successes": 0,
+            "total_tasks": 0,
+            "avg_steps": 0.0,
+            "llm_calls": 0,
+            "llm_accuracy": 0.0,
+            "first_try_success_rate": 0.0,
+            "first_try_successes": 0,
+            "learning_efficiency": 0.0,
+            "cold_start_success_rate": 0.0,
+            "cold_start_successes": 0,
+            "cold_start_total": 0
+          },
+          "reflexion": {
+            "name": "Reflexion (NOT RUN - unfair)",
+            "success_rate": 0.0,
+            "total_successes": 0,
+            "total_tasks": 0,
+            "avg_steps": 0.0,
+            "llm_calls": 0,
+            "llm_accuracy": 0.0,
+            "reflections_generated": 0,
+            "first_try_success_rate": 0.0,
+            "first_try_successes": 0,
+            "learning_efficiency": 0.0,
+            "cold_start_success_rate": 0.0,
+            "cold_start_successes": 0,
+            "cold_start_total": 0
+          },
+          "full_reflexion": {
+            "name": "Full Reflexion",
+            "success_rate": 1.0,
+            "total_successes": 16,
+            "total_tasks": 16,
+            "avg_steps": 3.12,
+            "llm_calls": 17,
+            "llm_accuracy": 0.9412,
+            "reflections_generated": 17,
+            "reflections_reused": 17,
+            "accumulated_memories": 20,
+            "first_try_success_rate": 0.9375,
+            "first_try_successes": 15,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_total": 0,
+            "learning_efficiency": 0,
+            "cold_start_success_rate": 1.0,
+            "cold_start_successes": 4,
+            "cold_start_total": 4
+          },
+          "expel": {
+            "name": "ExpeL",
+            "success_rate": 1.0,
+            "total_successes": 16,
+            "total_tasks": 16,
+            "avg_steps": 2.0,
+            "llm_calls": 32,
+            "llm_accuracy": 0.5,
+            "insights_extracted": 16,
+            "insights_retrieved": 160,
+            "first_try_success_rate": 1.0,
+            "first_try_successes": 16,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_total": 0,
+            "learning_efficiency": 0,
+            "cold_start_success_rate": 1.0,
+            "cold_start_successes": 4,
+            "cold_start_total": 4
+          },
+          "precept": {
+            "name": "PRECEPT",
+            "success_rate": 1.0,
+            "total_successes": 16,
+            "total_tasks": 16,
+            "avg_steps": 2.0,
+            "rules_learned": 16,
+            "llm_reasoning_calls": 0,
+            "llm_reasoning_successes": 0,
+            "has_compass_evolution": true,
+            "first_try_success_rate": 1.0,
+            "first_try_successes": 16,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_successes": 0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_successes": 0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_successes": 0,
+            "p1_other_total": 0,
+            "p1_without_rules": 0.0,
+            "p1_without_rules_successes": 0,
+            "p1_without_rules_total": 0,
+            "learning_efficiency": 0,
+            "cold_start_success_rate": 1.0,
+            "cold_start_successes": 4,
+            "cold_start_total": 4
+          }
+        },
+        "precept_advantages": {
+          "vs_llm_baseline": 1.0,
+          "vs_reflexion": 1.0,
+          "vs_full_reflexion": 0.0,
+          "steps_saved_vs_llm": -2.0,
+          "steps_saved_vs_reflexion": -2.0,
+          "steps_saved_vs_full_reflexion": 1.12,
+          "first_try_advantage_vs_llm": 1.0,
+          "first_try_advantage_vs_reflexion": 1.0,
+          "first_try_advantage_vs_full_reflexion": 0.0625,
+          "learning_efficiency_advantage_vs_llm": 0.0,
+          "learning_efficiency_advantage_vs_full_reflexion": 0,
+          "cold_start_advantage_vs_llm": 1.0,
+          "cold_start_advantage_vs_full_reflexion": 0.0
+        },
+        "pruning_stats": {
+          "total_constraints": 0,
+          "hard_constraints": 0,
+          "soft_constraints": 0,
+          "dumb_retries_prevented": 0,
+          "pruning_efficiency": 0.0
+        },
+        "conflict_resolution": {
+          "enabled": false,
+          "mode": "disabled",
+          "stats": {
+            "status": "active",
+            "summary": {
+              "conflicts_detected": 0,
+              "conflicts_resolved": 0
+            },
+            "detection": {
+              "total_detections": 0,
+              "conflicts_found": 0
+            },
+            "resolution_outcomes": {
+              "static_wins": 0,
+              "dynamic_wins": 0,
+              "merges": 0
+            },
+            "reliability": {
+              "static_kb": 0.8333333333333334,
+              "dynamic_experience": 0.625,
+              "episodic_memory": 0.5
+            }
+          },
+          "precept_capabilities": [],
+          "baseline_capabilities": []
+        },
+        "winner": "precept"
+      },
+      "rules": {
+        "before_count": 4,
+        "after_count": 4,
+        "changed_keys": 0
+      },
+      "train_hash_seed": "0",
+      "test_hash_seed": "1",
+      "precept": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 4,
+            "successes": 4,
+            "total": 4
+          },
+          "encounter_2": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 4,
+            "successes": 4,
+            "total": 4
+          },
+          "encounter_3": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 4,
+            "successes": 4,
+            "total": 4
+          },
+          "encounter_4": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 4,
+            "successes": 4,
+            "total": 4
+          }
+        },
+        "by_key": {
+          "C-BULK+H-903+P-220+SH-701+T-UR": 4,
+          "C-BULK+H-903+LA-550+R-482+T-FL": 4,
+          "C-FRAG+C-HIGH+LA-550+SH-701+T-": 4,
+          "E-HEAT+E-SMOG+E-TIDE+SH-701+T-": 4
+        },
+        "total_tasks": 16
+      },
+      "expel": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 4,
+            "successes": 4,
+            "total": 4
+          },
+          "encounter_2": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 4,
+            "successes": 4,
+            "total": 4
+          },
+          "encounter_3": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 4,
+            "successes": 4,
+            "total": 4
+          },
+          "encounter_4": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 4,
+            "successes": 4,
+            "total": 4
+          }
+        },
+        "by_key": {
+          "C-BULK+H-903+P-220+SH-701+T-UR": 4,
+          "C-BULK+H-903+LA-550+R-482+T-FL": 4,
+          "C-FRAG+C-HIGH+LA-550+SH-701+T-": 4,
+          "E-HEAT+E-SMOG+E-TIDE+SH-701+T-": 4
+        },
+        "total_tasks": 16
+      },
+      "full_reflexion": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 0.75,
+            "pt": 1.0,
+            "avg_steps": 2.5,
+            "first_try_successes": 3,
+            "successes": 4,
+            "total": 4
+          },
+          "encounter_2": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 4,
+            "successes": 4,
+            "total": 4
+          },
+          "encounter_3": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 4,
+            "successes": 4,
+            "total": 4
+          },
+          "encounter_4": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 4,
+            "successes": 4,
+            "total": 4
+          }
+        },
+        "by_key": {
+          "C-BULK+H-903+P-220+SH-701+T-UR": 4,
+          "C-BULK+H-903+LA-550+R-482+T-FL": 4,
+          "C-FRAG+C-HIGH+LA-550+SH-701+T-": 4,
+          "E-HEAT+E-SMOG+E-TIDE+SH-701+T-": 4
+        },
+        "total_tasks": 16
+      }
+    },
+    {
+      "aggregated": {
+        "metadata": {
+          "domain": "logistics",
+          "timestamp": "20260214_001922",
+          "seed": 456,
+          "train_tasks": 0,
+          "test_tasks": 16,
+          "max_retries": 3,
+          "max_attempts": 4,
+          "concurrent_training": false,
+          "concurrent_testing": false,
+          "train_elapsed_seconds": 0.01,
+          "test_elapsed_seconds": 396.41,
+          "static_knowledge_enabled": false,
+          "static_knowledge_mode": "disabled",
+          "test_mode": "matched"
+        },
+        "agents": {
+          "llm_baseline": {
+            "name": "LLM Baseline (NOT RUN - unfair)",
+            "success_rate": 0.0,
+            "total_successes": 0,
+            "total_tasks": 0,
+            "avg_steps": 0.0,
+            "llm_calls": 0,
+            "llm_accuracy": 0.0,
+            "first_try_success_rate": 0.0,
+            "first_try_successes": 0,
+            "learning_efficiency": 0.0,
+            "cold_start_success_rate": 0.0,
+            "cold_start_successes": 0,
+            "cold_start_total": 0
+          },
+          "reflexion": {
+            "name": "Reflexion (NOT RUN - unfair)",
+            "success_rate": 0.0,
+            "total_successes": 0,
+            "total_tasks": 0,
+            "avg_steps": 0.0,
+            "llm_calls": 0,
+            "llm_accuracy": 0.0,
+            "reflections_generated": 0,
+            "first_try_success_rate": 0.0,
+            "first_try_successes": 0,
+            "learning_efficiency": 0.0,
+            "cold_start_success_rate": 0.0,
+            "cold_start_successes": 0,
+            "cold_start_total": 0
+          },
+          "full_reflexion": {
+            "name": "Full Reflexion",
+            "success_rate": 0.5625,
+            "total_successes": 9,
+            "total_tasks": 16,
+            "avg_steps": 5.62,
+            "llm_calls": 37,
+            "llm_accuracy": 0.2432,
+            "reflections_generated": 37,
+            "reflections_reused": 37,
+            "accumulated_memories": 20,
+            "first_try_success_rate": 0.5625,
+            "first_try_successes": 9,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_total": 0,
+            "learning_efficiency": 0,
+            "cold_start_success_rate": 0.6,
+            "cold_start_successes": 3,
+            "cold_start_total": 5
+          },
+          "expel": {
+            "name": "ExpeL",
+            "success_rate": 0.875,
+            "total_successes": 14,
+            "total_tasks": 16,
+            "avg_steps": 3.5,
+            "llm_calls": 44,
+            "llm_accuracy": 0.3182,
+            "insights_extracted": 16,
+            "insights_retrieved": 280,
+            "first_try_success_rate": 0.625,
+            "first_try_successes": 10,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_total": 0,
+            "learning_efficiency": 0,
+            "cold_start_success_rate": 0.8,
+            "cold_start_successes": 4,
+            "cold_start_total": 5
+          },
+          "precept": {
+            "name": "PRECEPT",
+            "success_rate": 1.0,
+            "total_successes": 16,
+            "total_tasks": 16,
+            "avg_steps": 2.19,
+            "rules_learned": 17,
+            "llm_reasoning_calls": 2,
+            "llm_reasoning_successes": 2,
+            "has_compass_evolution": true,
+            "first_try_success_rate": 0.9375,
+            "first_try_successes": 15,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_successes": 0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_successes": 0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_successes": 0,
+            "p1_other_total": 0,
+            "p1_without_rules": 0.0,
+            "p1_without_rules_successes": 0,
+            "p1_without_rules_total": 0,
+            "learning_efficiency": 0,
+            "cold_start_success_rate": 1.0,
+            "cold_start_successes": 5,
+            "cold_start_total": 5
+          }
+        },
+        "precept_advantages": {
+          "vs_llm_baseline": 1.0,
+          "vs_reflexion": 1.0,
+          "vs_full_reflexion": 0.4375,
+          "steps_saved_vs_llm": -2.19,
+          "steps_saved_vs_reflexion": -2.19,
+          "steps_saved_vs_full_reflexion": 3.44,
+          "first_try_advantage_vs_llm": 0.9375,
+          "first_try_advantage_vs_reflexion": 0.9375,
+          "first_try_advantage_vs_full_reflexion": 0.375,
+          "learning_efficiency_advantage_vs_llm": 0.0,
+          "learning_efficiency_advantage_vs_full_reflexion": 0,
+          "cold_start_advantage_vs_llm": 1.0,
+          "cold_start_advantage_vs_full_reflexion": 0.4
+        },
+        "pruning_stats": {
+          "total_constraints": 2,
+          "hard_constraints": 0,
+          "soft_constraints": 2,
+          "dumb_retries_prevented": 2,
+          "pruning_efficiency": 1.0
+        },
+        "conflict_resolution": {
+          "enabled": false,
+          "mode": "disabled",
+          "stats": {
+            "status": "active",
+            "summary": {
+              "conflicts_detected": 0,
+              "conflicts_resolved": 0
+            },
+            "detection": {
+              "total_detections": 0,
+              "conflicts_found": 0
+            },
+            "resolution_outcomes": {
+              "static_wins": 0,
+              "dynamic_wins": 0,
+              "merges": 0
+            },
+            "reliability": {
+              "static_kb": 0.8333333333333334,
+              "dynamic_experience": 0.625,
+              "episodic_memory": 0.5
+            }
+          },
+          "precept_capabilities": [],
+          "baseline_capabilities": []
+        },
+        "winner": "precept"
+      },
+      "rules": {
+        "before_count": 5,
+        "after_count": 5,
+        "changed_keys": 3
+      },
+      "train_hash_seed": "0",
+      "test_hash_seed": "1",
+      "precept": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 0.8,
+            "pt": 1.0,
+            "avg_steps": 2.6,
+            "first_try_successes": 4,
+            "successes": 5,
+            "total": 5
+          },
+          "encounter_2": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 5,
+            "successes": 5,
+            "total": 5
+          },
+          "encounter_3": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 5,
+            "successes": 5,
+            "total": 5
+          },
+          "encounter_4": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 1,
+            "successes": 1,
+            "total": 1
+          }
+        },
+        "by_key": {
+          "E-TIDE+H-903+P-220+SH-701+T-WK": 4,
+          "E-HEAT+E-WNTR+R-482+T-FLEX+T-U": 3,
+          "C-BULK+C-HIGH+E-WNTR+LA-550+SH": 3,
+          "E-TIDE+LA-550+P-220+T-URGT+T-W": 3,
+          "E-HEAT+E-STRM+LA-550+P-220+SH-": 3
+        },
+        "total_tasks": 16
+      },
+      "expel": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 0.6,
+            "pt": 0.8,
+            "avg_steps": 3.2,
+            "first_try_successes": 3,
+            "successes": 4,
+            "total": 5
+          },
+          "encounter_2": {
+            "p1": 0.6,
+            "pt": 0.8,
+            "avg_steps": 3.2,
+            "first_try_successes": 3,
+            "successes": 4,
+            "total": 5
+          },
+          "encounter_3": {
+            "p1": 0.6,
+            "pt": 1.0,
+            "avg_steps": 2.8,
+            "first_try_successes": 3,
+            "successes": 5,
+            "total": 5
+          },
+          "encounter_4": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 1,
+            "successes": 1,
+            "total": 1
+          }
+        },
+        "by_key": {
+          "E-TIDE+H-903+P-220+SH-701+T-WK": 4,
+          "E-HEAT+E-WNTR+R-482+T-FLEX+T-U": 3,
+          "C-BULK+C-HIGH+E-WNTR+LA-550+SH": 3,
+          "E-TIDE+LA-550+P-220+T-URGT+T-W": 3,
+          "E-HEAT+E-STRM+LA-550+P-220+SH-": 3
+        },
+        "total_tasks": 16
+      },
+      "full_reflexion": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 0.6,
+            "pt": 0.6,
+            "avg_steps": 3.6,
+            "first_try_successes": 3,
+            "successes": 3,
+            "total": 5
+          },
+          "encounter_2": {
+            "p1": 0.6,
+            "pt": 0.6,
+            "avg_steps": 3.6,
+            "first_try_successes": 3,
+            "successes": 3,
+            "total": 5
+          },
+          "encounter_3": {
+            "p1": 0.6,
+            "pt": 0.6,
+            "avg_steps": 3.6,
+            "first_try_successes": 3,
+            "successes": 3,
+            "total": 5
+          },
+          "encounter_4": {
+            "p1": 0.0,
+            "pt": 0.0,
+            "avg_steps": 6.0,
+            "first_try_successes": 0,
+            "successes": 0,
+            "total": 1
+          }
+        },
+        "by_key": {
+          "E-TIDE+H-903+P-220+SH-701+T-WK": 4,
+          "E-HEAT+E-WNTR+R-482+T-FLEX+T-U": 3,
+          "C-BULK+C-HIGH+E-WNTR+LA-550+SH": 3,
+          "E-TIDE+LA-550+P-220+T-URGT+T-W": 3,
+          "E-HEAT+E-STRM+LA-550+P-220+SH-": 3
+        },
+        "total_tasks": 16
+      }
+    },
+    {
+      "aggregated": {
+        "metadata": {
+          "domain": "logistics",
+          "timestamp": "20260214_002628",
+          "seed": 789,
+          "train_tasks": 0,
+          "test_tasks": 16,
+          "max_retries": 3,
+          "max_attempts": 4,
+          "concurrent_training": false,
+          "concurrent_testing": false,
+          "train_elapsed_seconds": 0.01,
+          "test_elapsed_seconds": 309.13,
+          "static_knowledge_enabled": false,
+          "static_knowledge_mode": "disabled",
+          "test_mode": "matched"
+        },
+        "agents": {
+          "llm_baseline": {
+            "name": "LLM Baseline (NOT RUN - unfair)",
+            "success_rate": 0.0,
+            "total_successes": 0,
+            "total_tasks": 0,
+            "avg_steps": 0.0,
+            "llm_calls": 0,
+            "llm_accuracy": 0.0,
+            "first_try_success_rate": 0.0,
+            "first_try_successes": 0,
+            "learning_efficiency": 0.0,
+            "cold_start_success_rate": 0.0,
+            "cold_start_successes": 0,
+            "cold_start_total": 0
+          },
+          "reflexion": {
+            "name": "Reflexion (NOT RUN - unfair)",
+            "success_rate": 0.0,
+            "total_successes": 0,
+            "total_tasks": 0,
+            "avg_steps": 0.0,
+            "llm_calls": 0,
+            "llm_accuracy": 0.0,
+            "reflections_generated": 0,
+            "first_try_success_rate": 0.0,
+            "first_try_successes": 0,
+            "learning_efficiency": 0.0,
+            "cold_start_success_rate": 0.0,
+            "cold_start_successes": 0,
+            "cold_start_total": 0
+          },
+          "full_reflexion": {
+            "name": "Full Reflexion",
+            "success_rate": 1.0,
+            "total_successes": 16,
+            "total_tasks": 16,
+            "avg_steps": 3.62,
+            "llm_calls": 21,
+            "llm_accuracy": 0.7619,
+            "reflections_generated": 21,
+            "reflections_reused": 21,
+            "accumulated_memories": 21,
+            "first_try_success_rate": 0.8125,
+            "first_try_successes": 13,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_total": 0,
+            "learning_efficiency": 0,
+            "cold_start_success_rate": 1.0,
+            "cold_start_successes": 4,
+            "cold_start_total": 4
+          },
+          "expel": {
+            "name": "ExpeL",
+            "success_rate": 0.9375,
+            "total_successes": 15,
+            "total_tasks": 16,
+            "avg_steps": 2.62,
+            "llm_calls": 37,
+            "llm_accuracy": 0.4054,
+            "insights_extracted": 16,
+            "insights_retrieved": 210,
+            "first_try_success_rate": 0.8125,
+            "first_try_successes": 13,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_total": 0,
+            "learning_efficiency": 0,
+            "cold_start_success_rate": 1.0,
+            "cold_start_successes": 4,
+            "cold_start_total": 4
+          },
+          "precept": {
+            "name": "PRECEPT",
+            "success_rate": 1.0,
+            "total_successes": 16,
+            "total_tasks": 16,
+            "avg_steps": 2.0,
+            "rules_learned": 16,
+            "llm_reasoning_calls": 0,
+            "llm_reasoning_successes": 0,
+            "has_compass_evolution": true,
+            "first_try_success_rate": 1.0,
+            "first_try_successes": 16,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_successes": 0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_successes": 0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_successes": 0,
+            "p1_other_total": 0,
+            "p1_without_rules": 0.0,
+            "p1_without_rules_successes": 0,
+            "p1_without_rules_total": 0,
+            "learning_efficiency": 0,
+            "cold_start_success_rate": 1.0,
+            "cold_start_successes": 4,
+            "cold_start_total": 4
+          }
+        },
+        "precept_advantages": {
+          "vs_llm_baseline": 1.0,
+          "vs_reflexion": 1.0,
+          "vs_full_reflexion": 0.0,
+          "steps_saved_vs_llm": -2.0,
+          "steps_saved_vs_reflexion": -2.0,
+          "steps_saved_vs_full_reflexion": 1.62,
+          "first_try_advantage_vs_llm": 1.0,
+          "first_try_advantage_vs_reflexion": 1.0,
+          "first_try_advantage_vs_full_reflexion": 0.1875,
+          "learning_efficiency_advantage_vs_llm": 0.0,
+          "learning_efficiency_advantage_vs_full_reflexion": 0,
+          "cold_start_advantage_vs_llm": 1.0,
+          "cold_start_advantage_vs_full_reflexion": 0.0
+        },
+        "pruning_stats": {
+          "total_constraints": 0,
+          "hard_constraints": 0,
+          "soft_constraints": 0,
+          "dumb_retries_prevented": 0,
+          "pruning_efficiency": 0.0
+        },
+        "conflict_resolution": {
+          "enabled": false,
+          "mode": "disabled",
+          "stats": {
+            "status": "active",
+            "summary": {
+              "conflicts_detected": 0,
+              "conflicts_resolved": 0
+            },
+            "detection": {
+              "total_detections": 0,
+              "conflicts_found": 0
+            },
+            "resolution_outcomes": {
+              "static_wins": 0,
+              "dynamic_wins": 0,
+              "merges": 0
+            },
+            "reliability": {
+              "static_kb": 0.8333333333333334,
+              "dynamic_experience": 0.625,
+              "episodic_memory": 0.5
+            }
+          },
+          "precept_capabilities": [],
+          "baseline_capabilities": []
+        },
+        "winner": "precept"
+      },
+      "rules": {
+        "before_count": 4,
+        "after_count": 4,
+        "changed_keys": 2
+      },
+      "train_hash_seed": "0",
+      "test_hash_seed": "1",
+      "precept": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 4,
+            "successes": 4,
+            "total": 4
+          },
+          "encounter_2": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 4,
+            "successes": 4,
+            "total": 4
+          },
+          "encounter_3": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 4,
+            "successes": 4,
+            "total": 4
+          },
+          "encounter_4": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 4,
+            "successes": 4,
+            "total": 4
+          }
+        },
+        "by_key": {
+          "C-HIGH+E-HEAT+E-STRM+H-903+R-4": 4,
+          "C-HZMT+E-HEAT+E-TIDE+SH-701+T-": 4,
+          "E-SMOG+E-TIDE+H-903+T-PEAK+T-U": 4,
+          "C-FRAG+C-HIGH+E-SMOG+LA-550+R-": 4
+        },
+        "total_tasks": 16
+      },
+      "expel": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 0.75,
+            "pt": 1.0,
+            "avg_steps": 2.5,
+            "first_try_successes": 3,
+            "successes": 4,
+            "total": 4
+          },
+          "encounter_2": {
+            "p1": 0.75,
+            "pt": 0.75,
+            "avg_steps": 3.0,
+            "first_try_successes": 3,
+            "successes": 3,
+            "total": 4
+          },
+          "encounter_3": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 4,
+            "successes": 4,
+            "total": 4
+          },
+          "encounter_4": {
+            "p1": 0.75,
+            "pt": 1.0,
+            "avg_steps": 2.5,
+            "first_try_successes": 3,
+            "successes": 4,
+            "total": 4
+          }
+        },
+        "by_key": {
+          "C-HIGH+E-HEAT+E-STRM+H-903+R-4": 4,
+          "C-HZMT+E-HEAT+E-TIDE+SH-701+T-": 4,
+          "E-SMOG+E-TIDE+H-903+T-PEAK+T-U": 4,
+          "C-FRAG+C-HIGH+E-SMOG+LA-550+R-": 4
+        },
+        "total_tasks": 16
+      },
+      "full_reflexion": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 0.75,
+            "pt": 1.0,
+            "avg_steps": 2.5,
+            "first_try_successes": 3,
+            "successes": 4,
+            "total": 4
+          },
+          "encounter_2": {
+            "p1": 0.75,
+            "pt": 1.0,
+            "avg_steps": 2.5,
+            "first_try_successes": 3,
+            "successes": 4,
+            "total": 4
+          },
+          "encounter_3": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 4,
+            "successes": 4,
+            "total": 4
+          },
+          "encounter_4": {
+            "p1": 0.75,
+            "pt": 1.0,
+            "avg_steps": 2.5,
+            "first_try_successes": 3,
+            "successes": 4,
+            "total": 4
+          }
+        },
+        "by_key": {
+          "C-HIGH+E-HEAT+E-STRM+H-903+R-4": 4,
+          "C-HZMT+E-HEAT+E-TIDE+SH-701+T-": 4,
+          "E-SMOG+E-TIDE+H-903+T-PEAK+T-U": 4,
+          "C-FRAG+C-HIGH+E-SMOG+LA-550+R-": 4
+        },
+        "total_tasks": 16
+      }
+    },
+    {
+      "aggregated": {
+        "metadata": {
+          "domain": "logistics",
+          "timestamp": "20260214_003409",
+          "seed": 999,
+          "train_tasks": 0,
+          "test_tasks": 16,
+          "max_retries": 3,
+          "max_attempts": 4,
+          "concurrent_training": false,
+          "concurrent_testing": false,
+          "train_elapsed_seconds": 0.01,
+          "test_elapsed_seconds": 336.18,
+          "static_knowledge_enabled": false,
+          "static_knowledge_mode": "disabled",
+          "test_mode": "matched"
+        },
+        "agents": {
+          "llm_baseline": {
+            "name": "LLM Baseline (NOT RUN - unfair)",
+            "success_rate": 0.0,
+            "total_successes": 0,
+            "total_tasks": 0,
+            "avg_steps": 0.0,
+            "llm_calls": 0,
+            "llm_accuracy": 0.0,
+            "first_try_success_rate": 0.0,
+            "first_try_successes": 0,
+            "learning_efficiency": 0.0,
+            "cold_start_success_rate": 0.0,
+            "cold_start_successes": 0,
+            "cold_start_total": 0
+          },
+          "reflexion": {
+            "name": "Reflexion (NOT RUN - unfair)",
+            "success_rate": 0.0,
+            "total_successes": 0,
+            "total_tasks": 0,
+            "avg_steps": 0.0,
+            "llm_calls": 0,
+            "llm_accuracy": 0.0,
+            "reflections_generated": 0,
+            "first_try_success_rate": 0.0,
+            "first_try_successes": 0,
+            "learning_efficiency": 0.0,
+            "cold_start_success_rate": 0.0,
+            "cold_start_successes": 0,
+            "cold_start_total": 0
+          },
+          "full_reflexion": {
+            "name": "Full Reflexion",
+            "success_rate": 1.0,
+            "total_successes": 16,
+            "total_tasks": 16,
+            "avg_steps": 3.5,
+            "llm_calls": 20,
+            "llm_accuracy": 0.8,
+            "reflections_generated": 20,
+            "reflections_reused": 20,
+            "accumulated_memories": 20,
+            "first_try_success_rate": 0.8125,
+            "first_try_successes": 13,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_total": 0,
+            "learning_efficiency": 0,
+            "cold_start_success_rate": 1.0,
+            "cold_start_successes": 4,
+            "cold_start_total": 4
+          },
+          "expel": {
+            "name": "ExpeL",
+            "success_rate": 0.875,
+            "total_successes": 14,
+            "total_tasks": 16,
+            "avg_steps": 3.5,
+            "llm_calls": 44,
+            "llm_accuracy": 0.3182,
+            "insights_extracted": 16,
+            "insights_retrieved": 280,
+            "first_try_success_rate": 0.625,
+            "first_try_successes": 10,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_total": 0,
+            "learning_efficiency": 0,
+            "cold_start_success_rate": 0.75,
+            "cold_start_successes": 3,
+            "cold_start_total": 4
+          },
+          "precept": {
+            "name": "PRECEPT",
+            "success_rate": 0.9375,
+            "total_successes": 15,
+            "total_tasks": 16,
+            "avg_steps": 2.25,
+            "rules_learned": 17,
+            "llm_reasoning_calls": 2,
+            "llm_reasoning_successes": 2,
+            "has_compass_evolution": true,
+            "first_try_success_rate": 0.875,
+            "first_try_successes": 14,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_successes": 0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_successes": 0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_successes": 0,
+            "p1_other_total": 0,
+            "p1_without_rules": 0.0,
+            "p1_without_rules_successes": 0,
+            "p1_without_rules_total": 0,
+            "learning_efficiency": 0,
+            "cold_start_success_rate": 0.75,
+            "cold_start_successes": 3,
+            "cold_start_total": 4
+          }
+        },
+        "precept_advantages": {
+          "vs_llm_baseline": 0.9375,
+          "vs_reflexion": 0.9375,
+          "vs_full_reflexion": -0.0625,
+          "steps_saved_vs_llm": -2.25,
+          "steps_saved_vs_reflexion": -2.25,
+          "steps_saved_vs_full_reflexion": 1.25,
+          "first_try_advantage_vs_llm": 0.875,
+          "first_try_advantage_vs_reflexion": 0.875,
+          "first_try_advantage_vs_full_reflexion": 0.0625,
+          "learning_efficiency_advantage_vs_llm": 0.0,
+          "learning_efficiency_advantage_vs_full_reflexion": 0,
+          "cold_start_advantage_vs_llm": 0.75,
+          "cold_start_advantage_vs_full_reflexion": -0.25
+        },
+        "pruning_stats": {
+          "total_constraints": 2,
+          "hard_constraints": 0,
+          "soft_constraints": 2,
+          "dumb_retries_prevented": 0,
+          "pruning_efficiency": 0.0
+        },
+        "conflict_resolution": {
+          "enabled": false,
+          "mode": "disabled",
+          "stats": {
+            "status": "active",
+            "summary": {
+              "conflicts_detected": 0,
+              "conflicts_resolved": 0
+            },
+            "detection": {
+              "total_detections": 0,
+              "conflicts_found": 0
+            },
+            "resolution_outcomes": {
+              "static_wins": 0,
+              "dynamic_wins": 0,
+              "merges": 0
+            },
+            "reliability": {
+              "static_kb": 0.8333333333333334,
+              "dynamic_experience": 0.625,
+              "episodic_memory": 0.5
+            }
+          },
+          "precept_capabilities": [],
+          "baseline_capabilities": []
+        },
+        "winner": "baseline"
+      },
+      "rules": {
+        "before_count": 4,
+        "after_count": 4,
+        "changed_keys": 2
+      },
+      "train_hash_seed": "0",
+      "test_hash_seed": "1",
+      "precept": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 0.75,
+            "pt": 0.75,
+            "avg_steps": 2.25,
+            "first_try_successes": 3,
+            "successes": 3,
+            "total": 4
+          },
+          "encounter_2": {
+            "p1": 0.75,
+            "pt": 1.0,
+            "avg_steps": 2.75,
+            "first_try_successes": 3,
+            "successes": 4,
+            "total": 4
+          },
+          "encounter_3": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 4,
+            "successes": 4,
+            "total": 4
+          },
+          "encounter_4": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 4,
+            "successes": 4,
+            "total": 4
+          }
+        },
+        "by_key": {
+          "C-HIGH+E-HEAT+E-STRM+T-URGT+T-": 4,
+          "C-BULK+C-HIGH+E-SMOG+H-903+SH-": 4,
+          "E-SMOG+E-STRM+E-TIDE+LA-550+R-": 4,
+          "C-COLD+E-HEAT+H-903+LA-550+T-U": 4
+        },
+        "total_tasks": 16
+      },
+      "expel": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 0.5,
+            "pt": 0.75,
+            "avg_steps": 3.5,
+            "first_try_successes": 2,
+            "successes": 3,
+            "total": 4
+          },
+          "encounter_2": {
+            "p1": 0.75,
+            "pt": 0.75,
+            "avg_steps": 3.0,
+            "first_try_successes": 3,
+            "successes": 3,
+            "total": 4
+          },
+          "encounter_3": {
+            "p1": 0.5,
+            "pt": 1.0,
+            "avg_steps": 3.0,
+            "first_try_successes": 2,
+            "successes": 4,
+            "total": 4
+          },
+          "encounter_4": {
+            "p1": 0.75,
+            "pt": 1.0,
+            "avg_steps": 2.5,
+            "first_try_successes": 3,
+            "successes": 4,
+            "total": 4
+          }
+        },
+        "by_key": {
+          "C-HIGH+E-HEAT+E-STRM+T-URGT+T-": 4,
+          "C-BULK+C-HIGH+E-SMOG+H-903+SH-": 4,
+          "E-SMOG+E-STRM+E-TIDE+LA-550+R-": 4,
+          "C-COLD+E-HEAT+H-903+LA-550+T-U": 4
+        },
+        "total_tasks": 16
+      },
+      "full_reflexion": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 0.5,
+            "pt": 1.0,
+            "avg_steps": 3.0,
+            "first_try_successes": 2,
+            "successes": 4,
+            "total": 4
+          },
+          "encounter_2": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 4,
+            "successes": 4,
+            "total": 4
+          },
+          "encounter_3": {
+            "p1": 0.75,
+            "pt": 1.0,
+            "avg_steps": 2.5,
+            "first_try_successes": 3,
+            "successes": 4,
+            "total": 4
+          },
+          "encounter_4": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 4,
+            "successes": 4,
+            "total": 4
+          }
+        },
+        "by_key": {
+          "C-HIGH+E-HEAT+E-STRM+T-URGT+T-": 4,
+          "C-BULK+C-HIGH+E-SMOG+H-903+SH-": 4,
+          "E-SMOG+E-STRM+E-TIDE+LA-550+R-": 4,
+          "C-COLD+E-HEAT+H-903+LA-550+T-U": 4
+        },
+        "total_tasks": 16
+      }
+    },
+    {
+      "aggregated": {
+        "metadata": {
+          "domain": "logistics",
+          "timestamp": "20260214_004328",
+          "seed": 2024,
+          "train_tasks": 0,
+          "test_tasks": 16,
+          "max_retries": 3,
+          "max_attempts": 4,
+          "concurrent_training": false,
+          "concurrent_testing": false,
+          "train_elapsed_seconds": 0.01,
+          "test_elapsed_seconds": 432.1,
+          "static_knowledge_enabled": false,
+          "static_knowledge_mode": "disabled",
+          "test_mode": "matched"
+        },
+        "agents": {
+          "llm_baseline": {
+            "name": "LLM Baseline (NOT RUN - unfair)",
+            "success_rate": 0.0,
+            "total_successes": 0,
+            "total_tasks": 0,
+            "avg_steps": 0.0,
+            "llm_calls": 0,
+            "llm_accuracy": 0.0,
+            "first_try_success_rate": 0.0,
+            "first_try_successes": 0,
+            "learning_efficiency": 0.0,
+            "cold_start_success_rate": 0.0,
+            "cold_start_successes": 0,
+            "cold_start_total": 0
+          },
+          "reflexion": {
+            "name": "Reflexion (NOT RUN - unfair)",
+            "success_rate": 0.0,
+            "total_successes": 0,
+            "total_tasks": 0,
+            "avg_steps": 0.0,
+            "llm_calls": 0,
+            "llm_accuracy": 0.0,
+            "reflections_generated": 0,
+            "first_try_success_rate": 0.0,
+            "first_try_successes": 0,
+            "learning_efficiency": 0.0,
+            "cold_start_success_rate": 0.0,
+            "cold_start_successes": 0,
+            "cold_start_total": 0
+          },
+          "full_reflexion": {
+            "name": "Full Reflexion",
+            "success_rate": 0.5,
+            "total_successes": 8,
+            "total_tasks": 16,
+            "avg_steps": 6.5,
+            "llm_calls": 44,
+            "llm_accuracy": 0.1818,
+            "reflections_generated": 44,
+            "reflections_reused": 44,
+            "accumulated_memories": 20,
+            "first_try_success_rate": 0.375,
+            "first_try_successes": 6,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_total": 0,
+            "learning_efficiency": 0,
+            "cold_start_success_rate": 0.5,
+            "cold_start_successes": 2,
+            "cold_start_total": 4
+          },
+          "expel": {
+            "name": "ExpeL",
+            "success_rate": 1.0,
+            "total_successes": 16,
+            "total_tasks": 16,
+            "avg_steps": 2.38,
+            "llm_calls": 35,
+            "llm_accuracy": 0.4571,
+            "insights_extracted": 16,
+            "insights_retrieved": 190,
+            "first_try_success_rate": 0.875,
+            "first_try_successes": 14,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_total": 0,
+            "learning_efficiency": 0,
+            "cold_start_success_rate": 1.0,
+            "cold_start_successes": 4,
+            "cold_start_total": 4
+          },
+          "precept": {
+            "name": "PRECEPT",
+            "success_rate": 0.875,
+            "total_successes": 14,
+            "total_tasks": 16,
+            "avg_steps": 2.56,
+            "rules_learned": 17,
+            "llm_reasoning_calls": 8,
+            "llm_reasoning_successes": 8,
+            "has_compass_evolution": true,
+            "first_try_success_rate": 0.8125,
+            "first_try_successes": 13,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_successes": 0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_successes": 0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_successes": 0,
+            "p1_other_total": 0,
+            "p1_without_rules": 0.0,
+            "p1_without_rules_successes": 0,
+            "p1_without_rules_total": 0,
+            "learning_efficiency": 0,
+            "cold_start_success_rate": 0.75,
+            "cold_start_successes": 3,
+            "cold_start_total": 4
+          }
+        },
+        "precept_advantages": {
+          "vs_llm_baseline": 0.875,
+          "vs_reflexion": 0.875,
+          "vs_full_reflexion": 0.375,
+          "steps_saved_vs_llm": -2.56,
+          "steps_saved_vs_reflexion": -2.56,
+          "steps_saved_vs_full_reflexion": 3.94,
+          "first_try_advantage_vs_llm": 0.8125,
+          "first_try_advantage_vs_reflexion": 0.8125,
+          "first_try_advantage_vs_full_reflexion": 0.4375,
+          "learning_efficiency_advantage_vs_llm": 0.0,
+          "learning_efficiency_advantage_vs_full_reflexion": 0,
+          "cold_start_advantage_vs_llm": 0.75,
+          "cold_start_advantage_vs_full_reflexion": 0.25
+        },
+        "pruning_stats": {
+          "total_constraints": 9,
+          "hard_constraints": 0,
+          "soft_constraints": 9,
+          "dumb_retries_prevented": 7,
+          "pruning_efficiency": 0.7778
+        },
+        "conflict_resolution": {
+          "enabled": false,
+          "mode": "disabled",
+          "stats": {
+            "status": "active",
+            "summary": {
+              "conflicts_detected": 0,
+              "conflicts_resolved": 0
+            },
+            "detection": {
+              "total_detections": 0,
+              "conflicts_found": 0
+            },
+            "resolution_outcomes": {
+              "static_wins": 0,
+              "dynamic_wins": 0,
+              "merges": 0
+            },
+            "reliability": {
+              "static_kb": 0.8333333333333334,
+              "dynamic_experience": 0.625,
+              "episodic_memory": 0.5
+            }
+          },
+          "precept_capabilities": [],
+          "baseline_capabilities": []
+        },
+        "winner": "precept"
+      },
+      "rules": {
+        "before_count": 4,
+        "after_count": 4,
+        "changed_keys": 3
+      },
+      "train_hash_seed": "0",
+      "test_hash_seed": "1",
+      "precept": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 0.75,
+            "pt": 0.75,
+            "avg_steps": 3.0,
+            "first_try_successes": 3,
+            "successes": 3,
+            "total": 4
+          },
+          "encounter_2": {
+            "p1": 0.75,
+            "pt": 0.75,
+            "avg_steps": 3.0,
+            "first_try_successes": 3,
+            "successes": 3,
+            "total": 4
+          },
+          "encounter_3": {
+            "p1": 0.75,
+            "pt": 1.0,
+            "avg_steps": 2.25,
+            "first_try_successes": 3,
+            "successes": 4,
+            "total": 4
+          },
+          "encounter_4": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 4,
+            "successes": 4,
+            "total": 4
+          }
+        },
+        "by_key": {
+          "C-COLD+C-FRAG+E-SMOG+T-FLEX+T-": 4,
+          "C-HZMT+E-TIDE+SH-701+T-FLEX+T-": 4,
+          "C-BULK+C-COLD+E-STRM+H-903+T-F": 4,
+          "C-HZMT+E-SMOG+E-WNTR+H-903+T-P": 4
+        },
+        "total_tasks": 16
+      },
+      "expel": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 0.75,
+            "pt": 1.0,
+            "avg_steps": 2.5,
+            "first_try_successes": 3,
+            "successes": 4,
+            "total": 4
+          },
+          "encounter_2": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 4,
+            "successes": 4,
+            "total": 4
+          },
+          "encounter_3": {
+            "p1": 0.75,
+            "pt": 1.0,
+            "avg_steps": 2.5,
+            "first_try_successes": 3,
+            "successes": 4,
+            "total": 4
+          },
+          "encounter_4": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 4,
+            "successes": 4,
+            "total": 4
+          }
+        },
+        "by_key": {
+          "C-COLD+C-FRAG+E-SMOG+T-FLEX+T-": 4,
+          "C-HZMT+E-TIDE+SH-701+T-FLEX+T-": 4,
+          "C-BULK+C-COLD+E-STRM+H-903+T-F": 4,
+          "C-HZMT+E-SMOG+E-WNTR+H-903+T-P": 4
+        },
+        "total_tasks": 16
+      },
+      "full_reflexion": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 0.25,
+            "pt": 0.5,
+            "avg_steps": 4.5,
+            "first_try_successes": 1,
+            "successes": 2,
+            "total": 4
+          },
+          "encounter_2": {
+            "p1": 0.25,
+            "pt": 0.5,
+            "avg_steps": 4.5,
+            "first_try_successes": 1,
+            "successes": 2,
+            "total": 4
+          },
+          "encounter_3": {
+            "p1": 0.5,
+            "pt": 0.5,
+            "avg_steps": 4.0,
+            "first_try_successes": 2,
+            "successes": 2,
+            "total": 4
+          },
+          "encounter_4": {
+            "p1": 0.5,
+            "pt": 0.5,
+            "avg_steps": 4.0,
+            "first_try_successes": 2,
+            "successes": 2,
+            "total": 4
+          }
+        },
+        "by_key": {
+          "C-COLD+C-FRAG+E-SMOG+T-FLEX+T-": 4,
+          "C-HZMT+E-TIDE+SH-701+T-FLEX+T-": 4,
+          "C-BULK+C-COLD+E-STRM+H-903+T-F": 4,
+          "C-HZMT+E-SMOG+E-WNTR+H-903+T-P": 4
+        },
+        "total_tasks": 16
+      }
+    },
+    {
+      "aggregated": {
+        "metadata": {
+          "domain": "logistics",
+          "timestamp": "20260214_005011",
+          "seed": 3141,
+          "train_tasks": 0,
+          "test_tasks": 16,
+          "max_retries": 3,
+          "max_attempts": 4,
+          "concurrent_training": false,
+          "concurrent_testing": false,
+          "train_elapsed_seconds": 0.01,
+          "test_elapsed_seconds": 276.56,
+          "static_knowledge_enabled": false,
+          "static_knowledge_mode": "disabled",
+          "test_mode": "matched"
+        },
+        "agents": {
+          "llm_baseline": {
+            "name": "LLM Baseline (NOT RUN - unfair)",
+            "success_rate": 0.0,
+            "total_successes": 0,
+            "total_tasks": 0,
+            "avg_steps": 0.0,
+            "llm_calls": 0,
+            "llm_accuracy": 0.0,
+            "first_try_success_rate": 0.0,
+            "first_try_successes": 0,
+            "learning_efficiency": 0.0,
+            "cold_start_success_rate": 0.0,
+            "cold_start_successes": 0,
+            "cold_start_total": 0
+          },
+          "reflexion": {
+            "name": "Reflexion (NOT RUN - unfair)",
+            "success_rate": 0.0,
+            "total_successes": 0,
+            "total_tasks": 0,
+            "avg_steps": 0.0,
+            "llm_calls": 0,
+            "llm_accuracy": 0.0,
+            "reflections_generated": 0,
+            "first_try_success_rate": 0.0,
+            "first_try_successes": 0,
+            "learning_efficiency": 0.0,
+            "cold_start_success_rate": 0.0,
+            "cold_start_successes": 0,
+            "cold_start_total": 0
+          },
+          "full_reflexion": {
+            "name": "Full Reflexion",
+            "success_rate": 1.0,
+            "total_successes": 16,
+            "total_tasks": 16,
+            "avg_steps": 3.25,
+            "llm_calls": 18,
+            "llm_accuracy": 0.8889,
+            "reflections_generated": 18,
+            "reflections_reused": 18,
+            "accumulated_memories": 20,
+            "first_try_success_rate": 0.9375,
+            "first_try_successes": 15,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_total": 0,
+            "learning_efficiency": 0,
+            "cold_start_success_rate": 1.0,
+            "cold_start_successes": 2,
+            "cold_start_total": 2
+          },
+          "expel": {
+            "name": "ExpeL",
+            "success_rate": 0.9375,
+            "total_successes": 15,
+            "total_tasks": 16,
+            "avg_steps": 2.38,
+            "llm_calls": 35,
+            "llm_accuracy": 0.4286,
+            "insights_extracted": 16,
+            "insights_retrieved": 190,
+            "first_try_success_rate": 0.9375,
+            "first_try_successes": 15,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_total": 0,
+            "learning_efficiency": 0,
+            "cold_start_success_rate": 0.5,
+            "cold_start_successes": 1,
+            "cold_start_total": 2
+          },
+          "precept": {
+            "name": "PRECEPT",
+            "success_rate": 1.0,
+            "total_successes": 16,
+            "total_tasks": 16,
+            "avg_steps": 2.0,
+            "rules_learned": 16,
+            "llm_reasoning_calls": 0,
+            "llm_reasoning_successes": 0,
+            "has_compass_evolution": true,
+            "first_try_success_rate": 1.0,
+            "first_try_successes": 16,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_successes": 0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_successes": 0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_successes": 0,
+            "p1_other_total": 0,
+            "p1_without_rules": 0.0,
+            "p1_without_rules_successes": 0,
+            "p1_without_rules_total": 0,
+            "learning_efficiency": 0,
+            "cold_start_success_rate": 1.0,
+            "cold_start_successes": 2,
+            "cold_start_total": 2
+          }
+        },
+        "precept_advantages": {
+          "vs_llm_baseline": 1.0,
+          "vs_reflexion": 1.0,
+          "vs_full_reflexion": 0.0,
+          "steps_saved_vs_llm": -2.0,
+          "steps_saved_vs_reflexion": -2.0,
+          "steps_saved_vs_full_reflexion": 1.25,
+          "first_try_advantage_vs_llm": 1.0,
+          "first_try_advantage_vs_reflexion": 1.0,
+          "first_try_advantage_vs_full_reflexion": 0.0625,
+          "learning_efficiency_advantage_vs_llm": 0.0,
+          "learning_efficiency_advantage_vs_full_reflexion": 0,
+          "cold_start_advantage_vs_llm": 1.0,
+          "cold_start_advantage_vs_full_reflexion": 0.0
+        },
+        "pruning_stats": {
+          "total_constraints": 0,
+          "hard_constraints": 0,
+          "soft_constraints": 0,
+          "dumb_retries_prevented": 0,
+          "pruning_efficiency": 0.0
+        },
+        "conflict_resolution": {
+          "enabled": false,
+          "mode": "disabled",
+          "stats": {
+            "status": "active",
+            "summary": {
+              "conflicts_detected": 0,
+              "conflicts_resolved": 0
+            },
+            "detection": {
+              "total_detections": 0,
+              "conflicts_found": 0
+            },
+            "resolution_outcomes": {
+              "static_wins": 0,
+              "dynamic_wins": 0,
+              "merges": 0
+            },
+            "reliability": {
+              "static_kb": 0.8333333333333334,
+              "dynamic_experience": 0.625,
+              "episodic_memory": 0.5
+            }
+          },
+          "precept_capabilities": [],
+          "baseline_capabilities": []
+        },
+        "winner": "precept"
+      },
+      "rules": {
+        "before_count": 2,
+        "after_count": 2,
+        "changed_keys": 0
+      },
+      "train_hash_seed": "0",
+      "test_hash_seed": "1",
+      "precept": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 2,
+            "successes": 2,
+            "total": 2
+          },
+          "encounter_2": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 2,
+            "successes": 2,
+            "total": 2
+          },
+          "encounter_3": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 2,
+            "successes": 2,
+            "total": 2
+          },
+          "encounter_4": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 2,
+            "successes": 2,
+            "total": 2
+          }
+        },
+        "by_key": {
+          "H-903+LA-550+R-482+T-NGHT+T-WK": 8,
+          "E-SMOG+P-220+SH-701+T-FLEX+T-W": 8
+        },
+        "total_tasks": 16
+      },
+      "expel": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 0.5,
+            "pt": 0.5,
+            "avg_steps": 4.0,
+            "first_try_successes": 1,
+            "successes": 1,
+            "total": 2
+          },
+          "encounter_2": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 2,
+            "successes": 2,
+            "total": 2
+          },
+          "encounter_3": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 2,
+            "successes": 2,
+            "total": 2
+          },
+          "encounter_4": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 2,
+            "successes": 2,
+            "total": 2
+          }
+        },
+        "by_key": {
+          "H-903+LA-550+R-482+T-NGHT+T-WK": 8,
+          "E-SMOG+P-220+SH-701+T-FLEX+T-W": 8
+        },
+        "total_tasks": 16
+      },
+      "full_reflexion": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 0.5,
+            "pt": 1.0,
+            "avg_steps": 3.0,
+            "first_try_successes": 1,
+            "successes": 2,
+            "total": 2
+          },
+          "encounter_2": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 2,
+            "successes": 2,
+            "total": 2
+          },
+          "encounter_3": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 2,
+            "successes": 2,
+            "total": 2
+          },
+          "encounter_4": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 2,
+            "successes": 2,
+            "total": 2
+          }
+        },
+        "by_key": {
+          "H-903+LA-550+R-482+T-NGHT+T-WK": 8,
+          "E-SMOG+P-220+SH-701+T-FLEX+T-W": 8
+        },
+        "total_tasks": 16
+      }
+    },
+    {
+      "aggregated": {
+        "metadata": {
+          "domain": "logistics",
+          "timestamp": "20260214_005612",
+          "seed": 1337,
+          "train_tasks": 0,
+          "test_tasks": 16,
+          "max_retries": 3,
+          "max_attempts": 4,
+          "concurrent_training": false,
+          "concurrent_testing": false,
+          "train_elapsed_seconds": 0.01,
+          "test_elapsed_seconds": 237.03,
+          "static_knowledge_enabled": false,
+          "static_knowledge_mode": "disabled",
+          "test_mode": "matched"
+        },
+        "agents": {
+          "llm_baseline": {
+            "name": "LLM Baseline (NOT RUN - unfair)",
+            "success_rate": 0.0,
+            "total_successes": 0,
+            "total_tasks": 0,
+            "avg_steps": 0.0,
+            "llm_calls": 0,
+            "llm_accuracy": 0.0,
+            "first_try_success_rate": 0.0,
+            "first_try_successes": 0,
+            "learning_efficiency": 0.0,
+            "cold_start_success_rate": 0.0,
+            "cold_start_successes": 0,
+            "cold_start_total": 0
+          },
+          "reflexion": {
+            "name": "Reflexion (NOT RUN - unfair)",
+            "success_rate": 0.0,
+            "total_successes": 0,
+            "total_tasks": 0,
+            "avg_steps": 0.0,
+            "llm_calls": 0,
+            "llm_accuracy": 0.0,
+            "reflections_generated": 0,
+            "first_try_success_rate": 0.0,
+            "first_try_successes": 0,
+            "learning_efficiency": 0.0,
+            "cold_start_success_rate": 0.0,
+            "cold_start_successes": 0,
+            "cold_start_total": 0
+          },
+          "full_reflexion": {
+            "name": "Full Reflexion",
+            "success_rate": 1.0,
+            "total_successes": 16,
+            "total_tasks": 16,
+            "avg_steps": 3.0,
+            "llm_calls": 16,
+            "llm_accuracy": 1.0,
+            "reflections_generated": 16,
+            "reflections_reused": 16,
+            "accumulated_memories": 20,
+            "first_try_success_rate": 1.0,
+            "first_try_successes": 16,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_total": 0,
+            "learning_efficiency": 0,
+            "cold_start_success_rate": 1.0,
+            "cold_start_successes": 3,
+            "cold_start_total": 3
+          },
+          "expel": {
+            "name": "ExpeL",
+            "success_rate": 1.0,
+            "total_successes": 16,
+            "total_tasks": 16,
+            "avg_steps": 2.0,
+            "llm_calls": 32,
+            "llm_accuracy": 0.5,
+            "insights_extracted": 16,
+            "insights_retrieved": 160,
+            "first_try_success_rate": 1.0,
+            "first_try_successes": 16,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_total": 0,
+            "learning_efficiency": 0,
+            "cold_start_success_rate": 1.0,
+            "cold_start_successes": 3,
+            "cold_start_total": 3
+          },
+          "precept": {
+            "name": "PRECEPT",
+            "success_rate": 1.0,
+            "total_successes": 16,
+            "total_tasks": 16,
+            "avg_steps": 2.0,
+            "rules_learned": 16,
+            "llm_reasoning_calls": 0,
+            "llm_reasoning_successes": 0,
+            "has_compass_evolution": true,
+            "first_try_success_rate": 1.0,
+            "first_try_successes": 16,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_successes": 0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_successes": 0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_successes": 0,
+            "p1_other_total": 0,
+            "p1_without_rules": 0.0,
+            "p1_without_rules_successes": 0,
+            "p1_without_rules_total": 0,
+            "learning_efficiency": 0,
+            "cold_start_success_rate": 1.0,
+            "cold_start_successes": 3,
+            "cold_start_total": 3
+          }
+        },
+        "precept_advantages": {
+          "vs_llm_baseline": 1.0,
+          "vs_reflexion": 1.0,
+          "vs_full_reflexion": 0.0,
+          "steps_saved_vs_llm": -2.0,
+          "steps_saved_vs_reflexion": -2.0,
+          "steps_saved_vs_full_reflexion": 1.0,
+          "first_try_advantage_vs_llm": 1.0,
+          "first_try_advantage_vs_reflexion": 1.0,
+          "first_try_advantage_vs_full_reflexion": 0.0,
+          "learning_efficiency_advantage_vs_llm": 0.0,
+          "learning_efficiency_advantage_vs_full_reflexion": 0,
+          "cold_start_advantage_vs_llm": 1.0,
+          "cold_start_advantage_vs_full_reflexion": 0.0
+        },
+        "pruning_stats": {
+          "total_constraints": 0,
+          "hard_constraints": 0,
+          "soft_constraints": 0,
+          "dumb_retries_prevented": 0,
+          "pruning_efficiency": 0.0
+        },
+        "conflict_resolution": {
+          "enabled": false,
+          "mode": "disabled",
+          "stats": {
+            "status": "active",
+            "summary": {
+              "conflicts_detected": 0,
+              "conflicts_resolved": 0
+            },
+            "detection": {
+              "total_detections": 0,
+              "conflicts_found": 0
+            },
+            "resolution_outcomes": {
+              "static_wins": 0,
+              "dynamic_wins": 0,
+              "merges": 0
+            },
+            "reliability": {
+              "static_kb": 0.8333333333333334,
+              "dynamic_experience": 0.625,
+              "episodic_memory": 0.5
+            }
+          },
+          "precept_capabilities": [],
+          "baseline_capabilities": []
+        },
+        "winner": "precept"
+      },
+      "rules": {
+        "before_count": 3,
+        "after_count": 3,
+        "changed_keys": 1
+      },
+      "train_hash_seed": "0",
+      "test_hash_seed": "1",
+      "precept": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 3,
+            "successes": 3,
+            "total": 3
+          },
+          "encounter_2": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 3,
+            "successes": 3,
+            "total": 3
+          },
+          "encounter_3": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 3,
+            "successes": 3,
+            "total": 3
+          },
+          "encounter_4": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 3,
+            "successes": 3,
+            "total": 3
+          }
+        },
+        "by_key": {
+          "E-HEAT+H-903+T-NGHT+T-PEAK+T-U": 6,
+          "E-TIDE+H-903+LA-550+T-NGHT+T-U": 5,
+          "C-HZMT+E-TIDE+T-FLEX+T-NGHT+T-": 5
+        },
+        "total_tasks": 16
+      },
+      "expel": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 3,
+            "successes": 3,
+            "total": 3
+          },
+          "encounter_2": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 3,
+            "successes": 3,
+            "total": 3
+          },
+          "encounter_3": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 3,
+            "successes": 3,
+            "total": 3
+          },
+          "encounter_4": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 3,
+            "successes": 3,
+            "total": 3
+          }
+        },
+        "by_key": {
+          "E-HEAT+H-903+T-NGHT+T-PEAK+T-U": 6,
+          "E-TIDE+H-903+LA-550+T-NGHT+T-U": 5,
+          "C-HZMT+E-TIDE+T-FLEX+T-NGHT+T-": 5
+        },
+        "total_tasks": 16
+      },
+      "full_reflexion": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 3,
+            "successes": 3,
+            "total": 3
+          },
+          "encounter_2": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 3,
+            "successes": 3,
+            "total": 3
+          },
+          "encounter_3": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 3,
+            "successes": 3,
+            "total": 3
+          },
+          "encounter_4": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 3,
+            "successes": 3,
+            "total": 3
+          }
+        },
+        "by_key": {
+          "E-HEAT+H-903+T-NGHT+T-PEAK+T-U": 6,
+          "E-TIDE+H-903+LA-550+T-NGHT+T-U": 5,
+          "C-HZMT+E-TIDE+T-FLEX+T-NGHT+T-": 5
+        },
+        "total_tasks": 16
+      }
+    },
+    {
+      "aggregated": {
+        "metadata": {
+          "domain": "logistics",
+          "timestamp": "20260214_010425",
+          "seed": 8888,
+          "train_tasks": 0,
+          "test_tasks": 16,
+          "max_retries": 3,
+          "max_attempts": 4,
+          "concurrent_training": false,
+          "concurrent_testing": false,
+          "train_elapsed_seconds": 0.01,
+          "test_elapsed_seconds": 366.7,
+          "static_knowledge_enabled": false,
+          "static_knowledge_mode": "disabled",
+          "test_mode": "matched"
+        },
+        "agents": {
+          "llm_baseline": {
+            "name": "LLM Baseline (NOT RUN - unfair)",
+            "success_rate": 0.0,
+            "total_successes": 0,
+            "total_tasks": 0,
+            "avg_steps": 0.0,
+            "llm_calls": 0,
+            "llm_accuracy": 0.0,
+            "first_try_success_rate": 0.0,
+            "first_try_successes": 0,
+            "learning_efficiency": 0.0,
+            "cold_start_success_rate": 0.0,
+            "cold_start_successes": 0,
+            "cold_start_total": 0
+          },
+          "reflexion": {
+            "name": "Reflexion (NOT RUN - unfair)",
+            "success_rate": 0.0,
+            "total_successes": 0,
+            "total_tasks": 0,
+            "avg_steps": 0.0,
+            "llm_calls": 0,
+            "llm_accuracy": 0.0,
+            "reflections_generated": 0,
+            "first_try_success_rate": 0.0,
+            "first_try_successes": 0,
+            "learning_efficiency": 0.0,
+            "cold_start_success_rate": 0.0,
+            "cold_start_successes": 0,
+            "cold_start_total": 0
+          },
+          "full_reflexion": {
+            "name": "Full Reflexion",
+            "success_rate": 0.8125,
+            "total_successes": 13,
+            "total_tasks": 16,
+            "avg_steps": 4.38,
+            "llm_calls": 27,
+            "llm_accuracy": 0.4815,
+            "reflections_generated": 27,
+            "reflections_reused": 27,
+            "accumulated_memories": 21,
+            "first_try_success_rate": 0.75,
+            "first_try_successes": 12,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_total": 0,
+            "learning_efficiency": 0,
+            "cold_start_success_rate": 0.8,
+            "cold_start_successes": 4,
+            "cold_start_total": 5
+          },
+          "expel": {
+            "name": "ExpeL",
+            "success_rate": 0.8125,
+            "total_successes": 13,
+            "total_tasks": 16,
+            "avg_steps": 3.38,
+            "llm_calls": 43,
+            "llm_accuracy": 0.3023,
+            "insights_extracted": 16,
+            "insights_retrieved": 267,
+            "first_try_success_rate": 0.6875,
+            "first_try_successes": 11,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_total": 0,
+            "learning_efficiency": 0,
+            "cold_start_success_rate": 0.8,
+            "cold_start_successes": 4,
+            "cold_start_total": 5
+          },
+          "precept": {
+            "name": "PRECEPT",
+            "success_rate": 0.875,
+            "total_successes": 14,
+            "total_tasks": 16,
+            "avg_steps": 2.56,
+            "rules_learned": 17,
+            "llm_reasoning_calls": 9,
+            "llm_reasoning_successes": 8,
+            "has_compass_evolution": true,
+            "first_try_success_rate": 0.8125,
+            "first_try_successes": 13,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_successes": 0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_successes": 0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_successes": 0,
+            "p1_other_total": 0,
+            "p1_without_rules": 0.0,
+            "p1_without_rules_successes": 0,
+            "p1_without_rules_total": 0,
+            "learning_efficiency": 0,
+            "cold_start_success_rate": 0.8,
+            "cold_start_successes": 4,
+            "cold_start_total": 5
+          }
+        },
+        "precept_advantages": {
+          "vs_llm_baseline": 0.875,
+          "vs_reflexion": 0.875,
+          "vs_full_reflexion": 0.0625,
+          "steps_saved_vs_llm": -2.56,
+          "steps_saved_vs_reflexion": -2.56,
+          "steps_saved_vs_full_reflexion": 1.81,
+          "first_try_advantage_vs_llm": 0.8125,
+          "first_try_advantage_vs_reflexion": 0.8125,
+          "first_try_advantage_vs_full_reflexion": 0.0625,
+          "learning_efficiency_advantage_vs_llm": 0.0,
+          "learning_efficiency_advantage_vs_full_reflexion": 0,
+          "cold_start_advantage_vs_llm": 0.8,
+          "cold_start_advantage_vs_full_reflexion": 0.0
+        },
+        "pruning_stats": {
+          "total_constraints": 9,
+          "hard_constraints": 0,
+          "soft_constraints": 9,
+          "dumb_retries_prevented": 3,
+          "pruning_efficiency": 0.3333
+        },
+        "conflict_resolution": {
+          "enabled": false,
+          "mode": "disabled",
+          "stats": {
+            "status": "active",
+            "summary": {
+              "conflicts_detected": 0,
+              "conflicts_resolved": 0
+            },
+            "detection": {
+              "total_detections": 0,
+              "conflicts_found": 0
+            },
+            "resolution_outcomes": {
+              "static_wins": 0,
+              "dynamic_wins": 0,
+              "merges": 0
+            },
+            "reliability": {
+              "static_kb": 0.8333333333333334,
+              "dynamic_experience": 0.625,
+              "episodic_memory": 0.5
+            }
+          },
+          "precept_capabilities": [],
+          "baseline_capabilities": []
+        },
+        "winner": "precept"
+      },
+      "rules": {
+        "before_count": 5,
+        "after_count": 5,
+        "changed_keys": 3
+      },
+      "train_hash_seed": "0",
+      "test_hash_seed": "1",
+      "precept": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 0.8,
+            "pt": 0.8,
+            "avg_steps": 2.4,
+            "first_try_successes": 4,
+            "successes": 4,
+            "total": 5
+          },
+          "encounter_2": {
+            "p1": 0.8,
+            "pt": 0.8,
+            "avg_steps": 2.8,
+            "first_try_successes": 4,
+            "successes": 4,
+            "total": 5
+          },
+          "encounter_3": {
+            "p1": 0.8,
+            "pt": 1.0,
+            "avg_steps": 2.6,
+            "first_try_successes": 4,
+            "successes": 5,
+            "total": 5
+          },
+          "encounter_4": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 1,
+            "successes": 1,
+            "total": 1
+          }
+        },
+        "by_key": {
+          "C-FRAG+H-903+LA-550+T-PEAK+T-W": 4,
+          "C-HIGH+E-SMOG+E-STRM+H-903+P-2": 3,
+          "C-HIGH+E-STRM+LA-550+R-482+T-U": 3,
+          "C-BULK+C-FRAG+E-TIDE+SH-701+T-": 3,
+          "C-FRAG+C-HIGH+E-STRM+P-220+T-N": 3
+        },
+        "total_tasks": 16
+      },
+      "expel": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 0.6,
+            "pt": 0.8,
+            "avg_steps": 3.2,
+            "first_try_successes": 3,
+            "successes": 4,
+            "total": 5
+          },
+          "encounter_2": {
+            "p1": 0.6,
+            "pt": 0.8,
+            "avg_steps": 3.2,
+            "first_try_successes": 3,
+            "successes": 4,
+            "total": 5
+          },
+          "encounter_3": {
+            "p1": 0.8,
+            "pt": 0.8,
+            "avg_steps": 2.8,
+            "first_try_successes": 4,
+            "successes": 4,
+            "total": 5
+          },
+          "encounter_4": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 1,
+            "successes": 1,
+            "total": 1
+          }
+        },
+        "by_key": {
+          "C-FRAG+H-903+LA-550+T-PEAK+T-W": 4,
+          "C-HIGH+E-SMOG+E-STRM+H-903+P-2": 3,
+          "C-HIGH+E-STRM+LA-550+R-482+T-U": 3,
+          "C-BULK+C-FRAG+E-TIDE+SH-701+T-": 3,
+          "C-FRAG+C-HIGH+E-STRM+P-220+T-N": 3
+        },
+        "total_tasks": 16
+      },
+      "full_reflexion": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 0.6,
+            "pt": 0.8,
+            "avg_steps": 3.2,
+            "first_try_successes": 3,
+            "successes": 4,
+            "total": 5
+          },
+          "encounter_2": {
+            "p1": 0.8,
+            "pt": 0.8,
+            "avg_steps": 2.8,
+            "first_try_successes": 4,
+            "successes": 4,
+            "total": 5
+          },
+          "encounter_3": {
+            "p1": 0.8,
+            "pt": 0.8,
+            "avg_steps": 2.8,
+            "first_try_successes": 4,
+            "successes": 4,
+            "total": 5
+          },
+          "encounter_4": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 1,
+            "successes": 1,
+            "total": 1
+          }
+        },
+        "by_key": {
+          "C-FRAG+H-903+LA-550+T-PEAK+T-W": 4,
+          "C-HIGH+E-SMOG+E-STRM+H-903+P-2": 3,
+          "C-HIGH+E-STRM+LA-550+R-482+T-U": 3,
+          "C-BULK+C-FRAG+E-TIDE+SH-701+T-": 3,
+          "C-FRAG+C-HIGH+E-STRM+P-220+T-N": 3
+        },
+        "total_tasks": 16
+      }
+    },
+    {
+      "aggregated": {
+        "metadata": {
+          "domain": "logistics",
+          "timestamp": "20260214_011300",
+          "seed": 7777,
+          "train_tasks": 0,
+          "test_tasks": 16,
+          "max_retries": 3,
+          "max_attempts": 4,
+          "concurrent_training": false,
+          "concurrent_testing": false,
+          "train_elapsed_seconds": 0.01,
+          "test_elapsed_seconds": 387.61,
+          "static_knowledge_enabled": false,
+          "static_knowledge_mode": "disabled",
+          "test_mode": "matched"
+        },
+        "agents": {
+          "llm_baseline": {
+            "name": "LLM Baseline (NOT RUN - unfair)",
+            "success_rate": 0.0,
+            "total_successes": 0,
+            "total_tasks": 0,
+            "avg_steps": 0.0,
+            "llm_calls": 0,
+            "llm_accuracy": 0.0,
+            "first_try_success_rate": 0.0,
+            "first_try_successes": 0,
+            "learning_efficiency": 0.0,
+            "cold_start_success_rate": 0.0,
+            "cold_start_successes": 0,
+            "cold_start_total": 0
+          },
+          "reflexion": {
+            "name": "Reflexion (NOT RUN - unfair)",
+            "success_rate": 0.0,
+            "total_successes": 0,
+            "total_tasks": 0,
+            "avg_steps": 0.0,
+            "llm_calls": 0,
+            "llm_accuracy": 0.0,
+            "reflections_generated": 0,
+            "first_try_success_rate": 0.0,
+            "first_try_successes": 0,
+            "learning_efficiency": 0.0,
+            "cold_start_success_rate": 0.0,
+            "cold_start_successes": 0,
+            "cold_start_total": 0
+          },
+          "full_reflexion": {
+            "name": "Full Reflexion",
+            "success_rate": 0.8125,
+            "total_successes": 13,
+            "total_tasks": 16,
+            "avg_steps": 4.75,
+            "llm_calls": 30,
+            "llm_accuracy": 0.4333,
+            "reflections_generated": 30,
+            "reflections_reused": 30,
+            "accumulated_memories": 21,
+            "first_try_success_rate": 0.6875,
+            "first_try_successes": 11,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_total": 0,
+            "learning_efficiency": 0,
+            "cold_start_success_rate": 0.5,
+            "cold_start_successes": 2,
+            "cold_start_total": 4
+          },
+          "expel": {
+            "name": "ExpeL",
+            "success_rate": 0.6875,
+            "total_successes": 11,
+            "total_tasks": 16,
+            "avg_steps": 3.88,
+            "llm_calls": 47,
+            "llm_accuracy": 0.234,
+            "insights_extracted": 16,
+            "insights_retrieved": 274,
+            "first_try_success_rate": 0.6875,
+            "first_try_successes": 11,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_total": 0,
+            "learning_efficiency": 0,
+            "cold_start_success_rate": 0.75,
+            "cold_start_successes": 3,
+            "cold_start_total": 4
+          },
+          "precept": {
+            "name": "PRECEPT",
+            "success_rate": 0.875,
+            "total_successes": 14,
+            "total_tasks": 16,
+            "avg_steps": 2.5,
+            "rules_learned": 17,
+            "llm_reasoning_calls": 8,
+            "llm_reasoning_successes": 6,
+            "has_compass_evolution": true,
+            "first_try_success_rate": 0.8125,
+            "first_try_successes": 13,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_successes": 0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_successes": 0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_successes": 0,
+            "p1_other_total": 0,
+            "p1_without_rules": 0.0,
+            "p1_without_rules_successes": 0,
+            "p1_without_rules_total": 0,
+            "learning_efficiency": 0,
+            "cold_start_success_rate": 0.75,
+            "cold_start_successes": 3,
+            "cold_start_total": 4
+          }
+        },
+        "precept_advantages": {
+          "vs_llm_baseline": 0.875,
+          "vs_reflexion": 0.875,
+          "vs_full_reflexion": 0.0625,
+          "steps_saved_vs_llm": -2.5,
+          "steps_saved_vs_reflexion": -2.5,
+          "steps_saved_vs_full_reflexion": 2.25,
+          "first_try_advantage_vs_llm": 0.8125,
+          "first_try_advantage_vs_reflexion": 0.8125,
+          "first_try_advantage_vs_full_reflexion": 0.125,
+          "learning_efficiency_advantage_vs_llm": 0.0,
+          "learning_efficiency_advantage_vs_full_reflexion": 0,
+          "cold_start_advantage_vs_llm": 0.75,
+          "cold_start_advantage_vs_full_reflexion": 0.25
+        },
+        "pruning_stats": {
+          "total_constraints": 7,
+          "hard_constraints": 0,
+          "soft_constraints": 7,
+          "dumb_retries_prevented": 0,
+          "pruning_efficiency": 0.0
+        },
+        "conflict_resolution": {
+          "enabled": false,
+          "mode": "disabled",
+          "stats": {
+            "status": "active",
+            "summary": {
+              "conflicts_detected": 0,
+              "conflicts_resolved": 0
+            },
+            "detection": {
+              "total_detections": 0,
+              "conflicts_found": 0
+            },
+            "resolution_outcomes": {
+              "static_wins": 0,
+              "dynamic_wins": 0,
+              "merges": 0
+            },
+            "reliability": {
+              "static_kb": 0.8333333333333334,
+              "dynamic_experience": 0.625,
+              "episodic_memory": 0.5
+            }
+          },
+          "precept_capabilities": [],
+          "baseline_capabilities": []
+        },
+        "winner": "precept"
+      },
+      "rules": {
+        "before_count": 4,
+        "after_count": 4,
+        "changed_keys": 2
+      },
+      "train_hash_seed": "0",
+      "test_hash_seed": "1",
+      "precept": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 0.75,
+            "pt": 0.75,
+            "avg_steps": 3.0,
+            "first_try_successes": 3,
+            "successes": 3,
+            "total": 4
+          },
+          "encounter_2": {
+            "p1": 0.75,
+            "pt": 0.75,
+            "avg_steps": 2.5,
+            "first_try_successes": 3,
+            "successes": 3,
+            "total": 4
+          },
+          "encounter_3": {
+            "p1": 0.75,
+            "pt": 1.0,
+            "avg_steps": 2.5,
+            "first_try_successes": 3,
+            "successes": 4,
+            "total": 4
+          },
+          "encounter_4": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 4,
+            "successes": 4,
+            "total": 4
+          }
+        },
+        "by_key": {
+          "E-TIDE+H-903+LA-550+T-FLEX+T-U": 4,
+          "C-HIGH+P-220+R-482+T-NGHT+T-PE": 4,
+          "C-FRAG+E-SMOG+E-STRM+R-482+T-F": 4,
+          "E-HEAT+E-SMOG+E-WNTR+H-903+SH-": 4
+        },
+        "total_tasks": 16
+      },
+      "expel": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 0.75,
+            "pt": 0.75,
+            "avg_steps": 3.0,
+            "first_try_successes": 3,
+            "successes": 3,
+            "total": 4
+          },
+          "encounter_2": {
+            "p1": 0.5,
+            "pt": 0.5,
+            "avg_steps": 4.0,
+            "first_try_successes": 2,
+            "successes": 2,
+            "total": 4
+          },
+          "encounter_3": {
+            "p1": 0.75,
+            "pt": 0.75,
+            "avg_steps": 3.0,
+            "first_try_successes": 3,
+            "successes": 3,
+            "total": 4
+          },
+          "encounter_4": {
+            "p1": 0.75,
+            "pt": 0.75,
+            "avg_steps": 3.0,
+            "first_try_successes": 3,
+            "successes": 3,
+            "total": 4
+          }
+        },
+        "by_key": {
+          "E-TIDE+H-903+LA-550+T-FLEX+T-U": 4,
+          "C-HIGH+P-220+R-482+T-NGHT+T-PE": 4,
+          "C-FRAG+E-SMOG+E-STRM+R-482+T-F": 4,
+          "E-HEAT+E-SMOG+E-WNTR+H-903+SH-": 4
+        },
+        "total_tasks": 16
+      },
+      "full_reflexion": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 0.25,
+            "pt": 0.5,
+            "avg_steps": 4.5,
+            "first_try_successes": 1,
+            "successes": 2,
+            "total": 4
+          },
+          "encounter_2": {
+            "p1": 0.75,
+            "pt": 0.75,
+            "avg_steps": 3.0,
+            "first_try_successes": 3,
+            "successes": 3,
+            "total": 4
+          },
+          "encounter_3": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 4,
+            "successes": 4,
+            "total": 4
+          },
+          "encounter_4": {
+            "p1": 0.75,
+            "pt": 1.0,
+            "avg_steps": 2.5,
+            "first_try_successes": 3,
+            "successes": 4,
+            "total": 4
+          }
+        },
+        "by_key": {
+          "E-TIDE+H-903+LA-550+T-FLEX+T-U": 4,
+          "C-HIGH+P-220+R-482+T-NGHT+T-PE": 4,
+          "C-FRAG+E-SMOG+E-STRM+R-482+T-F": 4,
+          "E-HEAT+E-SMOG+E-WNTR+H-903+SH-": 4
+        },
+        "total_tasks": 16
+      }
+    }
+  ]
+}

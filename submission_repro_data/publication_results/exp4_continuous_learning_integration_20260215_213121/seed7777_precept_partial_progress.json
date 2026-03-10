@@ -1,0 +1,203 @@
+{
+  "INT-403+INT-429+SVC-DEPREC+SVC-DOWN+SVC-MIGRATE": {
+    "failed_options": [
+      "microsoft_graph",
+      "microsoft_graph-delegated",
+      "google_workspace"
+    ],
+    "errors": [
+      "INT-915"
+    ],
+    "last_attempt": 1771216102.438089
+  },
+  "DAT-SYNC+INT-401+NET-DNS+SVC-DOWN+SVC-VERSION": {
+    "failed_options": [
+      "confluence_server",
+      "stripe",
+      "google_workspace",
+      "zendesk-premium",
+      "audit-logger",
+      "analytics-api-backend",
+      "analytics-api",
+      "legacy-erp-v2",
+      "notification-service",
+      "inventory-service-direct",
+      "data-warehouse",
+      "payment-gateway",
+      "salesforce-backup"
+    ],
+    "errors": [
+      "INT-978"
+    ],
+    "last_attempt": 1771216717.622907
+  },
+  "DAT-SCHEMA+INT-403+INT-419+SVC-DOWN+SVC-VERSION": {
+    "failed_options": [
+      "payment-gateway",
+      "legacy-erp-v2",
+      "payment-gateway-v2",
+      "audit-logger",
+      "compliance-gateway",
+      "inventory-service-direct",
+      "analytics-api-backend",
+      "notification-service"
+    ],
+    "errors": [
+      "INT-363"
+    ],
+    "last_attempt": 1771216255.1739678
+  },
+  "INT-402+INT-407+NET-PROXY+NET-SSL+SVC-VERSION": {
+    "failed_options": [
+      "jira_cloud",
+      "salesforce-backup"
+    ],
+    "errors": [
+      "INT-973"
+    ],
+    "last_attempt": 1771216107.335992
+  },
+  "DAT-LARGE+DAT-PARTIAL+INT-404+NET-SSL+SVC-MIGRATE": {
+    "failed_options": [
+      "jira_cloud",
+      "google_workspace",
+      "microsoft_graph",
+      "zendesk-premium",
+      "microsoft_graph-delegated",
+      "stripe",
+      "confluence_server",
+      "hubspot"
+    ],
+    "errors": [
+      "INT-558"
+    ],
+    "last_attempt": 1771216337.712468
+  },
+  "DAT-LARGE+DAT-SCHEMA+INT-511+NET-FIREWALL+SVC-DOWN": {
+    "failed_options": [
+      "stripe",
+      "stripe-webhook-v2",
+      "zendesk",
+      "google_workspace-admin",
+      "jira_cloud",
+      "hubspot",
+      "microsoft_graph-delegated",
+      "confluence_server",
+      "slack_enterprise",
+      "google_workspace",
+      "microsoft_graph"
+    ],
+    "errors": [
+      "INT-991"
+    ],
+    "last_attempt": 1771216554.4964721
+  },
+  "INT-403+NET-PROXY+NET-SSL+SVC-DEPREC+SVC-DOWN": {
+    "failed_options": [
+      "data-warehouse",
+      "partner-api-proxy",
+      "analytics-api-backend",
+      "notification-service"
+    ],
+    "errors": [
+      "INT-647"
+    ],
+    "last_attempt": 1771217467.810529
+  },
+  "DAT-SYNC+INT-402+INT-407+NET-PROXY+SVC-DEPREC": {
+    "failed_options": [
+      "inventory-service-direct",
+      "notification-service-fallback",
+      "notification-service",
+      "partner-api"
+    ],
+    "errors": [
+      "INT-186"
+    ],
+    "last_attempt": 1771217529.5135202
+  },
+  "INT-403+INT-407+INT-429+SVC-DOWN+SVC-MAINT": {
+    "failed_options": [
+      "zendesk-premium",
+      "zendesk",
+      "google_workspace",
+      "stripe-webhook-v2"
+    ],
+    "errors": [
+      "INT-300"
+    ],
+    "last_attempt": 1771217580.658201
+  },
+  "INT-401+INT-403+INT-419+INT-429+SVC-DOWN": {
+    "failed_options": [
+      "payment-gateway-v2",
+      "partner-api-proxy",
+      "inventory-service",
+      "legacy-erp-v2"
+    ],
+    "errors": [
+      "INT-982"
+    ],
+    "last_attempt": 1771217656.90186
+  },
+  "INT-402+INT-407+NET-DNS+NET-SSL+SVC-MIGRATE": {
+    "failed_options": [
+      "compliance-gateway",
+      "payment-gateway-v2",
+      "analytics-api-backend",
+      "partner-api"
+    ],
+    "errors": [
+      "INT-196"
+    ],
+    "last_attempt": 1771217705.8991811
+  },
+  "DAT-CORRUPT+DAT-SCHEMA+INT-403+INT-429+SVC-DEPREC": {
+    "failed_options": [
+      "audit-logger",
+      "payment-gateway-v2",
+      "partner-api-proxy",
+      "notification-service-fallback"
+    ],
+    "errors": [
+      "INT-485"
+    ],
+    "last_attempt": 1771217770.4067159
+  },
+  "INT-401+INT-402+NET-PROXY+NET-SSL+SVC-MAINT": {
+    "failed_options": [
+      "partner-api-proxy",
+      "inventory-service-direct",
+      "partner-api",
+      "audit-logger"
+    ],
+    "errors": [
+      "INT-935"
+    ],
+    "last_attempt": 1771217899.6385338
+  },
+  "DAT-SCHEMA+INT-403+SVC-DEPREC+SVC-MIGRATE+SVC-VERSION": {
+    "failed_options": [
+      "audit-logger",
+      "data-warehouse",
+      "partner-api-proxy",
+      "legacy-erp"
+    ],
+    "errors": [
+      "INT-515"
+    ],
+    "last_attempt": 1771217967.6328378
+  },
+  "DAT-SYNC+INT-402+INT-407+NET-FIREWALL+NET-SSL": {
+    "failed_options": [
+      "payment-gateway",
+      "payment-gateway-v2",
+      "partner-api",
+      "audit-logger"
+    ],
+    "errors": [
+      "INT-373"
+    ],
+    "last_attempt": 1771218036.7555342
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "logistics:book_shipment:recovery_ROUTE-769_antwerp": {
+    "name": "recovery_ROUTE-769_antwerp",
+    "task_type": "logistics:book_shipment",
+    "steps": "1. Attempt default action for book_shipment\n2. If error 'ROUTE-769' occurs, use 'antwerp'\n3. Learned from: Arrange standard delivery from Hamburg to Los_Ange...",
+    "success_rate": 1.0,
+    "created": 1770986834.031947,
+    "uses": 32
+  },
+  "logistics:book_shipment:recovery_ROUTE-585_long_beach": {
+    "name": "recovery_ROUTE-585_long_beach",
+    "task_type": "logistics:book_shipment",
+    "steps": "1. Attempt default action for book_shipment\n2. If error 'ROUTE-585' occurs, use 'long_beach'\n3. Learned from: Book shipment from Rotterdam to London...",
+    "success_rate": 1.0,
+    "created": 1770987084.796473,
+    "uses": 23
+  },
+  "logistics:book_shipment:recovery_ROUTE-169_ningbo": {
+    "name": "recovery_ROUTE-169_ningbo",
+    "task_type": "logistics:book_shipment",
+    "steps": "1. Attempt default action for book_shipment\n2. If error 'ROUTE-169' occurs, use 'ningbo'\n3. Learned from: Send shipment from Rotterdam to Seattle...",
+    "success_rate": 1.0,
+    "created": 1770987471.4587379,
+    "uses": 3
+  }
+}

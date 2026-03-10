@@ -1,0 +1,68 @@
+{
+  "FAST": {
+    "constraint": "Constraint: FAST (logistics domain)",
+    "solution_hint": "solution:long_beach",
+    "confidence": 0.8,
+    "domain": "logistics",
+    "times_seen": 7,
+    "last_updated": 1770992402.9965959,
+    "source": "direct_training",
+    "tier": 1,
+    "semantic_meaning": "Time-critical express shipment"
+  },
+  "EURO": {
+    "constraint": "Constraint: EURO (logistics domain)",
+    "solution_hint": "solution:hamburg",
+    "confidence": 0.8,
+    "domain": "logistics",
+    "times_seen": 6,
+    "last_updated": 1770992369.645396,
+    "source": "direct_training",
+    "tier": 2,
+    "semantic_meaning": "European hub routing"
+  },
+  "ASIA": {
+    "constraint": "Constraint: ASIA (logistics domain)",
+    "solution_hint": "solution:ningbo",
+    "confidence": 0.8,
+    "domain": "logistics",
+    "times_seen": 5,
+    "last_updated": 1770992402.996599,
+    "source": "direct_training",
+    "tier": 2,
+    "semantic_meaning": "Asian hub routing"
+  },
+  "SAFE": {
+    "constraint": "Constraint: SAFE (logistics domain)",
+    "solution_hint": "solution:hamburg",
+    "confidence": 0.8,
+    "domain": "logistics",
+    "times_seen": 7,
+    "last_updated": 1770992391.531855,
+    "source": "direct_training",
+    "tier": 3,
+    "semantic_meaning": "Safety-critical cargo requiring secure handling"
+  },
+  "INTL": {
+    "constraint": "Constraint: INTL (logistics domain)",
+    "solution_hint": "solution:antwerp",
+    "confidence": 0.7,
+    "domain": "logistics",
+    "times_seen": 5,
+    "last_updated": 1770992355.0156531,
+    "source": "direct_training",
+    "tier": 2,
+    "semantic_meaning": "International transshipment - neutral hub"
+  },
+  "ECON": {
+    "constraint": "Constraint: ECON (logistics domain)",
+    "solution_hint": "solution:ningbo",
+    "confidence": 0.6,
+    "domain": "logistics",
+    "times_seen": 5,
+    "last_updated": 1770992369.645393,
+    "source": "direct_training",
+    "tier": 1,
+    "semantic_meaning": "Cost-optimized economical routing"
+  }
+}

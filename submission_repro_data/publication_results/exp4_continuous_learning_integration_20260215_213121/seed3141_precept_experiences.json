@@ -1,0 +1,155 @@
+{
+  "experiences": [
+    {
+      "id": "a53018b9462e",
+      "task_description": "Connect integration (Support_tickets)",
+      "goal": "",
+      "trajectory": [
+        {
+          "outcome": "failure",
+          "strategy": "",
+          "lessons": "Domain: integration, Strategy: "
+        }
+      ],
+      "outcome": "failure",
+      "correctness": 0.0,
+      "strategy_used": "Strategy using 1 steps",
+      "lessons_learned": [],
+      "skills_demonstrated": [],
+      "experience_type": "failure",
+      "priority": 2,
+      "domain": "general",
+      "timestamp": 1771211587.820865,
+      "retrieval_count": 0,
+      "usefulness_score": 0.5,
+      "summary": null
+    },
+    {
+      "id": "48f9d625b9c5",
+      "task_description": "Configure integration (Marketing_automation)",
+      "goal": "",
+      "trajectory": [
+        {
+          "outcome": "failure",
+          "strategy": "",
+          "lessons": "Domain: integration, Strategy: "
+        }
+      ],
+      "outcome": "failure",
+      "correctness": 0.0,
+      "strategy_used": "Strategy using 1 steps",
+      "lessons_learned": [],
+      "skills_demonstrated": [],
+      "experience_type": "failure",
+      "priority": 2,
+      "domain": "general",
+      "timestamp": 1771211588.458133,
+      "retrieval_count": 2,
+      "usefulness_score": 0.3860149999999999,
+      "summary": null
+    },
+    {
+      "id": "48f9d625b9c5",
+      "task_description": "Configure integration (Marketing_automation)",
+      "goal": "",
+      "trajectory": [
+        {
+          "outcome": "failure",
+          "strategy": "",
+          "lessons": "Domain: integration, Strategy: "
+        }
+      ],
+      "outcome": "failure",
+      "correctness": 0.0,
+      "strategy_used": "Strategy using 1 steps",
+      "lessons_learned": [],
+      "skills_demonstrated": [],
+      "experience_type": "failure",
+      "priority": 2,
+      "domain": "general",
+      "timestamp": 1771211588.642128,
+      "retrieval_count": 2,
+      "usefulness_score": 0.5,
+      "summary": null
+    },
+    {
+      "id": "4b1ead80699b",
+      "task_description": "Configure integration (Support_tickets)",
+      "goal": "",
+      "trajectory": [
+        {
+          "outcome": "failure",
+          "strategy": "",
+          "lessons": "Domain: integration, Strategy: "
+        }
+      ],
+      "outcome": "failure",
+      "correctness": 0.0,
+      "strategy_used": "Strategy using 1 steps",
+      "lessons_learned": [],
+      "skills_demonstrated": [],
+      "experience_type": "failure",
+      "priority": 2,
+      "domain": "general",
+      "timestamp": 1771211592.614049,
+      "retrieval_count": 2,
+      "usefulness_score": 0.42349999999999993,
+      "summary": null
+    },
+    {
+      "id": "eeb41c9a2c68",
+      "task_description": "Setup connector (Support_tickets)",
+      "goal": "",
+      "trajectory": [
+        {
+          "outcome": "failure",
+          "strategy": "",
+          "lessons": "Domain: integration, Strategy: "
+        }
+      ],
+      "outcome": "failure",
+      "correctness": 0.0,
+      "strategy_used": "Strategy using 1 steps",
+      "lessons_learned": [],
+      "skills_demonstrated": [],
+      "experience_type": "failure",
+      "priority": 2,
+      "domain": "general",
+      "timestamp": 1771211606.4740841,
+      "retrieval_count": 0,
+      "usefulness_score": 0.5,
+      "summary": null
+    },
+    {
+      "id": "48f9d625b9c5",
+      "task_description": "Configure integration (Marketing_automation)",
+      "goal": "",
+      "trajectory": [
+        {
+          "outcome": "failure",
+          "strategy": "",
+          "lessons": "Domain: integration, Strategy: "
+        }
+      ],
+      "outcome": "failure",
+      "correctness": 0.0,
+      "strategy_used": "Strategy using 1 steps",
+      "lessons_learned": [],
+      "skills_demonstrated": [],
+      "experience_type": "failure",
+      "priority": 2,
+      "domain": "general",
+      "timestamp": 1771211606.699476,
+      "retrieval_count": 0,
+      "usefulness_score": 0.5,
+      "summary": null
+    }
+  ],
+  "stats": {
+    "total_added": 6,
+    "total_retrieved": 6,
+    "total_pruned": 0,
+    "successful_retrievals": 0
+  },
+  "timestamp": 1771211607.072586
+}

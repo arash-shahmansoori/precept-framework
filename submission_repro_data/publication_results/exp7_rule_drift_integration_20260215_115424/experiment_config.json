@@ -1,0 +1,31 @@
+{
+  "experiment": "exp7_rule_drift",
+  "domain": "integration",
+  "seeds": [
+    42,
+    123,
+    456,
+    789,
+    999,
+    2024,
+    3141,
+    1337,
+    8888,
+    7777
+  ],
+  "num_conditions": 5,
+  "condition_mode": "MULTI",
+  "parameters": {
+    "num_keys": 6,
+    "train_size": 18,
+    "test_size": 24,
+    "num_conditions": 5,
+    "max_retries": 3,
+    "beta": 3,
+    "encounters_per_key": 4
+  },
+  "train_hash_seed": "0",
+  "test_hash_seed": "1",
+  "timestamp": "20260215_115424",
+  "mode": "full"
+}

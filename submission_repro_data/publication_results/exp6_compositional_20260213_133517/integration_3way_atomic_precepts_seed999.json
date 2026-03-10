@@ -1,0 +1,46 @@
+{
+  "BATCH": {
+    "constraint": "Constraint: BATCH (integration domain)",
+    "solution_hint": "solution:salesforce-backup",
+    "confidence": 0.8,
+    "domain": "integration",
+    "times_seen": 4,
+    "last_updated": 1771000008.5469398,
+    "source": "direct_training",
+    "tier": 1,
+    "semantic_meaning": "Batch processing for efficiency"
+  },
+  "VERIFY": {
+    "constraint": "Constraint: VERIFY (integration domain)",
+    "solution_hint": "solution:hubspot-v2",
+    "confidence": 0.6,
+    "domain": "integration",
+    "times_seen": 2,
+    "last_updated": 1771000008.546936,
+    "source": "direct_training",
+    "tier": 2,
+    "semantic_meaning": "Request verification required"
+  },
+  "RATE": {
+    "constraint": "Constraint: RATE (integration domain)",
+    "solution_hint": "solution:hubspot-v2",
+    "confidence": 0.6,
+    "domain": "integration",
+    "times_seen": 1,
+    "last_updated": 1770999976.763941,
+    "source": "direct_training",
+    "tier": 2,
+    "semantic_meaning": "Rate limiting compliance"
+  },
+  "QUERY": {
+    "constraint": "Constraint: QUERY (integration domain)",
+    "solution_hint": "solution:hubspot-v2",
+    "confidence": 0.6,
+    "domain": "integration",
+    "times_seen": 2,
+    "last_updated": 1771000008.546931,
+    "source": "direct_training",
+    "tier": 1,
+    "semantic_meaning": "Flexible query patterns"
+  }
+}

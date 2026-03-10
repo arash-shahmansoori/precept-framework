@@ -1,0 +1,57 @@
+{
+  "STREAM": {
+    "constraint": "Constraint: STREAM (integration domain)",
+    "solution_hint": "solution:hubspot-v2",
+    "confidence": 0.6,
+    "domain": "integration",
+    "times_seen": 3,
+    "last_updated": 1771000692.520784,
+    "source": "direct_training",
+    "tier": 1,
+    "semantic_meaning": "Real-time streaming data"
+  },
+  "AUTH": {
+    "constraint": "Constraint: AUTH (integration domain)",
+    "solution_hint": "contributed_to:hubspot-v2",
+    "confidence": 0.4,
+    "domain": "integration",
+    "times_seen": 1,
+    "last_updated": 1771000489.77183,
+    "source": "composite_extraction",
+    "tier": 3,
+    "semantic_meaning": "Secure authentication required"
+  },
+  "BATCH": {
+    "constraint": "Constraint: BATCH (integration domain)",
+    "solution_hint": "contributed_to:hubspot-v2",
+    "confidence": 0.4,
+    "domain": "integration",
+    "times_seen": 1,
+    "last_updated": 1771000489.771845,
+    "source": "composite_extraction",
+    "tier": 1,
+    "semantic_meaning": "Batch processing for efficiency"
+  },
+  "SIMPLE": {
+    "constraint": "Constraint: SIMPLE (integration domain)",
+    "solution_hint": "contributed_to:hubspot-v2",
+    "confidence": 0.4,
+    "domain": "integration",
+    "times_seen": 1,
+    "last_updated": 1771000692.520774,
+    "source": "composite_extraction",
+    "tier": 1,
+    "semantic_meaning": "Simple API key authentication"
+  },
+  "VERIFY": {
+    "constraint": "Constraint: VERIFY (integration domain)",
+    "solution_hint": "contributed_to:hubspot-v2",
+    "confidence": 0.4,
+    "domain": "integration",
+    "times_seen": 1,
+    "last_updated": 1771000692.520788,
+    "source": "composite_extraction",
+    "tier": 2,
+    "semantic_meaning": "Request verification required"
+  }
+}

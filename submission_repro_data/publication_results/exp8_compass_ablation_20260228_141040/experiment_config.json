@@ -1,0 +1,27 @@
+{
+  "experiment": "exp8_compass_ablation",
+  "domain": "integration",
+  "E": 6,
+  "N": 5,
+  "beta": 3,
+  "max_retries": 4,
+  "seeds": [
+    42,
+    123,
+    456,
+    789,
+    999,
+    2024,
+    3141,
+    1337,
+    8888,
+    7777
+  ],
+  "configs": {
+    "full": "All components: COMPASS evolution + learned rules",
+    "no_compass": "COMPASS evolution disabled; static prompt + rule injection only",
+    "no_rules": "COMPASS evolution active but rules NOT baked into prompt",
+    "base_only": "Neither COMPASS evolution nor rule injection; bare base prompt"
+  },
+  "timestamp": "20260228_141040"
+}

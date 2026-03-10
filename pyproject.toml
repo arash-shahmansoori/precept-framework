@@ -1,0 +1,186 @@
+[project]
+name = "precept-framework"
+version = "0.1.0"
+description = "PRECEPT Framework (Planning Resilience via Experience, Context Engineering & Probing Trajectories): test-time adaptation with compositional rule learning, conflict-aware memory, and Pareto-guided prompt evolution"
+authors = [
+    {name = "PRECEPT Team", email = "precept@example.com"},
+]
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+keywords = ["agent", "llm", "rag", "knowledge-graph", "multi-modal", "retrieval", "memory", "evolution", "test-time-learning", "precept"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+
+dependencies = [
+    "aiohttp",
+    "python-dotenv",
+    "tiktoken",
+    "langchain",
+    "langchain-openai",
+    "langchain-anthropic",
+    "langchain-google-genai",
+    "google-generativeai",
+    "langchain-together",
+    "together",
+    "groq",
+    "langchain-groq",
+    "langchain-experimental",
+    "langgraph",
+    "langchain-cli",
+    "onnxruntime>=1.17.0,<1.19.0", # Version 1.17+ has macOS 11.0 wheels that work on macOS 12
+    "chromadb", # Should work now with compatible onnxruntime
+    "langchain-chroma",
+    "langchain-text-splitters",
+    "networkx",
+    "neo4j",
+    "lark",
+    "opensearch-py",
+    "langchain-benchmarks",
+    "pypdfium2",
+    "langsmith",
+    "rank-bm25",
+    "pypdf",
+    "pymupdf",
+    "pdfplumber",
+    "json-repair",
+    "grpcio",
+    "scikit-learn>=1.7.1",
+    "wikipedia>=1.4.0",
+    "msgpack",
+    "ruff>=0.12.7",
+    "pandas>=2.3.2",
+    # PRECEPT Framework Dependencies (Planning Resilience via Experience, Context Engineering & Probing Trajectories)
+    "openai>=1.50.0", # Required for PRECEPT LLM clients (AsyncOpenAI, NOT_GIVEN)
+    "pydantic>=2.0.0", # Required for PRECEPT structured outputs (BaseModel, Field)
+    "numpy>=1.24.0", # Required for PRECEPT memory operations
+    # PRECEPT MCP Integration (Model Context Protocol)
+    "mcp>=1.0.0", # Required for PRECEPT MCP server/client
+    "autogen-agentchat>=0.7.0", # Required for PRECEPT AutoGen integration
+    "autogen-ext[openai,docker]>=0.7.0", # Required for PRECEPT AutoGen OpenAI client and Docker code execution
+    "anyio>=4.0.0", # Required for async MCP operations
+    "docker>=7.1.0",
+    "httplib2>=0.22.0",
+    "rich>=14.1.0",
+    "matplotlib>=3.10.8",
+    "scipy>=1.15.3",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-mock",
+    "pytest-asyncio",
+    "black",
+    "ruff",
+    "mypy",
+    "pre-commit",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/arash-shahmansoori/precept-framework"
+"Bug Tracker" = "https://github.com/arash-shahmansoori/precept-framework/issues"
+"Documentation" = "https://github.com/arash-shahmansoori/precept-framework"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+dev-dependencies = [
+    "ipython>=8.0",
+    "jupyter>=1.0",
+    "pytest>=8.4.1",
+    "pytest-asyncio>=1.1.0",
+]
+
+
+
+
+
+[tool.ruff]
+line-length = 88
+indent-width = 4
+target-version = "py310"
+# Exclude a variety of commonly ignored directories.
+exclude = [
+    ".bzr",
+    ".direnv",
+    ".eggs",
+    ".git",
+    ".git-rewrite",
+    ".hg",
+    ".ipynb_checkpoints",
+    ".mypy_cache",
+    ".nox",
+    ".pants.d",
+    ".pyenv",
+    ".pytest_cache",
+    ".pytype",
+    ".ruff_cache",
+    ".svn",
+    ".tox",
+    ".venv",
+    ".vscode",
+    "__pypackages__",
+    "_build",
+    "build",
+    "dist",
+    "node_modules",
+    "venv",
+    "miscellaneous"
+]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "N", "W"]
+ignore = ["E501", "E203"]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+skip-magic-trailing-comma = false
+line-ending = "auto"
+
+[tool.black]
+line-length = 88
+target-version = ['py310']
+include = '\.pyi?$'
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = "test_*.py"
+python_classes = "Test*"
+python_functions = "test_*"
+addopts = "-v --tb=short"
+
+[tool.hatch.build.targets.wheel]
+packages = [
+    "algorithm",
+    "precept",  # PRECEPT: Planning Resilience via Experience, Context Engineering & Probing Trajectories
+    "compass",  # COMPASS retrieval framework
+    "configs",
+    "ingestion",
+    "memory",
+    "models",
+    "prompts",
+    "pydantic_models",
+    "retrievals",
+    "schema",
+    "type_extensions",
+    "utils",
+    "workflow"
+]
+
+[tool.mypy]
+python_version = "3.10"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = false
+ignore_missing_imports = true

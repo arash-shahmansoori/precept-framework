@@ -1,0 +1,229 @@
+{
+  "metadata": {
+    "domain": "booking",
+    "timestamp": "20260208_182415",
+    "seed": 1337,
+    "train_tasks": 51,
+    "test_tasks": 17,
+    "max_retries": 4,
+    "max_attempts": 5,
+    "concurrent_training": true,
+    "concurrent_testing": true,
+    "train_elapsed_seconds": 242.89,
+    "test_elapsed_seconds": 639.48,
+    "static_knowledge_enabled": false,
+    "static_knowledge_mode": "disabled",
+    "test_mode": "both"
+  },
+  "agents": {
+    "llm_baseline": {
+      "name": "LLM Baseline (NOT RUN - unfair)",
+      "success_rate": 0.0,
+      "total_successes": 0,
+      "total_tasks": 0,
+      "avg_steps": 0.0,
+      "llm_calls": 0,
+      "llm_accuracy": 0.0,
+      "first_try_success_rate": 0.0,
+      "first_try_successes": 0,
+      "learning_efficiency": 0.0,
+      "cold_start_success_rate": 0.0,
+      "cold_start_successes": 0,
+      "cold_start_total": 0
+    },
+    "reflexion": {
+      "name": "Reflexion (NOT RUN - unfair)",
+      "success_rate": 0.0,
+      "total_successes": 0,
+      "total_tasks": 0,
+      "avg_steps": 0.0,
+      "llm_calls": 0,
+      "llm_accuracy": 0.0,
+      "reflections_generated": 0,
+      "first_try_success_rate": 0.0,
+      "first_try_successes": 0,
+      "learning_efficiency": 0.0,
+      "cold_start_success_rate": 0.0,
+      "cold_start_successes": 0,
+      "cold_start_total": 0
+    },
+    "full_reflexion": {
+      "name": "Full Reflexion",
+      "success_rate": 1.0,
+      "total_successes": 17,
+      "total_tasks": 17,
+      "avg_steps": 4.18,
+      "llm_calls": 165,
+      "llm_accuracy": 0.4788,
+      "reflections_generated": 165,
+      "reflections_reused": 165,
+      "accumulated_memories": 20,
+      "first_try_success_rate": 0.5294,
+      "first_try_successes": 9,
+      "p1_with_rules": 0.0,
+      "p1_with_rules_total": 0,
+      "p1_inherent": 0.0,
+      "p1_inherent_total": 0,
+      "p1_other": 0.0,
+      "p1_other_total": 0,
+      "learning_efficiency": 0.1961,
+      "cold_start_success_rate": 1.0,
+      "cold_start_successes": 17,
+      "cold_start_total": 17
+    },
+    "expel": {
+      "name": "ExpeL",
+      "success_rate": 1.0,
+      "total_successes": 17,
+      "total_tasks": 17,
+      "avg_steps": 2.0,
+      "llm_calls": 207,
+      "llm_accuracy": 0.4058,
+      "insights_extracted": 85,
+      "insights_retrieved": 949,
+      "first_try_success_rate": 1.0,
+      "first_try_successes": 17,
+      "p1_with_rules": 0.0,
+      "p1_with_rules_total": 0,
+      "p1_inherent": 0.0,
+      "p1_inherent_total": 0,
+      "p1_other": 0.0,
+      "p1_other_total": 0,
+      "learning_efficiency": 0.1961,
+      "cold_start_success_rate": 1.0,
+      "cold_start_successes": 17,
+      "cold_start_total": 17
+    },
+    "precept": {
+      "name": "PRECEPT",
+      "success_rate": 0.9412,
+      "total_successes": 16,
+      "total_tasks": 17,
+      "avg_steps": 2.35,
+      "rules_learned": 77,
+      "llm_reasoning_calls": 122,
+      "llm_reasoning_successes": 60,
+      "has_compass_evolution": true,
+      "first_try_success_rate": 0.8824,
+      "first_try_successes": 15,
+      "p1_with_rules": 0.0,
+      "p1_with_rules_successes": 0,
+      "p1_with_rules_total": 0,
+      "p1_inherent": 0.0,
+      "p1_inherent_successes": 0,
+      "p1_inherent_total": 0,
+      "p1_other": 0.0,
+      "p1_other_successes": 0,
+      "p1_other_total": 0,
+      "p1_without_rules": 0.0,
+      "p1_without_rules_successes": 0,
+      "p1_without_rules_total": 0,
+      "learning_efficiency": 0.1845,
+      "cold_start_success_rate": 0.9412,
+      "cold_start_successes": 16,
+      "cold_start_total": 17
+    }
+  },
+  "precept_advantages": {
+    "vs_llm_baseline": 0.9412,
+    "vs_reflexion": 0.9412,
+    "vs_full_reflexion": -0.0588,
+    "steps_saved_vs_llm": -2.35,
+    "steps_saved_vs_reflexion": -2.35,
+    "steps_saved_vs_full_reflexion": 1.82,
+    "first_try_advantage_vs_llm": 0.8824,
+    "first_try_advantage_vs_reflexion": 0.8824,
+    "first_try_advantage_vs_full_reflexion": 0.3529,
+    "learning_efficiency_advantage_vs_llm": 0.1845,
+    "learning_efficiency_advantage_vs_full_reflexion": -0.0115,
+    "cold_start_advantage_vs_llm": 0.9412,
+    "cold_start_advantage_vs_full_reflexion": -0.0588
+  },
+  "pruning_stats": {
+    "total_constraints": 95,
+    "hard_constraints": 0,
+    "soft_constraints": 95,
+    "dumb_retries_prevented": 27,
+    "pruning_efficiency": 0.2842
+  },
+  "conflict_resolution": {
+    "enabled": false,
+    "mode": "disabled",
+    "stats": {
+      "status": "active",
+      "summary": {
+        "conflicts_detected": 0,
+        "conflicts_resolved": 0
+      },
+      "detection": {
+        "total_detections": 0,
+        "conflicts_found": 0
+      },
+      "resolution_outcomes": {
+        "static_wins": 0,
+        "dynamic_wins": 0,
+        "merges": 0
+      },
+      "reliability": {
+        "static_kb": 0.8333333333333334,
+        "dynamic_experience": 0.625,
+        "episodic_memory": 0.5
+      }
+    },
+    "precept_capabilities": [],
+    "baseline_capabilities": []
+  },
+  "winner": "baseline",
+  "dual_mode_results": {
+    "matched": {
+      "precept": {
+        "success_rate": 0.9412,
+        "first_try_success_rate": 0.8824,
+        "first_try_successes": 15,
+        "total_tasks": 17,
+        "avg_steps": 2.35
+      },
+      "expel": {
+        "success_rate": 1.0,
+        "first_try_success_rate": 1.0,
+        "first_try_successes": 17,
+        "total_tasks": 17,
+        "avg_steps": 2.0
+      },
+      "full_reflexion": {
+        "success_rate": 1.0,
+        "first_try_success_rate": 0.5294,
+        "first_try_successes": 9,
+        "total_tasks": 17,
+        "avg_steps": 4.18
+      },
+      "elapsed_seconds": 278.68,
+      "num_scenarios": 17
+    },
+    "random": {
+      "precept": {
+        "success_rate": 0.7059,
+        "first_try_success_rate": 0.6471,
+        "first_try_successes": 11,
+        "total_tasks": 17,
+        "avg_steps": 3.35
+      },
+      "expel": {
+        "success_rate": 0.9412,
+        "first_try_success_rate": 0.6471,
+        "first_try_successes": 11,
+        "total_tasks": 17,
+        "avg_steps": 3.29
+      },
+      "full_reflexion": {
+        "success_rate": 0.8235,
+        "first_try_success_rate": 0.3529,
+        "first_try_successes": 6,
+        "total_tasks": 17,
+        "avg_steps": 6.06
+      },
+      "elapsed_seconds": 360.79,
+      "num_scenarios": 17
+    }
+  }
+}

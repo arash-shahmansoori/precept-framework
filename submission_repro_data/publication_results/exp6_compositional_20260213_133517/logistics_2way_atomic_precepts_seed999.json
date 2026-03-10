@@ -1,0 +1,68 @@
+{
+  "INTL": {
+    "constraint": "Constraint: INTL (logistics domain)",
+    "solution_hint": "solution:antwerp",
+    "confidence": 0.8,
+    "domain": "logistics",
+    "times_seen": 5,
+    "last_updated": 1770990941.707223,
+    "source": "direct_training",
+    "tier": 2,
+    "semantic_meaning": "International transshipment - neutral hub"
+  },
+  "AMER": {
+    "constraint": "Constraint: AMER (logistics domain)",
+    "solution_hint": "solution:long_beach",
+    "confidence": 0.7,
+    "domain": "logistics",
+    "times_seen": 6,
+    "last_updated": 1770990988.2740438,
+    "source": "direct_training",
+    "tier": 2,
+    "semantic_meaning": "American hub routing"
+  },
+  "ECON": {
+    "constraint": "Constraint: ECON (logistics domain)",
+    "solution_hint": "solution:ningbo",
+    "confidence": 0.8,
+    "domain": "logistics",
+    "times_seen": 6,
+    "last_updated": 1770990941.70722,
+    "source": "direct_training",
+    "tier": 1,
+    "semantic_meaning": "Cost-optimized economical routing"
+  },
+  "ASIA": {
+    "constraint": "Constraint: ASIA (logistics domain)",
+    "solution_hint": "solution:ningbo",
+    "confidence": 0.7,
+    "domain": "logistics",
+    "times_seen": 4,
+    "last_updated": 1770990957.403292,
+    "source": "direct_training",
+    "tier": 2,
+    "semantic_meaning": "Asian hub routing"
+  },
+  "BULK": {
+    "constraint": "Constraint: BULK (logistics domain)",
+    "solution_hint": "solution:antwerp",
+    "confidence": 0.7,
+    "domain": "logistics",
+    "times_seen": 6,
+    "last_updated": 1770990997.702534,
+    "source": "direct_training",
+    "tier": 1,
+    "semantic_meaning": "Bulk cargo requiring high-volume facilities"
+  },
+  "SAFE": {
+    "constraint": "Constraint: SAFE (logistics domain)",
+    "solution_hint": "solution:hamburg",
+    "confidence": 0.6,
+    "domain": "logistics",
+    "times_seen": 6,
+    "last_updated": 1770990997.7025301,
+    "source": "direct_training",
+    "tier": 3,
+    "semantic_meaning": "Safety-critical cargo requiring secure handling"
+  }
+}

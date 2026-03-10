@@ -1,0 +1,83 @@
+{
+  "experiences": [
+    {
+      "id": "b54a491bdf12",
+      "task_description": "Authenticate with service (webhook)",
+      "goal": "",
+      "trajectory": [
+        {
+          "outcome": "failure",
+          "strategy": "",
+          "lessons": "Domain: integration, Strategy: "
+        }
+      ],
+      "outcome": "failure",
+      "correctness": 0.0,
+      "strategy_used": "Strategy using 1 steps",
+      "lessons_learned": [],
+      "skills_demonstrated": [],
+      "experience_type": "failure",
+      "priority": 2,
+      "domain": "general",
+      "timestamp": 1771209274.018576,
+      "retrieval_count": 2,
+      "usefulness_score": 0.6275,
+      "summary": null
+    },
+    {
+      "id": "aec9089c5c39",
+      "task_description": "Setup webhook (api)",
+      "goal": "",
+      "trajectory": [
+        {
+          "outcome": "success",
+          "strategy": "salesforce-backup",
+          "lessons": "Domain: integration, Strategy: salesforce-backup"
+        }
+      ],
+      "outcome": "success",
+      "correctness": 1.0,
+      "strategy_used": "Strategy using 1 steps",
+      "lessons_learned": [],
+      "skills_demonstrated": [],
+      "experience_type": "success",
+      "priority": 2,
+      "domain": "general",
+      "timestamp": 1771209320.736462,
+      "retrieval_count": 1,
+      "usefulness_score": 0.575,
+      "summary": null
+    },
+    {
+      "id": "db3a9318f2ad",
+      "task_description": "Configure integration (realtime)",
+      "goal": "",
+      "trajectory": [
+        {
+          "outcome": "success",
+          "strategy": "salesforce-backup",
+          "lessons": "Domain: integration, Strategy: salesforce-backup"
+        }
+      ],
+      "outcome": "success",
+      "correctness": 1.0,
+      "strategy_used": "Strategy using 1 steps",
+      "lessons_learned": [],
+      "skills_demonstrated": [],
+      "experience_type": "success",
+      "priority": 2,
+      "domain": "general",
+      "timestamp": 1771209365.483187,
+      "retrieval_count": 0,
+      "usefulness_score": 0.5,
+      "summary": null
+    }
+  ],
+  "stats": {
+    "total_added": 54,
+    "total_retrieved": 50,
+    "total_pruned": 51,
+    "successful_retrievals": 36
+  },
+  "timestamp": 1771209365.656117
+}

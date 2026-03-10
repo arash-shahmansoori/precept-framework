@@ -1,0 +1,81 @@
+[
+  {
+    "type": "flight_status",
+    "content": "American Airlines flight AA-999 has excellent availability",
+    "entity": "AA-999",
+    "condition": "BK-401",
+    "metadata": {"category": "availability", "outdated": true, "scenario_type": "single_condition"},
+    "note": "SINGLE-CONDITION CONFLICT: BK-401 phantom inventory"
+  },
+  {
+    "type": "flight_status",
+    "content": "United Airlines flight UA-666 is a reliable option",
+    "entity": "UA-666",
+    "condition": "BK-402",
+    "metadata": {"category": "availability", "outdated": true, "scenario_type": "single_condition"},
+    "note": "SINGLE-CONDITION CONFLICT: BK-402 phantom inventory"
+  },
+  {
+    "type": "payment_status",
+    "content": "Card payment gateway is always reliable",
+    "entity": "card",
+    "condition": "BK-403",
+    "metadata": {"category": "payment", "outdated": true, "scenario_type": "single_condition"},
+    "note": "SINGLE-CONDITION CONFLICT: BK-403 gateway timeout"
+  },
+  {
+    "type": "multi_condition_advice",
+    "content": "Peak season (TM-PKS) bookings for blocked flights proceed without issues",
+    "entity": "peak_booking",
+    "conditions": ["BK-401", "TM-PKS"],
+    "metadata": {"category": "booking", "outdated": true, "scenario_type": "multi_condition"},
+    "note": "MULTI-CONDITION CONFLICT: BK-401 + TM-PKS = higher phantom inventory"
+  },
+  {
+    "type": "multi_condition_advice",
+    "content": "Last minute bookings (TM-LST) with phantom inventory can still succeed",
+    "entity": "last_minute",
+    "conditions": ["BK-401", "TM-LST"],
+    "metadata": {"category": "timing", "false": true, "scenario_type": "multi_condition"},
+    "note": "MULTI-CONDITION CONFLICT: BK-401 + TM-LST needs alternative flight"
+  },
+  {
+    "type": "multi_condition_advice",
+    "content": "VIP customers (CX-VIP) are immune to phantom inventory issues",
+    "entity": "vip_class",
+    "conditions": ["BK-401", "CX-VIP"],
+    "metadata": {"category": "customer", "false": true, "scenario_type": "multi_condition"},
+    "note": "MULTI-CONDITION CONFLICT: BK-401 + CX-VIP still faces phantom inventory"
+  },
+  {
+    "type": "multi_condition_advice",
+    "content": "Group bookings (CX-GRP) with connectivity issues (SV-CON) retry automatically",
+    "entity": "group_conn",
+    "conditions": ["CX-GRP", "SV-CON"],
+    "metadata": {"category": "booking", "false": true, "scenario_type": "multi_condition"},
+    "note": "MULTI-CONDITION CONFLICT: CX-GRP + SV-CON needs manual intervention"
+  },
+  {
+    "type": "multi_condition_advice",
+    "content": "Holiday bookings (TM-HOL) with upgrade requests (SV-UPG) are guaranteed",
+    "entity": "holiday_upgrade",
+    "conditions": ["TM-HOL", "SV-UPG"],
+    "metadata": {"category": "booking", "misleading": true, "scenario_type": "multi_condition"},
+    "note": "MULTI-CONDITION CONFLICT: TM-HOL + SV-UPG may still fail"
+  },
+  {
+    "type": "multi_condition_advice",
+    "content": "Frequent flyer (CX-FFP) with red-eye timing (TM-RED) get priority",
+    "entity": "ffp_redeye",
+    "conditions": ["CX-FFP", "TM-RED"],
+    "metadata": {"category": "customer", "outdated": true, "scenario_type": "multi_condition"},
+    "note": "MULTI-CONDITION CONFLICT: CX-FFP + TM-RED doesn't guarantee booking"
+  },
+  {
+    "type": "flight_recommendation",
+    "content": "Avoid Delta flights as they have the highest cancellation rates",
+    "entity": "DL",
+    "metadata": {"category": "advice", "misleading": true, "scenario_type": "single_condition"},
+    "note": "MISLEADING: Delta flights (DL-123) actually work"
+  }
+]

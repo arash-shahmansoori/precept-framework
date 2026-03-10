@@ -1,0 +1,29 @@
+{
+  "experiment": "exp3_training_size_ablation",
+  "seeds": [
+    42,
+    123,
+    456,
+    789,
+    999,
+    2024,
+    3141,
+    1337,
+    8888,
+    7777
+  ],
+  "domain": "integration",
+  "E": 6,
+  "beta_values": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "test": 6,
+  "max_retries": 4,
+  "num_conditions": 5,
+  "timestamp": "20260214_114545",
+  "mode": "full"
+}

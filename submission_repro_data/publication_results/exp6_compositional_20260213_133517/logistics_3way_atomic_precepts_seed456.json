@@ -1,0 +1,68 @@
+{
+  "INTL": {
+    "constraint": "Constraint: INTL (logistics domain)",
+    "solution_hint": "solution:antwerp",
+    "confidence": 0.8,
+    "domain": "logistics",
+    "times_seen": 6,
+    "last_updated": 1770993416.390741,
+    "source": "direct_training",
+    "tier": 2,
+    "semantic_meaning": "International transshipment - neutral hub"
+  },
+  "FAST": {
+    "constraint": "Constraint: FAST (logistics domain)",
+    "solution_hint": "solution:long_beach",
+    "confidence": 0.8,
+    "domain": "logistics",
+    "times_seen": 9,
+    "last_updated": 1770993392.8809128,
+    "source": "direct_training",
+    "tier": 1,
+    "semantic_meaning": "Time-critical express shipment"
+  },
+  "AMER": {
+    "constraint": "Constraint: AMER (logistics domain)",
+    "solution_hint": "solution:long_beach",
+    "confidence": 0.8,
+    "domain": "logistics",
+    "times_seen": 7,
+    "last_updated": 1770993416.390739,
+    "source": "direct_training",
+    "tier": 2,
+    "semantic_meaning": "American hub routing"
+  },
+  "EURO": {
+    "constraint": "Constraint: EURO (logistics domain)",
+    "solution_hint": "solution:hamburg",
+    "confidence": 0.7,
+    "domain": "logistics",
+    "times_seen": 8,
+    "last_updated": 1770993392.8809211,
+    "source": "direct_training",
+    "tier": 2,
+    "semantic_meaning": "European hub routing"
+  },
+  "ECON": {
+    "constraint": "Constraint: ECON (logistics domain)",
+    "solution_hint": "solution:ningbo",
+    "confidence": 0.7,
+    "domain": "logistics",
+    "times_seen": 9,
+    "last_updated": 1770993416.3907342,
+    "source": "direct_training",
+    "tier": 1,
+    "semantic_meaning": "Cost-optimized economical routing"
+  },
+  "ASIA": {
+    "constraint": "Constraint: ASIA (logistics domain)",
+    "solution_hint": "solution:ningbo",
+    "confidence": 0.6,
+    "domain": "logistics",
+    "times_seen": 5,
+    "last_updated": 1770993392.880917,
+    "source": "direct_training",
+    "tier": 2,
+    "semantic_meaning": "Asian hub routing"
+  }
+}

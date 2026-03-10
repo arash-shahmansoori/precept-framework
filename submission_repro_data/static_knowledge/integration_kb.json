@@ -1,0 +1,81 @@
+[
+  {
+    "type": "auth_status",
+    "content": "OAuth tokens rarely expire and don't need refresh handling",
+    "entity": "oauth",
+    "condition": "INT-401",
+    "metadata": {"category": "auth", "outdated": true, "scenario_type": "single_condition"},
+    "note": "SINGLE-CONDITION CONFLICT: INT-401 unauthorized, tokens expire"
+  },
+  {
+    "type": "auth_status",
+    "content": "OAuth connections are permanent once established",
+    "entity": "oauth_perm",
+    "condition": "INT-403",
+    "metadata": {"category": "auth", "false": true, "scenario_type": "single_condition"},
+    "note": "SINGLE-CONDITION CONFLICT: INT-403 forbidden, tokens can be revoked"
+  },
+  {
+    "type": "rate_status",
+    "content": "API rate limits are generous; throttling is uncommon",
+    "entity": "rate_limit",
+    "condition": "INT-429",
+    "metadata": {"category": "infrastructure", "outdated": true, "scenario_type": "single_condition"},
+    "note": "SINGLE-CONDITION CONFLICT: INT-429 rate limiting common"
+  },
+  {
+    "type": "multi_condition_advice",
+    "content": "Unauthorized (INT-401) during data sync (DAT-SYNC) can be ignored",
+    "entity": "auth_sync",
+    "conditions": ["INT-401", "DAT-SYNC"],
+    "metadata": {"category": "auth", "dangerous": true, "scenario_type": "multi_condition"},
+    "note": "MULTI-CONDITION CONFLICT: INT-401 + DAT-SYNC needs proactive refresh"
+  },
+  {
+    "type": "multi_condition_advice",
+    "content": "Rate limits (INT-429) with timeout (NET-TIMEOUT) don't apply",
+    "entity": "rate_timeout",
+    "conditions": ["INT-429", "NET-TIMEOUT"],
+    "metadata": {"category": "infrastructure", "false": true, "scenario_type": "multi_condition"},
+    "note": "MULTI-CONDITION CONFLICT: INT-429 + NET-TIMEOUT needs exponential backoff"
+  },
+  {
+    "type": "multi_condition_advice",
+    "content": "Schema changes (DAT-SCHEMA) with partial data (DAT-PARTIAL) are safe to ignore",
+    "entity": "schema_partial",
+    "conditions": ["DAT-SCHEMA", "DAT-PARTIAL"],
+    "metadata": {"category": "data", "incomplete": true, "scenario_type": "multi_condition"},
+    "note": "MULTI-CONDITION CONFLICT: DAT-SCHEMA + DAT-PARTIAL needs migration"
+  },
+  {
+    "type": "multi_condition_advice",
+    "content": "Service maintenance (SVC-MAINT) with SSL issues (NET-SSL) is rare",
+    "entity": "maint_ssl",
+    "conditions": ["SVC-MAINT", "NET-SSL"],
+    "metadata": {"category": "service", "outdated": true, "scenario_type": "multi_condition"},
+    "note": "MULTI-CONDITION CONFLICT: SVC-MAINT + NET-SSL needs cert refresh"
+  },
+  {
+    "type": "multi_condition_advice",
+    "content": "Service down (SVC-DOWN) for deprecated APIs (SVC-DEPREC) auto-recovers",
+    "entity": "down_deprec",
+    "conditions": ["SVC-DOWN", "SVC-DEPREC"],
+    "metadata": {"category": "service", "dangerous": true, "scenario_type": "multi_condition"},
+    "note": "MULTI-CONDITION CONFLICT: SVC-DOWN + SVC-DEPREC needs API migration"
+  },
+  {
+    "type": "multi_condition_advice",
+    "content": "DNS issues (NET-DNS) with proxy config (NET-PROXY) are client-side bugs",
+    "entity": "dns_proxy",
+    "conditions": ["NET-DNS", "NET-PROXY"],
+    "metadata": {"category": "network", "misleading": true, "scenario_type": "multi_condition"},
+    "note": "MULTI-CONDITION CONFLICT: NET-DNS + NET-PROXY needs network config fix"
+  },
+  {
+    "type": "api_reliability",
+    "content": "Third-party APIs have guaranteed uptime; no fallback needed",
+    "entity": "third_party_api",
+    "metadata": {"category": "infrastructure", "false": true, "scenario_type": "single_condition"},
+    "note": "FALSE: All APIs can fail, need fallbacks"
+  }
+]

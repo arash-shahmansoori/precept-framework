@@ -1,0 +1,125 @@
+{
+  "experiment": "exp9_compass_stress",
+  "domain": "integration",
+  "timestamp": "2026-03-05T13:57:14.364331",
+  "config": {
+    "E": 6,
+    "N": 5,
+    "beta": 3,
+    "max_retries": 4
+  },
+  "regimes": {
+    "ood_semantic_compositional": {
+      "label": "OOD Semantic Compositional",
+      "desc": "Semantic/compositional OOD: 1-condition train -> 3-condition test",
+      "train": 18,
+      "test": 24,
+      "args": [
+        "--semantic-compositional",
+        "--beta",
+        "3",
+        "--train-num-conditions",
+        "1",
+        "--test-num-conditions",
+        "3",
+        "--filter-by-learned"
+      ]
+    }
+  },
+  "aggregated": {
+    "ood_semantic_compositional": {
+      "full": {
+        "label": "PRECEPT (full)",
+        "n": 9,
+        "p1": {
+          "mean": 0.16732222222222223,
+          "std": 0.20061721497529678,
+          "ci_95": 0.15420804244205916
+        },
+        "pt": {
+          "mean": 0.2518888888888889,
+          "std": 0.24727492515641594,
+          "ci_95": 0.19007233331433193
+        },
+        "steps": {
+          "mean": 5.205555555555556,
+          "std": 0.8415478463983957,
+          "ci_95": 0.6468709379222869
+        },
+        "ttfc_mean_global_gap": null,
+        "ttfc_mean_samekey_gap": null
+      },
+      "no_compass": {
+        "label": "PRECEPT (no COMPASS)",
+        "n": 8,
+        "p1": {
+          "mean": 0.23105,
+          "std": 0.18882214609823408,
+          "ci_95": 0.15785926460514565
+        },
+        "pt": {
+          "mean": 0.34914999999999996,
+          "std": 0.19965666959629902,
+          "ci_95": 0.16691715292541667
+        },
+        "steps": {
+          "mean": 4.9275,
+          "std": 0.8181643216022422,
+          "ci_95": 0.684002490190454
+        },
+        "ttfc_mean_global_gap": null,
+        "ttfc_mean_samekey_gap": null
+      },
+      "no_rules": {
+        "label": "PRECEPT (no rules in prompt)",
+        "n": 10,
+        "p1": {
+          "mean": 0.35076,
+          "std": 0.14555099297344404,
+          "ci_95": 0.10412090799701354
+        },
+        "pt": {
+          "mean": 0.4966399999999999,
+          "std": 0.1463712494538004,
+          "ci_95": 0.10470768413491816
+        },
+        "steps": {
+          "mean": 4.332000000000001,
+          "std": 0.6513541450103947,
+          "ci_95": 0.4659506858773165
+        },
+        "ttfc_mean_global_gap": null,
+        "ttfc_mean_samekey_gap": null
+      },
+      "base_only": {
+        "label": "PRECEPT (base prompt only)",
+        "n": 10,
+        "p1": {
+          "mean": 0.24420999999999998,
+          "std": 0.2157612953139547,
+          "ci_95": 0.15434633264782716
+        },
+        "pt": {
+          "mean": 0.36272000000000004,
+          "std": 0.20312353548189993,
+          "ci_95": 0.14530582387574473
+        },
+        "steps": {
+          "mean": 4.843999999999999,
+          "std": 0.870825917033811,
+          "ci_95": 0.6229513336637659
+        },
+        "ttfc_mean_global_gap": null,
+        "ttfc_mean_samekey_gap": null
+      }
+    }
+  },
+  "comparisons": {
+    "ood_semantic_compositional__full_vs_no_compass": {
+      "delta_pp": -7.9575000000000005,
+      "t_stat": -1.1275847533117822,
+      "p_value": 0.296656951179067,
+      "n": 8
+    }
+  }
+}

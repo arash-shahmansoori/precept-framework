@@ -1,0 +1,35 @@
+{
+  "experiences": [
+    {
+      "id": "b54a491bdf12",
+      "task_description": "Authenticate with service (webhook)",
+      "goal": "",
+      "trajectory": [
+        {
+          "outcome": "failure",
+          "strategy": "",
+          "lessons": "Domain: integration, Strategy: "
+        }
+      ],
+      "outcome": "failure",
+      "correctness": 0.0,
+      "strategy_used": "Strategy using 1 steps",
+      "lessons_learned": [],
+      "skills_demonstrated": [],
+      "experience_type": "failure",
+      "priority": 2,
+      "domain": "general",
+      "timestamp": 1771193001.697763,
+      "retrieval_count": 0,
+      "usefulness_score": 0.5,
+      "summary": null
+    }
+  ],
+  "stats": {
+    "total_added": 52,
+    "total_retrieved": 51,
+    "total_pruned": 51,
+    "successful_retrievals": 30
+  },
+  "timestamp": 1771193001.984119
+}

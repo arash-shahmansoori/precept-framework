@@ -1,0 +1,46 @@
+{
+  "RETRY": {
+    "constraint": "Constraint: RETRY (integration domain)",
+    "solution_hint": "solution:hubspot-v2",
+    "confidence": 0.7,
+    "domain": "integration",
+    "times_seen": 2,
+    "last_updated": 1771001234.180097,
+    "source": "direct_training",
+    "tier": 2,
+    "semantic_meaning": "Retry logic for reliability"
+  },
+  "VERIFY": {
+    "constraint": "Constraint: VERIFY (integration domain)",
+    "solution_hint": "solution:hubspot-v2",
+    "confidence": 0.7,
+    "domain": "integration",
+    "times_seen": 2,
+    "last_updated": 1771001232.921091,
+    "source": "direct_training",
+    "tier": 2,
+    "semantic_meaning": "Request verification required"
+  },
+  "QUERY": {
+    "constraint": "Constraint: QUERY (integration domain)",
+    "solution_hint": "solution:hubspot-v2",
+    "confidence": 0.6,
+    "domain": "integration",
+    "times_seen": 1,
+    "last_updated": 1771001214.374157,
+    "source": "direct_training",
+    "tier": 1,
+    "semantic_meaning": "Flexible query patterns"
+  },
+  "BATCH": {
+    "constraint": "Constraint: BATCH (integration domain)",
+    "solution_hint": "solution:salesforce-backup",
+    "confidence": 0.6,
+    "domain": "integration",
+    "times_seen": 1,
+    "last_updated": 1771001251.1589398,
+    "source": "direct_training",
+    "tier": 1,
+    "semantic_meaning": "Batch processing for efficiency"
+  }
+}

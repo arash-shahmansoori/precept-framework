@@ -1,0 +1,139 @@
+[
+  {
+    "type": "region_status",
+    "content": "Region has unlimited capacity and never experiences resource constraints",
+    "entity": "region",
+    "condition": "CFN-881",
+    "metadata": {
+      "category": "infrastructure",
+      "outdated": true,
+      "scenario_type": "single_condition"
+    },
+    "note": "SINGLE-CONDITION CONFLICT: CFN-881 capacity exhausted"
+  },
+  {
+    "type": "iam_status",
+    "content": "IAM role changes take effect immediately with no propagation delay",
+    "entity": "iam",
+    "condition": "IAM-301",
+    "metadata": {
+      "category": "service",
+      "false": true,
+      "scenario_type": "single_condition"
+    },
+    "note": "SINGLE-CONDITION CONFLICT: IAM-301 propagation delays"
+  },
+  {
+    "type": "kubernetes_status",
+    "content": "Pod scheduling issues (K8S-101) always indicate application code bugs",
+    "entity": "k8s",
+    "condition": "K8S-101",
+    "metadata": {
+      "category": "k8s",
+      "incomplete": true,
+      "scenario_type": "single_condition"
+    },
+    "note": "SINGLE-CONDITION CONFLICT: K8S-101 can be resource limits"
+  },
+  {
+    "type": "multi_condition_advice",
+    "content": "CFN failures (CFN-881) during peak traffic (TF-PEAK) are temporary",
+    "entity": "cfn_peak",
+    "conditions": [
+      "CFN-881",
+      "TF-PEAK"
+    ],
+    "metadata": {
+      "category": "deployment",
+      "outdated": true,
+      "scenario_type": "multi_condition"
+    },
+    "note": "MULTI-CONDITION CONFLICT: CFN-881 + TF-PEAK needs region failover"
+  },
+  {
+    "type": "multi_condition_advice",
+    "content": "IAM delays (IAM-301) with service dependencies (SVC-DEP) are negligible",
+    "entity": "iam_dep",
+    "conditions": [
+      "IAM-301",
+      "SVC-DEP"
+    ],
+    "metadata": {
+      "category": "security",
+      "dangerous": true,
+      "scenario_type": "multi_condition"
+    },
+    "note": "MULTI-CONDITION CONFLICT: IAM-301 + SVC-DEP can take minutes"
+  },
+  {
+    "type": "multi_condition_advice",
+    "content": "K8S scheduling issues (K8S-101) with scaling enabled (SVC-SCALE) self-heal",
+    "entity": "k8s_scale",
+    "conditions": [
+      "K8S-101",
+      "SVC-SCALE"
+    ],
+    "metadata": {
+      "category": "k8s",
+      "false": true,
+      "scenario_type": "multi_condition"
+    },
+    "note": "MULTI-CONDITION CONFLICT: K8S-101 + SVC-SCALE needs manual intervention"
+  },
+  {
+    "type": "multi_condition_advice",
+    "content": "Stack rollback (CFN-882) with region full (RG-FULL) is quick",
+    "entity": "cfn_region",
+    "conditions": [
+      "CFN-882",
+      "RG-FULL"
+    ],
+    "metadata": {
+      "category": "deployment",
+      "misleading": true,
+      "scenario_type": "multi_condition"
+    },
+    "note": "MULTI-CONDITION CONFLICT: CFN-882 + RG-FULL needs different region"
+  },
+  {
+    "type": "multi_condition_advice",
+    "content": "Network latency (RG-LAT) with critical services (SVC-CRIT) get priority",
+    "entity": "lat_crit",
+    "conditions": [
+      "RG-LAT",
+      "SVC-CRIT"
+    ],
+    "metadata": {
+      "category": "network",
+      "false": true,
+      "scenario_type": "multi_condition"
+    },
+    "note": "MULTI-CONDITION CONFLICT: RG-LAT + SVC-CRIT needs CDN or edge deployment"
+  },
+  {
+    "type": "multi_condition_advice",
+    "content": "Canary deployments (TF-CANARY) during migration (TF-MIGRATE) auto-rollback",
+    "entity": "canary_migrate",
+    "conditions": [
+      "TF-CANARY",
+      "TF-MIGRATE"
+    ],
+    "metadata": {
+      "category": "deployment",
+      "incomplete": true,
+      "scenario_type": "multi_condition"
+    },
+    "note": "MULTI-CONDITION CONFLICT: TF-CANARY + TF-MIGRATE needs manual traffic shift"
+  },
+  {
+    "type": "region_advice",
+    "content": "Secondary regions are only for disaster recovery; avoid for primary deployments",
+    "entity": "secondary",
+    "metadata": {
+      "category": "advice",
+      "misleading": true,
+      "scenario_type": "single_condition"
+    },
+    "note": "MISLEADING: Secondary regions are good primary alternatives"
+  }
+]

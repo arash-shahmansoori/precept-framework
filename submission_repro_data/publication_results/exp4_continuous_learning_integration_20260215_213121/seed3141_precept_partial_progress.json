@@ -1,0 +1,74 @@
+{
+  "INT-419+INT-429+NET-DNS+NET-FIREWALL+SVC-DEPREC": {
+    "failed_options": [
+      "notification-service-fallback",
+      "inventory-service-direct",
+      "legacy-erp",
+      "inventory-service"
+    ],
+    "errors": [
+      "INT-497"
+    ],
+    "last_attempt": 1771211592.606623
+  },
+  "DAT-CORRUPT+INT-401+NET-DNS+NET-SSL+SVC-DOWN": {
+    "failed_options": [
+      "partner-api",
+      "legacy-erp-v2",
+      "notification-service",
+      "data-warehouse"
+    ],
+    "errors": [
+      "INT-240"
+    ],
+    "last_attempt": 1771211588.439583
+  },
+  "INT-401+INT-402+INT-407+NET-DNS+NET-TIMEOUT": {
+    "failed_options": [
+      "payment-gateway",
+      "audit-logger",
+      "payment-gateway-v2",
+      "partner-api-proxy"
+    ],
+    "errors": [
+      "INT-559"
+    ],
+    "last_attempt": 1771211588.447923
+  },
+  "DAT-CORRUPT+INT-407+INT-511+NET-DNS+NET-SSL": {
+    "failed_options": [
+      "stripe-webhook-v2",
+      "stripe",
+      "hubspot-v2",
+      "google_workspace-admin"
+    ],
+    "errors": [
+      "INT-926"
+    ],
+    "last_attempt": 1771211587.80981
+  },
+  "INT-403+INT-407+INT-429+NET-FIREWALL+SVC-MIGRATE": {
+    "failed_options": [
+      "legacy-erp",
+      "notification-service",
+      "legacy-erp-v2",
+      "analytics-api-backend"
+    ],
+    "errors": [
+      "INT-479"
+    ],
+    "last_attempt": 1771211606.460055
+  },
+  "INT-403+INT-404+INT-407+INT-429+SVC-MIGRATE": {
+    "failed_options": [
+      "microsoft_graph",
+      "hubspot",
+      "stripe-webhook-v2",
+      "zendesk-premium"
+    ],
+    "errors": [
+      "INT-395"
+    ],
+    "last_attempt": 1771211606.456636
+  }
+}

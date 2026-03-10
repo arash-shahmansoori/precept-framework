@@ -1,0 +1,18 @@
+{
+  "integration:sync_data:recovery_INT-623_hubspot-v2": {
+    "name": "recovery_INT-623_hubspot-v2",
+    "task_type": "integration:sync_data",
+    "steps": "1. Attempt default action for sync_data\n2. If error 'INT-623' occurs, use 'hubspot-v2'\n3. Learned from: Setup connector (Analytics)...",
+    "success_rate": 1.0,
+    "created": 1771195353.298221,
+    "uses": 16
+  },
+  "integration:sync_data:recovery_INT-792_hubspot-v2": {
+    "name": "recovery_INT-792_hubspot-v2",
+    "task_type": "integration:sync_data",
+    "steps": "1. Attempt default action for sync_data\n2. If error 'INT-792' occurs, use 'hubspot-v2'\n3. Learned from: Connect to API (webhook)...",
+    "success_rate": 1.0,
+    "created": 1771195603.410772,
+    "uses": 13
+  }
+}

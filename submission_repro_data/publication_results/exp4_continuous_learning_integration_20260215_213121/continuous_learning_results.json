@@ -1,0 +1,3929 @@
+{
+  "experiment": "exp4_continuous_learning",
+  "domain": "integration",
+  "timestamp": "20260215_213121",
+  "parameters": {
+    "num_keys": 6,
+    "train_size": 6,
+    "test_size": 24,
+    "num_conditions": 5,
+    "max_retries": 4,
+    "beta": 1,
+    "encounters_per_key": 4
+  },
+  "n_runs": 9,
+  "seeds_used": [
+    42,
+    123,
+    456,
+    789,
+    999,
+    2024,
+    3141,
+    1337,
+    8888
+  ],
+  "learning_curves": {
+    "precept": {
+      "encounter_1": {
+        "p1_mean": 0.30276999688764394,
+        "p1_std": 0.1641058261608634,
+        "p1_ci_95": 0.12614290457934899,
+        "pt_mean": 0.37587405332503376,
+        "pt_std": 0.2187584105667856,
+        "pt_ci_95": 0.1681525997925661,
+        "steps_mean": 3.950124494242141,
+        "steps_std": 1.5472736164118195,
+        "steps_ci_95": 1.1893397859126533,
+        "n": 9
+      },
+      "encounter_2": {
+        "p1_mean": 0.5138888888888888,
+        "p1_std": 0.2554847610953096,
+        "p1_ci_95": 0.19638297185581077,
+        "pt_mean": 0.5621693121693121,
+        "pt_std": 0.2974718551361381,
+        "pt_ci_95": 0.22865710935026304,
+        "steps_mean": 3.1084656084656084,
+        "steps_std": 1.3646467106906242,
+        "steps_ci_95": 1.048960319315114,
+        "n": 9
+      },
+      "encounter_3": {
+        "p1_mean": 0.6349206349206349,
+        "p1_std": 0.28719852575749566,
+        "p1_ci_95": 0.22076032934044168,
+        "pt_mean": 0.671957671957672,
+        "pt_std": 0.31220854385350705,
+        "pt_ci_95": 0.23998473105741946,
+        "steps_mean": 2.6084656084656084,
+        "steps_std": 1.1917916013139458,
+        "steps_ci_95": 0.9160921203105179,
+        "n": 9
+      },
+      "encounter_4": {
+        "p1_mean": 0.7037037037037037,
+        "p1_std": 0.30932024237944566,
+        "p1_ci_95": 0.23776458600978553,
+        "pt_mean": 0.7407407407407408,
+        "pt_std": 0.3017439025333393,
+        "pt_ci_95": 0.23194089567150775,
+        "steps_mean": 2.3333333333333335,
+        "steps_std": 1.1303883305208782,
+        "steps_ci_95": 0.8688933881892261,
+        "n": 9
+      }
+    },
+    "expel": {
+      "encounter_1": {
+        "p1_mean": 0.18526818134661274,
+        "p1_std": 0.11767500907161843,
+        "p1_ci_95": 0.0904530191764466,
+        "pt_mean": 0.290159767610748,
+        "pt_std": 0.1308223417714182,
+        "pt_ci_95": 0.100558953700661,
+        "steps_mean": 4.382477435418612,
+        "steps_std": 1.6689094148708106,
+        "steps_ci_95": 1.282837337324418,
+        "n": 9
+      },
+      "encounter_2": {
+        "p1_mean": 0.21097883597883596,
+        "p1_std": 0.11004305257033371,
+        "p1_ci_95": 0.08458657809255965,
+        "pt_mean": 0.2427248677248677,
+        "pt_std": 0.10588622273116138,
+        "pt_ci_95": 0.0813913558264025,
+        "steps_mean": 4.4259259259259265,
+        "steps_std": 1.6761822089743212,
+        "steps_ci_95": 1.288427701750146,
+        "n": 9
+      },
+      "encounter_3": {
+        "p1_mean": 0.27248677248677244,
+        "p1_std": 0.18523714312672707,
+        "p1_ci_95": 0.14238587268121286,
+        "pt_mean": 0.3095238095238095,
+        "pt_std": 0.17577170309801668,
+        "pt_ci_95": 0.1351100913986351,
+        "steps_mean": 4.169312169312169,
+        "steps_std": 1.6595274152982469,
+        "steps_ci_95": 1.2756256940541462,
+        "n": 9
+      },
+      "encounter_4": {
+        "p1_mean": 0.3055555555555556,
+        "p1_std": 0.2041241452319315,
+        "p1_ci_95": 0.15690370766661657,
+        "pt_mean": 0.3425925925925926,
+        "pt_std": 0.188398055086813,
+        "pt_ci_95": 0.14481556469820434,
+        "steps_mean": 4.037037037037037,
+        "steps_std": 1.6282612099725384,
+        "steps_ci_95": 1.2515923611297375,
+        "n": 9
+      }
+    },
+    "full_reflexion": {
+      "encounter_1": {
+        "p1_mean": 0.16758999896254798,
+        "p1_std": 0.11970900153655492,
+        "p1_ci_95": 0.0920164841881525,
+        "pt_mean": 0.2741570702355016,
+        "pt_std": 0.13261045448827533,
+        "pt_ci_95": 0.10193341880708891,
+        "steps_mean": 4.449839194937234,
+        "steps_std": 1.7046187678198894,
+        "steps_ci_95": 1.3102859758464316,
+        "n": 9
+      },
+      "encounter_2": {
+        "p1_mean": 0.17658730158730157,
+        "p1_std": 0.145194177591077,
+        "p1_ci_95": 0.11160612464419718,
+        "pt_mean": 0.24338624338624337,
+        "pt_std": 0.14432051962029482,
+        "pt_ci_95": 0.11093457167973793,
+        "steps_mean": 4.493386243386244,
+        "steps_std": 1.7383511625745498,
+        "steps_ci_95": 1.3362149897779603,
+        "n": 9
+      },
+      "encounter_3": {
+        "p1_mean": 0.2354497354497354,
+        "p1_std": 0.24984247997932055,
+        "p1_ci_95": 0.1920459306606591,
+        "pt_mean": 0.30952380952380953,
+        "pt_std": 0.22744015683979524,
+        "pt_ci_95": 0.17482598072801728,
+        "steps_mean": 4.243386243386244,
+        "steps_std": 1.80205923474028,
+        "steps_ci_95": 1.3851853490646466,
+        "n": 9
+      },
+      "encounter_4": {
+        "p1_mean": 0.2685185185185185,
+        "p1_std": 0.2273709103297903,
+        "p1_ci_95": 0.17477275314854399,
+        "pt_mean": 0.28703703703703703,
+        "pt_std": 0.20879578303295707,
+        "pt_ci_95": 0.16049464636239694,
+        "steps_mean": 4.222222222222221,
+        "steps_std": 1.755942292142123,
+        "steps_ci_95": 1.3497367289532056,
+        "n": 9
+      }
+    }
+  },
+  "improvements": {
+    "precept": {
+      "p1_improvement_pp": 40.093370681605975,
+      "pt_improvement_pp": 36.4866687415707,
+      "steps_saved": 1.6167911609088077,
+      "enc1_p1": 0.30276999688764394,
+      "enc4_p1": 0.7037037037037037
+    },
+    "expel": {
+      "p1_improvement_pp": 12.028737420894284,
+      "pt_improvement_pp": 5.24328249818446,
+      "steps_saved": 0.3454403983815748,
+      "enc1_p1": 0.18526818134661274,
+      "enc4_p1": 0.3055555555555556
+    },
+    "full_reflexion": {
+      "p1_improvement_pp": 10.092851955597052,
+      "pt_improvement_pp": 1.2879966801535414,
+      "steps_saved": 0.2276169727150128,
+      "enc1_p1": 0.16758999896254798,
+      "enc4_p1": 0.2685185185185185
+    }
+  },
+  "statistical_tests": {
+    "per_encounter_tests": {
+      "encounter_1": {
+        "precept_vs_expel": {
+          "t_stat": 2.6862726530005436,
+          "p_value": 0.02765587904858075,
+          "cohens_d": 0.8954242176668479,
+          "n": 9
+        },
+        "precept_vs_full_reflexion": {
+          "t_stat": 3.1255644599743637,
+          "p_value": 0.014109521778514185,
+          "cohens_d": 1.0418548199914546,
+          "n": 9
+        }
+      },
+      "encounter_2": {
+        "precept_vs_expel": {
+          "t_stat": 4.487554960775527,
+          "p_value": 0.0020353278205920327,
+          "cohens_d": 1.4958516535918422,
+          "n": 9
+        },
+        "precept_vs_full_reflexion": {
+          "t_stat": 4.254989240614448,
+          "p_value": 0.002780242762056436,
+          "cohens_d": 1.4183297468714824,
+          "n": 9
+        }
+      },
+      "encounter_3": {
+        "precept_vs_expel": {
+          "t_stat": 5.550381030664111,
+          "p_value": 0.0005407320204826446,
+          "cohens_d": 1.8501270102213707,
+          "n": 9
+        },
+        "precept_vs_full_reflexion": {
+          "t_stat": 5.098907701571466,
+          "p_value": 0.0009311054758624646,
+          "cohens_d": 1.699635900523822,
+          "n": 9
+        }
+      },
+      "encounter_4": {
+        "precept_vs_expel": {
+          "t_stat": 4.664004843101107,
+          "p_value": 0.0016150310031553259,
+          "cohens_d": 1.5546682810337025,
+          "n": 9
+        },
+        "precept_vs_full_reflexion": {
+          "t_stat": 5.391269745958201,
+          "p_value": 0.0006527852632860839,
+          "cohens_d": 1.7970899153194,
+          "n": 9
+        }
+      }
+    },
+    "improvement_tests": {
+      "precept": {
+        "paired_test": {
+          "t_stat": 5.253087732226431,
+          "p_value": 0.0007709400276750286,
+          "cohens_d": 1.7510292440754773,
+          "n": 9
+        },
+        "improvement_significance": {
+          "t_stat": 5.253087732226431,
+          "p_value_two_tailed": 0.0007709400276750286,
+          "p_value_one_tailed": 0.0003854700138375143,
+          "n": 9
+        },
+        "mean_improvement_pp": 40.09337068160598
+      },
+      "expel": {
+        "paired_test": {
+          "t_stat": 1.6876628236474212,
+          "p_value": 0.12995536924601522,
+          "cohens_d": 0.5625542745491404,
+          "n": 9
+        },
+        "improvement_significance": {
+          "t_stat": 1.6876628236474212,
+          "p_value_two_tailed": 0.12995536924601522,
+          "p_value_one_tailed": 0.06497768462300761,
+          "n": 9
+        },
+        "mean_improvement_pp": 12.028737420894284
+      },
+      "full_reflexion": {
+        "paired_test": {
+          "t_stat": 1.4608591016718562,
+          "p_value": 0.1821861061149608,
+          "cohens_d": 0.48695303389061867,
+          "n": 9
+        },
+        "improvement_significance": {
+          "t_stat": 1.4608591016718562,
+          "p_value_two_tailed": 0.1821861061149608,
+          "p_value_one_tailed": 0.0910930530574804,
+          "n": 9
+        },
+        "mean_improvement_pp": 10.092851955597054
+      }
+    },
+    "final_encounter_advantage": {
+      "precept_vs_expel": {
+        "t_stat": 4.664004843101107,
+        "p_value": 0.0016150310031553259,
+        "cohens_d": 1.5546682810337025,
+        "n": 9
+      },
+      "precept_vs_full_reflexion": {
+        "t_stat": 5.391269745958201,
+        "p_value": 0.0006527852632860839,
+        "cohens_d": 1.7970899153194,
+        "n": 9
+      },
+      "precept_mean_p1": 0.7037037037037037,
+      "expel_mean_p1": 0.3055555555555556,
+      "full_reflexion_mean_p1": 0.2685185185185185,
+      "advantage_vs_expel_pp": 39.81481481481482,
+      "advantage_vs_fr_pp": 43.518518518518526
+    }
+  },
+  "raw_runs": [
+    {
+      "aggregated": {
+        "metadata": {
+          "domain": "integration",
+          "timestamp": "20260215_220348",
+          "seed": 42,
+          "train_tasks": 6,
+          "test_tasks": 24,
+          "max_retries": 4,
+          "max_attempts": 5,
+          "concurrent_training": true,
+          "concurrent_testing": false,
+          "train_elapsed_seconds": 40.06,
+          "test_elapsed_seconds": 1862.32,
+          "static_knowledge_enabled": false,
+          "static_knowledge_mode": "disabled",
+          "test_mode": "both"
+        },
+        "agents": {
+          "llm_baseline": {
+            "name": "LLM Baseline (NOT RUN - unfair)",
+            "success_rate": 0.0,
+            "total_successes": 0,
+            "total_tasks": 0,
+            "avg_steps": 0.0,
+            "llm_calls": 0,
+            "llm_accuracy": 0.0,
+            "first_try_success_rate": 0.0,
+            "first_try_successes": 0,
+            "learning_efficiency": 0.0,
+            "cold_start_success_rate": 0.0,
+            "cold_start_successes": 0,
+            "cold_start_total": 0
+          },
+          "reflexion": {
+            "name": "Reflexion (NOT RUN - unfair)",
+            "success_rate": 0.0,
+            "total_successes": 0,
+            "total_tasks": 0,
+            "avg_steps": 0.0,
+            "llm_calls": 0,
+            "llm_accuracy": 0.0,
+            "reflections_generated": 0,
+            "first_try_success_rate": 0.0,
+            "first_try_successes": 0,
+            "learning_efficiency": 0.0,
+            "cold_start_success_rate": 0.0,
+            "cold_start_successes": 0,
+            "cold_start_total": 0
+          },
+          "full_reflexion": {
+            "name": "Full Reflexion",
+            "success_rate": 0.3333,
+            "total_successes": 8,
+            "total_tasks": 24,
+            "avg_steps": 8.67,
+            "llm_calls": 206,
+            "llm_accuracy": 0.0825,
+            "reflections_generated": 206,
+            "reflections_reused": 206,
+            "accumulated_memories": 40,
+            "first_try_success_rate": 0.2917,
+            "first_try_successes": 7,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_total": 0,
+            "learning_efficiency": 0.5556,
+            "cold_start_success_rate": 0.5,
+            "cold_start_successes": 3,
+            "cold_start_total": 6
+          },
+          "expel": {
+            "name": "ExpeL",
+            "success_rate": 0.3333,
+            "total_successes": 8,
+            "total_tasks": 24,
+            "avg_steps": 7.67,
+            "llm_calls": 260,
+            "llm_accuracy": 0.0654,
+            "insights_extracted": 54,
+            "insights_retrieved": 1719,
+            "first_try_success_rate": 0.2917,
+            "first_try_successes": 7,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_total": 0,
+            "learning_efficiency": 0.5556,
+            "cold_start_success_rate": 0.3333,
+            "cold_start_successes": 2,
+            "cold_start_total": 6
+          },
+          "precept": {
+            "name": "PRECEPT",
+            "success_rate": 0.7083,
+            "total_successes": 17,
+            "total_tasks": 24,
+            "avg_steps": 3.04,
+            "rules_learned": 43,
+            "llm_reasoning_calls": 95,
+            "llm_reasoning_successes": 41,
+            "has_compass_evolution": true,
+            "first_try_success_rate": 0.7083,
+            "first_try_successes": 17,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_successes": 0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_successes": 0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_successes": 0,
+            "p1_other_total": 0,
+            "p1_without_rules": 0.0,
+            "p1_without_rules_successes": 0,
+            "p1_without_rules_total": 0,
+            "learning_efficiency": 1.1806,
+            "cold_start_success_rate": 0.5,
+            "cold_start_successes": 3,
+            "cold_start_total": 6
+          }
+        },
+        "precept_advantages": {
+          "vs_llm_baseline": 0.7083,
+          "vs_reflexion": 0.7083,
+          "vs_full_reflexion": 0.375,
+          "steps_saved_vs_llm": -3.04,
+          "steps_saved_vs_reflexion": -3.04,
+          "steps_saved_vs_full_reflexion": 5.62,
+          "first_try_advantage_vs_llm": 0.7083,
+          "first_try_advantage_vs_reflexion": 0.7083,
+          "first_try_advantage_vs_full_reflexion": 0.4167,
+          "learning_efficiency_advantage_vs_llm": 1.1806,
+          "learning_efficiency_advantage_vs_full_reflexion": 0.625,
+          "cold_start_advantage_vs_llm": 0.5,
+          "cold_start_advantage_vs_full_reflexion": 0.0
+        },
+        "pruning_stats": {
+          "total_constraints": 88,
+          "hard_constraints": 0,
+          "soft_constraints": 88,
+          "dumb_retries_prevented": 7,
+          "pruning_efficiency": 0.0795
+        },
+        "conflict_resolution": {
+          "enabled": false,
+          "mode": "disabled",
+          "stats": {
+            "status": "active",
+            "summary": {
+              "conflicts_detected": 0,
+              "conflicts_resolved": 0
+            },
+            "detection": {
+              "total_detections": 0,
+              "conflicts_found": 0
+            },
+            "resolution_outcomes": {
+              "static_wins": 0,
+              "dynamic_wins": 0,
+              "merges": 0
+            },
+            "reliability": {
+              "static_kb": 0.8333333333333334,
+              "dynamic_experience": 0.625,
+              "episodic_memory": 0.5
+            }
+          },
+          "precept_capabilities": [],
+          "baseline_capabilities": []
+        },
+        "winner": "precept",
+        "dual_mode_results": {
+          "matched": {
+            "precept": {
+              "success_rate": 0.7083,
+              "first_try_success_rate": 0.7083,
+              "first_try_successes": 17,
+              "total_tasks": 24,
+              "avg_steps": 3.04
+            },
+            "expel": {
+              "success_rate": 0.3333,
+              "first_try_success_rate": 0.2917,
+              "first_try_successes": 7,
+              "total_tasks": 24,
+              "avg_steps": 7.67
+            },
+            "full_reflexion": {
+              "success_rate": 0.3333,
+              "first_try_success_rate": 0.2917,
+              "first_try_successes": 7,
+              "total_tasks": 24,
+              "avg_steps": 8.67
+            },
+            "elapsed_seconds": 959.61,
+            "num_scenarios": 24
+          },
+          "random": {
+            "precept": {
+              "success_rate": 0.7083,
+              "first_try_success_rate": 0.7083,
+              "first_try_successes": 17,
+              "total_tasks": 24,
+              "avg_steps": 3.17
+            },
+            "expel": {
+              "success_rate": 0.375,
+              "first_try_success_rate": 0.375,
+              "first_try_successes": 9,
+              "total_tasks": 24,
+              "avg_steps": 7.0
+            },
+            "full_reflexion": {
+              "success_rate": 0.375,
+              "first_try_success_rate": 0.375,
+              "first_try_successes": 9,
+              "total_tasks": 24,
+              "avg_steps": 8.0
+            },
+            "elapsed_seconds": 902.7,
+            "num_scenarios": 24
+          }
+        }
+      },
+      "artifacts": {
+        "rules_learned": 10,
+        "procedures": 4,
+        "partial_progress_keys": 11
+      },
+      "precept": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 0.4,
+            "pt": 0.4,
+            "avg_steps": 4.466666666666667,
+            "first_try_successes": 6,
+            "successes": 6,
+            "total": 15
+          },
+          "encounter_2": {
+            "p1": 0.625,
+            "pt": 0.625,
+            "avg_steps": 3.5,
+            "first_try_successes": 5,
+            "successes": 5,
+            "total": 8
+          },
+          "encounter_3": {
+            "p1": 0.8333333333333334,
+            "pt": 0.8333333333333334,
+            "avg_steps": 2.6666666666666665,
+            "first_try_successes": 5,
+            "successes": 5,
+            "total": 6
+          },
+          "encounter_4": {
+            "p1": 0.8333333333333334,
+            "pt": 0.8333333333333334,
+            "avg_steps": 2.0,
+            "first_try_successes": 5,
+            "successes": 5,
+            "total": 6
+          }
+        },
+        "by_key": {
+          "DAT-LARGE+DAT-PARTIAL+INT-401+": 11,
+          "DAT-CORRUPT+INT-402+INT-407+IN": 4,
+          "DAT-CORRUPT+DAT-SCHEMA+INT-407": 4,
+          "DAT-CORRUPT+DAT-LARGE+INT-401+": 4,
+          "DAT-CORRUPT+INT-401+INT-403+NE": 4,
+          "INT-401+INT-403+INT-429+NET-FI": 10,
+          "DAT-PARTIAL+INT-401+INT-429+NE": 2,
+          "DAT-SYNC+INT-401+INT-407+INT-4": 1,
+          "DAT-SYNC+INT-401+INT-403+NET-S": 1,
+          "DAT-LARGE+INT-401+INT-403+INT-": 2,
+          "DAT-CORRUPT+INT-401+INT-403+IN": 1,
+          "INT-401+INT-403+NET-DNS+NET-TI": 1,
+          "DAT-SYNC+INT-401+INT-429+NET-S": 1,
+          "DAT-LARGE+INT-401+INT-429+NET-": 1,
+          "DAT-PARTIAL+INT-401+INT-403+IN": 1
+        },
+        "total_tasks": 48
+      },
+      "expel": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 0.26666666666666666,
+            "pt": 0.26666666666666666,
+            "avg_steps": 4.933333333333334,
+            "first_try_successes": 4,
+            "successes": 4,
+            "total": 15
+          },
+          "encounter_2": {
+            "p1": 0.375,
+            "pt": 0.375,
+            "avg_steps": 4.5,
+            "first_try_successes": 3,
+            "successes": 3,
+            "total": 8
+          },
+          "encounter_3": {
+            "p1": 0.3333333333333333,
+            "pt": 0.3333333333333333,
+            "avg_steps": 4.666666666666667,
+            "first_try_successes": 2,
+            "successes": 2,
+            "total": 6
+          },
+          "encounter_4": {
+            "p1": 0.16666666666666666,
+            "pt": 0.3333333333333333,
+            "avg_steps": 5.0,
+            "first_try_successes": 1,
+            "successes": 2,
+            "total": 6
+          }
+        },
+        "by_key": {
+          "DAT-LARGE+DAT-PARTIAL+INT-401+": 11,
+          "DAT-CORRUPT+INT-402+INT-407+IN": 4,
+          "DAT-CORRUPT+DAT-SCHEMA+INT-407": 4,
+          "DAT-CORRUPT+DAT-LARGE+INT-401+": 4,
+          "DAT-CORRUPT+INT-401+INT-403+NE": 4,
+          "INT-401+INT-403+INT-429+NET-FI": 10,
+          "DAT-PARTIAL+INT-401+INT-429+NE": 2,
+          "DAT-SYNC+INT-401+INT-407+INT-4": 1,
+          "DAT-SYNC+INT-401+INT-403+NET-S": 1,
+          "DAT-LARGE+INT-401+INT-403+INT-": 2,
+          "DAT-CORRUPT+INT-401+INT-403+IN": 1,
+          "INT-401+INT-403+NET-DNS+NET-TI": 1,
+          "DAT-SYNC+INT-401+INT-429+NET-S": 1,
+          "DAT-LARGE+INT-401+INT-429+NET-": 1,
+          "DAT-PARTIAL+INT-401+INT-403+IN": 1
+        },
+        "total_tasks": 48
+      },
+      "full_reflexion": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 0.26666666666666666,
+            "pt": 0.3333333333333333,
+            "avg_steps": 4.8,
+            "first_try_successes": 4,
+            "successes": 5,
+            "total": 15
+          },
+          "encounter_2": {
+            "p1": 0.375,
+            "pt": 0.375,
+            "avg_steps": 4.5,
+            "first_try_successes": 3,
+            "successes": 3,
+            "total": 8
+          },
+          "encounter_3": {
+            "p1": 0.3333333333333333,
+            "pt": 0.3333333333333333,
+            "avg_steps": 4.666666666666667,
+            "first_try_successes": 2,
+            "successes": 2,
+            "total": 6
+          },
+          "encounter_4": {
+            "p1": 0.16666666666666666,
+            "pt": 0.16666666666666666,
+            "avg_steps": 5.333333333333333,
+            "first_try_successes": 1,
+            "successes": 1,
+            "total": 6
+          }
+        },
+        "by_key": {
+          "DAT-LARGE+DAT-PARTIAL+INT-401+": 11,
+          "DAT-CORRUPT+INT-402+INT-407+IN": 4,
+          "DAT-CORRUPT+DAT-SCHEMA+INT-407": 4,
+          "DAT-CORRUPT+DAT-LARGE+INT-401+": 4,
+          "DAT-CORRUPT+INT-401+INT-403+NE": 4,
+          "INT-401+INT-403+INT-429+NET-FI": 10,
+          "DAT-PARTIAL+INT-401+INT-429+NE": 2,
+          "DAT-SYNC+INT-401+INT-407+INT-4": 1,
+          "DAT-SYNC+INT-401+INT-403+NET-S": 1,
+          "DAT-LARGE+INT-401+INT-403+INT-": 2,
+          "DAT-CORRUPT+INT-401+INT-403+IN": 1,
+          "INT-401+INT-403+NET-DNS+NET-TI": 1,
+          "DAT-SYNC+INT-401+INT-429+NET-S": 1,
+          "DAT-LARGE+INT-401+INT-429+NET-": 1,
+          "DAT-PARTIAL+INT-401+INT-403+IN": 1
+        },
+        "total_tasks": 48
+      }
+    },
+    {
+      "aggregated": {
+        "metadata": {
+          "domain": "integration",
+          "timestamp": "20260215_223957",
+          "seed": 123,
+          "train_tasks": 6,
+          "test_tasks": 24,
+          "max_retries": 4,
+          "max_attempts": 5,
+          "concurrent_training": true,
+          "concurrent_testing": false,
+          "train_elapsed_seconds": 39.55,
+          "test_elapsed_seconds": 2100.26,
+          "static_knowledge_enabled": false,
+          "static_knowledge_mode": "disabled",
+          "test_mode": "both"
+        },
+        "agents": {
+          "llm_baseline": {
+            "name": "LLM Baseline (NOT RUN - unfair)",
+            "success_rate": 0.0,
+            "total_successes": 0,
+            "total_tasks": 0,
+            "avg_steps": 0.0,
+            "llm_calls": 0,
+            "llm_accuracy": 0.0,
+            "first_try_success_rate": 0.0,
+            "first_try_successes": 0,
+            "learning_efficiency": 0.0,
+            "cold_start_success_rate": 0.0,
+            "cold_start_successes": 0,
+            "cold_start_total": 0
+          },
+          "reflexion": {
+            "name": "Reflexion (NOT RUN - unfair)",
+            "success_rate": 0.0,
+            "total_successes": 0,
+            "total_tasks": 0,
+            "avg_steps": 0.0,
+            "llm_calls": 0,
+            "llm_accuracy": 0.0,
+            "reflections_generated": 0,
+            "first_try_success_rate": 0.0,
+            "first_try_successes": 0,
+            "learning_efficiency": 0.0,
+            "cold_start_success_rate": 0.0,
+            "cold_start_successes": 0,
+            "cold_start_total": 0
+          },
+          "full_reflexion": {
+            "name": "Full Reflexion",
+            "success_rate": 0.125,
+            "total_successes": 3,
+            "total_tasks": 24,
+            "avg_steps": 10.5,
+            "llm_calls": 235,
+            "llm_accuracy": 0.0468,
+            "reflections_generated": 235,
+            "reflections_reused": 235,
+            "accumulated_memories": 40,
+            "first_try_success_rate": 0.0417,
+            "first_try_successes": 1,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_total": 0,
+            "learning_efficiency": 0.2083,
+            "cold_start_success_rate": 0.1667,
+            "cold_start_successes": 1,
+            "cold_start_total": 6
+          },
+          "expel": {
+            "name": "ExpeL",
+            "success_rate": 0.25,
+            "total_successes": 6,
+            "total_tasks": 24,
+            "avg_steps": 8.17,
+            "llm_calls": 268,
+            "llm_accuracy": 0.0597,
+            "insights_extracted": 54,
+            "insights_retrieved": 1692,
+            "first_try_success_rate": 0.1667,
+            "first_try_successes": 4,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_total": 0,
+            "learning_efficiency": 0.4167,
+            "cold_start_success_rate": 0.1667,
+            "cold_start_successes": 1,
+            "cold_start_total": 6
+          },
+          "precept": {
+            "name": "PRECEPT",
+            "success_rate": 0.875,
+            "total_successes": 21,
+            "total_tasks": 24,
+            "avg_steps": 2.71,
+            "rules_learned": 50,
+            "llm_reasoning_calls": 87,
+            "llm_reasoning_successes": 48,
+            "has_compass_evolution": true,
+            "first_try_success_rate": 0.7917,
+            "first_try_successes": 19,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_successes": 0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_successes": 0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_successes": 0,
+            "p1_other_total": 0,
+            "p1_without_rules": 0.0,
+            "p1_without_rules_successes": 0,
+            "p1_without_rules_total": 0,
+            "learning_efficiency": 1.4583,
+            "cold_start_success_rate": 0.6667,
+            "cold_start_successes": 4,
+            "cold_start_total": 6
+          }
+        },
+        "precept_advantages": {
+          "vs_llm_baseline": 0.875,
+          "vs_reflexion": 0.875,
+          "vs_full_reflexion": 0.75,
+          "steps_saved_vs_llm": -2.71,
+          "steps_saved_vs_reflexion": -2.71,
+          "steps_saved_vs_full_reflexion": 7.79,
+          "first_try_advantage_vs_llm": 0.7917,
+          "first_try_advantage_vs_reflexion": 0.7917,
+          "first_try_advantage_vs_full_reflexion": 0.75,
+          "learning_efficiency_advantage_vs_llm": 1.4583,
+          "learning_efficiency_advantage_vs_full_reflexion": 1.25,
+          "cold_start_advantage_vs_llm": 0.6667,
+          "cold_start_advantage_vs_full_reflexion": 0.5
+        },
+        "pruning_stats": {
+          "total_constraints": 82,
+          "hard_constraints": 0,
+          "soft_constraints": 82,
+          "dumb_retries_prevented": 6,
+          "pruning_efficiency": 0.0732
+        },
+        "conflict_resolution": {
+          "enabled": false,
+          "mode": "disabled",
+          "stats": {
+            "status": "active",
+            "summary": {
+              "conflicts_detected": 0,
+              "conflicts_resolved": 0
+            },
+            "detection": {
+              "total_detections": 0,
+              "conflicts_found": 0
+            },
+            "resolution_outcomes": {
+              "static_wins": 0,
+              "dynamic_wins": 0,
+              "merges": 0
+            },
+            "reliability": {
+              "static_kb": 0.8333333333333334,
+              "dynamic_experience": 0.625,
+              "episodic_memory": 0.5
+            }
+          },
+          "precept_capabilities": [],
+          "baseline_capabilities": []
+        },
+        "winner": "precept",
+        "dual_mode_results": {
+          "matched": {
+            "precept": {
+              "success_rate": 0.875,
+              "first_try_success_rate": 0.7917,
+              "first_try_successes": 19,
+              "total_tasks": 24,
+              "avg_steps": 2.71
+            },
+            "expel": {
+              "success_rate": 0.25,
+              "first_try_success_rate": 0.1667,
+              "first_try_successes": 4,
+              "total_tasks": 24,
+              "avg_steps": 8.17
+            },
+            "full_reflexion": {
+              "success_rate": 0.125,
+              "first_try_success_rate": 0.0417,
+              "first_try_successes": 1,
+              "total_tasks": 24,
+              "avg_steps": 10.5
+            },
+            "elapsed_seconds": 1049.53,
+            "num_scenarios": 24
+          },
+          "random": {
+            "precept": {
+              "success_rate": 0.6667,
+              "first_try_success_rate": 0.625,
+              "first_try_successes": 15,
+              "total_tasks": 24,
+              "avg_steps": 3.42
+            },
+            "expel": {
+              "success_rate": 0.375,
+              "first_try_success_rate": 0.25,
+              "first_try_successes": 6,
+              "total_tasks": 24,
+              "avg_steps": 7.33
+            },
+            "full_reflexion": {
+              "success_rate": 0.2917,
+              "first_try_success_rate": 0.25,
+              "first_try_successes": 6,
+              "total_tasks": 24,
+              "avg_steps": 8.92
+            },
+            "elapsed_seconds": 1050.73,
+            "num_scenarios": 24
+          }
+        }
+      },
+      "artifacts": {
+        "rules_learned": 13,
+        "procedures": 4,
+        "partial_progress_keys": 12
+      },
+      "precept": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 0.26666666666666666,
+            "pt": 0.3333333333333333,
+            "avg_steps": 4.8,
+            "first_try_successes": 4,
+            "successes": 5,
+            "total": 15
+          },
+          "encounter_2": {
+            "p1": 0.7142857142857143,
+            "pt": 0.8571428571428571,
+            "avg_steps": 2.857142857142857,
+            "first_try_successes": 5,
+            "successes": 6,
+            "total": 7
+          },
+          "encounter_3": {
+            "p1": 0.8333333333333334,
+            "pt": 1.0,
+            "avg_steps": 2.5,
+            "first_try_successes": 5,
+            "successes": 6,
+            "total": 6
+          },
+          "encounter_4": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 6,
+            "successes": 6,
+            "total": 6
+          }
+        },
+        "by_key": {
+          "DAT-LARGE+DAT-SCHEMA+INT-403+N": 12,
+          "DAT-PARTIAL+INT-401+INT-407+IN": 10,
+          "DAT-LARGE+INT-402+INT-403+INT-": 4,
+          "INT-401+INT-404+INT-407+NET-PR": 4,
+          "INT-429+NET-DNS+SVC-DEPREC+SVC": 4,
+          "DAT-SYNC+INT-403+INT-429+INT-5": 4,
+          "DAT-PARTIAL+INT-401+INT-403+IN": 1,
+          "DAT-LARGE+INT-403+INT-419+NET-": 1,
+          "INT-401+INT-407+INT-419+NET-FI": 2,
+          "DAT-PARTIAL+INT-401+NET-FIREWA": 1,
+          "DAT-LARGE+DAT-SCHEMA+INT-403+I": 1,
+          "DAT-LARGE+INT-403+NET-DNS+SVC-": 1,
+          "INT-401+INT-407+NET-DNS+NET-FI": 1,
+          "INT-401+INT-403+NET-DNS+SVC-DE": 1,
+          "INT-401+INT-403+INT-407+INT-41": 1
+        },
+        "total_tasks": 48
+      },
+      "expel": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 0.13333333333333333,
+            "pt": 0.26666666666666666,
+            "avg_steps": 5.2,
+            "first_try_successes": 2,
+            "successes": 4,
+            "total": 15
+          },
+          "encounter_2": {
+            "p1": 0.14285714285714285,
+            "pt": 0.2857142857142857,
+            "avg_steps": 5.142857142857143,
+            "first_try_successes": 1,
+            "successes": 2,
+            "total": 7
+          },
+          "encounter_3": {
+            "p1": 0.16666666666666666,
+            "pt": 0.3333333333333333,
+            "avg_steps": 5.0,
+            "first_try_successes": 1,
+            "successes": 2,
+            "total": 6
+          },
+          "encounter_4": {
+            "p1": 0.16666666666666666,
+            "pt": 0.3333333333333333,
+            "avg_steps": 5.0,
+            "first_try_successes": 1,
+            "successes": 2,
+            "total": 6
+          }
+        },
+        "by_key": {
+          "DAT-LARGE+DAT-SCHEMA+INT-403+N": 12,
+          "DAT-PARTIAL+INT-401+INT-407+IN": 10,
+          "DAT-LARGE+INT-402+INT-403+INT-": 4,
+          "INT-401+INT-404+INT-407+NET-PR": 4,
+          "INT-429+NET-DNS+SVC-DEPREC+SVC": 4,
+          "DAT-SYNC+INT-403+INT-429+INT-5": 4,
+          "DAT-PARTIAL+INT-401+INT-403+IN": 1,
+          "DAT-LARGE+INT-403+INT-419+NET-": 1,
+          "INT-401+INT-407+INT-419+NET-FI": 2,
+          "DAT-PARTIAL+INT-401+NET-FIREWA": 1,
+          "DAT-LARGE+DAT-SCHEMA+INT-403+I": 1,
+          "DAT-LARGE+INT-403+NET-DNS+SVC-": 1,
+          "INT-401+INT-407+NET-DNS+NET-FI": 1,
+          "INT-401+INT-403+NET-DNS+SVC-DE": 1,
+          "INT-401+INT-403+INT-407+INT-41": 1
+        },
+        "total_tasks": 48
+      },
+      "full_reflexion": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 0.06666666666666667,
+            "pt": 0.2,
+            "avg_steps": 5.466666666666667,
+            "first_try_successes": 1,
+            "successes": 3,
+            "total": 15
+          },
+          "encounter_2": {
+            "p1": 0.0,
+            "pt": 0.0,
+            "avg_steps": 6.0,
+            "first_try_successes": 0,
+            "successes": 0,
+            "total": 7
+          },
+          "encounter_3": {
+            "p1": 0.0,
+            "pt": 0.16666666666666666,
+            "avg_steps": 5.666666666666667,
+            "first_try_successes": 0,
+            "successes": 1,
+            "total": 6
+          },
+          "encounter_4": {
+            "p1": 0.16666666666666666,
+            "pt": 0.16666666666666666,
+            "avg_steps": 5.333333333333333,
+            "first_try_successes": 1,
+            "successes": 1,
+            "total": 6
+          }
+        },
+        "by_key": {
+          "DAT-LARGE+DAT-SCHEMA+INT-403+N": 12,
+          "DAT-PARTIAL+INT-401+INT-407+IN": 10,
+          "DAT-LARGE+INT-402+INT-403+INT-": 4,
+          "INT-401+INT-404+INT-407+NET-PR": 4,
+          "INT-429+NET-DNS+SVC-DEPREC+SVC": 4,
+          "DAT-SYNC+INT-403+INT-429+INT-5": 4,
+          "DAT-PARTIAL+INT-401+INT-403+IN": 1,
+          "DAT-LARGE+INT-403+INT-419+NET-": 1,
+          "INT-401+INT-407+INT-419+NET-FI": 2,
+          "DAT-PARTIAL+INT-401+NET-FIREWA": 1,
+          "DAT-LARGE+DAT-SCHEMA+INT-403+I": 1,
+          "DAT-LARGE+INT-403+NET-DNS+SVC-": 1,
+          "INT-401+INT-407+NET-DNS+NET-FI": 1,
+          "INT-401+INT-403+NET-DNS+SVC-DE": 1,
+          "INT-401+INT-403+INT-407+INT-41": 1
+        },
+        "total_tasks": 48
+      }
+    },
+    {
+      "aggregated": {
+        "metadata": {
+          "domain": "integration",
+          "timestamp": "20260215_231055",
+          "seed": 456,
+          "train_tasks": 6,
+          "test_tasks": 24,
+          "max_retries": 4,
+          "max_attempts": 5,
+          "concurrent_training": true,
+          "concurrent_testing": false,
+          "train_elapsed_seconds": 37.38,
+          "test_elapsed_seconds": 1787.22,
+          "static_knowledge_enabled": false,
+          "static_knowledge_mode": "disabled",
+          "test_mode": "both"
+        },
+        "agents": {
+          "llm_baseline": {
+            "name": "LLM Baseline (NOT RUN - unfair)",
+            "success_rate": 0.0,
+            "total_successes": 0,
+            "total_tasks": 0,
+            "avg_steps": 0.0,
+            "llm_calls": 0,
+            "llm_accuracy": 0.0,
+            "first_try_success_rate": 0.0,
+            "first_try_successes": 0,
+            "learning_efficiency": 0.0,
+            "cold_start_success_rate": 0.0,
+            "cold_start_successes": 0,
+            "cold_start_total": 0
+          },
+          "reflexion": {
+            "name": "Reflexion (NOT RUN - unfair)",
+            "success_rate": 0.0,
+            "total_successes": 0,
+            "total_tasks": 0,
+            "avg_steps": 0.0,
+            "llm_calls": 0,
+            "llm_accuracy": 0.0,
+            "reflections_generated": 0,
+            "first_try_success_rate": 0.0,
+            "first_try_successes": 0,
+            "learning_efficiency": 0.0,
+            "cold_start_success_rate": 0.0,
+            "cold_start_successes": 0,
+            "cold_start_total": 0
+          },
+          "full_reflexion": {
+            "name": "Full Reflexion",
+            "success_rate": 0.6667,
+            "total_successes": 16,
+            "total_tasks": 24,
+            "avg_steps": 6.0,
+            "llm_calls": 182,
+            "llm_accuracy": 0.1429,
+            "reflections_generated": 182,
+            "reflections_reused": 182,
+            "accumulated_memories": 40,
+            "first_try_success_rate": 0.5417,
+            "first_try_successes": 13,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_total": 0,
+            "learning_efficiency": 1.1111,
+            "cold_start_success_rate": 0.6667,
+            "cold_start_successes": 4,
+            "cold_start_total": 6
+          },
+          "expel": {
+            "name": "ExpeL",
+            "success_rate": 0.5417,
+            "total_successes": 13,
+            "total_tasks": 24,
+            "avg_steps": 6.0,
+            "llm_calls": 258,
+            "llm_accuracy": 0.0814,
+            "insights_extracted": 54,
+            "insights_retrieved": 1711,
+            "first_try_success_rate": 0.5,
+            "first_try_successes": 12,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_total": 0,
+            "learning_efficiency": 0.9028,
+            "cold_start_success_rate": 0.5,
+            "cold_start_successes": 3,
+            "cold_start_total": 6
+          },
+          "precept": {
+            "name": "PRECEPT",
+            "success_rate": 0.9583,
+            "total_successes": 23,
+            "total_tasks": 24,
+            "avg_steps": 2.83,
+            "rules_learned": 53,
+            "llm_reasoning_calls": 81,
+            "llm_reasoning_successes": 41,
+            "has_compass_evolution": true,
+            "first_try_success_rate": 0.7917,
+            "first_try_successes": 19,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_successes": 0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_successes": 0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_successes": 0,
+            "p1_other_total": 0,
+            "p1_without_rules": 0.0,
+            "p1_without_rules_successes": 0,
+            "p1_without_rules_total": 0,
+            "learning_efficiency": 1.5972,
+            "cold_start_success_rate": 0.8333,
+            "cold_start_successes": 5,
+            "cold_start_total": 6
+          }
+        },
+        "precept_advantages": {
+          "vs_llm_baseline": 0.9583,
+          "vs_reflexion": 0.9583,
+          "vs_full_reflexion": 0.2917,
+          "steps_saved_vs_llm": -2.83,
+          "steps_saved_vs_reflexion": -2.83,
+          "steps_saved_vs_full_reflexion": 3.17,
+          "first_try_advantage_vs_llm": 0.7917,
+          "first_try_advantage_vs_reflexion": 0.7917,
+          "first_try_advantage_vs_full_reflexion": 0.25,
+          "learning_efficiency_advantage_vs_llm": 1.5972,
+          "learning_efficiency_advantage_vs_full_reflexion": 0.4861,
+          "cold_start_advantage_vs_llm": 0.8333,
+          "cold_start_advantage_vs_full_reflexion": 0.1667
+        },
+        "pruning_stats": {
+          "total_constraints": 72,
+          "hard_constraints": 0,
+          "soft_constraints": 72,
+          "dumb_retries_prevented": 3,
+          "pruning_efficiency": 0.0417
+        },
+        "conflict_resolution": {
+          "enabled": false,
+          "mode": "disabled",
+          "stats": {
+            "status": "active",
+            "summary": {
+              "conflicts_detected": 0,
+              "conflicts_resolved": 0
+            },
+            "detection": {
+              "total_detections": 0,
+              "conflicts_found": 0
+            },
+            "resolution_outcomes": {
+              "static_wins": 0,
+              "dynamic_wins": 0,
+              "merges": 0
+            },
+            "reliability": {
+              "static_kb": 0.8333333333333334,
+              "dynamic_experience": 0.625,
+              "episodic_memory": 0.5
+            }
+          },
+          "precept_capabilities": [],
+          "baseline_capabilities": []
+        },
+        "winner": "precept",
+        "dual_mode_results": {
+          "matched": {
+            "precept": {
+              "success_rate": 0.9583,
+              "first_try_success_rate": 0.7917,
+              "first_try_successes": 19,
+              "total_tasks": 24,
+              "avg_steps": 2.83
+            },
+            "expel": {
+              "success_rate": 0.5417,
+              "first_try_success_rate": 0.5,
+              "first_try_successes": 12,
+              "total_tasks": 24,
+              "avg_steps": 6.0
+            },
+            "full_reflexion": {
+              "success_rate": 0.6667,
+              "first_try_success_rate": 0.5417,
+              "first_try_successes": 13,
+              "total_tasks": 24,
+              "avg_steps": 6.0
+            },
+            "elapsed_seconds": 752.59,
+            "num_scenarios": 24
+          },
+          "random": {
+            "precept": {
+              "success_rate": 0.8333,
+              "first_try_success_rate": 0.6667,
+              "first_try_successes": 16,
+              "total_tasks": 24,
+              "avg_steps": 3.04
+            },
+            "expel": {
+              "success_rate": 0.25,
+              "first_try_success_rate": 0.0417,
+              "first_try_successes": 1,
+              "total_tasks": 24,
+              "avg_steps": 8.83
+            },
+            "full_reflexion": {
+              "success_rate": 0.3333,
+              "first_try_success_rate": 0.125,
+              "first_try_successes": 3,
+              "total_tasks": 24,
+              "avg_steps": 8.75
+            },
+            "elapsed_seconds": 1034.62,
+            "num_scenarios": 24
+          }
+        }
+      },
+      "artifacts": {
+        "rules_learned": 5,
+        "procedures": 2,
+        "partial_progress_keys": 9
+      },
+      "precept": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 0.5714285714285714,
+            "pt": 0.8214285714285714,
+            "avg_steps": 3.4642857142857144,
+            "first_try_successes": 16,
+            "successes": 23,
+            "total": 28
+          },
+          "encounter_2": {
+            "p1": 0.875,
+            "pt": 1.0,
+            "avg_steps": 2.5,
+            "first_try_successes": 7,
+            "successes": 8,
+            "total": 8
+          },
+          "encounter_3": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 6,
+            "successes": 6,
+            "total": 6
+          },
+          "encounter_4": {
+            "p1": 1.0,
+            "pt": 1.0,
+            "avg_steps": 2.0,
+            "first_try_successes": 4,
+            "successes": 4,
+            "total": 4
+          }
+        },
+        "by_key": {
+          "INT-402+INT-403+INT-419+NET-TI": 3,
+          "DAT-LARGE+INT-403+INT-429+INT-": 4,
+          "INT-404+SVC-DEPREC+SVC-DOWN+SV": 6,
+          "INT-407+INT-419+INT-429+SVC-MA": 4,
+          "INT-401+NET-FIREWALL+NET-PROXY": 4,
+          "DAT-CORRUPT+DAT-SCHEMA+DAT-SYN": 3,
+          "INT-401+INT-407+INT-419+SVC-DO": 1,
+          "DAT-SCHEMA+INT-402+INT-419+INT": 1,
+          "INT-429+NET-DNS+SVC-DEPREC+SVC": 1,
+          "DAT-PARTIAL+INT-401+INT-407+IN": 1,
+          "DAT-CORRUPT+DAT-PARTIAL+INT-40": 2,
+          "DAT-SYNC+INT-404+INT-407+NET-T": 1,
+          "DAT-LARGE+DAT-SCHEMA+INT-403+N": 1,
+          "DAT-CORRUPT+INT-407+INT-511+NE": 2,
+          "DAT-PARTIAL+DAT-SCHEMA+INT-401": 1,
+          "DAT-SCHEMA+INT-429+SVC-DEPREC+": 1,
+          "DAT-SYNC+INT-429+NET-DNS+SVC-M": 1,
+          "DAT-PARTIAL+DAT-SYNC+INT-403+I": 1,
+          "INT-401+INT-403+INT-419+NET-TI": 1,
+          "DAT-LARGE+DAT-SCHEMA+INT-401+I": 1,
+          "DAT-SCHEMA+INT-401+INT-419+SVC": 1,
+          "INT-402+INT-429+NET-FIREWALL+N": 1,
+          "INT-403+INT-429+NET-DNS+NET-FI": 1,
+          "INT-401+INT-407+NET-FIREWALL+S": 1,
+          "DAT-CORRUPT+DAT-SCHEMA+INT-404": 1,
+          "DAT-LARGE+DAT-PARTIAL+INT-403+": 1,
+          "DAT-LARGE+DAT-SCHEMA+DAT-SYNC+": 1,
+          "INT-429+NET-TIMEOUT+SVC-DEPREC": 1
+        },
+        "total_tasks": 48
+      },
+      "expel": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 0.14285714285714285,
+            "pt": 0.32142857142857145,
+            "avg_steps": 5.071428571428571,
+            "first_try_successes": 4,
+            "successes": 9,
+            "total": 28
+          },
+          "encounter_2": {
+            "p1": 0.25,
+            "pt": 0.25,
+            "avg_steps": 5.0,
+            "first_try_successes": 2,
+            "successes": 2,
+            "total": 8
+          },
+          "encounter_3": {
+            "p1": 0.6666666666666666,
+            "pt": 0.6666666666666666,
+            "avg_steps": 3.3333333333333335,
+            "first_try_successes": 4,
+            "successes": 4,
+            "total": 6
+          },
+          "encounter_4": {
+            "p1": 0.75,
+            "pt": 0.75,
+            "avg_steps": 3.0,
+            "first_try_successes": 3,
+            "successes": 3,
+            "total": 4
+          }
+        },
+        "by_key": {
+          "INT-402+INT-403+INT-419+NET-TI": 3,
+          "DAT-LARGE+INT-403+INT-429+INT-": 4,
+          "INT-404+SVC-DEPREC+SVC-DOWN+SV": 6,
+          "INT-407+INT-419+INT-429+SVC-MA": 4,
+          "INT-401+NET-FIREWALL+NET-PROXY": 4,
+          "DAT-CORRUPT+DAT-SCHEMA+DAT-SYN": 3,
+          "INT-401+INT-407+INT-419+SVC-DO": 1,
+          "DAT-SCHEMA+INT-402+INT-419+INT": 1,
+          "INT-429+NET-DNS+SVC-DEPREC+SVC": 1,
+          "DAT-PARTIAL+INT-401+INT-407+IN": 1,
+          "DAT-CORRUPT+DAT-PARTIAL+INT-40": 2,
+          "DAT-SYNC+INT-404+INT-407+NET-T": 1,
+          "DAT-LARGE+DAT-SCHEMA+INT-403+N": 1,
+          "DAT-CORRUPT+INT-407+INT-511+NE": 2,
+          "DAT-PARTIAL+DAT-SCHEMA+INT-401": 1,
+          "DAT-SCHEMA+INT-429+SVC-DEPREC+": 1,
+          "DAT-SYNC+INT-429+NET-DNS+SVC-M": 1,
+          "DAT-PARTIAL+DAT-SYNC+INT-403+I": 1,
+          "INT-401+INT-403+INT-419+NET-TI": 1,
+          "DAT-LARGE+DAT-SCHEMA+INT-401+I": 1,
+          "DAT-SCHEMA+INT-401+INT-419+SVC": 1,
+          "INT-402+INT-429+NET-FIREWALL+N": 1,
+          "INT-403+INT-429+NET-DNS+NET-FI": 1,
+          "INT-401+INT-407+NET-FIREWALL+S": 1,
+          "DAT-CORRUPT+DAT-SCHEMA+INT-404": 1,
+          "DAT-LARGE+DAT-PARTIAL+INT-403+": 1,
+          "DAT-LARGE+DAT-SCHEMA+DAT-SYNC+": 1,
+          "INT-429+NET-TIMEOUT+SVC-DEPREC": 1
+        },
+        "total_tasks": 48
+      },
+      "full_reflexion": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 0.21428571428571427,
+            "pt": 0.42857142857142855,
+            "avg_steps": 4.714285714285714,
+            "first_try_successes": 6,
+            "successes": 12,
+            "total": 28
+          },
+          "encounter_2": {
+            "p1": 0.25,
+            "pt": 0.375,
+            "avg_steps": 4.75,
+            "first_try_successes": 2,
+            "successes": 3,
+            "total": 8
+          },
+          "encounter_3": {
+            "p1": 0.8333333333333334,
+            "pt": 0.8333333333333334,
+            "avg_steps": 2.6666666666666665,
+            "first_try_successes": 5,
+            "successes": 5,
+            "total": 6
+          },
+          "encounter_4": {
+            "p1": 0.75,
+            "pt": 0.75,
+            "avg_steps": 3.0,
+            "first_try_successes": 3,
+            "successes": 3,
+            "total": 4
+          }
+        },
+        "by_key": {
+          "INT-402+INT-403+INT-419+NET-TI": 3,
+          "DAT-LARGE+INT-403+INT-429+INT-": 4,
+          "INT-404+SVC-DEPREC+SVC-DOWN+SV": 6,
+          "INT-407+INT-419+INT-429+SVC-MA": 4,
+          "INT-401+NET-FIREWALL+NET-PROXY": 4,
+          "DAT-CORRUPT+DAT-SCHEMA+DAT-SYN": 3,
+          "INT-401+INT-407+INT-419+SVC-DO": 1,
+          "DAT-SCHEMA+INT-402+INT-419+INT": 1,
+          "INT-429+NET-DNS+SVC-DEPREC+SVC": 1,
+          "DAT-PARTIAL+INT-401+INT-407+IN": 1,
+          "DAT-CORRUPT+DAT-PARTIAL+INT-40": 2,
+          "DAT-SYNC+INT-404+INT-407+NET-T": 1,
+          "DAT-LARGE+DAT-SCHEMA+INT-403+N": 1,
+          "DAT-CORRUPT+INT-407+INT-511+NE": 2,
+          "DAT-PARTIAL+DAT-SCHEMA+INT-401": 1,
+          "DAT-SCHEMA+INT-429+SVC-DEPREC+": 1,
+          "DAT-SYNC+INT-429+NET-DNS+SVC-M": 1,
+          "DAT-PARTIAL+DAT-SYNC+INT-403+I": 1,
+          "INT-401+INT-403+INT-419+NET-TI": 1,
+          "DAT-LARGE+DAT-SCHEMA+INT-401+I": 1,
+          "DAT-SCHEMA+INT-401+INT-419+SVC": 1,
+          "INT-402+INT-429+NET-FIREWALL+N": 1,
+          "INT-403+INT-429+NET-DNS+NET-FI": 1,
+          "INT-401+INT-407+NET-FIREWALL+S": 1,
+          "DAT-CORRUPT+DAT-SCHEMA+INT-404": 1,
+          "DAT-LARGE+DAT-PARTIAL+INT-403+": 1,
+          "DAT-LARGE+DAT-SCHEMA+DAT-SYNC+": 1,
+          "INT-429+NET-TIMEOUT+SVC-DEPREC": 1
+        },
+        "total_tasks": 48
+      }
+    },
+    {
+      "aggregated": {
+        "metadata": {
+          "domain": "integration",
+          "timestamp": "20260216_023642",
+          "seed": 999,
+          "train_tasks": 6,
+          "test_tasks": 24,
+          "max_retries": 4,
+          "max_attempts": 5,
+          "concurrent_training": true,
+          "concurrent_testing": false,
+          "train_elapsed_seconds": 38.26,
+          "test_elapsed_seconds": 2007.29,
+          "static_knowledge_enabled": false,
+          "static_knowledge_mode": "disabled",
+          "test_mode": "both"
+        },
+        "agents": {
+          "llm_baseline": {
+            "name": "LLM Baseline (NOT RUN - unfair)",
+            "success_rate": 0.0,
+            "total_successes": 0,
+            "total_tasks": 0,
+            "avg_steps": 0.0,
+            "llm_calls": 0,
+            "llm_accuracy": 0.0,
+            "first_try_success_rate": 0.0,
+            "first_try_successes": 0,
+            "learning_efficiency": 0.0,
+            "cold_start_success_rate": 0.0,
+            "cold_start_successes": 0,
+            "cold_start_total": 0
+          },
+          "reflexion": {
+            "name": "Reflexion (NOT RUN - unfair)",
+            "success_rate": 0.0,
+            "total_successes": 0,
+            "total_tasks": 0,
+            "avg_steps": 0.0,
+            "llm_calls": 0,
+            "llm_accuracy": 0.0,
+            "reflections_generated": 0,
+            "first_try_success_rate": 0.0,
+            "first_try_successes": 0,
+            "learning_efficiency": 0.0,
+            "cold_start_success_rate": 0.0,
+            "cold_start_successes": 0,
+            "cold_start_total": 0
+          },
+          "full_reflexion": {
+            "name": "Full Reflexion",
+            "success_rate": 0.2917,
+            "total_successes": 7,
+            "total_tasks": 24,
+            "avg_steps": 9.0,
+            "llm_calls": 213,
+            "llm_accuracy": 0.0751,
+            "reflections_generated": 213,
+            "reflections_reused": 213,
+            "accumulated_memories": 40,
+            "first_try_success_rate": 0.2083,
+            "first_try_successes": 5,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_total": 0,
+            "learning_efficiency": 0.4861,
+            "cold_start_success_rate": 0.3333,
+            "cold_start_successes": 2,
+            "cold_start_total": 6
+          },
+          "expel": {
+            "name": "ExpeL",
+            "success_rate": 0.2917,
+            "total_successes": 7,
+            "total_tasks": 24,
+            "avg_steps": 8.0,
+            "llm_calls": 265,
+            "llm_accuracy": 0.0642,
+            "insights_extracted": 54,
+            "insights_retrieved": 1731,
+            "first_try_success_rate": 0.25,
+            "first_try_successes": 6,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_total": 0,
+            "learning_efficiency": 0.4861,
+            "cold_start_success_rate": 0.3333,
+            "cold_start_successes": 2,
+            "cold_start_total": 6
+          },
+          "precept": {
+            "name": "PRECEPT",
+            "success_rate": 0.4583,
+            "total_successes": 11,
+            "total_tasks": 24,
+            "avg_steps": 4.08,
+            "rules_learned": 40,
+            "llm_reasoning_calls": 129,
+            "llm_reasoning_successes": 47,
+            "has_compass_evolution": true,
+            "first_try_success_rate": 0.4583,
+            "first_try_successes": 11,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_successes": 0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_successes": 0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_successes": 0,
+            "p1_other_total": 0,
+            "p1_without_rules": 0.0,
+            "p1_without_rules_successes": 0,
+            "p1_without_rules_total": 0,
+            "learning_efficiency": 0.7639,
+            "cold_start_success_rate": 0.3333,
+            "cold_start_successes": 2,
+            "cold_start_total": 6
+          }
+        },
+        "precept_advantages": {
+          "vs_llm_baseline": 0.4583,
+          "vs_reflexion": 0.4583,
+          "vs_full_reflexion": 0.1667,
+          "steps_saved_vs_llm": -4.08,
+          "steps_saved_vs_reflexion": -4.08,
+          "steps_saved_vs_full_reflexion": 4.92,
+          "first_try_advantage_vs_llm": 0.4583,
+          "first_try_advantage_vs_reflexion": 0.4583,
+          "first_try_advantage_vs_full_reflexion": 0.25,
+          "learning_efficiency_advantage_vs_llm": 0.7639,
+          "learning_efficiency_advantage_vs_full_reflexion": 0.2778,
+          "cold_start_advantage_vs_llm": 0.3333,
+          "cold_start_advantage_vs_full_reflexion": 0.0
+        },
+        "pruning_stats": {
+          "total_constraints": 121,
+          "hard_constraints": 0,
+          "soft_constraints": 121,
+          "dumb_retries_prevented": 5,
+          "pruning_efficiency": 0.0413
+        },
+        "conflict_resolution": {
+          "enabled": false,
+          "mode": "disabled",
+          "stats": {
+            "status": "active",
+            "summary": {
+              "conflicts_detected": 0,
+              "conflicts_resolved": 0
+            },
+            "detection": {
+              "total_detections": 0,
+              "conflicts_found": 0
+            },
+            "resolution_outcomes": {
+              "static_wins": 0,
+              "dynamic_wins": 0,
+              "merges": 0
+            },
+            "reliability": {
+              "static_kb": 0.8333333333333334,
+              "dynamic_experience": 0.625,
+              "episodic_memory": 0.5
+            }
+          },
+          "precept_capabilities": [],
+          "baseline_capabilities": []
+        },
+        "winner": "precept",
+        "dual_mode_results": {
+          "matched": {
+            "precept": {
+              "success_rate": 0.4583,
+              "first_try_success_rate": 0.4583,
+              "first_try_successes": 11,
+              "total_tasks": 24,
+              "avg_steps": 4.08
+            },
+            "expel": {
+              "success_rate": 0.2917,
+              "first_try_success_rate": 0.25,
+              "first_try_successes": 6,
+              "total_tasks": 24,
+              "avg_steps": 8.0
+            },
+            "full_reflexion": {
+              "success_rate": 0.2917,
+              "first_try_success_rate": 0.2083,
+              "first_try_successes": 5,
+              "total_tasks": 24,
+              "avg_steps": 9.0
+            },
+            "elapsed_seconds": 1144.34,
+            "num_scenarios": 24
+          },
+          "random": {
+            "precept": {
+              "success_rate": 0.6667,
+              "first_try_success_rate": 0.6667,
+              "first_try_successes": 16,
+              "total_tasks": 24,
+              "avg_steps": 3.08
+            },
+            "expel": {
+              "success_rate": 0.375,
+              "first_try_success_rate": 0.25,
+              "first_try_successes": 6,
+              "total_tasks": 24,
+              "avg_steps": 7.42
+            },
+            "full_reflexion": {
+              "success_rate": 0.375,
+              "first_try_success_rate": 0.25,
+              "first_try_successes": 6,
+              "total_tasks": 24,
+              "avg_steps": 8.25
+            },
+            "elapsed_seconds": 862.94,
+            "num_scenarios": 24
+          }
+        }
+      },
+      "artifacts": {
+        "rules_learned": 8,
+        "procedures": 1,
+        "partial_progress_keys": 13
+      },
+      "precept": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 0.35294117647058826,
+            "pt": 0.35294117647058826,
+            "avg_steps": 4.117647058823529,
+            "first_try_successes": 6,
+            "successes": 6,
+            "total": 17
+          },
+          "encounter_2": {
+            "p1": 0.2857142857142857,
+            "pt": 0.2857142857142857,
+            "avg_steps": 4.857142857142857,
+            "first_try_successes": 2,
+            "successes": 2,
+            "total": 7
+          },
+          "encounter_3": {
+            "p1": 0.5,
+            "pt": 0.5,
+            "avg_steps": 4.0,
+            "first_try_successes": 3,
+            "successes": 3,
+            "total": 6
+          },
+          "encounter_4": {
+            "p1": 0.6666666666666666,
+            "pt": 0.6666666666666666,
+            "avg_steps": 3.3333333333333335,
+            "first_try_successes": 4,
+            "successes": 4,
+            "total": 6
+          }
+        },
+        "by_key": {
+          "DAT-CORRUPT+DAT-PARTIAL+INT-40": 4,
+          "DAT-CORRUPT+INT-407+INT-511+NE": 4,
+          "DAT-PARTIAL+DAT-SYNC+INT-403+I": 4,
+          "INT-401+INT-419+SVC-DEPREC+SVC": 4,
+          "DAT-SYNC+INT-404+INT-407+NET-T": 4,
+          "DAT-SCHEMA+INT-402+INT-419+INT": 16,
+          "DAT-LARGE+DAT-SCHEMA+DAT-SYNC+": 1,
+          "INT-402+INT-403+INT-419+INT-42": 1,
+          "DAT-SCHEMA+INT-402+INT-419+NET": 2,
+          "DAT-SCHEMA+INT-402+NET-DNS+NET": 1,
+          "DAT-LARGE+INT-402+INT-419+INT-": 1,
+          "DAT-LARGE+DAT-SCHEMA+INT-402+I": 1,
+          "DAT-SYNC+INT-402+INT-419+NET-S": 1,
+          "DAT-SCHEMA+INT-401+INT-402+INT": 1,
+          "DAT-SCHEMA+DAT-SYNC+INT-402+IN": 1,
+          "DAT-SCHEMA+INT-402+INT-429+NET": 1,
+          "INT-402+INT-419+INT-429+NET-TI": 1
+        },
+        "total_tasks": 48
+      },
+      "expel": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 0.17647058823529413,
+            "pt": 0.29411764705882354,
+            "avg_steps": 5.0588235294117645,
+            "first_try_successes": 3,
+            "successes": 5,
+            "total": 17
+          },
+          "encounter_2": {
+            "p1": 0.14285714285714285,
+            "pt": 0.2857142857142857,
+            "avg_steps": 5.142857142857143,
+            "first_try_successes": 1,
+            "successes": 2,
+            "total": 7
+          },
+          "encounter_3": {
+            "p1": 0.16666666666666666,
+            "pt": 0.3333333333333333,
+            "avg_steps": 5.0,
+            "first_try_successes": 1,
+            "successes": 2,
+            "total": 6
+          },
+          "encounter_4": {
+            "p1": 0.3333333333333333,
+            "pt": 0.3333333333333333,
+            "avg_steps": 4.666666666666667,
+            "first_try_successes": 2,
+            "successes": 2,
+            "total": 6
+          }
+        },
+        "by_key": {
+          "DAT-CORRUPT+DAT-PARTIAL+INT-40": 4,
+          "DAT-CORRUPT+INT-407+INT-511+NE": 4,
+          "DAT-PARTIAL+DAT-SYNC+INT-403+I": 4,
+          "INT-401+INT-419+SVC-DEPREC+SVC": 4,
+          "DAT-SYNC+INT-404+INT-407+NET-T": 4,
+          "DAT-SCHEMA+INT-402+INT-419+INT": 16,
+          "DAT-LARGE+DAT-SCHEMA+DAT-SYNC+": 1,
+          "INT-402+INT-403+INT-419+INT-42": 1,
+          "DAT-SCHEMA+INT-402+INT-419+NET": 2,
+          "DAT-SCHEMA+INT-402+NET-DNS+NET": 1,
+          "DAT-LARGE+INT-402+INT-419+INT-": 1,
+          "DAT-LARGE+DAT-SCHEMA+INT-402+I": 1,
+          "DAT-SYNC+INT-402+INT-419+NET-S": 1,
+          "DAT-SCHEMA+INT-401+INT-402+INT": 1,
+          "DAT-SCHEMA+DAT-SYNC+INT-402+IN": 1,
+          "DAT-SCHEMA+INT-402+INT-429+NET": 1,
+          "INT-402+INT-419+INT-429+NET-TI": 1
+        },
+        "total_tasks": 48
+      },
+      "full_reflexion": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 0.11764705882352941,
+            "pt": 0.29411764705882354,
+            "avg_steps": 5.176470588235294,
+            "first_try_successes": 2,
+            "successes": 5,
+            "total": 17
+          },
+          "encounter_2": {
+            "p1": 0.14285714285714285,
+            "pt": 0.2857142857142857,
+            "avg_steps": 5.142857142857143,
+            "first_try_successes": 1,
+            "successes": 2,
+            "total": 7
+          },
+          "encounter_3": {
+            "p1": 0.16666666666666666,
+            "pt": 0.3333333333333333,
+            "avg_steps": 5.0,
+            "first_try_successes": 1,
+            "successes": 2,
+            "total": 6
+          },
+          "encounter_4": {
+            "p1": 0.3333333333333333,
+            "pt": 0.3333333333333333,
+            "avg_steps": 4.666666666666667,
+            "first_try_successes": 2,
+            "successes": 2,
+            "total": 6
+          }
+        },
+        "by_key": {
+          "DAT-CORRUPT+DAT-PARTIAL+INT-40": 4,
+          "DAT-CORRUPT+INT-407+INT-511+NE": 4,
+          "DAT-PARTIAL+DAT-SYNC+INT-403+I": 4,
+          "INT-401+INT-419+SVC-DEPREC+SVC": 4,
+          "DAT-SYNC+INT-404+INT-407+NET-T": 4,
+          "DAT-SCHEMA+INT-402+INT-419+INT": 16,
+          "DAT-LARGE+DAT-SCHEMA+DAT-SYNC+": 1,
+          "INT-402+INT-403+INT-419+INT-42": 1,
+          "DAT-SCHEMA+INT-402+INT-419+NET": 2,
+          "DAT-SCHEMA+INT-402+NET-DNS+NET": 1,
+          "DAT-LARGE+INT-402+INT-419+INT-": 1,
+          "DAT-LARGE+DAT-SCHEMA+INT-402+I": 1,
+          "DAT-SYNC+INT-402+INT-419+NET-S": 1,
+          "DAT-SCHEMA+INT-401+INT-402+INT": 1,
+          "DAT-SCHEMA+DAT-SYNC+INT-402+IN": 1,
+          "DAT-SCHEMA+INT-402+INT-429+NET": 1,
+          "INT-402+INT-419+INT-429+NET-TI": 1
+        },
+        "total_tasks": 48
+      }
+    },
+    {
+      "aggregated": {
+        "metadata": {
+          "domain": "integration",
+          "timestamp": "20260216_031224",
+          "seed": 2024,
+          "train_tasks": 6,
+          "test_tasks": 24,
+          "max_retries": 4,
+          "max_attempts": 5,
+          "concurrent_training": true,
+          "concurrent_testing": false,
+          "train_elapsed_seconds": 40.47,
+          "test_elapsed_seconds": 2068.62,
+          "static_knowledge_enabled": false,
+          "static_knowledge_mode": "disabled",
+          "test_mode": "both"
+        },
+        "agents": {
+          "llm_baseline": {
+            "name": "LLM Baseline (NOT RUN - unfair)",
+            "success_rate": 0.0,
+            "total_successes": 0,
+            "total_tasks": 0,
+            "avg_steps": 0.0,
+            "llm_calls": 0,
+            "llm_accuracy": 0.0,
+            "first_try_success_rate": 0.0,
+            "first_try_successes": 0,
+            "learning_efficiency": 0.0,
+            "cold_start_success_rate": 0.0,
+            "cold_start_successes": 0,
+            "cold_start_total": 0
+          },
+          "reflexion": {
+            "name": "Reflexion (NOT RUN - unfair)",
+            "success_rate": 0.0,
+            "total_successes": 0,
+            "total_tasks": 0,
+            "avg_steps": 0.0,
+            "llm_calls": 0,
+            "llm_accuracy": 0.0,
+            "reflections_generated": 0,
+            "first_try_success_rate": 0.0,
+            "first_try_successes": 0,
+            "learning_efficiency": 0.0,
+            "cold_start_success_rate": 0.0,
+            "cold_start_successes": 0,
+            "cold_start_total": 0
+          },
+          "full_reflexion": {
+            "name": "Full Reflexion",
+            "success_rate": 0.2083,
+            "total_successes": 5,
+            "total_tasks": 24,
+            "avg_steps": 9.75,
+            "llm_calls": 227,
+            "llm_accuracy": 0.0529,
+            "reflections_generated": 227,
+            "reflections_reused": 227,
+            "accumulated_memories": 40,
+            "first_try_success_rate": 0.125,
+            "first_try_successes": 3,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_total": 0,
+            "learning_efficiency": 0.3472,
+            "cold_start_success_rate": 0.1667,
+            "cold_start_successes": 1,
+            "cold_start_total": 6
+          },
+          "expel": {
+            "name": "ExpeL",
+            "success_rate": 0.375,
+            "total_successes": 9,
+            "total_tasks": 24,
+            "avg_steps": 7.0,
+            "llm_calls": 254,
+            "llm_accuracy": 0.0748,
+            "insights_extracted": 54,
+            "insights_retrieved": 1690,
+            "first_try_success_rate": 0.375,
+            "first_try_successes": 9,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_total": 0,
+            "learning_efficiency": 0.625,
+            "cold_start_success_rate": 0.5,
+            "cold_start_successes": 3,
+            "cold_start_total": 6
+          },
+          "precept": {
+            "name": "PRECEPT",
+            "success_rate": 0.5417,
+            "total_successes": 13,
+            "total_tasks": 24,
+            "avg_steps": 4.0,
+            "rules_learned": 39,
+            "llm_reasoning_calls": 134,
+            "llm_reasoning_successes": 41,
+            "has_compass_evolution": true,
+            "first_try_success_rate": 0.5,
+            "first_try_successes": 12,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_successes": 0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_successes": 0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_successes": 0,
+            "p1_other_total": 0,
+            "p1_without_rules": 0.0,
+            "p1_without_rules_successes": 0,
+            "p1_without_rules_total": 0,
+            "learning_efficiency": 0.9028,
+            "cold_start_success_rate": 0.5,
+            "cold_start_successes": 3,
+            "cold_start_total": 6
+          }
+        },
+        "precept_advantages": {
+          "vs_llm_baseline": 0.5417,
+          "vs_reflexion": 0.5417,
+          "vs_full_reflexion": 0.3333,
+          "steps_saved_vs_llm": -4.0,
+          "steps_saved_vs_reflexion": -4.0,
+          "steps_saved_vs_full_reflexion": 5.75,
+          "first_try_advantage_vs_llm": 0.5,
+          "first_try_advantage_vs_reflexion": 0.5,
+          "first_try_advantage_vs_full_reflexion": 0.375,
+          "learning_efficiency_advantage_vs_llm": 0.9028,
+          "learning_efficiency_advantage_vs_full_reflexion": 0.5556,
+          "cold_start_advantage_vs_llm": 0.5,
+          "cold_start_advantage_vs_full_reflexion": 0.3333
+        },
+        "pruning_stats": {
+          "total_constraints": 128,
+          "hard_constraints": 0,
+          "soft_constraints": 128,
+          "dumb_retries_prevented": 6,
+          "pruning_efficiency": 0.0469
+        },
+        "conflict_resolution": {
+          "enabled": false,
+          "mode": "disabled",
+          "stats": {
+            "status": "active",
+            "summary": {
+              "conflicts_detected": 0,
+              "conflicts_resolved": 0
+            },
+            "detection": {
+              "total_detections": 0,
+              "conflicts_found": 0
+            },
+            "resolution_outcomes": {
+              "static_wins": 0,
+              "dynamic_wins": 0,
+              "merges": 0
+            },
+            "reliability": {
+              "static_kb": 0.8333333333333334,
+              "dynamic_experience": 0.625,
+              "episodic_memory": 0.5
+            }
+          },
+          "precept_capabilities": [],
+          "baseline_capabilities": []
+        },
+        "winner": "precept",
+        "dual_mode_results": {
+          "matched": {
+            "precept": {
+              "success_rate": 0.5417,
+              "first_try_success_rate": 0.5,
+              "first_try_successes": 12,
+              "total_tasks": 24,
+              "avg_steps": 4.0
+            },
+            "expel": {
+              "success_rate": 0.375,
+              "first_try_success_rate": 0.375,
+              "first_try_successes": 9,
+              "total_tasks": 24,
+              "avg_steps": 7.0
+            },
+            "full_reflexion": {
+              "success_rate": 0.2083,
+              "first_try_success_rate": 0.125,
+              "first_try_successes": 3,
+              "total_tasks": 24,
+              "avg_steps": 9.75
+            },
+            "elapsed_seconds": 1011.48,
+            "num_scenarios": 24
+          },
+          "random": {
+            "precept": {
+              "success_rate": 0.625,
+              "first_try_success_rate": 0.625,
+              "first_try_successes": 15,
+              "total_tasks": 24,
+              "avg_steps": 3.5
+            },
+            "expel": {
+              "success_rate": 0.375,
+              "first_try_success_rate": 0.2917,
+              "first_try_successes": 7,
+              "total_tasks": 24,
+              "avg_steps": 7.25
+            },
+            "full_reflexion": {
+              "success_rate": 0.2917,
+              "first_try_success_rate": 0.2917,
+              "first_try_successes": 7,
+              "total_tasks": 24,
+              "avg_steps": 8.67
+            },
+            "elapsed_seconds": 1057.14,
+            "num_scenarios": 24
+          }
+        }
+      },
+      "artifacts": {
+        "rules_learned": 7,
+        "procedures": 3,
+        "partial_progress_keys": 14
+      },
+      "precept": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 0.35294117647058826,
+            "pt": 0.35294117647058826,
+            "avg_steps": 4.588235294117647,
+            "first_try_successes": 6,
+            "successes": 6,
+            "total": 17
+          },
+          "encounter_2": {
+            "p1": 0.42857142857142855,
+            "pt": 0.42857142857142855,
+            "avg_steps": 4.285714285714286,
+            "first_try_successes": 3,
+            "successes": 3,
+            "total": 7
+          },
+          "encounter_3": {
+            "p1": 0.5,
+            "pt": 0.5,
+            "avg_steps": 4.0,
+            "first_try_successes": 3,
+            "successes": 3,
+            "total": 6
+          },
+          "encounter_4": {
+            "p1": 0.5,
+            "pt": 0.6666666666666666,
+            "avg_steps": 4.0,
+            "first_try_successes": 3,
+            "successes": 4,
+            "total": 6
+          }
+        },
+        "by_key": {
+          "DAT-CORRUPT+DAT-SYNC+INT-403+I": 4,
+          "DAT-SCHEMA+INT-403+INT-404+NET": 4,
+          "DAT-CORRUPT+DAT-LARGE+INT-402+": 4,
+          "DAT-CORRUPT+INT-429+NET-FIREWA": 10,
+          "DAT-PARTIAL+INT-511+NET-TIMEOU": 10,
+          "DAT-CORRUPT+DAT-SCHEMA+INT-401": 4,
+          "DAT-CORRUPT+DAT-PARTIAL+INT-42": 2,
+          "INT-407+INT-511+NET-PROXY+SVC-": 1,
+          "DAT-CORRUPT+INT-403+INT-419+IN": 1,
+          "INT-401+INT-511+NET-DNS+NET-TI": 1,
+          "DAT-CORRUPT+INT-401+INT-429+NE": 1,
+          "DAT-PARTIAL+INT-403+INT-407+IN": 1,
+          "DAT-SYNC+INT-511+NET-PROXY+SVC": 1,
+          "DAT-PARTIAL+INT-401+INT-429+NE": 1,
+          "DAT-PARTIAL+INT-511+NET-PROXY+": 1,
+          "INT-429+NET-DNS+NET-FIREWALL+N": 1,
+          "DAT-PARTIAL+INT-511+NET-SSL+SV": 1
+        },
+        "total_tasks": 48
+      },
+      "expel": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 0.29411764705882354,
+            "pt": 0.4117647058823529,
+            "avg_steps": 4.588235294117647,
+            "first_try_successes": 5,
+            "successes": 7,
+            "total": 17
+          },
+          "encounter_2": {
+            "p1": 0.2857142857142857,
+            "pt": 0.2857142857142857,
+            "avg_steps": 4.857142857142857,
+            "first_try_successes": 2,
+            "successes": 2,
+            "total": 7
+          },
+          "encounter_3": {
+            "p1": 0.3333333333333333,
+            "pt": 0.3333333333333333,
+            "avg_steps": 4.666666666666667,
+            "first_try_successes": 2,
+            "successes": 2,
+            "total": 6
+          },
+          "encounter_4": {
+            "p1": 0.3333333333333333,
+            "pt": 0.3333333333333333,
+            "avg_steps": 4.666666666666667,
+            "first_try_successes": 2,
+            "successes": 2,
+            "total": 6
+          }
+        },
+        "by_key": {
+          "DAT-CORRUPT+DAT-SYNC+INT-403+I": 4,
+          "DAT-SCHEMA+INT-403+INT-404+NET": 4,
+          "DAT-CORRUPT+DAT-LARGE+INT-402+": 4,
+          "DAT-CORRUPT+INT-429+NET-FIREWA": 10,
+          "DAT-PARTIAL+INT-511+NET-TIMEOU": 10,
+          "DAT-CORRUPT+DAT-SCHEMA+INT-401": 4,
+          "DAT-CORRUPT+DAT-PARTIAL+INT-42": 2,
+          "INT-407+INT-511+NET-PROXY+SVC-": 1,
+          "DAT-CORRUPT+INT-403+INT-419+IN": 1,
+          "INT-401+INT-511+NET-DNS+NET-TI": 1,
+          "DAT-CORRUPT+INT-401+INT-429+NE": 1,
+          "DAT-PARTIAL+INT-403+INT-407+IN": 1,
+          "DAT-SYNC+INT-511+NET-PROXY+SVC": 1,
+          "DAT-PARTIAL+INT-401+INT-429+NE": 1,
+          "DAT-PARTIAL+INT-511+NET-PROXY+": 1,
+          "INT-429+NET-DNS+NET-FIREWALL+N": 1,
+          "DAT-PARTIAL+INT-511+NET-SSL+SV": 1
+        },
+        "total_tasks": 48
+      },
+      "full_reflexion": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 0.11764705882352941,
+            "pt": 0.17647058823529413,
+            "avg_steps": 5.411764705882353,
+            "first_try_successes": 2,
+            "successes": 3,
+            "total": 17
+          },
+          "encounter_2": {
+            "p1": 0.2857142857142857,
+            "pt": 0.2857142857142857,
+            "avg_steps": 4.857142857142857,
+            "first_try_successes": 2,
+            "successes": 2,
+            "total": 7
+          },
+          "encounter_3": {
+            "p1": 0.16666666666666666,
+            "pt": 0.16666666666666666,
+            "avg_steps": 5.333333333333333,
+            "first_try_successes": 1,
+            "successes": 1,
+            "total": 6
+          },
+          "encounter_4": {
+            "p1": 0.0,
+            "pt": 0.16666666666666666,
+            "avg_steps": 5.666666666666667,
+            "first_try_successes": 0,
+            "successes": 1,
+            "total": 6
+          }
+        },
+        "by_key": {
+          "DAT-CORRUPT+DAT-SYNC+INT-403+I": 4,
+          "DAT-SCHEMA+INT-403+INT-404+NET": 4,
+          "DAT-CORRUPT+DAT-LARGE+INT-402+": 4,
+          "DAT-CORRUPT+INT-429+NET-FIREWA": 10,
+          "DAT-PARTIAL+INT-511+NET-TIMEOU": 10,
+          "DAT-CORRUPT+DAT-SCHEMA+INT-401": 4,
+          "DAT-CORRUPT+DAT-PARTIAL+INT-42": 2,
+          "INT-407+INT-511+NET-PROXY+SVC-": 1,
+          "DAT-CORRUPT+INT-403+INT-419+IN": 1,
+          "INT-401+INT-511+NET-DNS+NET-TI": 1,
+          "DAT-CORRUPT+INT-401+INT-429+NE": 1,
+          "DAT-PARTIAL+INT-403+INT-407+IN": 1,
+          "DAT-SYNC+INT-511+NET-PROXY+SVC": 1,
+          "DAT-PARTIAL+INT-401+INT-429+NE": 1,
+          "DAT-PARTIAL+INT-511+NET-PROXY+": 1,
+          "INT-429+NET-DNS+NET-FIREWALL+N": 1,
+          "DAT-PARTIAL+INT-511+NET-SSL+SV": 1
+        },
+        "total_tasks": 48
+      }
+    },
+    {
+      "aggregated": {
+        "metadata": {
+          "domain": "integration",
+          "timestamp": "20260216_031339",
+          "seed": 3141,
+          "train_tasks": 6,
+          "test_tasks": 24,
+          "max_retries": 4,
+          "max_attempts": 5,
+          "concurrent_training": true,
+          "concurrent_testing": false,
+          "train_elapsed_seconds": 40.08,
+          "test_elapsed_seconds": 0.0,
+          "static_knowledge_enabled": false,
+          "static_knowledge_mode": "disabled",
+          "test_mode": "both"
+        },
+        "agents": {
+          "llm_baseline": {
+            "name": "LLM Baseline (NOT RUN - unfair)",
+            "success_rate": 0.0,
+            "total_successes": 0,
+            "total_tasks": 0,
+            "avg_steps": 0.0,
+            "llm_calls": 0,
+            "llm_accuracy": 0.0,
+            "first_try_success_rate": 0.0,
+            "first_try_successes": 0,
+            "learning_efficiency": 0.0,
+            "cold_start_success_rate": 0.0,
+            "cold_start_successes": 0,
+            "cold_start_total": 0
+          },
+          "reflexion": {
+            "name": "Reflexion (NOT RUN - unfair)",
+            "success_rate": 0.0,
+            "total_successes": 0,
+            "total_tasks": 0,
+            "avg_steps": 0.0,
+            "llm_calls": 0,
+            "llm_accuracy": 0.0,
+            "reflections_generated": 0,
+            "first_try_success_rate": 0.0,
+            "first_try_successes": 0,
+            "learning_efficiency": 0.0,
+            "cold_start_success_rate": 0.0,
+            "cold_start_successes": 0,
+            "cold_start_total": 0
+          },
+          "full_reflexion": {
+            "name": "Full Reflexion",
+            "success_rate": 0,
+            "total_successes": 0,
+            "total_tasks": 0,
+            "avg_steps": 0,
+            "llm_calls": 29,
+            "llm_accuracy": 0.0345,
+            "reflections_generated": 29,
+            "reflections_reused": 29,
+            "accumulated_memories": 6,
+            "first_try_success_rate": 0,
+            "first_try_successes": 0,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_total": 0,
+            "learning_efficiency": 0.0,
+            "cold_start_success_rate": 0,
+            "cold_start_successes": 0,
+            "cold_start_total": 0
+          },
+          "expel": {
+            "name": "ExpeL",
+            "success_rate": 0,
+            "total_successes": 0,
+            "total_tasks": 0,
+            "avg_steps": 0,
+            "llm_calls": 34,
+            "llm_accuracy": 0.0294,
+            "insights_extracted": 6,
+            "insights_retrieved": 25,
+            "first_try_success_rate": 0,
+            "first_try_successes": 0,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_total": 0,
+            "learning_efficiency": 0.0,
+            "cold_start_success_rate": 0,
+            "cold_start_successes": 0,
+            "cold_start_total": 0
+          },
+          "precept": {
+            "name": "PRECEPT",
+            "success_rate": 0,
+            "total_successes": 0,
+            "total_tasks": 0,
+            "avg_steps": 0,
+            "rules_learned": 0,
+            "llm_reasoning_calls": 30,
+            "llm_reasoning_successes": 0,
+            "has_compass_evolution": true,
+            "first_try_success_rate": 0,
+            "first_try_successes": 0,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_successes": 0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_successes": 0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_successes": 0,
+            "p1_other_total": 0,
+            "p1_without_rules": 0.0,
+            "p1_without_rules_successes": 0,
+            "p1_without_rules_total": 0,
+            "learning_efficiency": 0.0,
+            "cold_start_success_rate": 0,
+            "cold_start_successes": 0,
+            "cold_start_total": 0
+          }
+        },
+        "precept_advantages": {
+          "vs_llm_baseline": 0.0,
+          "vs_reflexion": 0.0,
+          "vs_full_reflexion": 0,
+          "steps_saved_vs_llm": 0.0,
+          "steps_saved_vs_reflexion": 0.0,
+          "steps_saved_vs_full_reflexion": 0,
+          "first_try_advantage_vs_llm": 0.0,
+          "first_try_advantage_vs_reflexion": 0.0,
+          "first_try_advantage_vs_full_reflexion": 0,
+          "learning_efficiency_advantage_vs_llm": 0.0,
+          "learning_efficiency_advantage_vs_full_reflexion": 0.0,
+          "cold_start_advantage_vs_llm": 0.0,
+          "cold_start_advantage_vs_full_reflexion": 0
+        },
+        "pruning_stats": {
+          "total_constraints": 30,
+          "hard_constraints": 0,
+          "soft_constraints": 30,
+          "dumb_retries_prevented": 0,
+          "pruning_efficiency": 0.0
+        },
+        "conflict_resolution": {
+          "enabled": false,
+          "mode": "disabled",
+          "stats": {
+            "status": "active",
+            "summary": {
+              "conflicts_detected": 0,
+              "conflicts_resolved": 0
+            },
+            "detection": {
+              "total_detections": 0,
+              "conflicts_found": 0
+            },
+            "resolution_outcomes": {
+              "static_wins": 0,
+              "dynamic_wins": 0,
+              "merges": 0
+            },
+            "reliability": {
+              "static_kb": 0.8333333333333334,
+              "dynamic_experience": 0.625,
+              "episodic_memory": 0.5
+            }
+          },
+          "precept_capabilities": [],
+          "baseline_capabilities": []
+        },
+        "winner": "precept",
+        "dual_mode_results": {
+          "matched": {
+            "precept": {
+              "success_rate": 0,
+              "first_try_success_rate": 0,
+              "first_try_successes": 0,
+              "total_tasks": 0,
+              "avg_steps": 0
+            },
+            "expel": {
+              "success_rate": 0,
+              "first_try_success_rate": 0,
+              "first_try_successes": 0,
+              "total_tasks": 0,
+              "avg_steps": 0
+            },
+            "full_reflexion": {
+              "success_rate": 0,
+              "first_try_success_rate": 0,
+              "first_try_successes": 0,
+              "total_tasks": 0,
+              "avg_steps": 0
+            },
+            "elapsed_seconds": 0.0,
+            "num_scenarios": 0
+          },
+          "random": {
+            "precept": {
+              "success_rate": 0,
+              "first_try_success_rate": 0,
+              "first_try_successes": 0,
+              "total_tasks": 0,
+              "avg_steps": 0
+            },
+            "expel": {
+              "success_rate": 0,
+              "first_try_success_rate": 0,
+              "first_try_successes": 0,
+              "total_tasks": 0,
+              "avg_steps": 0
+            },
+            "full_reflexion": {
+              "success_rate": 0,
+              "first_try_success_rate": 0,
+              "first_try_successes": 0,
+              "total_tasks": 0,
+              "avg_steps": 0
+            },
+            "elapsed_seconds": 0.0,
+            "num_scenarios": 0
+          }
+        }
+      },
+      "artifacts": {
+        "rules_learned": 0,
+        "procedures": 0,
+        "partial_progress_keys": 6
+      },
+      "precept": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 0,
+            "pt": 0,
+            "avg_steps": 0,
+            "first_try_successes": 0,
+            "successes": 0,
+            "total": 6
+          },
+          "encounter_2": {
+            "p1": 0,
+            "pt": 0,
+            "avg_steps": 0,
+            "first_try_successes": 0,
+            "successes": 0,
+            "total": 6
+          },
+          "encounter_3": {
+            "p1": 0,
+            "pt": 0,
+            "avg_steps": 0,
+            "first_try_successes": 0,
+            "successes": 0,
+            "total": 6
+          },
+          "encounter_4": {
+            "p1": 0,
+            "pt": 0,
+            "avg_steps": 0,
+            "first_try_successes": 0,
+            "successes": 0,
+            "total": 6
+          }
+        },
+        "total_tasks": 0,
+        "aggregated_p1": 0,
+        "aggregated_pt": 0,
+        "aggregated_steps": 0,
+        "note": "Synthetic data from aggregated results (uniform assumption)"
+      },
+      "expel": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 0,
+            "pt": 0,
+            "avg_steps": 0,
+            "first_try_successes": 0,
+            "successes": 0,
+            "total": 6
+          },
+          "encounter_2": {
+            "p1": 0,
+            "pt": 0,
+            "avg_steps": 0,
+            "first_try_successes": 0,
+            "successes": 0,
+            "total": 6
+          },
+          "encounter_3": {
+            "p1": 0,
+            "pt": 0,
+            "avg_steps": 0,
+            "first_try_successes": 0,
+            "successes": 0,
+            "total": 6
+          },
+          "encounter_4": {
+            "p1": 0,
+            "pt": 0,
+            "avg_steps": 0,
+            "first_try_successes": 0,
+            "successes": 0,
+            "total": 6
+          }
+        },
+        "total_tasks": 0,
+        "aggregated_p1": 0,
+        "aggregated_pt": 0,
+        "aggregated_steps": 0,
+        "note": "Synthetic data from aggregated results (uniform assumption)"
+      },
+      "full_reflexion": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 0,
+            "pt": 0,
+            "avg_steps": 0,
+            "first_try_successes": 0,
+            "successes": 0,
+            "total": 6
+          },
+          "encounter_2": {
+            "p1": 0,
+            "pt": 0,
+            "avg_steps": 0,
+            "first_try_successes": 0,
+            "successes": 0,
+            "total": 6
+          },
+          "encounter_3": {
+            "p1": 0,
+            "pt": 0,
+            "avg_steps": 0,
+            "first_try_successes": 0,
+            "successes": 0,
+            "total": 6
+          },
+          "encounter_4": {
+            "p1": 0,
+            "pt": 0,
+            "avg_steps": 0,
+            "first_try_successes": 0,
+            "successes": 0,
+            "total": 6
+          }
+        },
+        "total_tasks": 0,
+        "aggregated_p1": 0,
+        "aggregated_pt": 0,
+        "aggregated_steps": 0,
+        "note": "Synthetic data from aggregated results (uniform assumption)"
+      }
+    },
+    {
+      "aggregated": {
+        "metadata": {
+          "domain": "integration",
+          "timestamp": "20260216_034443",
+          "seed": 1337,
+          "train_tasks": 6,
+          "test_tasks": 24,
+          "max_retries": 4,
+          "max_attempts": 5,
+          "concurrent_training": true,
+          "concurrent_testing": false,
+          "train_elapsed_seconds": 42.13,
+          "test_elapsed_seconds": 1790.16,
+          "static_knowledge_enabled": false,
+          "static_knowledge_mode": "disabled",
+          "test_mode": "both"
+        },
+        "agents": {
+          "llm_baseline": {
+            "name": "LLM Baseline (NOT RUN - unfair)",
+            "success_rate": 0.0,
+            "total_successes": 0,
+            "total_tasks": 0,
+            "avg_steps": 0.0,
+            "llm_calls": 0,
+            "llm_accuracy": 0.0,
+            "first_try_success_rate": 0.0,
+            "first_try_successes": 0,
+            "learning_efficiency": 0.0,
+            "cold_start_success_rate": 0.0,
+            "cold_start_successes": 0,
+            "cold_start_total": 0
+          },
+          "reflexion": {
+            "name": "Reflexion (NOT RUN - unfair)",
+            "success_rate": 0.0,
+            "total_successes": 0,
+            "total_tasks": 0,
+            "avg_steps": 0.0,
+            "llm_calls": 0,
+            "llm_accuracy": 0.0,
+            "reflections_generated": 0,
+            "first_try_success_rate": 0.0,
+            "first_try_successes": 0,
+            "learning_efficiency": 0.0,
+            "cold_start_success_rate": 0.0,
+            "cold_start_successes": 0,
+            "cold_start_total": 0
+          },
+          "full_reflexion": {
+            "name": "Full Reflexion",
+            "success_rate": 0.375,
+            "total_successes": 9,
+            "total_tasks": 24,
+            "avg_steps": 8.0,
+            "llm_calls": 191,
+            "llm_accuracy": 0.1099,
+            "reflections_generated": 191,
+            "reflections_reused": 191,
+            "accumulated_memories": 40,
+            "first_try_success_rate": 0.375,
+            "first_try_successes": 9,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_total": 0,
+            "learning_efficiency": 0.625,
+            "cold_start_success_rate": 0.5,
+            "cold_start_successes": 3,
+            "cold_start_total": 6
+          },
+          "expel": {
+            "name": "ExpeL",
+            "success_rate": 0.375,
+            "total_successes": 9,
+            "total_tasks": 24,
+            "avg_steps": 7.0,
+            "llm_calls": 242,
+            "llm_accuracy": 0.0868,
+            "insights_extracted": 54,
+            "insights_retrieved": 1674,
+            "first_try_success_rate": 0.375,
+            "first_try_successes": 9,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_total": 0,
+            "learning_efficiency": 0.625,
+            "cold_start_success_rate": 0.5,
+            "cold_start_successes": 3,
+            "cold_start_total": 6
+          },
+          "precept": {
+            "name": "PRECEPT",
+            "success_rate": 0.7083,
+            "total_successes": 17,
+            "total_tasks": 24,
+            "avg_steps": 3.17,
+            "rules_learned": 43,
+            "llm_reasoning_calls": 107,
+            "llm_reasoning_successes": 46,
+            "has_compass_evolution": true,
+            "first_try_success_rate": 0.7083,
+            "first_try_successes": 17,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_successes": 0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_successes": 0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_successes": 0,
+            "p1_other_total": 0,
+            "p1_without_rules": 0.0,
+            "p1_without_rules_successes": 0,
+            "p1_without_rules_total": 0,
+            "learning_efficiency": 1.1806,
+            "cold_start_success_rate": 0.5,
+            "cold_start_successes": 3,
+            "cold_start_total": 6
+          }
+        },
+        "precept_advantages": {
+          "vs_llm_baseline": 0.7083,
+          "vs_reflexion": 0.7083,
+          "vs_full_reflexion": 0.3333,
+          "steps_saved_vs_llm": -3.17,
+          "steps_saved_vs_reflexion": -3.17,
+          "steps_saved_vs_full_reflexion": 4.83,
+          "first_try_advantage_vs_llm": 0.7083,
+          "first_try_advantage_vs_reflexion": 0.7083,
+          "first_try_advantage_vs_full_reflexion": 0.3333,
+          "learning_efficiency_advantage_vs_llm": 1.1806,
+          "learning_efficiency_advantage_vs_full_reflexion": 0.5556,
+          "cold_start_advantage_vs_llm": 0.5,
+          "cold_start_advantage_vs_full_reflexion": 0.0
+        },
+        "pruning_stats": {
+          "total_constraints": 101,
+          "hard_constraints": 0,
+          "soft_constraints": 101,
+          "dumb_retries_prevented": 7,
+          "pruning_efficiency": 0.0693
+        },
+        "conflict_resolution": {
+          "enabled": false,
+          "mode": "disabled",
+          "stats": {
+            "status": "active",
+            "summary": {
+              "conflicts_detected": 0,
+              "conflicts_resolved": 0
+            },
+            "detection": {
+              "total_detections": 0,
+              "conflicts_found": 0
+            },
+            "resolution_outcomes": {
+              "static_wins": 0,
+              "dynamic_wins": 0,
+              "merges": 0
+            },
+            "reliability": {
+              "static_kb": 0.8333333333333334,
+              "dynamic_experience": 0.625,
+              "episodic_memory": 0.5
+            }
+          },
+          "precept_capabilities": [],
+          "baseline_capabilities": []
+        },
+        "winner": "precept",
+        "dual_mode_results": {
+          "matched": {
+            "precept": {
+              "success_rate": 0.7083,
+              "first_try_success_rate": 0.7083,
+              "first_try_successes": 17,
+              "total_tasks": 24,
+              "avg_steps": 3.17
+            },
+            "expel": {
+              "success_rate": 0.375,
+              "first_try_success_rate": 0.375,
+              "first_try_successes": 9,
+              "total_tasks": 24,
+              "avg_steps": 7.0
+            },
+            "full_reflexion": {
+              "success_rate": 0.375,
+              "first_try_success_rate": 0.375,
+              "first_try_successes": 9,
+              "total_tasks": 24,
+              "avg_steps": 8.0
+            },
+            "elapsed_seconds": 843.89,
+            "num_scenarios": 24
+          },
+          "random": {
+            "precept": {
+              "success_rate": 0.6667,
+              "first_try_success_rate": 0.6667,
+              "first_try_successes": 16,
+              "total_tasks": 24,
+              "avg_steps": 3.33
+            },
+            "expel": {
+              "success_rate": 0.3333,
+              "first_try_success_rate": 0.3333,
+              "first_try_successes": 8,
+              "total_tasks": 24,
+              "avg_steps": 7.33
+            },
+            "full_reflexion": {
+              "success_rate": 0.3333,
+              "first_try_success_rate": 0.3333,
+              "first_try_successes": 8,
+              "total_tasks": 24,
+              "avg_steps": 8.33
+            },
+            "elapsed_seconds": 946.27,
+            "num_scenarios": 24
+          }
+        }
+      },
+      "artifacts": {
+        "rules_learned": 8,
+        "procedures": 1,
+        "partial_progress_keys": 13
+      },
+      "precept": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 0.4,
+            "pt": 0.4,
+            "avg_steps": 4.4,
+            "first_try_successes": 6,
+            "successes": 6,
+            "total": 15
+          },
+          "encounter_2": {
+            "p1": 0.625,
+            "pt": 0.625,
+            "avg_steps": 3.5,
+            "first_try_successes": 5,
+            "successes": 5,
+            "total": 8
+          },
+          "encounter_3": {
+            "p1": 0.7142857142857143,
+            "pt": 0.7142857142857143,
+            "avg_steps": 3.142857142857143,
+            "first_try_successes": 5,
+            "successes": 5,
+            "total": 7
+          },
+          "encounter_4": {
+            "p1": 0.8333333333333334,
+            "pt": 0.8333333333333334,
+            "avg_steps": 2.6666666666666665,
+            "first_try_successes": 5,
+            "successes": 5,
+            "total": 6
+          }
+        },
+        "by_key": {
+          "DAT-SCHEMA+INT-401+NET-DNS+NET": 4,
+          "INT-407+INT-511+NET-DNS+NET-SS": 4,
+          "DAT-CORRUPT+INT-419+INT-429+NE": 4,
+          "DAT-CORRUPT+INT-404+INT-419+NE": 4,
+          "INT-401+INT-403+NET-PROXY+NET-": 16,
+          "DAT-PARTIAL+INT-402+NET-DNS+NE": 4,
+          "DAT-LARGE+INT-401+NET-PROXY+NE": 2,
+          "INT-401+NET-SSL+NET-TIMEOUT+SV": 1,
+          "INT-401+NET-FIREWALL+NET-TIMEO": 1,
+          "INT-401+INT-403+INT-429+NET-PR": 3,
+          "DAT-SYNC+INT-401+NET-TIMEOUT+S": 1,
+          "DAT-SYNC+INT-401+INT-403+NET-T": 1,
+          "DAT-SCHEMA+INT-401+NET-PROXY+S": 1,
+          "INT-401+INT-403+INT-407+NET-PR": 1,
+          "DAT-SCHEMA+INT-401+NET-TIMEOUT": 1
+        },
+        "total_tasks": 48
+      },
+      "expel": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 0.4,
+            "pt": 0.4,
+            "avg_steps": 4.4,
+            "first_try_successes": 6,
+            "successes": 6,
+            "total": 15
+          },
+          "encounter_2": {
+            "p1": 0.25,
+            "pt": 0.25,
+            "avg_steps": 5.0,
+            "first_try_successes": 2,
+            "successes": 2,
+            "total": 8
+          },
+          "encounter_3": {
+            "p1": 0.2857142857142857,
+            "pt": 0.2857142857142857,
+            "avg_steps": 4.857142857142857,
+            "first_try_successes": 2,
+            "successes": 2,
+            "total": 7
+          },
+          "encounter_4": {
+            "p1": 0.3333333333333333,
+            "pt": 0.3333333333333333,
+            "avg_steps": 4.666666666666667,
+            "first_try_successes": 2,
+            "successes": 2,
+            "total": 6
+          }
+        },
+        "by_key": {
+          "DAT-SCHEMA+INT-401+NET-DNS+NET": 4,
+          "INT-407+INT-511+NET-DNS+NET-SS": 4,
+          "DAT-CORRUPT+INT-419+INT-429+NE": 4,
+          "DAT-CORRUPT+INT-404+INT-419+NE": 4,
+          "INT-401+INT-403+NET-PROXY+NET-": 16,
+          "DAT-PARTIAL+INT-402+NET-DNS+NE": 4,
+          "DAT-LARGE+INT-401+NET-PROXY+NE": 2,
+          "INT-401+NET-SSL+NET-TIMEOUT+SV": 1,
+          "INT-401+NET-FIREWALL+NET-TIMEO": 1,
+          "INT-401+INT-403+INT-429+NET-PR": 3,
+          "DAT-SYNC+INT-401+NET-TIMEOUT+S": 1,
+          "DAT-SYNC+INT-401+INT-403+NET-T": 1,
+          "DAT-SCHEMA+INT-401+NET-PROXY+S": 1,
+          "INT-401+INT-403+INT-407+NET-PR": 1,
+          "DAT-SCHEMA+INT-401+NET-TIMEOUT": 1
+        },
+        "total_tasks": 48
+      },
+      "full_reflexion": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 0.4,
+            "pt": 0.4,
+            "avg_steps": 4.4,
+            "first_try_successes": 6,
+            "successes": 6,
+            "total": 15
+          },
+          "encounter_2": {
+            "p1": 0.25,
+            "pt": 0.25,
+            "avg_steps": 5.0,
+            "first_try_successes": 2,
+            "successes": 2,
+            "total": 8
+          },
+          "encounter_3": {
+            "p1": 0.2857142857142857,
+            "pt": 0.2857142857142857,
+            "avg_steps": 4.857142857142857,
+            "first_try_successes": 2,
+            "successes": 2,
+            "total": 7
+          },
+          "encounter_4": {
+            "p1": 0.3333333333333333,
+            "pt": 0.3333333333333333,
+            "avg_steps": 4.666666666666667,
+            "first_try_successes": 2,
+            "successes": 2,
+            "total": 6
+          }
+        },
+        "by_key": {
+          "DAT-SCHEMA+INT-401+NET-DNS+NET": 4,
+          "INT-407+INT-511+NET-DNS+NET-SS": 4,
+          "DAT-CORRUPT+INT-419+INT-429+NE": 4,
+          "DAT-CORRUPT+INT-404+INT-419+NE": 4,
+          "INT-401+INT-403+NET-PROXY+NET-": 16,
+          "DAT-PARTIAL+INT-402+NET-DNS+NE": 4,
+          "DAT-LARGE+INT-401+NET-PROXY+NE": 2,
+          "INT-401+NET-SSL+NET-TIMEOUT+SV": 1,
+          "INT-401+NET-FIREWALL+NET-TIMEO": 1,
+          "INT-401+INT-403+INT-429+NET-PR": 3,
+          "DAT-SYNC+INT-401+NET-TIMEOUT+S": 1,
+          "DAT-SYNC+INT-401+INT-403+NET-T": 1,
+          "DAT-SCHEMA+INT-401+NET-PROXY+S": 1,
+          "INT-401+INT-403+INT-407+NET-PR": 1,
+          "DAT-SCHEMA+INT-401+NET-TIMEOUT": 1
+        },
+        "total_tasks": 48
+      }
+    },
+    {
+      "aggregated": {
+        "metadata": {
+          "domain": "integration",
+          "timestamp": "20260216_042741",
+          "seed": 8888,
+          "train_tasks": 6,
+          "test_tasks": 24,
+          "max_retries": 4,
+          "max_attempts": 5,
+          "concurrent_training": true,
+          "concurrent_testing": false,
+          "train_elapsed_seconds": 41.71,
+          "test_elapsed_seconds": 2503.04,
+          "static_knowledge_enabled": false,
+          "static_knowledge_mode": "disabled",
+          "test_mode": "both"
+        },
+        "agents": {
+          "llm_baseline": {
+            "name": "LLM Baseline (NOT RUN - unfair)",
+            "success_rate": 0.0,
+            "total_successes": 0,
+            "total_tasks": 0,
+            "avg_steps": 0.0,
+            "llm_calls": 0,
+            "llm_accuracy": 0.0,
+            "first_try_success_rate": 0.0,
+            "first_try_successes": 0,
+            "learning_efficiency": 0.0,
+            "cold_start_success_rate": 0.0,
+            "cold_start_successes": 0,
+            "cold_start_total": 0
+          },
+          "reflexion": {
+            "name": "Reflexion (NOT RUN - unfair)",
+            "success_rate": 0.0,
+            "total_successes": 0,
+            "total_tasks": 0,
+            "avg_steps": 0.0,
+            "llm_calls": 0,
+            "llm_accuracy": 0.0,
+            "reflections_generated": 0,
+            "first_try_success_rate": 0.0,
+            "first_try_successes": 0,
+            "learning_efficiency": 0.0,
+            "cold_start_success_rate": 0.0,
+            "cold_start_successes": 0,
+            "cold_start_total": 0
+          },
+          "full_reflexion": {
+            "name": "Full Reflexion",
+            "success_rate": 0.3333,
+            "total_successes": 8,
+            "total_tasks": 24,
+            "avg_steps": 8.58,
+            "llm_calls": 210,
+            "llm_accuracy": 0.0857,
+            "reflections_generated": 210,
+            "reflections_reused": 210,
+            "accumulated_memories": 40,
+            "first_try_success_rate": 0.25,
+            "first_try_successes": 6,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_total": 0,
+            "learning_efficiency": 0.5556,
+            "cold_start_success_rate": 0.3333,
+            "cold_start_successes": 2,
+            "cold_start_total": 6
+          },
+          "expel": {
+            "name": "ExpeL",
+            "success_rate": 0.3333,
+            "total_successes": 8,
+            "total_tasks": 24,
+            "avg_steps": 7.42,
+            "llm_calls": 259,
+            "llm_accuracy": 0.0734,
+            "insights_extracted": 54,
+            "insights_retrieved": 1698,
+            "first_try_success_rate": 0.2917,
+            "first_try_successes": 7,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_total": 0,
+            "learning_efficiency": 0.5556,
+            "cold_start_success_rate": 0.3333,
+            "cold_start_successes": 2,
+            "cold_start_total": 6
+          },
+          "precept": {
+            "name": "PRECEPT",
+            "success_rate": 0.6667,
+            "total_successes": 16,
+            "total_tasks": 24,
+            "avg_steps": 3.25,
+            "rules_learned": 49,
+            "llm_reasoning_calls": 115,
+            "llm_reasoning_successes": 62,
+            "has_compass_evolution": true,
+            "first_try_success_rate": 0.5833,
+            "first_try_successes": 14,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_successes": 0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_successes": 0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_successes": 0,
+            "p1_other_total": 0,
+            "p1_without_rules": 0.0,
+            "p1_without_rules_successes": 0,
+            "p1_without_rules_total": 0,
+            "learning_efficiency": 1.1111,
+            "cold_start_success_rate": 0.5,
+            "cold_start_successes": 3,
+            "cold_start_total": 6
+          }
+        },
+        "precept_advantages": {
+          "vs_llm_baseline": 0.6667,
+          "vs_reflexion": 0.6667,
+          "vs_full_reflexion": 0.3333,
+          "steps_saved_vs_llm": -3.25,
+          "steps_saved_vs_reflexion": -3.25,
+          "steps_saved_vs_full_reflexion": 5.33,
+          "first_try_advantage_vs_llm": 0.5833,
+          "first_try_advantage_vs_reflexion": 0.5833,
+          "first_try_advantage_vs_full_reflexion": 0.3333,
+          "learning_efficiency_advantage_vs_llm": 1.1111,
+          "learning_efficiency_advantage_vs_full_reflexion": 0.5556,
+          "cold_start_advantage_vs_llm": 0.5,
+          "cold_start_advantage_vs_full_reflexion": 0.1667
+        },
+        "pruning_stats": {
+          "total_constraints": 107,
+          "hard_constraints": 0,
+          "soft_constraints": 107,
+          "dumb_retries_prevented": 7,
+          "pruning_efficiency": 0.0654
+        },
+        "conflict_resolution": {
+          "enabled": false,
+          "mode": "disabled",
+          "stats": {
+            "status": "active",
+            "summary": {
+              "conflicts_detected": 0,
+              "conflicts_resolved": 0
+            },
+            "detection": {
+              "total_detections": 0,
+              "conflicts_found": 0
+            },
+            "resolution_outcomes": {
+              "static_wins": 0,
+              "dynamic_wins": 0,
+              "merges": 0
+            },
+            "reliability": {
+              "static_kb": 0.8333333333333334,
+              "dynamic_experience": 0.625,
+              "episodic_memory": 0.5
+            }
+          },
+          "precept_capabilities": [],
+          "baseline_capabilities": []
+        },
+        "winner": "precept",
+        "dual_mode_results": {
+          "matched": {
+            "precept": {
+              "success_rate": 0.6667,
+              "first_try_success_rate": 0.5833,
+              "first_try_successes": 14,
+              "total_tasks": 24,
+              "avg_steps": 3.25
+            },
+            "expel": {
+              "success_rate": 0.3333,
+              "first_try_success_rate": 0.2917,
+              "first_try_successes": 7,
+              "total_tasks": 24,
+              "avg_steps": 7.42
+            },
+            "full_reflexion": {
+              "success_rate": 0.3333,
+              "first_try_success_rate": 0.25,
+              "first_try_successes": 6,
+              "total_tasks": 24,
+              "avg_steps": 8.58
+            },
+            "elapsed_seconds": 945.11,
+            "num_scenarios": 24
+          },
+          "random": {
+            "precept": {
+              "success_rate": 0.6667,
+              "first_try_success_rate": 0.5417,
+              "first_try_successes": 13,
+              "total_tasks": 24,
+              "avg_steps": 3.58
+            },
+            "expel": {
+              "success_rate": 0.375,
+              "first_try_success_rate": 0.25,
+              "first_try_successes": 6,
+              "total_tasks": 24,
+              "avg_steps": 7.25
+            },
+            "full_reflexion": {
+              "success_rate": 0.3333,
+              "first_try_success_rate": 0.2917,
+              "first_try_successes": 7,
+              "total_tasks": 24,
+              "avg_steps": 8.42
+            },
+            "elapsed_seconds": 1557.93,
+            "num_scenarios": 24
+          }
+        }
+      },
+      "artifacts": {
+        "rules_learned": 8,
+        "procedures": 6,
+        "partial_progress_keys": 14
+      },
+      "precept": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 0.21428571428571427,
+            "pt": 0.5,
+            "avg_steps": 4.714285714285714,
+            "first_try_successes": 3,
+            "successes": 7,
+            "total": 14
+          },
+          "encounter_2": {
+            "p1": 0.5714285714285714,
+            "pt": 0.5714285714285714,
+            "avg_steps": 3.142857142857143,
+            "first_try_successes": 4,
+            "successes": 4,
+            "total": 7
+          },
+          "encounter_3": {
+            "p1": 0.6666666666666666,
+            "pt": 0.6666666666666666,
+            "avg_steps": 2.6666666666666665,
+            "first_try_successes": 4,
+            "successes": 4,
+            "total": 6
+          },
+          "encounter_4": {
+            "p1": 0.6666666666666666,
+            "pt": 0.8333333333333334,
+            "avg_steps": 3.0,
+            "first_try_successes": 4,
+            "successes": 5,
+            "total": 6
+          }
+        },
+        "by_key": {
+          "DAT-PARTIAL+INT-401+NET-DNS+NE": 19,
+          "INT-403+INT-419+NET-DNS+NET-PR": 4,
+          "DAT-PARTIAL+DAT-SCHEMA+INT-429": 4,
+          "INT-401+INT-429+INT-511+NET-SS": 4,
+          "DAT-PARTIAL+DAT-SYNC+INT-402+I": 4,
+          "DAT-LARGE+INT-404+NET-DNS+NET-": 4,
+          "DAT-PARTIAL+INT-401+INT-403+IN": 2,
+          "DAT-SYNC+INT-401+NET-DNS+NET-T": 1,
+          "INT-401+INT-403+NET-TIMEOUT+SV": 1,
+          "INT-401+NET-DNS+NET-FIREWALL+N": 1,
+          "DAT-LARGE+DAT-PARTIAL+INT-401+": 1,
+          "INT-401+INT-419+NET-FIREWALL+N": 1,
+          "DAT-SYNC+INT-401+NET-PROXY+NET": 1,
+          "DAT-SCHEMA+INT-401+INT-403+NET": 1
+        },
+        "total_tasks": 48
+      },
+      "expel": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 0.14285714285714285,
+            "pt": 0.42857142857142855,
+            "avg_steps": 4.857142857142857,
+            "first_try_successes": 2,
+            "successes": 6,
+            "total": 14
+          },
+          "encounter_2": {
+            "p1": 0.2857142857142857,
+            "pt": 0.2857142857142857,
+            "avg_steps": 4.857142857142857,
+            "first_try_successes": 2,
+            "successes": 2,
+            "total": 7
+          },
+          "encounter_3": {
+            "p1": 0.3333333333333333,
+            "pt": 0.3333333333333333,
+            "avg_steps": 4.666666666666667,
+            "first_try_successes": 2,
+            "successes": 2,
+            "total": 6
+          },
+          "encounter_4": {
+            "p1": 0.3333333333333333,
+            "pt": 0.3333333333333333,
+            "avg_steps": 4.666666666666667,
+            "first_try_successes": 2,
+            "successes": 2,
+            "total": 6
+          }
+        },
+        "by_key": {
+          "DAT-PARTIAL+INT-401+NET-DNS+NE": 19,
+          "INT-403+INT-419+NET-DNS+NET-PR": 4,
+          "DAT-PARTIAL+DAT-SCHEMA+INT-429": 4,
+          "INT-401+INT-429+INT-511+NET-SS": 4,
+          "DAT-PARTIAL+DAT-SYNC+INT-402+I": 4,
+          "DAT-LARGE+INT-404+NET-DNS+NET-": 4,
+          "DAT-PARTIAL+INT-401+INT-403+IN": 2,
+          "DAT-SYNC+INT-401+NET-DNS+NET-T": 1,
+          "INT-401+INT-403+NET-TIMEOUT+SV": 1,
+          "INT-401+NET-DNS+NET-FIREWALL+N": 1,
+          "DAT-LARGE+DAT-PARTIAL+INT-401+": 1,
+          "INT-401+INT-419+NET-FIREWALL+N": 1,
+          "DAT-SYNC+INT-401+NET-PROXY+NET": 1,
+          "DAT-SCHEMA+INT-401+INT-403+NET": 1
+        },
+        "total_tasks": 48
+      },
+      "full_reflexion": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 0.21428571428571427,
+            "pt": 0.35714285714285715,
+            "avg_steps": 4.857142857142857,
+            "first_try_successes": 3,
+            "successes": 5,
+            "total": 14
+          },
+          "encounter_2": {
+            "p1": 0.2857142857142857,
+            "pt": 0.2857142857142857,
+            "avg_steps": 4.857142857142857,
+            "first_try_successes": 2,
+            "successes": 2,
+            "total": 7
+          },
+          "encounter_3": {
+            "p1": 0.16666666666666666,
+            "pt": 0.3333333333333333,
+            "avg_steps": 5.0,
+            "first_try_successes": 1,
+            "successes": 2,
+            "total": 6
+          },
+          "encounter_4": {
+            "p1": 0.3333333333333333,
+            "pt": 0.3333333333333333,
+            "avg_steps": 4.666666666666667,
+            "first_try_successes": 2,
+            "successes": 2,
+            "total": 6
+          }
+        },
+        "by_key": {
+          "DAT-PARTIAL+INT-401+NET-DNS+NE": 19,
+          "INT-403+INT-419+NET-DNS+NET-PR": 4,
+          "DAT-PARTIAL+DAT-SCHEMA+INT-429": 4,
+          "INT-401+INT-429+INT-511+NET-SS": 4,
+          "DAT-PARTIAL+DAT-SYNC+INT-402+I": 4,
+          "DAT-LARGE+INT-404+NET-DNS+NET-": 4,
+          "DAT-PARTIAL+INT-401+INT-403+IN": 2,
+          "DAT-SYNC+INT-401+NET-DNS+NET-T": 1,
+          "INT-401+INT-403+NET-TIMEOUT+SV": 1,
+          "INT-401+NET-DNS+NET-FIREWALL+N": 1,
+          "DAT-LARGE+DAT-PARTIAL+INT-401+": 1,
+          "INT-401+INT-419+NET-FIREWALL+N": 1,
+          "DAT-SYNC+INT-401+NET-PROXY+NET": 1,
+          "DAT-SCHEMA+INT-401+INT-403+NET": 1
+        },
+        "total_tasks": 48
+      }
+    },
+    {
+      "aggregated": {
+        "metadata": {
+          "domain": "integration",
+          "timestamp": "20260216_050204",
+          "seed": 7777,
+          "train_tasks": 6,
+          "test_tasks": 24,
+          "max_retries": 4,
+          "max_attempts": 5,
+          "concurrent_training": true,
+          "concurrent_testing": false,
+          "train_elapsed_seconds": 35.92,
+          "test_elapsed_seconds": 1993.53,
+          "static_knowledge_enabled": false,
+          "static_knowledge_mode": "disabled",
+          "test_mode": "both"
+        },
+        "agents": {
+          "llm_baseline": {
+            "name": "LLM Baseline (NOT RUN - unfair)",
+            "success_rate": 0.0,
+            "total_successes": 0,
+            "total_tasks": 0,
+            "avg_steps": 0.0,
+            "llm_calls": 0,
+            "llm_accuracy": 0.0,
+            "first_try_success_rate": 0.0,
+            "first_try_successes": 0,
+            "learning_efficiency": 0.0,
+            "cold_start_success_rate": 0.0,
+            "cold_start_successes": 0,
+            "cold_start_total": 0
+          },
+          "reflexion": {
+            "name": "Reflexion (NOT RUN - unfair)",
+            "success_rate": 0.0,
+            "total_successes": 0,
+            "total_tasks": 0,
+            "avg_steps": 0.0,
+            "llm_calls": 0,
+            "llm_accuracy": 0.0,
+            "reflections_generated": 0,
+            "first_try_success_rate": 0.0,
+            "first_try_successes": 0,
+            "learning_efficiency": 0.0,
+            "cold_start_success_rate": 0.0,
+            "cold_start_successes": 0,
+            "cold_start_total": 0
+          },
+          "full_reflexion": {
+            "name": "Full Reflexion",
+            "success_rate": 0.2917,
+            "total_successes": 7,
+            "total_tasks": 24,
+            "avg_steps": 9.25,
+            "llm_calls": 208,
+            "llm_accuracy": 0.0913,
+            "reflections_generated": 208,
+            "reflections_reused": 208,
+            "accumulated_memories": 40,
+            "first_try_success_rate": 0.1667,
+            "first_try_successes": 4,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_total": 0,
+            "learning_efficiency": 0.4861,
+            "cold_start_success_rate": 0.1667,
+            "cold_start_successes": 1,
+            "cold_start_total": 6
+          },
+          "expel": {
+            "name": "ExpeL",
+            "success_rate": 0.2083,
+            "total_successes": 5,
+            "total_tasks": 24,
+            "avg_steps": 8.33,
+            "llm_calls": 271,
+            "llm_accuracy": 0.0517,
+            "insights_extracted": 54,
+            "insights_retrieved": 1818,
+            "first_try_success_rate": 0.2083,
+            "first_try_successes": 5,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_total": 0,
+            "learning_efficiency": 0.3472,
+            "cold_start_success_rate": 0.1667,
+            "cold_start_successes": 1,
+            "cold_start_total": 6
+          },
+          "precept": {
+            "name": "PRECEPT",
+            "success_rate": 0.6667,
+            "total_successes": 16,
+            "total_tasks": 24,
+            "avg_steps": 3.12,
+            "rules_learned": 52,
+            "llm_reasoning_calls": 119,
+            "llm_reasoning_successes": 71,
+            "has_compass_evolution": true,
+            "first_try_success_rate": 0.5833,
+            "first_try_successes": 14,
+            "p1_with_rules": 0.0,
+            "p1_with_rules_successes": 0,
+            "p1_with_rules_total": 0,
+            "p1_inherent": 0.0,
+            "p1_inherent_successes": 0,
+            "p1_inherent_total": 0,
+            "p1_other": 0.0,
+            "p1_other_successes": 0,
+            "p1_other_total": 0,
+            "p1_without_rules": 0.0,
+            "p1_without_rules_successes": 0,
+            "p1_without_rules_total": 0,
+            "learning_efficiency": 1.1111,
+            "cold_start_success_rate": 0.3333,
+            "cold_start_successes": 2,
+            "cold_start_total": 6
+          }
+        },
+        "precept_advantages": {
+          "vs_llm_baseline": 0.6667,
+          "vs_reflexion": 0.6667,
+          "vs_full_reflexion": 0.375,
+          "steps_saved_vs_llm": -3.12,
+          "steps_saved_vs_reflexion": -3.12,
+          "steps_saved_vs_full_reflexion": 6.12,
+          "first_try_advantage_vs_llm": 0.5833,
+          "first_try_advantage_vs_reflexion": 0.5833,
+          "first_try_advantage_vs_full_reflexion": 0.4167,
+          "learning_efficiency_advantage_vs_llm": 1.1111,
+          "learning_efficiency_advantage_vs_full_reflexion": 0.625,
+          "cold_start_advantage_vs_llm": 0.3333,
+          "cold_start_advantage_vs_full_reflexion": 0.1667
+        },
+        "pruning_stats": {
+          "total_constraints": 108,
+          "hard_constraints": 0,
+          "soft_constraints": 108,
+          "dumb_retries_prevented": 3,
+          "pruning_efficiency": 0.0278
+        },
+        "conflict_resolution": {
+          "enabled": false,
+          "mode": "disabled",
+          "stats": {
+            "status": "active",
+            "summary": {
+              "conflicts_detected": 0,
+              "conflicts_resolved": 0
+            },
+            "detection": {
+              "total_detections": 0,
+              "conflicts_found": 0
+            },
+            "resolution_outcomes": {
+              "static_wins": 0,
+              "dynamic_wins": 0,
+              "merges": 0
+            },
+            "reliability": {
+              "static_kb": 0.8333333333333334,
+              "dynamic_experience": 0.625,
+              "episodic_memory": 0.5
+            }
+          },
+          "precept_capabilities": [],
+          "baseline_capabilities": []
+        },
+        "winner": "precept",
+        "dual_mode_results": {
+          "matched": {
+            "precept": {
+              "success_rate": 0.6667,
+              "first_try_success_rate": 0.5833,
+              "first_try_successes": 14,
+              "total_tasks": 24,
+              "avg_steps": 3.12
+            },
+            "expel": {
+              "success_rate": 0.2083,
+              "first_try_success_rate": 0.2083,
+              "first_try_successes": 5,
+              "total_tasks": 24,
+              "avg_steps": 8.33
+            },
+            "full_reflexion": {
+              "success_rate": 0.2917,
+              "first_try_success_rate": 0.1667,
+              "first_try_successes": 4,
+              "total_tasks": 24,
+              "avg_steps": 9.25
+            },
+            "elapsed_seconds": 914.37,
+            "num_scenarios": 24
+          },
+          "random": {
+            "precept": {
+              "success_rate": 0.5833,
+              "first_try_success_rate": 0.5417,
+              "first_try_successes": 13,
+              "total_tasks": 24,
+              "avg_steps": 3.58
+            },
+            "expel": {
+              "success_rate": 0.3333,
+              "first_try_success_rate": 0.25,
+              "first_try_successes": 6,
+              "total_tasks": 24,
+              "avg_steps": 7.58
+            },
+            "full_reflexion": {
+              "success_rate": 0.375,
+              "first_try_success_rate": 0.25,
+              "first_try_successes": 6,
+              "total_tasks": 24,
+              "avg_steps": 8.33
+            },
+            "elapsed_seconds": 1079.16,
+            "num_scenarios": 24
+          }
+        }
+      },
+      "artifacts": {
+        "rules_learned": 7,
+        "procedures": 5,
+        "partial_progress_keys": 15
+      },
+      "precept": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 0.16666666666666666,
+            "pt": 0.2222222222222222,
+            "avg_steps": 5.0,
+            "first_try_successes": 3,
+            "successes": 4,
+            "total": 18
+          },
+          "encounter_2": {
+            "p1": 0.5,
+            "pt": 0.6666666666666666,
+            "avg_steps": 3.3333333333333335,
+            "first_try_successes": 3,
+            "successes": 4,
+            "total": 6
+          },
+          "encounter_3": {
+            "p1": 0.6666666666666666,
+            "pt": 0.8333333333333334,
+            "avg_steps": 2.5,
+            "first_try_successes": 4,
+            "successes": 5,
+            "total": 6
+          },
+          "encounter_4": {
+            "p1": 0.8333333333333334,
+            "pt": 0.8333333333333334,
+            "avg_steps": 2.0,
+            "first_try_successes": 5,
+            "successes": 5,
+            "total": 6
+          }
+        },
+        "by_key": {
+          "INT-402+INT-407+NET-PROXY+NET-": 10,
+          "INT-403+INT-429+SVC-DEPREC+SVC": 10,
+          "DAT-SYNC+INT-401+NET-DNS+SVC-D": 4,
+          "DAT-SCHEMA+INT-403+INT-419+SVC": 4,
+          "DAT-LARGE+DAT-SCHEMA+INT-511+N": 4,
+          "DAT-LARGE+DAT-PARTIAL+INT-404+": 4,
+          "INT-403+NET-PROXY+NET-SSL+SVC-": 1,
+          "DAT-SYNC+INT-402+INT-407+NET-P": 1,
+          "INT-403+INT-407+INT-429+SVC-DO": 1,
+          "DAT-PARTIAL+INT-402+INT-407+IN": 1,
+          "INT-401+INT-403+INT-419+INT-42": 1,
+          "INT-402+INT-407+NET-DNS+NET-SS": 1,
+          "DAT-CORRUPT+DAT-SCHEMA+INT-403": 1,
+          "DAT-LARGE+INT-402+NET-PROXY+NE": 1,
+          "DAT-CORRUPT+INT-403+SVC-DEPREC": 1,
+          "INT-401+INT-402+NET-PROXY+NET-": 1,
+          "DAT-SCHEMA+INT-403+SVC-DEPREC+": 1,
+          "DAT-SYNC+INT-402+INT-407+NET-F": 1
+        },
+        "total_tasks": 48
+      },
+      "expel": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 0.1111111111111111,
+            "pt": 0.2222222222222222,
+            "avg_steps": 5.333333333333333,
+            "first_try_successes": 2,
+            "successes": 4,
+            "total": 18
+          },
+          "encounter_2": {
+            "p1": 0.16666666666666666,
+            "pt": 0.16666666666666666,
+            "avg_steps": 5.333333333333333,
+            "first_try_successes": 1,
+            "successes": 1,
+            "total": 6
+          },
+          "encounter_3": {
+            "p1": 0.16666666666666666,
+            "pt": 0.16666666666666666,
+            "avg_steps": 5.333333333333333,
+            "first_try_successes": 1,
+            "successes": 1,
+            "total": 6
+          },
+          "encounter_4": {
+            "p1": 0.3333333333333333,
+            "pt": 0.3333333333333333,
+            "avg_steps": 4.666666666666667,
+            "first_try_successes": 2,
+            "successes": 2,
+            "total": 6
+          }
+        },
+        "by_key": {
+          "INT-402+INT-407+NET-PROXY+NET-": 10,
+          "INT-403+INT-429+SVC-DEPREC+SVC": 10,
+          "DAT-SYNC+INT-401+NET-DNS+SVC-D": 4,
+          "DAT-SCHEMA+INT-403+INT-419+SVC": 4,
+          "DAT-LARGE+DAT-SCHEMA+INT-511+N": 4,
+          "DAT-LARGE+DAT-PARTIAL+INT-404+": 4,
+          "INT-403+NET-PROXY+NET-SSL+SVC-": 1,
+          "DAT-SYNC+INT-402+INT-407+NET-P": 1,
+          "INT-403+INT-407+INT-429+SVC-DO": 1,
+          "DAT-PARTIAL+INT-402+INT-407+IN": 1,
+          "INT-401+INT-403+INT-419+INT-42": 1,
+          "INT-402+INT-407+NET-DNS+NET-SS": 1,
+          "DAT-CORRUPT+DAT-SCHEMA+INT-403": 1,
+          "DAT-LARGE+INT-402+NET-PROXY+NE": 1,
+          "DAT-CORRUPT+INT-403+SVC-DEPREC": 1,
+          "INT-401+INT-402+NET-PROXY+NET-": 1,
+          "DAT-SCHEMA+INT-403+SVC-DEPREC+": 1,
+          "DAT-SYNC+INT-402+INT-407+NET-F": 1
+        },
+        "total_tasks": 48
+      },
+      "full_reflexion": {
+        "by_encounter": {
+          "encounter_1": {
+            "p1": 0.1111111111111111,
+            "pt": 0.2777777777777778,
+            "avg_steps": 5.222222222222222,
+            "first_try_successes": 2,
+            "successes": 5,
+            "total": 18
+          },
+          "encounter_2": {
+            "p1": 0.0,
+            "pt": 0.3333333333333333,
+            "avg_steps": 5.333333333333333,
+            "first_try_successes": 0,
+            "successes": 2,
+            "total": 6
+          },
+          "encounter_3": {
+            "p1": 0.16666666666666666,
+            "pt": 0.3333333333333333,
+            "avg_steps": 5.0,
+            "first_try_successes": 1,
+            "successes": 2,
+            "total": 6
+          },
+          "encounter_4": {
+            "p1": 0.3333333333333333,
+            "pt": 0.3333333333333333,
+            "avg_steps": 4.666666666666667,
+            "first_try_successes": 2,
+            "successes": 2,
+            "total": 6
+          }
+        },
+        "by_key": {
+          "INT-402+INT-407+NET-PROXY+NET-": 10,
+          "INT-403+INT-429+SVC-DEPREC+SVC": 10,
+          "DAT-SYNC+INT-401+NET-DNS+SVC-D": 4,
+          "DAT-SCHEMA+INT-403+INT-419+SVC": 4,
+          "DAT-LARGE+DAT-SCHEMA+INT-511+N": 4,
+          "DAT-LARGE+DAT-PARTIAL+INT-404+": 4,
+          "INT-403+NET-PROXY+NET-SSL+SVC-": 1,
+          "DAT-SYNC+INT-402+INT-407+NET-P": 1,
+          "INT-403+INT-407+INT-429+SVC-DO": 1,
+          "DAT-PARTIAL+INT-402+INT-407+IN": 1,
+          "INT-401+INT-403+INT-419+INT-42": 1,
+          "INT-402+INT-407+NET-DNS+NET-SS": 1,
+          "DAT-CORRUPT+DAT-SCHEMA+INT-403": 1,
+          "DAT-LARGE+INT-402+NET-PROXY+NE": 1,
+          "DAT-CORRUPT+INT-403+SVC-DEPREC": 1,
+          "INT-401+INT-402+NET-PROXY+NET-": 1,
+          "DAT-SCHEMA+INT-403+SVC-DEPREC+": 1,
+          "DAT-SYNC+INT-402+INT-407+NET-F": 1
+        },
+        "total_tasks": 48
+      }
+    }
+  ]
+}

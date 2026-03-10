@@ -1,0 +1,34 @@
+{
+  "logistics:book_shipment:recovery_ROUTE-218_ningbo": {
+    "name": "recovery_ROUTE-218_ningbo",
+    "task_type": "logistics:book_shipment",
+    "steps": "1. Attempt default action for book_shipment\n2. If error 'ROUTE-218' occurs, use 'ningbo'\n3. Learned from: Transport bulk shipment from Los_Angeles to Singap...",
+    "success_rate": 1.0,
+    "created": 1770987619.556871,
+    "uses": 32
+  },
+  "logistics:book_shipment:recovery_ROUTE-360_long_beach": {
+    "name": "recovery_ROUTE-360_long_beach",
+    "task_type": "logistics:book_shipment",
+    "steps": "1. Attempt default action for book_shipment\n2. If error 'ROUTE-360' occurs, use 'long_beach'\n3. Learned from: Book shipment from Rotterdam to London...",
+    "success_rate": 1.0,
+    "created": 1770987880.8590488,
+    "uses": 23
+  },
+  "logistics:book_shipment:recovery_ROUTE-447_long_beach": {
+    "name": "recovery_ROUTE-447_long_beach",
+    "task_type": "logistics:book_shipment",
+    "steps": "1. Attempt default action for book_shipment\n2. If error 'ROUTE-447' occurs, use 'long_beach'\n3. Learned from: Handle cargo from Hamburg to Shanghai...",
+    "success_rate": 1.0,
+    "created": 1770988367.838397,
+    "uses": 2
+  },
+  "logistics:book_shipment:recovery_ROUTE-579_long_beach": {
+    "name": "recovery_ROUTE-579_long_beach",
+    "task_type": "logistics:book_shipment",
+    "steps": "1. Attempt default action for book_shipment\n2. If error 'ROUTE-579' occurs, use 'long_beach'\n3. Learned from: Ship cargo from Los_Angeles to London...",
+    "success_rate": 1.0,
+    "created": 1770988393.672179,
+    "uses": 1
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "RATE": {
+    "constraint": "Constraint: RATE (integration domain)",
+    "solution_hint": "solution:hubspot-v2",
+    "confidence": 0.8,
+    "domain": "integration",
+    "times_seen": 5,
+    "last_updated": 1770999827.7714298,
+    "source": "direct_training",
+    "tier": 2,
+    "semantic_meaning": "Rate limiting compliance"
+  },
+  "SIMPLE": {
+    "constraint": "Constraint: SIMPLE (integration domain)",
+    "solution_hint": "solution:salesforce-backup",
+    "confidence": 0.8,
+    "domain": "integration",
+    "times_seen": 6,
+    "last_updated": 1770999841.054466,
+    "source": "direct_training",
+    "tier": 1,
+    "semantic_meaning": "Simple API key authentication"
+  },
+  "VERIFY": {
+    "constraint": "Constraint: VERIFY (integration domain)",
+    "solution_hint": "solution:hubspot-v2",
+    "confidence": 0.6,
+    "domain": "integration",
+    "times_seen": 3,
+    "last_updated": 1770999841.0544739,
+    "source": "direct_training",
+    "tier": 2,
+    "semantic_meaning": "Request verification required"
+  },
+  "RETRY": {
+    "constraint": "Constraint: RETRY (integration domain)",
+    "solution_hint": "solution:hubspot-v2",
+    "confidence": 0.6,
+    "domain": "integration",
+    "times_seen": 3,
+    "last_updated": 1770999841.054471,
+    "source": "direct_training",
+    "tier": 2,
+    "semantic_meaning": "Retry logic for reliability"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "precept": {
+    "count": 2,
+    "pt_curve": [
+      0.0,
+      0.5
+    ],
+    "p1_curve": [
+      0.0,
+      0.5
+    ]
+  },
+  "full_reflexion": {
+    "count": 2,
+    "pt_curve": [
+      1.0,
+      0.5
+    ],
+    "p1_curve": [
+      0.0,
+      0.0
+    ]
+  },
+  "expel": {
+    "count": 2,
+    "pt_curve": [
+      1.0,
+      0.5
+    ],
+    "p1_curve": [
+      0.0,
+      0.0
+    ]
+  }
+}

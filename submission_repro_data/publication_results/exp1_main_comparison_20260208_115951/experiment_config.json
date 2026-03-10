@@ -1,0 +1,51 @@
+{
+  "experiment": "exp1_main_comparison",
+  "seeds": [
+    42,
+    123,
+    456,
+    789,
+    999,
+    2024,
+    3141,
+    1337,
+    8888,
+    7777
+  ],
+  "domains": {
+    "finance": {
+      "E": 6,
+      "train": 18,
+      "test": 6
+    },
+    "logistics": {
+      "E": 4,
+      "train": 12,
+      "test": 4
+    },
+    "coding": {
+      "E": 5,
+      "train": 15,
+      "test": 5
+    },
+    "devops": {
+      "E": 5,
+      "train": 15,
+      "test": 5
+    },
+    "booking": {
+      "E": 17,
+      "train": 51,
+      "test": 17
+    },
+    "integration": {
+      "E": 6,
+      "train": 18,
+      "test": 6
+    }
+  },
+  "num_conditions": 5,
+  "max_retries": 4,
+  "timestamp": "20260208_115951",
+  "mode": "full"
+}

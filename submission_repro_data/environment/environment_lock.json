@@ -1,0 +1,9 @@
+{
+  "python_min_version": "3.10",
+  "uv_version_used_for_lock_export": "uv 0.6.2 (6d3614eec 2025-02-19)",
+  "uv_lock_file": "uv.lock",
+  "uv_lock_sha256": "89292595870cd46f4c90d69d28d8991a5ada1a6b24298ae81e1eab0107db4f48",
+  "requirements_lock_file": "submission_repro_data/environment/requirements.lock.txt",
+  "requirements_lock_sha256": "fb41c6a3847b0b9988f89828c0b7f6eaa11697e5afa3e9a48922d286f633be96",
+  "export_command": "uv export --frozen --output-file submission_repro_data/environment/requirements.lock.txt"
+}

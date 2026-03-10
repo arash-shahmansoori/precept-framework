@@ -1,0 +1,8 @@
+{
+  "E-HEAT+H-903+R-482+SH-701+T-FLEX": "E-HEAT+H-903+R-482+SH-701+T-FLEX: first-try-success \u2192 ningbo",
+  "C-COLD+C-HIGH+H-903+LA-550+P-220": "C-COLD+C-HIGH+H-903+LA-550+P-220: first-try-success \u2192 long_beach",
+  "C-BULK+C-COLD+P-220+R-482+SH-701": "C-BULK+C-COLD+P-220+R-482+SH-701: first-try-success \u2192 ningbo",
+  "C-COLD+C-HZMT+H-903+LA-550+R-482": "C-COLD+C-HZMT+H-903+LA-550+R-482 \u2192 hamburg",
+  "E-HEAT+E-WNTR+LA-550+T-FLEX+T-PEAK": "E-HEAT+E-WNTR+LA-550+T-FLEX+T-PEAK \u2192 long_beach",
+  "E-SMOG+E-WNTR+H-903+LA-550+T-NGHT": "E-SMOG+E-WNTR+H-903+LA-550+T-NGHT \u2192 long_beach"
+}

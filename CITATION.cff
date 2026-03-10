@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+  - family-names: "Shahmansoori"
+    given-names: "Arash"
+    orcid: "https://orcid.org/0000-0001-5126-8005"
+title: "PRECEPT: Planning Resilience via Experience, Context Engineering & Probing Trajectories"
+abstract: "A comprehensive AI agent learning framework combining COMPASS (a novel enhanced GEPA with ML-based complexity detection, smart rollout allocation, and multi-strategy coordination), episodic memory with semantic retrieval, test-time learning, dynamic rule extraction, memory consolidation, and context engineering patterns for production-ready agent systems."
+version: "1.0.0"
+date-released: "2026-01-06"
+doi: ""
+url: "https://github.com/arash-shahmansoori/precept-framework"
+repository-code: "https://github.com/arash-shahmansoori/precept-framework"
+keywords:
+  - "AI agents"
+  - "prompt evolution"
+  - "GEPA"
+  - "COMPASS"
+  - "test-time learning"
+  - "memory systems"
+license: "MIT"

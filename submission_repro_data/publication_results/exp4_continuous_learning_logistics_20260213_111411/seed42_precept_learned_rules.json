@@ -1,0 +1,9 @@
+{
+  "C-COLD+C-HIGH+H-903+LA-550+P-220": "C-COLD+C-HIGH+H-903+LA-550+P-220: first-try-success \u2192 ningbo",
+  "E-HEAT+H-903+R-482+SH-701+T-FLEX": "E-HEAT+H-903+R-482+SH-701+T-FLEX: first-try-success \u2192 ningbo",
+  "C-BULK+C-COLD+P-220+R-482+SH-701": "C-BULK+C-COLD+P-220+R-482+SH-701: first-try-success \u2192 hamburg",
+  "E-WNTR+H-903+R-482+SH-701+T-FLEX": "E-WNTR+H-903+R-482+SH-701+T-FLEX: first-try-success \u2192 ningbo",
+  "C-COLD+C-HIGH+E-HEAT+H-903+P-220": "C-COLD+C-HIGH+E-HEAT+H-903+P-220 \u2192 hamburg",
+  "C-COLD+C-HIGH+H-903+P-220+T-WKND": "C-COLD+C-HIGH+H-903+P-220+T-WKND: first-try-success \u2192 ningbo",
+  "E-HEAT+H-903+R-482+SH-701+T-WKND": "E-HEAT+H-903+R-482+SH-701+T-WKND: first-try-success \u2192 ningbo"
+}

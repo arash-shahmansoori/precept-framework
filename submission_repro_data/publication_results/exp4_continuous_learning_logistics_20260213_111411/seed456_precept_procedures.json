@@ -1,0 +1,26 @@
+{
+  "logistics:book_shipment:recovery_ROUTE-712_antwerp": {
+    "name": "recovery_ROUTE-712_antwerp",
+    "task_type": "logistics:book_shipment",
+    "steps": "1. Attempt default action for book_shipment\n2. If error 'ROUTE-712' occurs, use 'antwerp'\n3. Learned from: Arrange perishable delivery from Shanghai to New_Y...",
+    "success_rate": 1.0,
+    "created": 1770982658.0391748,
+    "uses": 32
+  },
+  "logistics:book_shipment:recovery_ROUTE-212_antwerp": {
+    "name": "recovery_ROUTE-212_antwerp",
+    "task_type": "logistics:book_shipment",
+    "steps": "1. Attempt default action for book_shipment\n2. If error 'ROUTE-212' occurs, use 'antwerp'\n3. Learned from: Ship bulk from Rotterdam to Shanghai...",
+    "success_rate": 1.0,
+    "created": 1770982658.7270348,
+    "uses": 32
+  },
+  "logistics:book_shipment:recovery_ROUTE-870_long_beach": {
+    "name": "recovery_ROUTE-870_long_beach",
+    "task_type": "logistics:book_shipment",
+    "steps": "1. Attempt default action for book_shipment\n2. If error 'ROUTE-870' occurs, use 'long_beach'\n3. Learned from: Arrange delivery from Hamburg to London...",
+    "success_rate": 1.0,
+    "created": 1770982874.288249,
+    "uses": 21
+  }
+}

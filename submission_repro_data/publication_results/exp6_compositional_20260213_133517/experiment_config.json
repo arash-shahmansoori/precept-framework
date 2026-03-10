@@ -1,0 +1,49 @@
+{
+  "experiment": "exp6_compositional_generalization",
+  "seeds": [
+    42,
+    123,
+    456,
+    789,
+    999,
+    2024,
+    3141,
+    1337,
+    8888,
+    7777
+  ],
+  "domains": [
+    "logistics",
+    "integration"
+  ],
+  "configurations": [
+    {
+      "name": "logistics_2way",
+      "train": 1,
+      "test": 2,
+      "desc": "Semantic Logistics: 1\u21922 generalization"
+    },
+    {
+      "name": "logistics_3way",
+      "train": 1,
+      "test": 3,
+      "desc": "Semantic Logistics: 1\u21923 generalization"
+    },
+    {
+      "name": "integration_2way",
+      "train": 1,
+      "test": 2,
+      "desc": "Semantic Integration: 1\u21922 generalization"
+    },
+    {
+      "name": "integration_3way",
+      "train": 1,
+      "test": 3,
+      "desc": "Semantic Integration: 1\u21923 generalization"
+    }
+  ],
+  "max_retries": 4,
+  "beta": 3,
+  "timestamp": "20260213_133517",
+  "mode": "full"
+}

@@ -1,0 +1,164 @@
+{
+  "DAT-CORRUPT+INT-429+NET-FIREWALL+NET-SSL+SVC-MAINT": {
+    "failed_options": [
+      "stripe",
+      "microsoft_graph-delegated",
+      "hubspot-v2",
+      "google_workspace-admin",
+      "legacy-erp-v2",
+      "compliance-gateway",
+      "notification-service-fallback",
+      "legacy-erp",
+      "salesforce",
+      "slack_enterprise",
+      "jira_cloud",
+      "zendesk-premium",
+      "google_workspace",
+      "stripe-webhook-v2",
+      "zendesk",
+      "microsoft_graph",
+      "audit-logger",
+      "analytics-api-backend",
+      "inventory-service-direct",
+      "notification-service"
+    ],
+    "errors": [
+      "INT-232"
+    ],
+    "last_attempt": 1771196279.188823
+  },
+  "DAT-PARTIAL+INT-511+NET-TIMEOUT+SVC-MAINT+SVC-VERSION": {
+    "failed_options": [
+      "zendesk-premium",
+      "zendesk",
+      "slack_enterprise",
+      "google_workspace",
+      "hubspot-v2",
+      "hubspot",
+      "google_workspace-admin",
+      "stripe-webhook-v2",
+      "inventory-service",
+      "analytics-api-backend",
+      "inventory-service-direct",
+      "partner-api-proxy",
+      "data-warehouse",
+      "payment-gateway-v2",
+      "legacy-erp",
+      "legacy-erp-v2",
+      "analytics-api",
+      "notification-service",
+      "compliance-gateway",
+      "partner-api"
+    ],
+    "errors": [
+      "INT-800"
+    ],
+    "last_attempt": 1771196158.10345
+  },
+  "DAT-CORRUPT+DAT-SYNC+INT-403+INT-419+SVC-DOWN": {
+    "failed_options": [
+      "salesforce-backup",
+      "salesforce",
+      "jira_cloud",
+      "microsoft_graph"
+    ],
+    "errors": [
+      "INT-792"
+    ],
+    "last_attempt": 1771195335.077683
+  },
+  "DAT-CORRUPT+DAT-SCHEMA+INT-401+NET-TIMEOUT+SVC-MAINT": {
+    "failed_options": [
+      "inventory-service-direct",
+      "compliance-gateway",
+      "audit-logger",
+      "analytics-api",
+      "hubspot",
+      "confluence_server",
+      "slack_enterprise",
+      "google_workspace",
+      "microsoft_graph",
+      "zendesk-premium",
+      "microsoft_graph-delegated",
+      "zendesk",
+      "data-warehouse",
+      "partner-api-proxy",
+      "analytics-api-backend",
+      "partner-api",
+      "payment-gateway",
+      "notification-service-fallback",
+      "legacy-erp-v2",
+      "legacy-erp"
+    ],
+    "errors": [
+      "INT-443"
+    ],
+    "last_attempt": 1771196346.568992
+  },
+  "DAT-CORRUPT+DAT-LARGE+INT-402+NET-PROXY+SVC-VERSION": {
+    "failed_options": [
+      "stripe",
+      "zendesk"
+    ],
+    "errors": [
+      "INT-623"
+    ],
+    "last_attempt": 1771195351.743649
+  },
+  "DAT-SCHEMA+INT-403+INT-404+NET-PROXY+SVC-VERSION": {
+    "failed_options": [
+      "legacy-erp",
+      "notification-service-fallback",
+      "payment-gateway-v2",
+      "payment-gateway",
+      "legacy-erp-v2",
+      "notification-service",
+      "data-warehouse",
+      "analytics-api-backend",
+      "inventory-service",
+      "partner-api",
+      "audit-logger",
+      "inventory-service-direct"
+    ],
+    "errors": [
+      "INT-763"
+    ],
+    "last_attempt": 1771195736.0535748
+  },
+  "DAT-CORRUPT+INT-402+INT-429+NET-DNS+SVC-VERSION": {
+    "failed_options": [
+      "data-warehouse",
+      "analytics-api-backend",
+      "notification-service-fallback",
+      "partner-api-proxy"
+    ],
+    "errors": [
+      "INT-106"
+    ],
+    "last_attempt": 1771196900.875821
+  },
+  "DAT-LARGE+INT-402+INT-407+NET-FIREWALL+NET-PROXY": {
+    "failed_options": [
+      "payment-gateway-v2",
+      "analytics-api-backend",
+      "notification-service",
+      "partner-api-proxy"
+    ],
+    "errors": [
+      "INT-984"
+    ],
+    "last_attempt": 1771196952.383084
+  },
+  "DAT-CORRUPT+DAT-LARGE+INT-402+INT-407+NET-FIREWALL": {
+    "failed_options": [
+      "legacy-erp",
+      "legacy-erp-v2",
+      "data-warehouse",
+      "payment-gateway"
+    ],
+    "errors": [
+      "INT-187"
+    ],
+    "last_attempt": 1771197055.2638988
+  }
+}

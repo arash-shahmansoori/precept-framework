@@ -1,0 +1,50 @@
+{
+  "logistics:book_shipment:recovery_ROUTE-878_long_beach": {
+    "name": "recovery_ROUTE-878_long_beach",
+    "task_type": "logistics:book_shipment",
+    "steps": "1. Attempt default action for book_shipment\n2. If error 'ROUTE-878' occurs, use 'long_beach'\n3. Learned from: Arrange express delivery from Los_Angeles to Londo...",
+    "success_rate": 1.0,
+    "created": 1770986106.998864,
+    "uses": 32
+  },
+  "logistics:book_shipment:recovery_ROUTE-205_ningbo": {
+    "name": "recovery_ROUTE-205_ningbo",
+    "task_type": "logistics:book_shipment",
+    "steps": "1. Attempt default action for book_shipment\n2. If error 'ROUTE-205' occurs, use 'ningbo'\n3. Learned from: Transport express shipment from Shanghai to Boston...",
+    "success_rate": 1.0,
+    "created": 1770986108.2193658,
+    "uses": 32
+  },
+  "logistics:book_shipment:recovery_ROUTE-700_antwerp": {
+    "name": "recovery_ROUTE-700_antwerp",
+    "task_type": "logistics:book_shipment",
+    "steps": "1. Attempt default action for book_shipment\n2. If error 'ROUTE-700' occurs, use 'antwerp'\n3. Learned from: Arrange delivery from Rotterdam to Chicago...",
+    "success_rate": 1.0,
+    "created": 1770986192.03106,
+    "uses": 28
+  },
+  "logistics:book_shipment:recovery_ROUTE-962_ningbo": {
+    "name": "recovery_ROUTE-962_ningbo",
+    "task_type": "logistics:book_shipment",
+    "steps": "1. Attempt default action for book_shipment\n2. If error 'ROUTE-962' occurs, use 'ningbo'\n3. Learned from: Transport goods from Hamburg to London...",
+    "success_rate": 1.0,
+    "created": 1770986620.746284,
+    "uses": 6
+  },
+  "logistics:book_shipment:recovery_ROUTE-897_long_beach": {
+    "name": "recovery_ROUTE-897_long_beach",
+    "task_type": "logistics:book_shipment",
+    "steps": "1. Attempt default action for book_shipment\n2. If error 'ROUTE-897' occurs, use 'long_beach'\n3. Learned from: Send shipment from Hamburg to London...",
+    "success_rate": 1.0,
+    "created": 1770986701.1317918,
+    "uses": 3
+  },
+  "logistics:book_shipment:recovery_ROUTE-734_hamburg": {
+    "name": "recovery_ROUTE-734_hamburg",
+    "task_type": "logistics:book_shipment",
+    "steps": "1. Attempt default action for book_shipment\n2. If error 'ROUTE-734' occurs, use 'hamburg'\n3. Learned from: Book shipment from Hamburg to London...",
+    "success_rate": 1.0,
+    "created": 1770986773.4257338,
+    "uses": 0
+  }
+}

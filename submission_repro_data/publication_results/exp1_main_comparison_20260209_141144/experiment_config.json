@@ -1,0 +1,26 @@
+{
+  "experiment": "exp1_main_comparison",
+  "seeds": [
+    42,
+    123,
+    456,
+    789,
+    999,
+    2024,
+    3141,
+    1337,
+    8888,
+    7777
+  ],
+  "domains": {
+    "integration": {
+      "E": 6,
+      "train": 18,
+      "test": 6
+    }
+  },
+  "num_conditions": 5,
+  "max_retries": 4,
+  "timestamp": "20260209_141144",
+  "mode": "full"
+}

@@ -1,0 +1,26 @@
+{
+  "experiment": "exp1_main_comparison",
+  "seeds": [
+    42,
+    123,
+    456,
+    789,
+    999,
+    2024,
+    3141,
+    1337,
+    8888,
+    7777
+  ],
+  "domains": {
+    "booking": {
+      "E": 17,
+      "train": 51,
+      "test": 17
+    }
+  },
+  "num_conditions": 5,
+  "max_retries": 4,
+  "timestamp": "20260208_163115",
+  "mode": "full"
+}

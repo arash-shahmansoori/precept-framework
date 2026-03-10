@@ -1,0 +1,59 @@
+{
+  "experiences": [
+    {
+      "id": "b54a491bdf12",
+      "task_description": "Authenticate with service (webhook)",
+      "goal": "",
+      "trajectory": [
+        {
+          "outcome": "failure",
+          "strategy": "",
+          "lessons": "Domain: integration, Strategy: "
+        }
+      ],
+      "outcome": "failure",
+      "correctness": 0.0,
+      "strategy_used": "Strategy using 1 steps",
+      "lessons_learned": [],
+      "skills_demonstrated": [],
+      "experience_type": "failure",
+      "priority": 2,
+      "domain": "general",
+      "timestamp": 1771195140.525903,
+      "retrieval_count": 1,
+      "usefulness_score": 0.45499999999999996,
+      "summary": null
+    },
+    {
+      "id": "aec9089c5c39",
+      "task_description": "Setup webhook (api)",
+      "goal": "",
+      "trajectory": [
+        {
+          "outcome": "failure",
+          "strategy": "",
+          "lessons": "Domain: integration, Strategy: "
+        }
+      ],
+      "outcome": "failure",
+      "correctness": 0.0,
+      "strategy_used": "Strategy using 1 steps",
+      "lessons_learned": [],
+      "skills_demonstrated": [],
+      "experience_type": "failure",
+      "priority": 2,
+      "domain": "general",
+      "timestamp": 1771195188.4724338,
+      "retrieval_count": 0,
+      "usefulness_score": 0.5,
+      "summary": null
+    }
+  ],
+  "stats": {
+    "total_added": 53,
+    "total_retrieved": 42,
+    "total_pruned": 51,
+    "successful_retrievals": 21
+  },
+  "timestamp": 1771195189.147233
+}

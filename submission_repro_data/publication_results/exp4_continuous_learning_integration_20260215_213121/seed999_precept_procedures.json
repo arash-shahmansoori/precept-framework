@@ -1,0 +1,10 @@
+{
+  "integration:sync_data:recovery_INT-624_salesforce-backup": {
+    "name": "recovery_INT-624_salesforce-backup",
+    "task_type": "integration:sync_data",
+    "steps": "1. Attempt default action for sync_data\n2. If error 'INT-624' occurs, use 'salesforce-backup'\n3. Learned from: Connect integration (Analytics)...",
+    "success_rate": 1.0,
+    "created": 1771207378.666629,
+    "uses": 18
+  }
+}

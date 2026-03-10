@@ -1,0 +1,229 @@
+{
+  "metadata": {
+    "domain": "integration",
+    "timestamp": "20260209_151840",
+    "seed": 8888,
+    "train_tasks": 18,
+    "test_tasks": 6,
+    "max_retries": 4,
+    "max_attempts": 5,
+    "concurrent_training": true,
+    "concurrent_testing": true,
+    "train_elapsed_seconds": 93.38,
+    "test_elapsed_seconds": 365.72,
+    "static_knowledge_enabled": false,
+    "static_knowledge_mode": "disabled",
+    "test_mode": "both"
+  },
+  "agents": {
+    "llm_baseline": {
+      "name": "LLM Baseline (NOT RUN - unfair)",
+      "success_rate": 0.0,
+      "total_successes": 0,
+      "total_tasks": 0,
+      "avg_steps": 0.0,
+      "llm_calls": 0,
+      "llm_accuracy": 0.0,
+      "first_try_success_rate": 0.0,
+      "first_try_successes": 0,
+      "learning_efficiency": 0.0,
+      "cold_start_success_rate": 0.0,
+      "cold_start_successes": 0,
+      "cold_start_total": 0
+    },
+    "reflexion": {
+      "name": "Reflexion (NOT RUN - unfair)",
+      "success_rate": 0.0,
+      "total_successes": 0,
+      "total_tasks": 0,
+      "avg_steps": 0.0,
+      "llm_calls": 0,
+      "llm_accuracy": 0.0,
+      "reflections_generated": 0,
+      "first_try_success_rate": 0.0,
+      "first_try_successes": 0,
+      "learning_efficiency": 0.0,
+      "cold_start_success_rate": 0.0,
+      "cold_start_successes": 0,
+      "cold_start_total": 0
+    },
+    "full_reflexion": {
+      "name": "Full Reflexion",
+      "success_rate": 0.3333,
+      "total_successes": 2,
+      "total_tasks": 6,
+      "avg_steps": 9.33,
+      "llm_calls": 113,
+      "llm_accuracy": 0.1239,
+      "reflections_generated": 113,
+      "reflections_reused": 113,
+      "accumulated_memories": 30,
+      "first_try_success_rate": 0.1667,
+      "first_try_successes": 1,
+      "p1_with_rules": 0.0,
+      "p1_with_rules_total": 0,
+      "p1_inherent": 0.0,
+      "p1_inherent_total": 0,
+      "p1_other": 0.0,
+      "p1_other_total": 0,
+      "learning_efficiency": 0.1852,
+      "cold_start_success_rate": 0.3333,
+      "cold_start_successes": 2,
+      "cold_start_total": 6
+    },
+    "expel": {
+      "name": "ExpeL",
+      "success_rate": 0.5,
+      "total_successes": 3,
+      "total_tasks": 6,
+      "avg_steps": 6.0,
+      "llm_calls": 124,
+      "llm_accuracy": 0.1371,
+      "insights_extracted": 30,
+      "insights_retrieved": 681,
+      "first_try_success_rate": 0.5,
+      "first_try_successes": 3,
+      "p1_with_rules": 0.0,
+      "p1_with_rules_total": 0,
+      "p1_inherent": 0.0,
+      "p1_inherent_total": 0,
+      "p1_other": 0.0,
+      "p1_other_total": 0,
+      "learning_efficiency": 0.2778,
+      "cold_start_success_rate": 0.5,
+      "cold_start_successes": 3,
+      "cold_start_total": 6
+    },
+    "precept": {
+      "name": "PRECEPT",
+      "success_rate": 0.8333,
+      "total_successes": 5,
+      "total_tasks": 6,
+      "avg_steps": 2.67,
+      "rules_learned": 22,
+      "llm_reasoning_calls": 91,
+      "llm_reasoning_successes": 26,
+      "has_compass_evolution": true,
+      "first_try_success_rate": 0.8333,
+      "first_try_successes": 5,
+      "p1_with_rules": 0.0,
+      "p1_with_rules_successes": 0,
+      "p1_with_rules_total": 0,
+      "p1_inherent": 0.0,
+      "p1_inherent_successes": 0,
+      "p1_inherent_total": 0,
+      "p1_other": 0.0,
+      "p1_other_successes": 0,
+      "p1_other_total": 0,
+      "p1_without_rules": 0.0,
+      "p1_without_rules_successes": 0,
+      "p1_without_rules_total": 0,
+      "learning_efficiency": 0.463,
+      "cold_start_success_rate": 0.8333,
+      "cold_start_successes": 5,
+      "cold_start_total": 6
+    }
+  },
+  "precept_advantages": {
+    "vs_llm_baseline": 0.8333,
+    "vs_reflexion": 0.8333,
+    "vs_full_reflexion": 0.5,
+    "steps_saved_vs_llm": -2.67,
+    "steps_saved_vs_reflexion": -2.67,
+    "steps_saved_vs_full_reflexion": 6.67,
+    "first_try_advantage_vs_llm": 0.8333,
+    "first_try_advantage_vs_reflexion": 0.8333,
+    "first_try_advantage_vs_full_reflexion": 0.6667,
+    "learning_efficiency_advantage_vs_llm": 0.463,
+    "learning_efficiency_advantage_vs_full_reflexion": 0.2778,
+    "cold_start_advantage_vs_llm": 0.8333,
+    "cold_start_advantage_vs_full_reflexion": 0.5
+  },
+  "pruning_stats": {
+    "total_constraints": 86,
+    "hard_constraints": 0,
+    "soft_constraints": 86,
+    "dumb_retries_prevented": 9,
+    "pruning_efficiency": 0.1047
+  },
+  "conflict_resolution": {
+    "enabled": false,
+    "mode": "disabled",
+    "stats": {
+      "status": "active",
+      "summary": {
+        "conflicts_detected": 0,
+        "conflicts_resolved": 0
+      },
+      "detection": {
+        "total_detections": 0,
+        "conflicts_found": 0
+      },
+      "resolution_outcomes": {
+        "static_wins": 0,
+        "dynamic_wins": 0,
+        "merges": 0
+      },
+      "reliability": {
+        "static_kb": 0.8333333333333334,
+        "dynamic_experience": 0.625,
+        "episodic_memory": 0.5
+      }
+    },
+    "precept_capabilities": [],
+    "baseline_capabilities": []
+  },
+  "winner": "precept",
+  "dual_mode_results": {
+    "matched": {
+      "precept": {
+        "success_rate": 0.8333,
+        "first_try_success_rate": 0.8333,
+        "first_try_successes": 5,
+        "total_tasks": 6,
+        "avg_steps": 2.67
+      },
+      "expel": {
+        "success_rate": 0.5,
+        "first_try_success_rate": 0.5,
+        "first_try_successes": 3,
+        "total_tasks": 6,
+        "avg_steps": 6.0
+      },
+      "full_reflexion": {
+        "success_rate": 0.3333,
+        "first_try_success_rate": 0.1667,
+        "first_try_successes": 1,
+        "total_tasks": 6,
+        "avg_steps": 9.33
+      },
+      "elapsed_seconds": 173.95,
+      "num_scenarios": 6
+    },
+    "random": {
+      "precept": {
+        "success_rate": 0.6667,
+        "first_try_success_rate": 0.5,
+        "first_try_successes": 3,
+        "total_tasks": 6,
+        "avg_steps": 3.5
+      },
+      "expel": {
+        "success_rate": 0.5,
+        "first_try_success_rate": 0.3333,
+        "first_try_successes": 2,
+        "total_tasks": 6,
+        "avg_steps": 7.0
+      },
+      "full_reflexion": {
+        "success_rate": 0.3333,
+        "first_try_success_rate": 0.1667,
+        "first_try_successes": 1,
+        "total_tasks": 6,
+        "avg_steps": 8.67
+      },
+      "elapsed_seconds": 191.76,
+      "num_scenarios": 6
+    }
+  }
+}

@@ -1,0 +1,81 @@
+[
+  {
+    "type": "symbol_status",
+    "content": "Symbol has low volatility and stable API data feeds",
+    "entity": "symbol",
+    "condition": "FIN-058",
+    "metadata": {"category": "market", "outdated": true, "scenario_type": "single_condition"},
+    "note": "SINGLE-CONDITION CONFLICT: FIN-058 high volatility"
+  },
+  {
+    "type": "data_status",
+    "content": "Market data feeds never become stale during trading hours",
+    "entity": "market_data",
+    "condition": "FIN-059",
+    "metadata": {"category": "data", "false": true, "scenario_type": "single_condition"},
+    "note": "SINGLE-CONDITION CONFLICT: FIN-059 data staleness"
+  },
+  {
+    "type": "compliance_status",
+    "content": "KYC checks only apply to new customers",
+    "entity": "kyc",
+    "condition": "CPL-KYC",
+    "metadata": {"category": "compliance", "dangerous": true, "scenario_type": "single_condition"},
+    "note": "SINGLE-CONDITION CONFLICT: CPL-KYC applies to all transactions"
+  },
+  {
+    "type": "multi_condition_advice",
+    "content": "High volatility (FIN-058) during market open (TM-OPEN) is normal",
+    "entity": "vol_open",
+    "conditions": ["FIN-058", "TM-OPEN"],
+    "metadata": {"category": "market", "incomplete": true, "scenario_type": "multi_condition"},
+    "note": "MULTI-CONDITION CONFLICT: FIN-058 + TM-OPEN needs limit orders only"
+  },
+  {
+    "type": "multi_condition_advice",
+    "content": "Stale data (FIN-059) for algorithmic orders (ORD-ALG) doesn't matter",
+    "entity": "stale_algo",
+    "conditions": ["FIN-059", "ORD-ALG"],
+    "metadata": {"category": "data", "dangerous": true, "scenario_type": "multi_condition"},
+    "note": "MULTI-CONDITION CONFLICT: FIN-059 + ORD-ALG needs alternative feed"
+  },
+  {
+    "type": "multi_condition_advice",
+    "content": "Large orders (ORD-LRG) during volatility (FIN-058) execute at market",
+    "entity": "large_vol",
+    "conditions": ["ORD-LRG", "FIN-058"],
+    "metadata": {"category": "trading", "dangerous": true, "scenario_type": "multi_condition"},
+    "note": "MULTI-CONDITION CONFLICT: ORD-LRG + FIN-058 needs TWAP/VWAP"
+  },
+  {
+    "type": "multi_condition_advice",
+    "content": "AML compliance (CPL-AML) for block orders (ORD-BLK) is simpler",
+    "entity": "aml_block",
+    "conditions": ["CPL-AML", "ORD-BLK"],
+    "metadata": {"category": "compliance", "false": true, "scenario_type": "multi_condition"},
+    "note": "MULTI-CONDITION CONFLICT: CPL-AML + ORD-BLK needs full audit trail"
+  },
+  {
+    "type": "multi_condition_advice",
+    "content": "Express timing (TM-EXPR) with stale data (FIN-059) retries automatically",
+    "entity": "expr_stale",
+    "conditions": ["TM-EXPR", "FIN-059"],
+    "metadata": {"category": "infrastructure", "incomplete": true, "scenario_type": "multi_condition"},
+    "note": "MULTI-CONDITION CONFLICT: TM-EXPR + FIN-059 needs manual feed switch"
+  },
+  {
+    "type": "multi_condition_advice",
+    "content": "After-hours (TM-AFTER) with iceberg orders (ORD-ICE) is safe",
+    "entity": "ah_iceberg",
+    "conditions": ["TM-AFTER", "ORD-ICE"],
+    "metadata": {"category": "trading", "dangerous": true, "scenario_type": "multi_condition"},
+    "note": "MULTI-CONDITION CONFLICT: TM-AFTER + ORD-ICE has high slippage risk"
+  },
+  {
+    "type": "exchange_recommendation",
+    "content": "Primary feed is always reliable; no backup needed",
+    "entity": "exchange",
+    "metadata": {"category": "infrastructure", "misleading": true, "scenario_type": "single_condition"},
+    "note": "MISLEADING: Exchanges can have outages, need alternatives"
+  }
+]

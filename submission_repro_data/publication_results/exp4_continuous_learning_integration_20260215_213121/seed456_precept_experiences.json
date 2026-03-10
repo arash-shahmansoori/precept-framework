@@ -1,0 +1,59 @@
+{
+  "experiences": [
+    {
+      "id": "dba828eba0f4",
+      "task_description": "Connect to API (realtime)",
+      "goal": "",
+      "trajectory": [
+        {
+          "outcome": "success",
+          "strategy": "hubspot-v2",
+          "lessons": "Domain: integration, Strategy: hubspot-v2"
+        }
+      ],
+      "outcome": "success",
+      "correctness": 1.0,
+      "strategy_used": "Strategy using 1 steps",
+      "lessons_learned": [],
+      "skills_demonstrated": [],
+      "experience_type": "success",
+      "priority": 2,
+      "domain": "general",
+      "timestamp": 1771197029.333267,
+      "retrieval_count": 1,
+      "usefulness_score": 0.45499999999999996,
+      "summary": null
+    },
+    {
+      "id": "d90122ddcbcf",
+      "task_description": "Authenticate with service (oauth)",
+      "goal": "",
+      "trajectory": [
+        {
+          "outcome": "failure",
+          "strategy": "",
+          "lessons": "Domain: integration, Strategy: "
+        }
+      ],
+      "outcome": "failure",
+      "correctness": 0.0,
+      "strategy_used": "Strategy using 1 steps",
+      "lessons_learned": [],
+      "skills_demonstrated": [],
+      "experience_type": "failure",
+      "priority": 2,
+      "domain": "general",
+      "timestamp": 1771197055.2714791,
+      "retrieval_count": 0,
+      "usefulness_score": 0.5,
+      "summary": null
+    }
+  ],
+  "stats": {
+    "total_added": 47,
+    "total_retrieved": 46,
+    "total_pruned": 45,
+    "successful_retrievals": 33
+  },
+  "timestamp": 1771197055.708106
+}

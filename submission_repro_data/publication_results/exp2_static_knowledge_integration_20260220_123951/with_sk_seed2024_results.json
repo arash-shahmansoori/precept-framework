@@ -1,0 +1,190 @@
+{
+  "metadata": {
+    "domain": "integration",
+    "timestamp": "20260220_131939",
+    "seed": 2024,
+    "train_tasks": 18,
+    "test_tasks": 6,
+    "max_retries": 4,
+    "max_attempts": 5,
+    "concurrent_training": true,
+    "concurrent_testing": true,
+    "train_elapsed_seconds": 124.1,
+    "test_elapsed_seconds": 289.83,
+    "static_knowledge_enabled": true,
+    "static_knowledge_mode": "enabled",
+    "test_mode": "matched"
+  },
+  "agents": {
+    "llm_baseline": {
+      "name": "LLM Baseline (NOT RUN - unfair)",
+      "success_rate": 0.0,
+      "total_successes": 0,
+      "total_tasks": 0,
+      "avg_steps": 0.0,
+      "llm_calls": 0,
+      "llm_accuracy": 0.0,
+      "first_try_success_rate": 0.0,
+      "first_try_successes": 0,
+      "learning_efficiency": 0.0,
+      "cold_start_success_rate": 0.0,
+      "cold_start_successes": 0,
+      "cold_start_total": 0
+    },
+    "reflexion": {
+      "name": "Reflexion (NOT RUN - unfair)",
+      "success_rate": 0.0,
+      "total_successes": 0,
+      "total_tasks": 0,
+      "avg_steps": 0.0,
+      "llm_calls": 0,
+      "llm_accuracy": 0.0,
+      "reflections_generated": 0,
+      "first_try_success_rate": 0.0,
+      "first_try_successes": 0,
+      "learning_efficiency": 0.0,
+      "cold_start_success_rate": 0.0,
+      "cold_start_successes": 0,
+      "cold_start_total": 0
+    },
+    "full_reflexion": {
+      "name": "Full Reflexion",
+      "success_rate": 0.1667,
+      "total_successes": 1,
+      "total_tasks": 6,
+      "avg_steps": 9.67,
+      "llm_calls": 101,
+      "llm_accuracy": 0.0594,
+      "reflections_generated": 101,
+      "reflections_reused": 101,
+      "accumulated_memories": 24,
+      "first_try_success_rate": 0.1667,
+      "first_try_successes": 1,
+      "p1_with_rules": 0.0,
+      "p1_with_rules_total": 0,
+      "p1_inherent": 0.0,
+      "p1_inherent_total": 0,
+      "p1_other": 0.0,
+      "p1_other_total": 0,
+      "learning_efficiency": 0.0926,
+      "cold_start_success_rate": 0.1667,
+      "cold_start_successes": 1,
+      "cold_start_total": 6
+    },
+    "expel": {
+      "name": "ExpeL",
+      "success_rate": 0.5,
+      "total_successes": 3,
+      "total_tasks": 6,
+      "avg_steps": 6.0,
+      "llm_calls": 113,
+      "llm_accuracy": 0.1062,
+      "insights_extracted": 24,
+      "insights_retrieved": 686,
+      "first_try_success_rate": 0.5,
+      "first_try_successes": 3,
+      "p1_with_rules": 0.0,
+      "p1_with_rules_total": 0,
+      "p1_inherent": 0.0,
+      "p1_inherent_total": 0,
+      "p1_other": 0.0,
+      "p1_other_total": 0,
+      "learning_efficiency": 0.2778,
+      "cold_start_success_rate": 0.5,
+      "cold_start_successes": 3,
+      "cold_start_total": 6
+    },
+    "precept": {
+      "name": "PRECEPT",
+      "success_rate": 0.8333,
+      "total_successes": 5,
+      "total_tasks": 6,
+      "avg_steps": 2.67,
+      "rules_learned": 19,
+      "llm_reasoning_calls": 54,
+      "llm_reasoning_successes": 14,
+      "has_compass_evolution": true,
+      "first_try_success_rate": 0.8333,
+      "first_try_successes": 5,
+      "p1_with_rules": 0.0,
+      "p1_with_rules_successes": 0,
+      "p1_with_rules_total": 0,
+      "p1_inherent": 0.0,
+      "p1_inherent_successes": 0,
+      "p1_inherent_total": 0,
+      "p1_other": 0.0,
+      "p1_other_successes": 0,
+      "p1_other_total": 0,
+      "p1_without_rules": 0.0,
+      "p1_without_rules_successes": 0,
+      "p1_without_rules_total": 0,
+      "learning_efficiency": 0.463,
+      "cold_start_success_rate": 0.8333,
+      "cold_start_successes": 5,
+      "cold_start_total": 6
+    }
+  },
+  "precept_advantages": {
+    "vs_llm_baseline": 0.8333,
+    "vs_reflexion": 0.8333,
+    "vs_full_reflexion": 0.6667,
+    "steps_saved_vs_llm": -2.67,
+    "steps_saved_vs_reflexion": -2.67,
+    "steps_saved_vs_full_reflexion": 7.0,
+    "first_try_advantage_vs_llm": 0.8333,
+    "first_try_advantage_vs_reflexion": 0.8333,
+    "first_try_advantage_vs_full_reflexion": 0.6667,
+    "learning_efficiency_advantage_vs_llm": 0.463,
+    "learning_efficiency_advantage_vs_full_reflexion": 0.3704,
+    "cold_start_advantage_vs_llm": 0.8333,
+    "cold_start_advantage_vs_full_reflexion": 0.6667
+  },
+  "pruning_stats": {
+    "total_constraints": 46,
+    "hard_constraints": 0,
+    "soft_constraints": 46,
+    "dumb_retries_prevented": 3,
+    "pruning_efficiency": 0.0652
+  },
+  "conflict_resolution": {
+    "enabled": true,
+    "mode": "enabled",
+    "stats": {
+      "status": "active",
+      "summary": {
+        "conflicts_detected": 336,
+        "conflicts_resolved": 336
+      },
+      "detection": {
+        "total_detections": 420,
+        "conflicts_found": 336,
+        "conflict_rate": 0.8,
+        "avg_confidence": 0.2068027210884354
+      },
+      "resolution_outcomes": {
+        "static_wins": 0,
+        "dynamic_wins": 336,
+        "merges": 0
+      },
+      "reliability": {
+        "static_kb": 0.014450867052023121,
+        "dynamic_experience": 0.9912790697674418,
+        "episodic_memory": 0.5
+      }
+    },
+    "precept_capabilities": [
+      "Bayesian uncertainty quantification",
+      "Evidence-based prioritization",
+      "Anomaly detection",
+      "Dynamic reliability learning",
+      "Thompson sampling exploration",
+      "Multi-strategy resolution"
+    ],
+    "baseline_capabilities": [
+      "Static knowledge access (read-only)",
+      "No conflict detection",
+      "No resolution strategy"
+    ]
+  },
+  "winner": "precept"
+}

@@ -1,0 +1,26 @@
+{
+  "integration:sync_data:recovery_INT-840_salesforce-backup": {
+    "name": "recovery_INT-840_salesforce-backup",
+    "task_type": "integration:sync_data",
+    "steps": "1. Attempt default action for sync_data\n2. If error 'INT-840' occurs, use 'salesforce-backup'\n3. Learned from: Setup connector (Support_tickets)...",
+    "success_rate": 1.0,
+    "created": 1771209438.660657,
+    "uses": 19
+  },
+  "integration:sync_data:recovery_INT-628_salesforce-backup": {
+    "name": "recovery_INT-628_salesforce-backup",
+    "task_type": "integration:sync_data",
+    "steps": "1. Attempt default action for sync_data\n2. If error 'INT-628' occurs, use 'salesforce-backup'\n3. Learned from: Connect integration (Support_tickets)...",
+    "success_rate": 1.0,
+    "created": 1771209440.382634,
+    "uses": 19
+  },
+  "integration:sync_data:recovery_INT-612_hubspot-v2": {
+    "name": "recovery_INT-612_hubspot-v2",
+    "task_type": "integration:sync_data",
+    "steps": "1. Attempt default action for sync_data\n2. If error 'INT-612' occurs, use 'hubspot-v2'\n3. Learned from: Connect to API (oauth)...",
+    "success_rate": 1.0,
+    "created": 1771210309.273946,
+    "uses": 9
+  }
+}

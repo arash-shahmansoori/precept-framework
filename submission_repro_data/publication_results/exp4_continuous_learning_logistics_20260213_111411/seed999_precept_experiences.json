@@ -1,0 +1,35 @@
+{
+  "experiences": [
+    {
+      "id": "8f76af677ea9",
+      "task_description": "Book shipment from Los_Angeles to London",
+      "goal": "",
+      "trajectory": [
+        {
+          "outcome": "success",
+          "strategy": "LLM:origin:ningbo",
+          "lessons": "Domain: logistics, Strategy: LLM:origin:ningbo"
+        }
+      ],
+      "outcome": "success",
+      "correctness": 1.0,
+      "strategy_used": "Strategy using 1 steps",
+      "lessons_learned": [],
+      "skills_demonstrated": [],
+      "experience_type": "success",
+      "priority": 2,
+      "domain": "general",
+      "timestamp": 1770985037.334674,
+      "retrieval_count": 0,
+      "usefulness_score": 0.5,
+      "summary": null
+    }
+  ],
+  "stats": {
+    "total_added": 36,
+    "total_retrieved": 18,
+    "total_pruned": 35,
+    "successful_retrievals": 15
+  },
+  "timestamp": 1770985037.480136
+}
