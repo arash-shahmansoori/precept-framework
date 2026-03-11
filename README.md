@@ -13,7 +13,8 @@
 
 - **arXiv:** https://arxiv.org/abs/2603.09641
 - **Code:** https://github.com/arash-shahmansoori/precept-framework
-- **Framework overview image:** `paper/arxiv/PRECEPT_framework_linkedin.png`
+- **DOI:** https://doi.org/10.48550/arXiv.2603.09641
+- **Curated reproducibility assets:** `submission_repro_data/`
 
 ## Overview
 
@@ -407,30 +408,12 @@ data/chroma_static_knowledge/             # Static knowledge (vector DB, lazy-in
 data/precept_experiences.json             # Episodic memory (JSON backup)
 ```
 
-**Note**: The `chroma_static_knowledge/` directory is only created when `--static-knowledge` is used, preventing unnecessary resource allocation in pure dynamic learning mode.
+**Note**: These `data/` paths are local runtime artifacts created when you run examples or experiments; they are intentionally not tracked in the public GitHub repository. The `chroma_static_knowledge/` directory is only created when `--static-knowledge` is used, preventing unnecessary resource allocation in pure dynamic learning mode.
 
 ### 6. Memory Consolidation
 - Merge duplicate patterns
 - Prune low-value memories
 - Bake lessons into rules
-
-### Learning Timeline
-
-```mermaid
-%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#4CAF50', 'primaryTextColor': '#000', 'primaryBorderColor': '#2e7d32', 'taskTextColor': '#000', 'taskTextOutsideColor': '#000', 'sectionBkgColor': '#e3f2fd', 'altSectionBkgColor': '#f3e5f5', 'gridColor': '#ccc', 'todayLineColor': '#f44336'}}}%%
-gantt
-    title PRECEPT Learning Over 8 Tasks
-    dateFormat X
-    axisFormat %s
-
-    section Baselines
-    ExpeL/Reflexion retry loop    :crit, b1, 0, 8
-
-    section PRECEPT
-    Discovery Phase               :active, c1, 0, 2
-    Learning Phase                :c2, 2, 4
-    Optimized Phase               :done, c3, 4, 8
-```
 
 ---
 
@@ -692,266 +675,55 @@ All JSON file operations use `fcntl.flock` for atomic reads/writes, ensuring thr
 
 ## File Structure
 
-```
+The public repository is intentionally focused on the **codebase**, **experiment runners**, **tests**, and **curated reproducibility assets**. Manuscript sources and internal documentation used during submission are kept local and are not part of the public repo snapshot.
+
+```text
 precept-framework/
 ├── src/
-│   ├── precept/                         # Main PRECEPT package
-│   │   │
-│   │   │   ═══════════════════════════════════════════════════════════════
-│   │   │   CONFIGURATION (Modular Config System)
-│   │   │   ═══════════════════════════════════════════════════════════════
-│   │   ├── config/
-│   │   │   ├── __init__.py              # Re-exports all config classes
-│   │   │   ├── agent.py                 # AgentConfig (PRECEPT agent settings)
-│   │   │   ├── baseline.py              # BaselineConfig (baseline settings)
-│   │   │   ├── constraints.py           # ConstraintConfig (pruning settings)
-│   │   │   ├── llm.py                   # LLMConfig (model, temperature, tokens)
-│   │   │   ├── logging.py               # LogConfig, setup_logging, get_logger
-│   │   │   ├── paths.py                 # DataPaths, get_project_root
-│   │   │   ├── prompts.py               # PromptTemplates (centralized prompts)
-│   │   │   ├── unified.py               # PreceptConfig (aggregates all configs)
-│   │   │   ├── multi_condition.py       # Multi-condition experiment config
-│   │   │   ├── dynamic_static_knowledge.py  # Dynamic static knowledge config
-│   │   │   ├── logistics.py             # Logistics domain config
-│   │   │   ├── finance.py               # Finance domain config
-│   │   │   ├── booking.py               # Booking domain config
-│   │   │   ├── coding.py                # Coding domain config
-│   │   │   ├── devops.py                # DevOps domain config
-│   │   │   ├── integration.py           # Integration domain config
-│   │   │   └── factual_extraction.py    # Factual extraction config
-│   │   │
-│   │   │   ═══════════════════════════════════════════════════════════════
-│   │   │   DOMAIN STRATEGIES (Strategy Pattern)
-│   │   │   ═══════════════════════════════════════════════════════════════
-│   │   ├── domain_strategies/
-│   │   │   ├── __init__.py              # Package exports
-│   │   │   ├── base.py                  # DomainStrategy, BaselineDomainStrategy
-│   │   │   ├── logistics.py             # LogisticsDomainStrategy
-│   │   │   ├── coding.py                # CodingDomainStrategy
-│   │   │   ├── devops.py                # DevOpsDomainStrategy
-│   │   │   ├── finance.py               # FinanceDomainStrategy
-│   │   │   ├── booking.py               # BookingDomainStrategy
-│   │   │   └── integration.py           # IntegrationDomainStrategy
-│   │   │
-│   │   │   ═══════════════════════════════════════════════════════════════
-│   │   │   AUTOGEN AGENTS
-│   │   │   ═══════════════════════════════════════════════════════════════
-│   │   ├── precept_agent.py             # PRECEPTAgent (learning agent)
-│   │   ├── autogen_precept_agent.py     # AutoGen-integrated PRECEPT agent
-│   │   ├── autogen_integration.py       # AutoGen framework integration
-│   │   ├── agent_functions.py           # Pure functions for PRECEPT agent
-│   │   ├── baseline_agents.py           # ExpeL, Reflexion baselines
-│   │   ├── baseline_functions.py        # Pure functions for baselines
-│   │   ├── constraints.py               # RefineInterceptor (deterministic pruning)
-│   │   ├── structured_outputs.py        # Pydantic models for LLM responses
-│   │   │
-│   │   │   ═══════════════════════════════════════════════════════════════
-│   │   │   MCP INTEGRATION (Model Context Protocol)
-│   │   │   ═══════════════════════════════════════════════════════════════
-│   │   ├── precept_mcp_server.py        # Standalone MCP server with 15+ tools
-│   │   ├── precept_mcp_client.py        # MCP client wrapper
-│   │   ├── compass_mcp_client.py        # PRECEPTMCPClientWithCOMPASS
-│   │   ├── mcp_remem_integration.py     # MCP-wrapped ReMem Think-Act-Refine
-│   │   │
-│   │   │   ═══════════════════════════════════════════════════════════════
-│   │   │   DOCUMENT PROCESSING
-│   │   │   ═══════════════════════════════════════════════════════════════
-│   │   ├── document_processors/
-│   │   │   ├── __init__.py              # Package exports
-│   │   │   ├── base.py                  # Base document processor
-│   │   │   ├── chunkers.py              # Text chunking strategies
-│   │   │   ├── factory.py               # Processor factory
-│   │   │   ├── langchain_adapter.py     # LangChain compatibility
-│   │   │   ├── registry.py              # Processor registry
-│   │   │   └── processors/              # Format-specific processors
-│   │   │       ├── __init__.py
-│   │   │       ├── markdown.py          # Markdown processor
-│   │   │       ├── pdf.py               # PDF processor
-│   │   │       ├── text.py              # Plain text processor
-│   │   │       └── web.py               # Web content processor
-│   │   │
-│   │   │   ═══════════════════════════════════════════════════════════════
-│   │   │   RULE LEARNING
-│   │   │   ═══════════════════════════════════════════════════════════════
-│   │   ├── rule_parser.py               # DynamicRuleParser (NO hardcoded knowledge)
-│   │   │
-│   │   │   ═══════════════════════════════════════════════════════════════
-│   │   │   SCENARIO GENERATION (All 6 Domains)
-│   │   │   ═══════════════════════════════════════════════════════════════
-│   │   ├── scenario_generators/
-│   │   │   ├── __init__.py              # Package exports
-│   │   │   ├── logistics.py             # LogisticsScenarioGenerator
-│   │   │   ├── coding.py                # CodingScenarioGenerator
-│   │   │   ├── devops.py                # DevOpsScenarioGenerator
-│   │   │   ├── finance.py               # FinanceScenarioGenerator
-│   │   │   ├── booking.py               # BookingScenarioGenerator
-│   │   │   └── integration.py           # IntegrationScenarioGenerator
-│   │   │
-│   │   │   ═══════════════════════════════════════════════════════════════
-│   │   │   STRATEGY REGISTRY
-│   │   │   ═══════════════════════════════════════════════════════════════
-│   │   ├── strategy_registry.py         # get_domain_strategy, list_available_domains
-│   │   │
-│   │   │   ═══════════════════════════════════════════════════════════════
-│   │   │   CORE MEMORY SYSTEM
-│   │   │   ═══════════════════════════════════════════════════════════════
-│   │   ├── memory_store.py              # Episodic memory with semantic indexing
-│   │   ├── memory_consolidation.py      # LLM-powered memory consolidation
-│   │   ├── pareto_memory.py             # Pareto-optimal memory management
-│   │   ├── ingestion.py                 # Soft ingestion + dual retrieval
-│   │   ├── conflict_resolution.py       # Bayesian conflict resolution
-│   │   │
-│   │   │   ═══════════════════════════════════════════════════════════════
-│   │   │   COMPASS (Enhanced GEPA with ML Optimization)
-│   │   │   ═══════════════════════════════════════════════════════════════
-│   │   ├── gepa.py                      # COMPASS evolution engine (LLM reflection)
-│   │   ├── complexity_analyzer.py       # ML-based complexity detection
-│   │   ├── compass_integration.py       # Smart rollouts & multi-strategy coordination
-│   │   ├── compass_controller.py        # COMPASS controller
-│   │   │
-│   │   │   ═══════════════════════════════════════════════════════════════
-│   │   │   REMEM PIPELINE (Think-Act-Refine)
-│   │   │   ═══════════════════════════════════════════════════════════════
-│   │   ├── remem_pipeline.py            # ReMem loop with online learning
-│   │   ├── precept_orchestrator.py      # Full PRECEPT orchestrator
-│   │   │
-│   │   │   ═══════════════════════════════════════════════════════════════
-│   │   │   CONTEXT ENGINEERING (Google Whitepaper)
-│   │   │   ═══════════════════════════════════════════════════════════════
-│   │   ├── context_engineering.py       # Efficiency patterns
-│   │   │
-│   │   │   ═══════════════════════════════════════════════════════════════
-│   │   │   CODE EXECUTION
-│   │   │   ═══════════════════════════════════════════════════════════════
-│   │   ├── code_executor.py             # Code execution engine
-│   │   ├── single_turn_docker_agent.py  # Single-turn Docker execution
-│   │   ├── multiturn_docker_agent.py    # Multi-turn Docker execution
-│   │   ├── execution_tracer.py          # Execution tracing
-│   │   ├── execution_feedback_processor.py  # Feedback processing
-│   │   ├── dynamic_coding_config.py     # Dynamic coding configuration
-│   │   │
-│   │   │   ═══════════════════════════════════════════════════════════════
-│   │   │   UTILITIES & INFRASTRUCTURE
-│   │   │   ═══════════════════════════════════════════════════════════════
-│   │   ├── llm_clients.py               # OpenAI LLM + embedding clients (lazy-init)
-│   │   ├── black_swan_gen.py            # Black Swan scenario generation
-│   │   ├── scoring.py                   # Experience scoring functions
-│   │   ├── simulation.py                # Black Swan world simulation
-│   │   ├── baselines.py                 # RAG+Tools baseline for comparison
-│   │   ├── csp_constraint_manager.py    # CSP constraint management
-│   │   │
-│   │   │   ═══════════════════════════════════════════════════════════════
-│   │   │   PACKAGE
-│   │   │   ═══════════════════════════════════════════════════════════════
-│   │   ├── __init__.py                  # Package exports (all public APIs)
-│   │   └── README_PRECEPT.md            # Internal module documentation
-│   │
-│   └── models/                          # LLM API Wrappers (Multiple Providers)
-│       ├── __init__.py                  # Unified model exports
-│       ├── openai_api.py                # OpenAI chat + structured outputs
-│       ├── anthropic_api.py             # Anthropic Claude integration
-│       ├── gemini_api.py                # Google Gemini integration
-│       ├── groq_api.py                  # Groq API integration
-│       ├── together_ai_api_models.py    # Together AI integration
-│       └── embedding_models.py          # OpenAI embeddings (lazy-init)
-│
-├── scripts/                             # Publication experiment scripts
-│   ├── README_EXPERIMENTS.md            # Experiment documentation
-│   ├── run_exp1_main_comparison.py      # Exp1: Main comparison (PRECEPT vs baselines)
-│   ├── run_exp2_static_knowledge_ablation.py  # Exp2: Static knowledge ablation
-│   ├── run_exp3_training_size_ablation.py     # Exp3: Training size ablation
-│   ├── run_exp4_continuous_learning.py  # Exp4: Continuous learning
-│   ├── run_exp5_model_ablation.py       # Exp5: Model ablation
-│   ├── run_exp6_compositional_generalization.py  # Exp6: Compositional generalization
-│   ├── run_exp7_rule_drift.py           # Exp7: Rule drift adaptation
-│   ├── generate_exp6_main_figure.py     # Generate Exp6 publication figures
-│   ├── generate_exp6_figures.py         # Additional Exp6 figures
-│   ├── generate_exp7_main_figure.py     # Generate Exp7 publication figures
-│   ├── test_hybrid_parsing.py           # Standalone hybrid parsing test (requires API)
-│   ├── test_precept_workflow.py         # Standalone workflow test (requires API)
-│   └── create_results/                  # Result generation scripts
-│       ├── README.md
-│       ├── generate_consolidated_results.py
-│       ├── generate_exp1_main_comparison_results.py
-│       ├── generate_exp2_static_knowledge_results.py
-│       ├── generate_exp3_training_size_results.py
-│       ├── generate_exp4_continuous_learning_results.py
-│       └── generate_exp5_model_ablation_results.py
-│
+│   ├── precept/                     # Core PRECEPT package
+│   │   ├── precept_agent.py         # Main PRECEPT agent
+│   │   ├── precept_mcp_server.py    # MCP server and tools
+│   │   ├── conflict_resolution.py   # Bayesian conflict handling
+│   │   ├── memory_store.py          # Episodic / semantic memory
+│   │   ├── memory_consolidation.py  # Pattern-to-rule consolidation
+│   │   ├── rule_parser.py           # Dynamic rule extraction
+│   │   ├── context_engineering.py   # Retrieval / memory efficiency patterns
+│   │   ├── domain_strategies/       # Domain-specific behavior
+│   │   ├── document_processors/     # Knowledge ingestion pipeline
+│   │   └── config/                  # Modular runtime configuration
+│   └── models/                      # Multi-provider LLM wrappers
+├── scripts/
+│   ├── README_EXPERIMENTS.md        # Experiment runner guide
+│   ├── run_exp*.py                  # Public experiment runners
+│   ├── create_results/              # Result-table/figure generators
+│   └── run_submission_repro.*       # Curated reproduction workflow
 ├── examples/
-│   ├── precept_autogen_mcp_full.py      # PRIMARY: Full comparison (PRECEPT vs ExpeL vs Reflexion)
-│   └── config/
-│       ├── __init__.py                  # Experiment config exports
-│       ├── experiment.py                # ExperimentConfig, DATA_DIR, SERVER_SCRIPT
-│       └── display.py                   # ExperimentDisplay, ProgressTracker
-│
-├── data/                                # Auto-created persistence directory
-│   ├── chroma_precept/                  # Vector DB for PRECEPT experiences
-│   ├── chroma_expel/                    # Vector DB for ExpeL experiences
-│   ├── chroma_full_reflexion/           # Vector DB for Reflexion experiences
-│   ├── static_knowledge/                # Source static knowledge files
-│   │   └── *.json                       # Domain knowledge (ports, procedures, alerts)
-│   ├── publication_results/             # Publication experiment results
-│   │   ├── exp1_*/                      # Main comparison results
-│   │   ├── exp2_*/                      # Static knowledge ablation results
-│   │   ├── exp3_*/                      # Training size ablation results
-│   │   ├── exp4_*/                      # Continuous learning results
-│   │   ├── exp5_*/                      # Model ablation results
-│   │   ├── exp6_*/                      # Compositional generalization results
-│   │   └── exp7_*/                      # Rule drift results
-│   └── experiment_results_*.json        # Saved experiment results
-│
-├── tests/                               # Comprehensive test suite (512 tests)
-│   ├── conftest.py                      # Shared fixtures, path setup
-│   ├── fixtures/
-│   │   ├── __init__.py
-│   │   └── mock_data.py                 # Sample tasks, errors, rules
-│   ├── unit/                            # Unit tests (pure functions)
-│   │   ├── config/                      # Configuration tests
-│   │   │   ├── test_agent.py
-│   │   │   ├── test_baseline.py
-│   │   │   ├── test_constraints.py
-│   │   │   ├── test_llm.py
-│   │   │   └── test_unified.py
-│   │   ├── domain_strategies/
-│   │   │   └── test_logistics.py
-│   │   ├── test_agent_functions.py      # Agent logic tests
-│   │   ├── test_baseline_functions.py   # Baseline logic tests
-│   │   ├── test_black_swan_gen.py       # Black Swan CSP generator tests
-│   │   ├── test_compass_integration.py  # COMPASS integration tests
-│   │   ├── test_conflict_resolution.py  # Conflict resolution tests
-│   │   ├── test_constraints.py          # Pruning tests
-│   │   ├── test_csp_constraint_manager.py # CSP constraint manager tests
-│   │   ├── test_gepa_detailed.py        # GEPA/COMPASS tests
-│   │   ├── test_ingestion_detailed.py   # Ingestion tests
-│   │   ├── test_memory_store_detailed.py # Memory store tests
-│   │   ├── test_precept_modules.py      # Module import tests
-│   │   ├── test_rule_parser_detailed.py # Rule parser tests
-│   │   ├── test_scenario_generators.py  # Scenario generation tests
-│   │   └── test_structured_outputs.py   # LLM output tests
-│   └── integration/                     # Integration tests
-│       ├── test_baseline_agents.py      # Baseline agent tests
-│       ├── test_deterministic_keys.py   # Deterministic key verification
-│       ├── test_learning_integration.py # Learning component tests
-│       ├── test_mcp_mock_integration.py # MCP mock tests
-│       ├── test_precept_agent.py        # Full agent tests
-│       └── test_workflow_integration.py # End-to-end workflow tests
-│
-├── docs/                                # Documentation
-│   ├── EXPERIMENT_ANALYSIS.md           # Experiment results and analysis
-│   ├── PUBLICATION_EXPERIMENT_STRATEGY.md   # Publication experiment strategy
-│   ├── PUBLICATION_READY_GUIDELINES.md  # Publication guidelines
-│   ├── ABLATION_STUDIES_SUMMARY.md      # Ablation study summary
-│   ├── THEORETICAL_BOUNDS.md            # Theoretical analysis
-│   ├── CONTINUOUS_LEARNING.md           # Continuous learning documentation
-│   ├── RECOMMENDED_HYPERPARAMETERS.md   # Hyperparameter recommendations
-│   └── *.md                             # Additional documentation files
-│
-├── .env                                 # API keys (not in git)
-├── .python-version                      # Python version pin (3.12 for uv)
-├── pyproject.toml                       # Project config (uv dependencies)
-└── README.md                            # This file
+│   └── precept_autogen_mcp_full.py  # End-to-end demo / comparison entry point
+├── tests/
+│   ├── unit/
+│   └── integration/
+├── submission_repro_data/
+│   ├── publication_results/         # Curated paper-linked artifacts
+│   ├── static_knowledge/            # Static knowledge used in reported runs
+│   ├── paper_experiment_sources/    # Canonical paper-to-repo mapping
+│   ├── environment/                 # Locked environment metadata
+│   └── FIGURE_SHA256.txt            # Figure hash verification
+├── CITATION.cff
+├── LICENSE
+├── pyproject.toml
+├── uv.lock
+├── pytest.ini
+├── .python-version
+└── README.md
 ```
+
+### Local Runtime Artifacts
+
+The following paths are created or used locally during experiments but are not part of the public GitHub snapshot:
+
+- `data/` for runtime persistence, local vector stores, and exploratory outputs
+- `.env` for API keys
+- `paper/`, `docs/`, and top-level `figures/` for manuscript and local publication assets
 
 ### Module Dependency Graph
 
@@ -1067,7 +839,7 @@ PRECEPT includes a comprehensive test suite following software engineering best 
 
 ### Test Suite Structure
 
-The test suite includes **512 tests** covering all PRECEPT components.
+The test suite includes comprehensive **unit** and **integration** coverage across PRECEPT's core components.
 
 ```
 tests/
@@ -1198,29 +970,41 @@ uv run examples/precept_autogen_mcp_full.py --no-static-knowledge --seed 42
 
 ## Publication Experiments
 
-PRECEPT includes comprehensive experiment scripts for generating publication-quality results. See `scripts/README_EXPERIMENTS.md` for detailed documentation.
+PRECEPT includes the public experiment runners and curated paper-linked artifacts used to reproduce the main results. See `scripts/README_EXPERIMENTS.md` for runner details, and `submission_repro_data/paper_experiment_sources/README.md` for the canonical paper-to-repository mapping.
 
 ### Available Experiments
 
 | Exp | Name | Purpose | Script |
 |-----|------|---------|--------|
-| **1** | Main Comparison | PRECEPT vs ExpeL vs Reflexion across 6 domains | `run_exp1_main_comparison.py` |
-| **3** | Training Size Ablation | Sample efficiency analysis | `run_exp3_training_size_ablation.py` |
-| **4** | Continuous Learning | Cross-episode memory & online adaptation | `run_exp4_continuous_learning.py` |
-| **6** | Compositional Generalization | Atomic to composite generalization | `run_exp6_compositional_generalization.py` |
-| **7** | Rule Drift | Non-stationary environment adaptation | `run_exp7_rule_drift.py` |
+| **1** | Main Domain Comparison | PRECEPT vs ExpeL vs Reflexion across the main evaluated domains | `run_exp1_main_comparison.py` |
+| **2** | Compositional Semantic Generalization | Atomic-to-composite generalization under structured condition combinations | `run_exp6_compositional_generalization.py` |
+| **3** | Training Size Ablation | Sample efficiency analysis as training exposure increases | `run_exp3_training_size_ablation.py` |
+| **4** | Continuous Learning | Cross-episode learning and recovery over repeated encounters | `run_exp4_continuous_learning.py` |
+| **5** | Rule Persistence / Retrieval Fidelity | Post-restart retention of learned rules | `run_exp7_rule_drift.py --train-hash-seed 0 --test-hash-seed 0` |
+| **6** | Static Knowledge Ablation | Robustness under conflicting static knowledge | `run_exp2_static_knowledge_ablation.py` |
+| **7** | Rule Drift Adaptation | Adaptation after train-test mapping shifts | `run_exp7_rule_drift.py --train-hash-seed 0 --test-hash-seed 1` |
+| **8** | COMPASS Ablation | Contribution analysis for prompt-evolution components | `run_exp8_compass_ablation.py` |
+| **9** | COMPASS Stress / OOD Follow-up | Stress-testing and OOD semantic follow-up for the COMPASS loop | `run_exp9_compass_stress.py` |
+
+**Note:** script names reflect development chronology, not final paper numbering. When in doubt, follow the curated mapping in `submission_repro_data/paper_experiment_sources/README.md`.
 
 ### Running Publication Experiments
 
 ```bash
-# Experiment 1: Main comparison (all domains, 10 seeds)
+# Experiment 1: Main comparison
 uv run scripts/run_exp1_main_comparison.py --publication
 
-# Experiment 6: Compositional generalization
+# Experiment 2: Compositional semantic generalization
 uv run scripts/run_exp6_compositional_generalization.py --publication
 
-# Experiment 7: Rule drift (logistics domain)
+# Experiment 6: Static knowledge ablation
+uv run scripts/run_exp2_static_knowledge_ablation.py --publication
+
+# Experiment 7: Rule drift adaptation
 uv run scripts/run_exp7_rule_drift.py --publication --domains logistics
+
+# One-command curated regeneration / verification
+bash scripts/run_submission_repro.sh
 
 # Quick validation run (fewer seeds)
 uv run scripts/run_exp1_main_comparison.py --very-quick
@@ -1371,16 +1155,18 @@ MIT License - see LICENSE file for details.
 
 ## Acknowledgments
 
-- **AutoGen**: Microsoft Research - Multi-agent orchestration framework
-- **MCP**: Anthropic - Model Context Protocol for tool integration
-- **GEPA**: "Reflective Prompt Evolution Can Outperform Reinforcement Learning" paper (COMPASS builds upon and extends this work)
-- **Reflexion**: Shinn et al., 2023 - "Reflexion: Language Agents with Verbal Reinforcement Learning"
-- **ExpeL**: Zhao et al., 2024 - "ExpeL: LLM Agents Are Experiential Learners"
-- **Context Engineering**: Google Whitepaper 2024 - Efficiency patterns
-- **ChromaDB**: Vector database for semantic embeddings
-- **uv**: Astral - Fast Python package manager
-- **Rich**: Terminal formatting and progress bars
-- **Pydantic**: Data validation and structured outputs
+PRECEPT builds on and interfaces with a number of important research and engineering contributions:
+
+- **AutoGen**: Microsoft's multi-agent orchestration framework, used here as part of the agent/runtime integration layer.
+- **MCP (Model Context Protocol)**: Anthropic's protocol for tool and model-context integration; PRECEPT uses MCP to structure server-side tool access and runtime interactions.
+- **GEPA**: Agrawal et al., 2025, *"GEPA: Reflective Prompt Evolution Can Outperform Reinforcement Learning."* PRECEPT's **COMPASS** component builds on and extends this prompt-evolution direction with complexity-aware rollout allocation, multi-strategy coordination, and execution-grounded evaluation.
+- **Reflexion**: Shinn et al., 2023, *"Reflexion: Language Agents with Verbal Reinforcement Learning."* Reflexion is one of the key baseline families compared against PRECEPT in the paper.
+- **ExpeL**: Zhao et al., 2023, *"ExpeL: LLM Agents Are Experiential Learners."* ExpeL is another central experience-based baseline used in PRECEPT's comparisons and framing.
+- **Context Engineering**: Google whitepaper patterns that informed PRECEPT's efficiency-oriented retrieval, writing, and memory-management design choices.
+- **ChromaDB**: The vector database used for semantic memory and static-knowledge retrieval in the current implementation.
+- **uv**: Astral's Python package manager, used for dependency management and reproducible local setup.
+- **Rich**: Terminal rendering, progress display, and developer-facing runtime formatting.
+- **Pydantic**: Data validation and structured outputs for typed interfaces and LLM response schemas.
 
 ---
 
