@@ -29,6 +29,9 @@ paper/**/PRECEPT_PAPER.fls
 paper/**/PRECEPT_PAPER.log
 paper/**/PRECEPT_PAPER.out
 
+LINKEDIN_POST_FINAL.md
+LINKEDIN_POST.md
+
 # Submission-package / generated-artifact excludes
 paper/
 docs/

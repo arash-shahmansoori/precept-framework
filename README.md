@@ -9,6 +9,12 @@
   <img src="https://img.shields.io/badge/uv-Package%20Manager-yellow.svg" alt="uv">
 </p>
 
+## Paper
+
+- **arXiv:** https://arxiv.org/abs/2603.09641
+- **Code:** https://github.com/arash-shahmansoori/precept-framework
+- **Framework overview image:** `paper/arxiv/PRECEPT_framework_linkedin.png`
+
 ## Overview
 
 **PRECEPT** (**P**lanning **R**esilience via **E**xperience, **C**ontext **E**ngineering & **P**robing **T**rajectories) is a comprehensive AI agent learning framework that combines:
